@@ -1,0 +1,22 @@
+{
+	"name": "Wikisource",
+	"author": [
+		"Thomas Pellissier Tanon",
+		"Sam Wilson"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Wikisource",
+	"descriptionmsg": "wikisource-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"MessagesDirs": {
+		"Wikisource": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+	},
+	"Hooks": {
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 1
+}
