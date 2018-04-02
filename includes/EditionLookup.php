@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\Wikisource;
 
 use RequestContext;
+use Wikibase\Client\Usage\UsageAccumulator;
 use Wikibase\DataModel\Entity\EntityIdValue;
 use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\ItemId;
@@ -39,13 +40,20 @@ class EditionLookup {
 	private $editionOfPropertyId;
 
 	/**
+	 * @var UsageAccumulator
+	 */
+	private $usageAccumulator;
+
+	/**
+	 * @param UsageAccumulator $usageAccumulator
 	 * @return self
 	 */
-	public static function newFromGlobalState() {
+	public static function newFromGlobalState( UsageAccumulator $usageAccumulator ) {
 		return new self(
 			WikibaseClient::getDefaultInstance()->getStore()->getEntityLookup(),
 			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionProperty' ),
-			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionOfProperty' )
+			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionOfProperty' ),
+			$usageAccumulator
 		);
 	}
 
@@ -57,15 +65,18 @@ class EditionLookup {
 	 * @param EntityLookup $entityLookup
 	 * @param PropertyId $editionPropertyId
 	 * @param PropertyId $editionOfPropertyId
+	 * @param UsageAccumulator $usageAccumulator
 	 */
 	public function __construct(
 		EntityLookup $entityLookup,
 		PropertyId $editionPropertyId,
-		PropertyId $editionOfPropertyId
+		PropertyId $editionOfPropertyId,
+		UsageAccumulator $usageAccumulator
 	) {
 		$this->entityLookup = $entityLookup;
 		$this->editionPropertyId = $editionPropertyId;
 		$this->editionOfPropertyId = $editionOfPropertyId;
+		$this->usageAccumulator = $usageAccumulator;
 	}
 
 	/**
@@ -99,6 +110,8 @@ class EditionLookup {
 	 * @return ItemId[]
 	 */
 	private function getValuesForItem( Item $item, PropertyId $propertyId ) {
+		$this->usageAccumulator->addStatementUsage( $item->getId(), $propertyId );
+
 		$statements = $item->getStatements()->getByPropertyId( $propertyId );
 		$mainSnaks = $statements->getBestStatements()->getMainSnaks();
 		return $this->getMainSnakItemIds( $mainSnaks );

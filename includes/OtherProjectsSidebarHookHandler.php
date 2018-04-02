@@ -11,6 +11,7 @@ use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\ItemId;
 use Wikibase\DataModel\Services\Lookup\EntityLookup;
 use Wikibase\DataModel\SiteLink;
+use Wikibase\Client\Usage\UsageAccumulator;
 
 /**
  * Handler for the WikibaseClientOtherProjectsSidebar hook.
@@ -42,21 +43,30 @@ class OtherProjectsSidebarHookHandler {
 	private $sidebarLinkBadgeDisplay;
 
 	/**
+	 * @var UsageAccumulator
+	 */
+	private $usageAccumulator;
+
+	/**
 	 * @var string[]
 	 */
 	private $siteIdsToOutput;
 
 	/**
+	 * @param UsageAccumulator $usageAccumulator
 	 * @param string[] $siteIdsToOutput
 	 * @return self
 	 */
-	private static function newFromGlobalState( array $siteIdsToOutput ) {
+	private static function newFromGlobalState(
+		UsageAccumulator $usageAccumulator, array $siteIdsToOutput
+	) {
 		$wikibaseClient = WikibaseClient::getDefaultInstance();
 		return new self(
 			$wikibaseClient->getStore()->getEntityLookup(),
-			EditionLookup::newFromGlobalState(),
+			EditionLookup::newFromGlobalState( $usageAccumulator ),
 			MediaWikiServices::getInstance()->getSiteLookup(),
 			$wikibaseClient->getSidebarLinkBadgeDisplay(),
+			$usageAccumulator,
 			$siteIdsToOutput
 		);
 	}
@@ -66,6 +76,7 @@ class OtherProjectsSidebarHookHandler {
 	 * @param EditionLookup $editionLookup
 	 * @param SiteLookup $siteLookup
 	 * @param SidebarLinkBadgeDisplay $sidebarLinkBadgeDisplay
+	 * @param UsageAccumulator $usageAccumulator
 	 * @param string[] $siteIdsToOutput
 	 */
 	public function __construct(
@@ -73,12 +84,14 @@ class OtherProjectsSidebarHookHandler {
 		EditionLookup $editionLookup,
 		SiteLookup $siteLookup,
 		SidebarLinkBadgeDisplay $sidebarLinkBadgeDisplay,
+		UsageAccumulator $usageAccumulator,
 		array $siteIdsToOutput
 	) {
 		$this->entityLookup = $entityLookup;
 		$this->editionLookup = $editionLookup;
 		$this->siteLookup = $siteLookup;
 		$this->sidebarLinkBadgeDisplay = $sidebarLinkBadgeDisplay;
+		$this->usageAccumulator = $usageAccumulator;
 		$this->siteIdsToOutput = $siteIdsToOutput;
 	}
 
@@ -88,9 +101,13 @@ class OtherProjectsSidebarHookHandler {
 	 * @param ItemId $itemId
 	 * @param array &$sidebar
 	 * @param string[] $siteIdsToOutput
+	 * @param UsageAccumulator $usageAccumulator
 	 */
-	public static function addToSidebar( ItemId $itemId, array &$sidebar, array $siteIdsToOutput ) {
-		self::newFromGlobalState( $siteIdsToOutput )->doAddToSidebar( $itemId, $sidebar );
+	public static function addToSidebar(
+		ItemId $itemId, array &$sidebar, array $siteIdsToOutput, UsageAccumulator $usageAccumulator
+	) {
+		self::newFromGlobalState( $usageAccumulator, $siteIdsToOutput )
+			->doAddToSidebar( $itemId, $sidebar );
 	}
 
 	/**
@@ -107,6 +124,8 @@ class OtherProjectsSidebarHookHandler {
 	}
 
 	private function addItemSiteLinksToSidebar( ItemId $itemId, array &$sidebar ) {
+		$this->usageAccumulator->addSiteLinksUsage( $itemId );
+
 		$siteLinks = $this->getSiteLinks( $itemId );
 		foreach ( $siteLinks as $siteLink ) {
 			if ( !in_array( $siteLink->getSiteId(), $this->siteIdsToOutput ) ) {
