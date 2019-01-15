@@ -15,8 +15,15 @@
 	},
 	"ResourceModules": {
 	},
-	"Hooks": {
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Wikisource\\": "includes/"
 	},
-	"load_composer_autoloader": true,
+	"Hooks": {
+		"WikibaseClientOtherProjectsSidebar": "MediaWiki\\Extension\\Wikisource\\OtherProjectsSidebarHookHandler::addToSidebar"
+	},
+	"config": {
+		"WikisourceWikibaseEditionProperty": "P747",
+		"WikisourceWikibaseEditionOfProperty": "P629"
+	},
 	"manifest_version": 1
 }
