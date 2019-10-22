@@ -138,7 +138,7 @@ class OtherProjectsSidebarHookHandlerTest extends MediaWikiTestCase {
 	}
 
 	private function getSidebarLinkBadgeDisplay() {
-		$labelDescriptionLookup = $this->getMock( LabelDescriptionLookup::class );
+		$labelDescriptionLookup = $this->createMock( LabelDescriptionLookup::class );
 		$labelDescriptionLookup->method( 'getLabel' )
 			->with( new ItemId( 'Q4242' ) )
 			->will( $this->returnValue( new Term( 'en',  'badge' ) ) );
