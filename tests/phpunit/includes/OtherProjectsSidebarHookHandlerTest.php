@@ -7,6 +7,8 @@ use Language;
 use MediaWikiTestCase;
 use TestSites;
 use Wikibase\Client\Hooks\SidebarLinkBadgeDisplay;
+use Wikibase\Client\Usage\EntityUsage;
+use Wikibase\Client\Usage\HashUsageAccumulator;
 use Wikibase\DataModel\Entity\EntityIdValue;
 use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\ItemId;
@@ -34,22 +36,27 @@ class OtherProjectsSidebarHookHandlerTest extends MediaWikiTestCase {
 	public function testDoAddToSidebar(
 		array $expected,
 		array $sidebar,
-		ItemId $itemId
+		ItemId $itemId,
+		array $expectedUsages = []
 	) {
 		$entityLookup = $this->getEntityLookup();
+		$usageAccumulator = new HashUsageAccumulator();
 		$handler = new OtherProjectsSidebarHookHandler(
 			$entityLookup,
 			new EditionLookup(
 				$entityLookup,
 				new PropertyId( 'P747' ),
-				new PropertyId( 'P629' )
+				new PropertyId( 'P629' ),
+				$usageAccumulator
 			),
 			new HashSiteStore( TestSites::getSites() ),
 			$this->getSidebarLinkBadgeDisplay(),
+			$usageAccumulator,
 			[ 'enwiki', 'enwiktionary' ]
 		);
 		$handler->doAddToSidebar( $itemId, $sidebar );
 		$this->assertEquals( $expected, $sidebar );
+		$this->assertArrayEquals( $expectedUsages, $usageAccumulator->getUsages() );
 	}
 
 	public function doAddToSidebarProvider() {
@@ -79,7 +86,11 @@ class OtherProjectsSidebarHookHandlerTest extends MediaWikiTestCase {
 					'wiktionary' => [ 'enwiktionary' => $wiktionaryLink ]
 				],
 				[],
-				new ItemId( 'Q1' )
+				new ItemId( 'Q1' ),
+				[
+					new EntityUsage( new ItemId( 'Q1' ), EntityUsage::STATEMENT_USAGE, 'P629' ),
+					new EntityUsage( new ItemId( 'Q2' ), EntityUsage::SITELINK_USAGE ),
+				]
 			],
 			'Item with work with existing' => [
 				[
@@ -89,7 +100,11 @@ class OtherProjectsSidebarHookHandlerTest extends MediaWikiTestCase {
 				[
 					'wikipedia' => [ 'enwiki' => $existingWikipediaLink ],
 				],
-				new ItemId( 'Q1' )
+				new ItemId( 'Q1' ),
+				[
+					new EntityUsage( new ItemId( 'Q1' ), EntityUsage::STATEMENT_USAGE, 'P629' ),
+					new EntityUsage( new ItemId( 'Q2' ), EntityUsage::SITELINK_USAGE ),
+				]
 			],
 			'Item without work' => [
 				[
@@ -98,16 +113,20 @@ class OtherProjectsSidebarHookHandlerTest extends MediaWikiTestCase {
 				[
 					'wikipedia' => [ 'enwiki' => $existingWikipediaLink ],
 				],
-				new ItemId( 'Q2' )
+				new ItemId( 'Q2' ),
+				[
+					new EntityUsage( new ItemId( 'Q2' ), EntityUsage::STATEMENT_USAGE, 'P629' )
+				]
 			],
 			'Not existing item' => [
 				[
 					'wikipedia' => [ 'enwiki' => $existingWikipediaLink ]
 				],
 				[
-					'wikipedia' => [ 'enwiki' => $existingWikipediaLink ],
+					'wikipedia' => [ 'enwiki' => $existingWikipediaLink ]
 				],
-				new ItemId( 'Q3' )
+				new ItemId( 'Q3' ),
+				[]
 			],
 		];
 	}
