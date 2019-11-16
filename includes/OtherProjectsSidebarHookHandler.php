@@ -159,6 +159,7 @@ class OtherProjectsSidebarHookHandler {
 		if ( $item === null ) {
 			return [];
 		}
+		'@phan-var Item $item';
 		return $item->getSiteLinkList()->toArray();
 	}
 
