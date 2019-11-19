@@ -1,5 +1,7 @@
 <?php
 
+declare( strict_types = 1 );
+
 namespace MediaWiki\Extension\Wikisource;
 
 use RequestContext;
@@ -48,7 +50,7 @@ class EditionLookup {
 	 * @param UsageAccumulator $usageAccumulator
 	 * @return self
 	 */
-	public static function newFromGlobalState( UsageAccumulator $usageAccumulator ) {
+	public static function newFromGlobalState( UsageAccumulator $usageAccumulator ) : self {
 		return new self(
 			WikibaseClient::getDefaultInstance()->getStore()->getEntityLookup(),
 			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionProperty' ),
@@ -57,7 +59,7 @@ class EditionLookup {
 		);
 	}
 
-	private static function getPropertyIdFromConfig( $configParamName ) {
+	private static function getPropertyIdFromConfig( string $configParamName ) : PropertyId {
 		return new PropertyId( RequestContext::getMain()->getConfig()->get( $configParamName ) );
 	}
 
@@ -83,7 +85,7 @@ class EditionLookup {
 	 * @param ItemId $itemId
 	 * @return ItemId[]
 	 */
-	public function getWorks( ItemId $itemId ) {
+	public function getWorks( ItemId $itemId ) : array {
 		return $this->getValuesForItemId( $itemId, $this->editionOfPropertyId );
 	}
 
@@ -91,14 +93,14 @@ class EditionLookup {
 	 * @param ItemId $itemId
 	 * @return ItemId[]
 	 */
-	public function getEditions( ItemId $itemId ) {
+	public function getEditions( ItemId $itemId ) : array {
 		return $this->getValuesForItemId( $itemId, $this->editionPropertyId );
 	}
 
 	/**
 	 * @return ItemId[]
 	 */
-	private function getValuesForItemId( ItemId $itemId, PropertyId $propertyId ) {
+	private function getValuesForItemId( ItemId $itemId, PropertyId $propertyId ) : array {
 		$item = $this->getItem( $itemId );
 		if ( $item === null ) {
 			return [];
@@ -109,7 +111,7 @@ class EditionLookup {
 	/**
 	 * @return ItemId[]
 	 */
-	private function getValuesForItem( Item $item, PropertyId $propertyId ) {
+	private function getValuesForItem( Item $item, PropertyId $propertyId ) : array {
 		$this->usageAccumulator->addStatementUsage( $item->getId(), $propertyId );
 
 		$statements = $item->getStatements()->getByPropertyId( $propertyId );
@@ -121,7 +123,7 @@ class EditionLookup {
 	 * @param Snak[] $mainSnaks
 	 * @return ItemId[]
 	 */
-	private function getMainSnakItemIds( array $mainSnaks ) {
+	private function getMainSnakItemIds( array $mainSnaks ) : array {
 		$values = [];
 		foreach ( $mainSnaks as $snak ) {
 			if ( $snak instanceof PropertyValueSnak ) {
@@ -139,7 +141,7 @@ class EditionLookup {
 	 *
 	 * @return Item|null
 	 */
-	private function getItem( ItemId $itemId ) {
+	private function getItem( ItemId $itemId ) : ?Item {
 		try {
 			return $this->entityLookup->getEntity( $itemId );
 		} catch ( EntityLookupException $e ) {

@@ -1,5 +1,7 @@
 <?php
 
+declare( strict_types = 1 );
+
 namespace MediaWiki\Extension\Wikisource;
 
 use MediaWiki\MediaWikiServices;
@@ -59,7 +61,7 @@ class OtherProjectsSidebarHookHandler {
 	 */
 	private static function newFromGlobalState(
 		UsageAccumulator $usageAccumulator, array $siteIdsToOutput
-	) {
+	) : self {
 		$wikibaseClient = WikibaseClient::getDefaultInstance();
 		return new self(
 			$wikibaseClient->getStore()->getEntityLookup(),
@@ -105,7 +107,7 @@ class OtherProjectsSidebarHookHandler {
 	 */
 	public static function addToSidebar(
 		ItemId $itemId, array &$sidebar, array $siteIdsToOutput, UsageAccumulator $usageAccumulator
-	) {
+	) : void {
 		self::newFromGlobalState( $usageAccumulator, $siteIdsToOutput )
 			->doAddToSidebar( $itemId, $sidebar );
 	}
@@ -116,14 +118,14 @@ class OtherProjectsSidebarHookHandler {
 	 * @param ItemId $itemId
 	 * @param array &$sidebar
 	 */
-	public function doAddToSidebar( ItemId $itemId, array &$sidebar ) {
+	public function doAddToSidebar( ItemId $itemId, array &$sidebar ) : void {
 		$workItemIds = $this->editionLookup->getWorks( $itemId );
 		foreach ( $workItemIds as $workItemId ) {
 			$this->addItemSiteLinksToSidebar( $workItemId, $sidebar );
 		}
 	}
 
-	private function addItemSiteLinksToSidebar( ItemId $itemId, array &$sidebar ) {
+	private function addItemSiteLinksToSidebar( ItemId $itemId, array &$sidebar ) : void {
 		$this->usageAccumulator->addSiteLinksUsage( $itemId );
 
 		$siteLinks = $this->getSiteLinks( $itemId );
@@ -151,7 +153,7 @@ class OtherProjectsSidebarHookHandler {
 	/**
 	 * @return SiteLink[]
 	 */
-	private function getSiteLinks( ItemId $itemId ) {
+	private function getSiteLinks( ItemId $itemId ) : array {
 		/**
 		 * @var Item $item
 		 */
@@ -166,7 +168,7 @@ class OtherProjectsSidebarHookHandler {
 	/**
 	 * @return string[] Array of attributes describing a sidebar link.
 	 */
-	private function buildSidebarLink( SiteLink $siteLink, Site $site ) {
+	private function buildSidebarLink( SiteLink $siteLink, Site $site ) : array {
 		$attributes = [
 			'msg' => 'wikibase-otherprojects-' . $site->getGroup(),
 			'class' => 'wb-otherproject-link wb-otherproject-' . $site->getGroup(),
