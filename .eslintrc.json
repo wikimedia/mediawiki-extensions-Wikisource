@@ -10,13 +10,5 @@
 		"mediaWiki": false,
 		"mw": false,
 		"ve": false
-	},
-	"rules": {
-		"dot-notation": [
-			"error",
-			{
-				"allowKeywords": true
-			}
-		]
 	}
 }
