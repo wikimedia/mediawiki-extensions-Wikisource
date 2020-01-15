@@ -8,12 +8,12 @@ use MediaWiki\MediaWikiServices;
 use Site;
 use SiteLookup;
 use Wikibase\Client\Hooks\SidebarLinkBadgeDisplay;
+use Wikibase\Client\Usage\UsageAccumulator;
 use Wikibase\Client\WikibaseClient;
 use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\ItemId;
 use Wikibase\DataModel\Services\Lookup\EntityLookup;
 use Wikibase\DataModel\SiteLink;
-use Wikibase\Client\Usage\UsageAccumulator;
 
 /**
  * Handler for the WikibaseClientOtherProjectsSidebar hook.
