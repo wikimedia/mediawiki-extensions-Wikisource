@@ -98,6 +98,8 @@ class EditionLookup {
 	}
 
 	/**
+	 * @param ItemId $itemId
+	 * @param PropertyId $propertyId
 	 * @return ItemId[]
 	 */
 	private function getValuesForItemId( ItemId $itemId, PropertyId $propertyId ) : array {
@@ -109,6 +111,8 @@ class EditionLookup {
 	}
 
 	/**
+	 * @param Item $item
+	 * @param PropertyId $propertyId
 	 * @return ItemId[]
 	 */
 	private function getValuesForItem( Item $item, PropertyId $propertyId ) : array {

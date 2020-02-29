@@ -151,6 +151,7 @@ class OtherProjectsSidebarHookHandler {
 	}
 
 	/**
+	 * @param ItemId $itemId
 	 * @return SiteLink[]
 	 */
 	private function getSiteLinks( ItemId $itemId ) : array {
@@ -166,6 +167,8 @@ class OtherProjectsSidebarHookHandler {
 	}
 
 	/**
+	 * @param SiteLink $siteLink
+	 * @param Site $site
 	 * @return string[] Array of attributes describing a sidebar link.
 	 */
 	private function buildSidebarLink( SiteLink $siteLink, Site $site ) : array {
