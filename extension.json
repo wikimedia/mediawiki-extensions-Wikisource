@@ -16,8 +16,6 @@
 			"i18n"
 		]
 	},
-	"ResourceModules": {
-	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\Wikisource\\": "includes/"
 	},
@@ -25,8 +23,12 @@
 		"WikibaseClientOtherProjectsSidebar": "MediaWiki\\Extension\\Wikisource\\OtherProjectsSidebarHookHandler::addToSidebar"
 	},
 	"config": {
-		"WikisourceWikibaseEditionProperty": "P747",
-		"WikisourceWikibaseEditionOfProperty": "P629"
+		"WikisourceWikibaseEditionProperty": {
+			"value": "P747"
+		},
+		"WikisourceWikibaseEditionOfProperty": {
+			"value": "P629"
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
