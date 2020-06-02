@@ -20,7 +20,7 @@
 		"MediaWiki\\Extension\\Wikisource\\": "includes/"
 	},
 	"Hooks": {
-		"WikibaseClientOtherProjectsSidebar": "MediaWiki\\Extension\\Wikisource\\OtherProjectsSidebarHookHandler::addToSidebar"
+		"WikibaseClientSiteLinksForItem": "MediaWiki\\Extension\\Wikisource\\WikibaseClientSiteLinksForItemHandler::provideSiteLinks"
 	},
 	"config": {
 		"WikisourceWikibaseEditionProperty": {
