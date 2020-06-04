@@ -7,6 +7,8 @@ namespace MediaWiki\Extension\Wikisource;
 use RequestContext;
 use Wikibase\Client\Usage\UsageAccumulator;
 use Wikibase\Client\WikibaseClient;
+use Wikibase\DataModel\Entity\EntityDocument;
+use Wikibase\DataModel\Entity\EntityId;
 use Wikibase\DataModel\Entity\EntityIdValue;
 use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\ItemId;
@@ -82,32 +84,35 @@ class EditionLookup {
 	}
 
 	/**
-	 * @param ItemId $itemId
-	 * @return ItemId[]
+	 * @param Item $item
+	 * @return Item[]
 	 */
-	public function getWorks( ItemId $itemId ) : array {
-		return $this->getValuesForItemId( $itemId, $this->editionOfPropertyId );
+	public function getWorks( Item $item ) : array {
+		return $this->getItemValuesForItem( $item, $this->editionOfPropertyId );
 	}
 
 	/**
-	 * @param ItemId $itemId
-	 * @return ItemId[]
+	 * @param Item $item
+	 * @return Item[]
 	 */
-	public function getEditions( ItemId $itemId ) : array {
-		return $this->getValuesForItemId( $itemId, $this->editionPropertyId );
+	public function getEditions( Item $item ) : array {
+		return $this->getItemValuesForItem( $item, $this->editionPropertyId );
 	}
 
 	/**
-	 * @param ItemId $itemId
+	 * @param Item $item
 	 * @param PropertyId $propertyId
-	 * @return ItemId[]
+	 * @return Item[]
 	 */
-	private function getValuesForItemId( ItemId $itemId, PropertyId $propertyId ) : array {
-		$item = $this->getItem( $itemId );
-		if ( $item === null ) {
-			return [];
+	private function getItemValuesForItem( Item $item, PropertyId $propertyId ) : array {
+		$items = [];
+		foreach ( $this->getItemIdValuesForItem( $item, $propertyId ) as $itemId ) {
+			$item = $this->getEntity( $itemId );
+			if ( $item instanceof Item ) {
+				$items[] = $item;
+			}
 		}
-		return $this->getValuesForItem( $item, $propertyId );
+		return $items;
 	}
 
 	/**
@@ -115,7 +120,7 @@ class EditionLookup {
 	 * @param PropertyId $propertyId
 	 * @return ItemId[]
 	 */
-	private function getValuesForItem( Item $item, PropertyId $propertyId ) : array {
+	private function getItemIdValuesForItem( Item $item, PropertyId $propertyId ) : array {
 		$this->usageAccumulator->addStatementUsage( $item->getId(), $propertyId );
 
 		$statements = $item->getStatements()->getByPropertyId( $propertyId );
@@ -140,17 +145,11 @@ class EditionLookup {
 		return $values;
 	}
 
-	/**
-	 * @param ItemId $itemId
-	 *
-	 * @return Item|null
-	 */
-	private function getItem( ItemId $itemId ) : ?Item {
+	private function getEntity( EntityId $itemId ) : ?EntityDocument {
 		try {
 			return $this->entityLookup->getEntity( $itemId );
 		} catch ( EntityLookupException $e ) {
 			return null;
 		}
 	}
-
 }
