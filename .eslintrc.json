@@ -1,14 +1,15 @@
 {
 	"root": true,
-	"extends": "wikimedia",
+	"extends": [
+		"wikimedia",
+		"wikimedia/mediawiki"
+	],
 	"env": {
 		"browser": true,
 		"jquery": true
 	},
 	"globals": {
-		"OO": false,
 		"mediaWiki": false,
-		"mw": false,
 		"ve": false
 	}
 }
