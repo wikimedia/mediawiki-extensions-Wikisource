@@ -4,5 +4,11 @@
 			"Ата"
 		]
 	},
-	"wikisource-desc": "Налаштування MediaWiki, призначені для Вікіджерел"
+	"wikisource-desc": "Налаштування MediaWiki, призначені для Вікіджерел",
+	"wikisource-download-epub": "Завантажити як EPUB",
+	"wikisource-download-epub-tooltip": "Завантажте цю версію EPUB для цієї сторінки",
+	"wikisource-download-mobi": "Завантажити як MOBI",
+	"wikisource-download-mobi-tooltip": "Завантажте цю версію MOBI для цієї сторінки",
+	"wikisource-download-choose": "Інший формат",
+	"wikisource-download-choose-tooltip": "Завантажте версію роботи в інших форматах"
 }

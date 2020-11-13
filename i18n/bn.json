@@ -1,0 +1,11 @@
+{
+	"@metadata": {},
+	"wikisource-download-epub": "ইপাব ডাউনলোড",
+	"wikisource-download-epub-tooltip": "এই পাতার ইপাব সংস্করণ ডাউনলোড করুন",
+	"wikisource-download-pdf": "পিডিএফ ডাউনলোড",
+	"wikisource-download-pdf-tooltip": "এই পাতার পিডিএফ সংস্করণ ডাউনলোড করুন",
+	"wikisource-download-mobi": "মোবি ডাউনলোড",
+	"wikisource-download-mobi-tooltip": "এই পাতার মোবি সংস্করণ ডাউনলোড করুন",
+	"wikisource-download-choose": "অন্য সংস্করণ বাছুন",
+	"wikisource-download-choose-tooltip": "এই পাতার অন্য সংস্করণ ডাউনলোড করুন"
+}

@@ -4,5 +4,7 @@
 			"Mansil alfalb"
 		]
 	},
-	"wikisource-desc": "Personalizações do MediaWiki específicas de Wikisource"
+	"wikisource-desc": "Personalizações do MediaWiki específicas de Wikisource",
+	"wikisource-download-epub": "Baixar como EPUB",
+	"wikisource-download-epub-tooltip": "Fazer download de uma versão desta página no formato EPUB"
 }

@@ -2,5 +2,14 @@
 	"@metadata": {
 		"authors": []
 	},
-	"wikisource-desc": "{{desc|name=Wikisource}}"
+	"wikisource-desc": "{{desc|name=Wikisource}}",
+	"wikisource-export-portlet": "Heading for a portlet/section of the sidebar. Usually exactly the same as {{msg-mw|coll-print_export}} and similar to {{msg-mw|toolbox}}.",
+	"wikisource-download-epub": "Link text to download an EPUB format file.",
+	"wikisource-download-epub-tooltip": "Tooltip text for the link to download an EPUB file.",
+	"wikisource-download-mobi": "Link text to download a MOBI format file.",
+	"wikisource-download-mobi-tooltip": "Tooltip text for the link to download a MOBI file.",
+	"wikisource-download-pdf": "Link text to download a PDF format file.",
+	"wikisource-download-pdf-tooltip": "Tooltip text for the link to download a PDF file.",
+	"wikisource-download-choose": "Link text to go to an external page to download other formats.",
+	"wikisource-download-choose-tooltip": "Tooltip text for the 'other formats' link."
 }

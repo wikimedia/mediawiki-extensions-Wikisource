@@ -4,5 +4,11 @@
 			"BaRaN6161 TURK"
 		]
 	},
-	"wikisource-desc": "Vikikaynağına özgü MediaWiki özelleştirmeleri"
+	"wikisource-desc": "Vikikaynağına özgü MediaWiki özelleştirmeleri",
+	"wikisource-download-epub": "EPUB olarak indir",
+	"wikisource-download-epub-tooltip": "Bu sayfanın EPUB versiyonunu indirin",
+	"wikisource-download-mobi": "MOBI olarak indir",
+	"wikisource-download-mobi-tooltip": "Bu sayfanın MOBI versiyonunu indirin",
+	"wikisource-download-choose": "Format seç",
+	"wikisource-download-choose-tooltip": "Bu eseri diğer versiyonlarla indirin"
 }

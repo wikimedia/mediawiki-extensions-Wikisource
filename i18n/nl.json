@@ -4,5 +4,7 @@
 			"Mainframe98"
 		]
 	},
-	"wikisource-desc": "MediaWiki aanpassingen voor Wikisource"
+	"wikisource-desc": "MediaWiki aanpassingen voor Wikisource",
+	"wikisource-download-epub": "Downloaden als EPUB",
+	"wikisource-download-epub-tooltip": "Download een EPUB versie van deze pagina"
 }
