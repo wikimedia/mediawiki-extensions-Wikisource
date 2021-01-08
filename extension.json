@@ -9,7 +9,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.31.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"MessagesDirs": {
 		"Wikisource": [
@@ -20,7 +20,14 @@
 		"MediaWiki\\Extension\\Wikisource\\": "includes/"
 	},
 	"Hooks": {
+		"SidebarBeforeOutput": "SidebarBeforeOutput",
 		"WikibaseClientSiteLinksForItem": "MediaWiki\\Extension\\Wikisource\\WikibaseClientSiteLinksForItemHandler::provideSiteLinks"
+	},
+	"HookHandlers": {
+		"SidebarBeforeOutput": {
+			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\SidebarBeforeOutputHandler",
+			"services": [ "MainConfig", "ContentLanguage" ]
+		}
 	},
 	"config": {
 		"WikisourceWikibaseEditionProperty": {
@@ -28,6 +35,9 @@
 		},
 		"WikisourceWikibaseEditionOfProperty": {
 			"value": "P629"
+		},
+		"WikisourceWsExportUrl": {
+			"value": "https://wsexport.wmflabs.org"
 		}
 	},
 	"manifest_version": 2

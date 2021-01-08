@@ -4,5 +4,9 @@
 			"Verdy p"
 		]
 	},
-	"wikisource-desc": "Personnalisations de MediaWiki spécifiques à Wikisource"
+	"wikisource-desc": "Personnalisations de MediaWiki spécifiques à Wikisource",
+	"wikisource-download-epub": "EPUB",
+	"wikisource-download-epub-tooltip": "Télécharger une version EPUB de ce livre",
+	"wikisource-download-mobi": "MOBI",
+	"wikisource-download-mobi-tooltip": "Télécharger une version MOBI de ce livre"
 }
