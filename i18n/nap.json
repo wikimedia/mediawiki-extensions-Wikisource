@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chelin",
 			"Cryptex nap"
 		]
 	},
-	"wikisource-desc": "Personalizzazzione 'e MediaWiki specifiche pe Wikisource"
+	"wikisource-desc": "Personalizzazzione 'e MediaWiki specifiche pe Wikisource",
+	"wikisource-download-mobi": "Scarreca MOBI",
+	"wikisource-download-pdf": "Scarreca 'o PDF"
 }

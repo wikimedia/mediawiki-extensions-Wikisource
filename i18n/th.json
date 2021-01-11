@@ -1,5 +1,7 @@
 {
-	"@metadata": {},
+	"@metadata": {
+		"authors": []
+	},
 	"wikisource-download-epub": "ดาวน์โหลดเป็น EPUB",
 	"wikisource-download-epub-tooltip": "ดาวน์โหลดรุ่น EPUB ของหน้านี้",
 	"wikisource-download-mobi": "ดาวน์โหลดเป็น MOBI",

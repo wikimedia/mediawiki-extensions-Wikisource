@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"Okras"
 		]
 	},
-	"wikisource-desc": "Настройки MediaWiki для Викитеки"
+	"wikisource-desc": "Настройки MediaWiki для Викитеки",
+	"wikisource-export-portlet": "Печать/экспорт",
+	"wikisource-download-epub": "Скачать EPUB",
+	"wikisource-download-pdf": "Скачать PDF",
+	"wikisource-download-choose": "Другие форматы"
 }

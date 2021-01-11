@@ -1,5 +1,11 @@
 {
-	"@metadata": {},
+	"@metadata": {
+		"authors": [
+			"Kareyac"
+		]
+	},
+	"wikisource-export-portlet": "Տպել/արտահանել",
 	"wikisource-download-epub": "Ներբեռնել որպես EPUB",
-	"wikisource-download-epub-tooltip": "Ներբեռնել այս էջի EPUB տարբերակը"
+	"wikisource-download-epub-tooltip": "Ներբեռնել այս էջի EPUB տարբերակը",
+	"wikisource-download-choose": "Այլ ձևաչափեր"
 }

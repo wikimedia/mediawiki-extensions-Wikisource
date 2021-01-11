@@ -4,5 +4,14 @@
 			"Amire80"
 		]
 	},
-	"wikisource-desc": "התאמות של מדיה־ויקי לוויקיטקסט (Wikisource)"
+	"wikisource-desc": "התאמות של מדיה־ויקי לוויקיטקסט (Wikisource)",
+	"wikisource-export-portlet": "הדפסה/ייצוא",
+	"wikisource-download-epub": "הורדת EPUB",
+	"wikisource-download-epub-tooltip": "הורדת גרסת EPUB של היצירה הזאת",
+	"wikisource-download-mobi": "הורדת MOBI",
+	"wikisource-download-mobi-tooltip": "הורדת גרסת MOBI של היצירה הזאת",
+	"wikisource-download-pdf": "הורדת PDF",
+	"wikisource-download-pdf-tooltip": "הורדת גרסת PDF של היצירה הזאת",
+	"wikisource-download-choose": "תסדירים אחרים",
+	"wikisource-download-choose-tooltip": "פתיחת טופס לבחירת תסדירים וגופנים אחרים וכו'"
 }

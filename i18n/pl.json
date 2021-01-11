@@ -4,5 +4,14 @@
 			"Rail"
 		]
 	},
-	"wikisource-desc": "Dostosowania MediaWiki przystosowane do Wikiźródeł"
+	"wikisource-desc": "Dostosowania MediaWiki przystosowane do Wikiźródeł",
+	"wikisource-export-portlet": "Drukuj lub eksportuj",
+	"wikisource-download-epub": "Pobierz jako EPUB",
+	"wikisource-download-epub-tooltip": "Pobierz wersję tej pracy jako EPUB",
+	"wikisource-download-mobi": "Pobierz jako MOBI",
+	"wikisource-download-mobi-tooltip": "Pobierz wersję tej pracy jako MOBI",
+	"wikisource-download-pdf": "Pobierz jako PDF",
+	"wikisource-download-pdf-tooltip": "Pobierz wersję tej pracy jako PDF",
+	"wikisource-download-choose": "Inne formaty",
+	"wikisource-download-choose-tooltip": "Otwórz formularz, aby wybrać inne formaty, czcionki itd."
 }

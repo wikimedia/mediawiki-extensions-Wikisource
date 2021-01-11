@@ -1,5 +1,7 @@
 {
-	"@metadata": {},
+	"@metadata": {
+		"authors": []
+	},
 	"wikisource-download-epub": "EPUBஆக பதிவிறக்குக",
 	"wikisource-download-epub-tooltip": "EPUB வடிவத்தில் இப்பக்கத்தினை பதிவிற்றக்கம் செய்க",
 	"wikisource-download-mobi": "MOBIஆக பதிவிறக்குக",

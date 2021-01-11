@@ -4,5 +4,14 @@
 			"Eduardo Addad de Oliveira"
 		]
 	},
-	"wikisource-desc": "Personalizações do MediaWiki específicas de Wikisource"
+	"wikisource-desc": "Personalizações do MediaWiki específicas de Wikisource",
+	"wikisource-export-portlet": "Imprimir/exportar",
+	"wikisource-download-epub": "Baixar como EPUB",
+	"wikisource-download-epub-tooltip": "Baixar uma versão EPUB deste trabalho",
+	"wikisource-download-mobi": "Baixar MOBI",
+	"wikisource-download-mobi-tooltip": "Baixar uma versão MOBI deste trabalho",
+	"wikisource-download-pdf": "Baixar PDF",
+	"wikisource-download-pdf-tooltip": "Baixar uma versão em PDF deste trabalho",
+	"wikisource-download-choose": "Outros formatos",
+	"wikisource-download-choose-tooltip": "Abra um formulário para escolher outros formatos e fontes etc."
 }

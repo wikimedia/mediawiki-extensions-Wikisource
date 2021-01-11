@@ -4,5 +4,14 @@
 			"Umherirrender"
 		]
 	},
-	"wikisource-desc": "Wikisource-spezifische MediaWiki-Anpassungen"
+	"wikisource-desc": "Wikisource-spezifische MediaWiki-Anpassungen",
+	"wikisource-export-portlet": "Drucken/­exportieren",
+	"wikisource-download-epub": "EPUB herunterladen",
+	"wikisource-download-epub-tooltip": "Herunterladen einer EPUB-Version dieses Werkes",
+	"wikisource-download-mobi": "MOBI herunterladen",
+	"wikisource-download-mobi-tooltip": "Herunterladen einer MOBI-Version dieses Werkes",
+	"wikisource-download-pdf": "PDF herunterladen",
+	"wikisource-download-pdf-tooltip": "Herunterladen einer PDF-Version dieses Werkes",
+	"wikisource-download-choose": "Andere Formate",
+	"wikisource-download-choose-tooltip": "Öffnen eines Formulars, um andere Formate und Schriftarten usw. auszuwählen."
 }

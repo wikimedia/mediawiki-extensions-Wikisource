@@ -1,5 +1,15 @@
 {
-	"@metadata": {},
-	"wikisource-download-epub": "Scarica come ePub",
-	"wikisource-download-epub-tooltip": "Scarica in formato ePub"
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"wikisource-export-portlet": "Stampa/esporta",
+	"wikisource-download-epub": "Scarica ePub",
+	"wikisource-download-epub-tooltip": "Scarica una versione ePub di quest'opera",
+	"wikisource-download-mobi": "Scarica MOBI",
+	"wikisource-download-mobi-tooltip": "Scarica una versione MOBI di quest'opera",
+	"wikisource-download-pdf": "Scarica PDF",
+	"wikisource-download-pdf-tooltip": "Scarica una versione PDF di quest'opera",
+	"wikisource-download-choose": "Altri formati"
 }
