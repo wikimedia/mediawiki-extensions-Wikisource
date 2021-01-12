@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"StanProg",
 			"Ted Masters"
 		]
 	},
-	"wikisource-desc": "Настройки на МедияУики, свързани с Уикиизточник"
+	"wikisource-desc": "Настройки на МедияУики, свързани с Уикиизточник",
+	"wikisource-export-portlet": "Отпечатване/изнасяне",
+	"wikisource-download-choose": "Други формати"
 }

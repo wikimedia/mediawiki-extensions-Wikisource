@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tofeiku"
+		]
+	},
+	"wikisource-export-portlet": "Cetak/eksport",
+	"wikisource-download-mobi": "Muat turun MOBI",
+	"wikisource-download-pdf": "Muat turun PDF",
+	"wikisource-download-choose": "Format lain"
+}

@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Luwangcha"
+			"Luwangcha",
+			"꯴꯰꯴"
 		]
 	},
 	"wikisource-export-portlet": "ꯅꯝꯕꯥ/ꯄꯨꯊꯣꯛꯈꯤꯕ",
-	"wikisource-download-epub": "EPUB ꯆꯤꯡꯉꯨ",
-	"wikisource-download-mobi": "MOBI ꯆꯤꯡꯉꯨ",
-	"wikisource-download-pdf": "PDF ꯆꯤꯡꯉꯨ"
+	"wikisource-download-epub": "EPUB ꯆꯤꯡꯊꯔꯛꯎ",
+	"wikisource-download-mobi": "MOBI ꯆꯤꯡꯊꯔꯛꯎ",
+	"wikisource-download-pdf": "PDF ꯆꯤꯡꯊꯔꯛꯎ"
 }

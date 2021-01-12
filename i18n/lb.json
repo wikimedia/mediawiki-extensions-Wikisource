@@ -5,7 +5,10 @@
 		]
 	},
 	"wikisource-download-epub": "EPUB eroflueden",
+	"wikisource-download-epub-tooltip": "Eng EPUB-Versioun vun dësem Wierk eroflueden",
 	"wikisource-download-mobi": "MOBI eroflueden",
+	"wikisource-download-mobi-tooltip": "Eng MOBI-Versioun vun dësem Wierk eroflueden",
 	"wikisource-download-pdf": "PDF eroflueden",
+	"wikisource-download-pdf-tooltip": "Eng PDF-Versioun vun dësem Wierk eroflueden",
 	"wikisource-download-choose": "Aner Formater"
 }

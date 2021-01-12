@@ -4,5 +4,14 @@
 			"Jon Harald Søby"
 		]
 	},
-	"wikisource-desc": "Wikikilden-spesifikke MediaWiki-tilpasninger"
+	"wikisource-desc": "Wikikilden-spesifikke MediaWiki-tilpasninger",
+	"wikisource-export-portlet": "Skriv ut/eksporter",
+	"wikisource-download-epub": "Last ned EPUB",
+	"wikisource-download-epub-tooltip": "Last ned en EPUB-versjon av dette verket",
+	"wikisource-download-mobi": "Last ned MOBI",
+	"wikisource-download-mobi-tooltip": "Last ned en MOBI-versjon av dette verket",
+	"wikisource-download-pdf": "Last ned PDF",
+	"wikisource-download-pdf-tooltip": "Last ned en PDF-versjon av dette verket",
+	"wikisource-download-choose": "Andre formater",
+	"wikisource-download-choose-tooltip": "Åpne et skjema for å velge andre formater, skrifttyper osv."
 }

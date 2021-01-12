@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Biyolojiyabikurdi",
 			"Guherto"
 		]
 	},
@@ -9,5 +10,6 @@
 	"wikisource-download-mobi": "MOBI daxe",
 	"wikisource-download-mobi-tooltip": "Şiklekî MOBIyê yê vê berhemê daxe",
 	"wikisource-download-pdf": "PDF daxe",
-	"wikisource-download-pdf-tooltip": "Şiklekî PDFê yê vê berhemê daxe"
+	"wikisource-download-pdf-tooltip": "Şiklekî PDFê yê vê berhemê daxe",
+	"wikisource-download-choose": "Şêweyên din"
 }
