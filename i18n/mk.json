@@ -4,5 +4,14 @@
 			"Bjankuloski06"
 		]
 	},
-	"wikisource-desc": "Прилагодувања за Викиизвор"
+	"wikisource-desc": "Прилагодувања за Викиизвор",
+	"wikisource-export-portlet": "Печати/извези",
+	"wikisource-download-epub": "Преземи EPUB",
+	"wikisource-download-epub-tooltip": "Преземете EPUB-верзија на делово",
+	"wikisource-download-mobi": "Преземи MOBI",
+	"wikisource-download-mobi-tooltip": "Преземете MOBI-верзија на делово",
+	"wikisource-download-pdf": "Преземи PDF",
+	"wikisource-download-pdf-tooltip": "Преземете PDF-верзија на делово",
+	"wikisource-download-choose": "Други формати",
+	"wikisource-download-choose-tooltip": "Отворете образец за да изберете други формати, фонтови итн."
 }
