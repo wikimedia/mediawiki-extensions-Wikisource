@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aleator"
+		]
+	},
+	"wikisource-desc": "Personalitzacions de MediaWiki específiques de Wikisource",
+	"wikisource-export-portlet": "Imprimeix/exporta",
+	"wikisource-download-epub": "Baixa com a EPUB",
+	"wikisource-download-epub-tooltip": "Descarregar una versió EPUB d'aquesta obra",
+	"wikisource-download-mobi": "Baixa com a MOBI",
+	"wikisource-download-mobi-tooltip": "Descarregar una versió MOBI d'aquesta obra",
+	"wikisource-download-pdf": "Baixa com a PDF",
+	"wikisource-download-pdf-tooltip": "Descarregar una versió PDF d'aquesta obra",
+	"wikisource-download-choose": "Altres formats",
+	"wikisource-download-choose-tooltip": "Obrir formulari per escollir d'altres formats, fonts, etc."
+}

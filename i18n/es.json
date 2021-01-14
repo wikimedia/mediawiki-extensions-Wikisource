@@ -1,8 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aleator",
 			"Fitoschido"
 		]
 	},
-	"wikisource-desc": "Personalizaciones de MediaWiki específicas de Wikisource"
+	"wikisource-desc": "Personalizaciones de MediaWiki específicas de Wikisource",
+	"wikisource-export-portlet": "Imprimir/exportar",
+	"wikisource-download-epub": "Descarga como EPUB",
+	"wikisource-download-epub-tooltip": "Descargar una versión EPUB de esta obra",
+	"wikisource-download-mobi": "Descarga como MOBI",
+	"wikisource-download-mobi-tooltip": "Descargar una versión MOBI de esta obra",
+	"wikisource-download-pdf": "Descarga como PDF",
+	"wikisource-download-pdf-tooltip": "Descargar una versión PDF de esta obra",
+	"wikisource-download-choose": "Otros formatos",
+	"wikisource-download-choose-tooltip": "Abrir formulario para seleccionar otros formatos, fuentes, etc."
 }

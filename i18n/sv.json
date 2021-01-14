@@ -1,8 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sabelöga"
+			"Sabelöga",
+			"Thurs"
 		]
 	},
-	"wikisource-desc": "Wikisource-specifika Mediawiki-anpassningar"
+	"wikisource-desc": "Wikisource-specifika Mediawiki-anpassningar",
+	"wikisource-export-portlet": "Skriv ut/exportera",
+	"wikisource-download-epub": "Ladda ned EPUB",
+	"wikisource-download-epub-tooltip": "Ladda ned en EPUB-version av detta verk",
+	"wikisource-download-mobi": "Ladda ned MOBI",
+	"wikisource-download-mobi-tooltip": "Ladda en en MOBI-version av detta verk",
+	"wikisource-download-pdf": "Ladda ned PDF",
+	"wikisource-download-pdf-tooltip": "Ladda ned en PDF-version av detta verk",
+	"wikisource-download-choose": "Andra format",
+	"wikisource-download-choose-tooltip": "Öppna ett formulär för att välja andra filformat, typsnitt o.s.v."
 }

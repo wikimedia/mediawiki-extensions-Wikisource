@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alistair3149",
 			"Kly"
 		]
 	},
-	"wikisource-desc": "維基文庫特定的 MediaWiki 自訂"
+	"wikisource-desc": "維基文庫特定的 MediaWiki 自訂",
+	"wikisource-download-mobi": "下載為 MOBI",
+	"wikisource-download-pdf": "下載為 PDF"
 }

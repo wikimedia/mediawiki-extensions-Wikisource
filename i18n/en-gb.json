@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dick Bos"
+		]
+	},
+	"wikisource-desc": "Wikisource-specifieke MediaWiki aanpassingen",
+	"wikisource-export-portlet": "Print/export",
+	"wikisource-download-epub": "EPUB downloaden",
+	"wikisource-download-epub-tooltip": "Een EPUB versie van dit werk downloaden",
+	"wikisource-download-mobi": "MOBI downloaden",
+	"wikisource-download-mobi-tooltip": "Een MOBI versie van dit werk downloaden",
+	"wikisource-download-pdf": "PDF downloaden",
+	"wikisource-download-pdf-tooltip": "Een PDF versie van dit werk downloaden",
+	"wikisource-download-choose": "andere formaten",
+	"wikisource-download-choose-tooltip": "Open een formulier om andere formaten en fonts enz. te kiezen"
+}

@@ -4,5 +4,14 @@
 			"Joetaras"
 		]
 	},
-	"wikisource-desc": "Personalizzazzione de Uicchisorgende-specifeche de MediaUicchi"
+	"wikisource-desc": "Personalizzazzione de Uicchisorgende-specifeche de MediaUicchi",
+	"wikisource-export-portlet": "Stambe/esporte",
+	"wikisource-download-epub": "Scareche EPUB",
+	"wikisource-download-epub-tooltip": "Scareche 'na versione EPUB de sta fatìe",
+	"wikisource-download-mobi": "Scareche MOBI",
+	"wikisource-download-mobi-tooltip": "Scareche 'na versione MOBI de sta fatìe",
+	"wikisource-download-pdf": "Scareche 'u PDF",
+	"wikisource-download-pdf-tooltip": "Scareche 'na versione PDF de sta fatìe",
+	"wikisource-download-choose": "Otre formate",
+	"wikisource-download-choose-tooltip": "Iapre 'nu module pe scacchià le otre formate e tipe de carattere etc."
 }
