@@ -89,7 +89,7 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 	private function getLinks( IContextSource $context ): array {
 		$urlFormat = $this->wsExportUrl . '/?format=%s&lang=%s&page=%s';
 		$lang = $this->contentLanguage->getCode();
-		$title = $context->getTitle()->getDBkey();
+		$title = wfUrlencode( $context->getTitle()->getPrefixedDBkey() );
 		$links = [
 			'wikisource-export-epub' => [
 				'text' => $context->msg( 'wikisource-download-epub' )->escaped(),
