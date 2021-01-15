@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pikne"
+		]
+	},
+	"wikisource-desc": "Vikitekstidele eriomased MediaWiki kohandused",
+	"wikisource-export-portlet": "Prindi või ekspordi",
+	"wikisource-download-epub": "Laadi alla EPUB-fail",
+	"wikisource-download-epub-tooltip": "Laadi alla selle teose EPUB-versioon",
+	"wikisource-download-mobi": "Laadi alla MOBI-fail",
+	"wikisource-download-mobi-tooltip": "Laadi alla selle teose MOBI-versioon",
+	"wikisource-download-pdf": "Laadi alla PDF-fail",
+	"wikisource-download-pdf-tooltip": "Laadi alla selle teose PDF-versioon",
+	"wikisource-download-choose": "Teised vormingud",
+	"wikisource-download-choose-tooltip": "Ava vorm teiste vormingute, fontide ja muu valimiseks"
+}

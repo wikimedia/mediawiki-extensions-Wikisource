@@ -1,14 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"Yfdyh000",
 			"沈澄心"
 		]
 	},
 	"wikisource-desc": "维基文库特定的MediaWiki自定义",
+	"wikisource-export-portlet": "打印/导出",
 	"wikisource-download-epub": "下载为EPUB",
 	"wikisource-download-epub-tooltip": "下载此页面的EPUB版本",
 	"wikisource-download-mobi": "下载为MOBI",
 	"wikisource-download-mobi-tooltip": "下载此页的MOBI版本",
+	"wikisource-download-pdf": "下载 PDF",
 	"wikisource-download-choose": "其他格式",
 	"wikisource-download-choose-tooltip": "下载此页面的其他格式版本"
 }
