@@ -61,9 +61,9 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 
 		// Add the links to the sidebar.
 		if ( isset( $sidebar['coll-print_export'] ) ) {
-			// If the Collection extension is installed, first remove its PDF link,
+			// If the Collection or ElectronPdfService extension is installed, first remove its PDF link,
 			foreach ( $sidebar['coll-print_export'] as $linkIndex => $collectionsLink ) {
-				if ( $collectionsLink['id'] === 'coll-download-as-rl' ) {
+				if ( in_array( $collectionsLink['id'], [ 'coll-download-as-rl', 'electron-print_pdf' ] ) ) {
 					unset( $sidebar['coll-print_export'][ $linkIndex ] );
 				}
 			}
