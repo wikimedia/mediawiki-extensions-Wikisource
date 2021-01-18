@@ -50,11 +50,12 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 			}
 		}
 
-		// Do not add the export links to non-content namespaces or the main page.
+		// Do not add the export links to non-content namespaces, the main page, or pages that don't exist.
 		$exportNamespaceIds = $skin->getConfig()->get( 'ContentNamespaces' );
 		if (
 			!in_array( $skin->getTitle()->getNamespace(), $exportNamespaceIds )
 			|| $skin->getTitle()->isMainPage()
+			|| !$skin->getTitle()->exists()
 		) {
 			return;
 		}
