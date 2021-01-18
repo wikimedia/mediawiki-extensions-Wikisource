@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"wikisource-export-portlet": "인쇄/내보내기",
+	"wikisource-download-epub": "EPUB 다운로드",
+	"wikisource-download-epub-tooltip": "이 작품의 EPUB 버전 다운로드",
+	"wikisource-download-mobi": "MOBI 다운로드",
+	"wikisource-download-mobi-tooltip": "이 작품의 MOBI 버전 다운로드",
+	"wikisource-download-pdf": "PDF 다운로드",
+	"wikisource-download-pdf-tooltip": "이 작품의 PDF 버전 다운로드",
+	"wikisource-download-choose": "기타 형식",
+	"wikisource-download-choose-tooltip": "기타 포맷과 글꼴 등을 선택하려면 폼을 여십시오."
+}
