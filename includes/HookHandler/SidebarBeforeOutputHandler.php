@@ -92,25 +92,25 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 		$title = $context->getTitle()->getDBkey();
 		$links = [
 			'wikisource-export-epub' => [
-				'text' => $context->msg( 'wikisource-download-epub' )->escaped(),
+				'msg' => 'wikisource-download-epub',
 				'title' => $context->msg( 'wikisource-download-epub-tooltip' )->escaped(),
 				'id' => 'wikisource-download-epub',
 				'href' => sprintf( $urlFormat, 'epub-3', $lang, $title ),
 			],
 			'wikisource-export-mobi' => [
-				'text' => $context->msg( 'wikisource-download-mobi' )->escaped(),
+				'msg' => 'wikisource-download-mobi',
 				'title' => $context->msg( 'wikisource-download-mobi-tooltip' )->escaped(),
 				'id' => 'wikisource-download-mobi',
 				'href' => sprintf( $urlFormat, 'mobi', $lang, $title ),
 			],
 			'wikisource-export-pdf' => [
-				'text' => $context->msg( 'wikisource-download-pdf' )->escaped(),
+				'msg' => 'wikisource-download-pdf',
 				'title' => $context->msg( 'wikisource-download-pdf-tooltip' )->escaped(),
 				'id' => 'wikisource-download-pdf',
 				'href' => sprintf( $urlFormat, 'pdf-a4', $lang, $title ),
 			],
 			'wikisource-export-any' => [
-				'text' => $context->msg( 'wikisource-download-choose' )->escaped(),
+				'msg' => 'wikisource-download-choose',
 				'title' => $context->msg( 'wikisource-download-choose-tooltip' )->escaped(),
 				'id' => 'wikisource-download-choose',
 				'href' => sprintf( $this->wsExportUrl . '/?lang=%s&title=%s', $lang, $title ),
