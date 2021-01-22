@@ -6,6 +6,13 @@
 		]
 	},
 	"wikisource-desc": "維基文庫特定的 MediaWiki 自訂",
+	"wikisource-export-portlet": "列印/匯出",
+	"wikisource-download-epub": "下載 EPUB",
+	"wikisource-download-epub-tooltip": "下載此作品的 EPUB 版本",
 	"wikisource-download-mobi": "下載為 MOBI",
-	"wikisource-download-pdf": "下載為 PDF"
+	"wikisource-download-mobi-tooltip": "下載此作品的 MOBI 版本",
+	"wikisource-download-pdf": "下載為 PDF",
+	"wikisource-download-pdf-tooltip": "下載此作品的 PDF 版本",
+	"wikisource-download-choose": "其它格式",
+	"wikisource-download-choose-tooltip": "開啟表單來挑選其它格式、或是字型等等。"
 }
