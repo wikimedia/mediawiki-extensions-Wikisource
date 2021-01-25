@@ -5,6 +5,7 @@
 		"wikimedia/mediawiki"
 	],
 	"env": {
+		"commonjs": true,
 		"browser": true,
 		"jquery": true
 	},
