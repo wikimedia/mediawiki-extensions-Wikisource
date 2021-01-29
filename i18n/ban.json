@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseagush"
+		]
+	},
+	"wikisource-desc": "Kustomisasi MediaWiki khusus antuk WikiPustaka",
+	"wikisource-export-portlet": "Cétak/éspor",
+	"wikisource-download-epub": "Unduh PDF",
+	"wikisource-download-epub-tooltip": "Unduh pérsi EPUB ring pakaryan puniki",
+	"wikisource-download-mobi": "unduh MOBI",
+	"wikisource-download-mobi-tooltip": "Unduh pérsi MOBI ring pakaryan puniki",
+	"wikisource-download-pdf": "Unduh PDF",
+	"wikisource-download-pdf-tooltip": "Unduh pérsi PDF ring pakaryan puniki",
+	"wikisource-download-choose": "Format liyanan",
+	"wikisource-download-choose-tooltip": "Ngranjing formulir puniki antuk ngrereh format miwah aksara sané liyanan"
+}
