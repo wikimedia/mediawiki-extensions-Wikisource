@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tacsipacsi"
+		]
+	},
+	"wikisource-export-portlet": "Nyomtatás/exportálás",
+	"wikisource-download-epub": "Letöltés EPUB-ban",
+	"wikisource-download-epub-tooltip": "A mű EPUB-változatának letöltése",
+	"wikisource-download-mobi": "Letöltés MOBI-ban",
+	"wikisource-download-mobi-tooltip": "A mű MOBI-változatának letöltése",
+	"wikisource-download-pdf": "Letöltés PDF-ben",
+	"wikisource-download-pdf-tooltip": "A mű PDF-változatának letöltése",
+	"wikisource-download-choose": "Egyéb formátumok",
+	"wikisource-download-choose-tooltip": "Egy űrlap megnyitása, ahol kiválasztható a letöltendő formátum, a használandó betűtípus stb."
+}

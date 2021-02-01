@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chinamoonroll",
 			"Joseagush"
 		]
 	},
 	"wikisource-desc": "Kustomisasi MediaWiki khusus antuk WikiPustaka",
-	"wikisource-export-portlet": "Cétak/éspor",
+	"wikisource-export-portlet": "Cétak/ékspor",
 	"wikisource-download-epub": "Unduh PDF",
 	"wikisource-download-epub-tooltip": "Unduh pérsi EPUB ring pakaryan puniki",
 	"wikisource-download-mobi": "unduh MOBI",
