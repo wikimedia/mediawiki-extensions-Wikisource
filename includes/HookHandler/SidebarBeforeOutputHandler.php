@@ -58,15 +58,18 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 		}
 
 		// Add the links to the sidebar.
-		if ( isset( $sidebar['coll-print_export'] ) ) {
+		$collectionPortletId = 'coll-print_export';
+		$electronPdfPortletId = 'electronpdfservice-sidebar-portlet-heading';
+		if ( isset( $sidebar[$collectionPortletId] ) || isset( $sidebar[ $electronPdfPortletId ] ) ) {
 			// If the Collection or ElectronPdfService extension is installed, first remove its PDF link,
-			foreach ( $sidebar['coll-print_export'] as $linkIndex => $collectionsLink ) {
+			$portletId = isset( $sidebar[$collectionPortletId] ) ? $collectionPortletId : $electronPdfPortletId;
+			foreach ( $sidebar[$portletId] as $linkIndex => $collectionsLink ) {
 				if ( in_array( $collectionsLink['id'], [ 'coll-download-as-rl', 'electron-print_pdf' ] ) ) {
-					unset( $sidebar['coll-print_export'][ $linkIndex ] );
+					unset( $sidebar[$portletId][ $linkIndex ] );
 				}
 			}
-			// and then add our links to Collection's portlet.
-			$sidebar['coll-print_export'] += $this->getLinks( $skin );
+			// and then add our links to the print/export portlet.
+			$sidebar[$portletId] += $this->getLinks( $skin );
 		} else {
 			// If Collection isn't installed, add a new portlet with our links.
 			$sidebar['wikisource-export-portlet'] = $this->getLinks( $skin );
