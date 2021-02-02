@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vinhtantran"
+		]
+	},
+	"wikisource-desc": "Tùy chọn MediaWiki dành riêng cho Wikisource",
+	"wikisource-export-portlet": "In/xuất ra",
+	"wikisource-download-epub": "Tải về EPUB",
+	"wikisource-download-epub-tooltip": "Tải tác phẩm này dưới dạng EPUB",
+	"wikisource-download-mobi": "Tải về MOBI",
+	"wikisource-download-mobi-tooltip": "Tải tác phẩm này dưới dạng MOBI",
+	"wikisource-download-pdf": "Tải về PDF",
+	"wikisource-download-pdf-tooltip": "Tải tác phẩm này dưới dạng PDF",
+	"wikisource-download-choose": "Định dạng khác",
+	"wikisource-download-choose-tooltip": "Lựa chọn định dạng hoặc phông chữ khác v.v."
+}
