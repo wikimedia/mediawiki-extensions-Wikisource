@@ -9,5 +9,13 @@
 	"wikisource-download-pdf": "Download PDF",
 	"wikisource-download-pdf-tooltip": "Download a PDF version of this work",
 	"wikisource-download-choose": "Other formats",
-	"wikisource-download-choose-tooltip": "Open a form to choose other formats and fonts etc."
+	"wikisource-download-choose-tooltip": "Open a form to choose other formats and fonts etc.",
+	"wikisource-download-button": "Download",
+	"wikisource-download-chooser-title": "Pick a format",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "for computers, mobiles, tablets",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "for Kindles",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "for large screens and printing"
 }

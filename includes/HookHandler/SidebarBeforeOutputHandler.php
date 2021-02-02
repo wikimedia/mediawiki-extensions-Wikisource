@@ -7,24 +7,21 @@ use ExtensionRegistry;
 use GadgetRepo;
 use IContextSource;
 use Language;
+use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
 use Skin;
 
 class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 
-	/** @var Language */
-	private $contentLanguage;
-
-	/** @var string */
-	private $wsExportUrl;
+	/** @var WsExport */
+	private $wsExport;
 
 	/**
 	 * @param Config $config
 	 * @param Language $contentLanguage
 	 */
 	public function __construct( Config $config, Language $contentLanguage ) {
-		$this->contentLanguage = $contentLanguage;
-		$this->wsExportUrl = $config->get( 'WikisourceWsExportUrl' );
+		$this->wsExport = new WsExport( $contentLanguage, $config->get( 'WikisourceWsExportUrl' ) );
 	}
 
 	/**
@@ -88,33 +85,30 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 	 * @return array[]
 	 */
 	private function getLinks( IContextSource $context ): array {
-		$urlFormat = $this->wsExportUrl . '/?format=%s&lang=%s&page=%s';
-		$lang = $this->contentLanguage->getCode();
-		$title = wfUrlencode( $context->getTitle()->getPrefixedDBkey() );
 		$links = [
 			'wikisource-export-epub' => [
 				'msg' => 'wikisource-download-epub',
 				'title' => $context->msg( 'wikisource-download-epub-tooltip' )->text(),
 				'id' => 'wikisource-download-epub',
-				'href' => sprintf( $urlFormat, 'epub-3', $lang, $title ),
+				'href' => $this->wsExport->getExportUrl( $context->getTitle(), 'epub-3' ),
 			],
 			'wikisource-export-mobi' => [
 				'msg' => 'wikisource-download-mobi',
 				'title' => $context->msg( 'wikisource-download-mobi-tooltip' )->text(),
 				'id' => 'wikisource-download-mobi',
-				'href' => sprintf( $urlFormat, 'mobi', $lang, $title ),
+				'href' => $this->wsExport->getExportUrl( $context->getTitle(), 'mobi' ),
 			],
 			'wikisource-export-pdf' => [
 				'msg' => 'wikisource-download-pdf',
 				'title' => $context->msg( 'wikisource-download-pdf-tooltip' )->text(),
 				'id' => 'wikisource-download-pdf',
-				'href' => sprintf( $urlFormat, 'pdf-a4', $lang, $title ),
+				'href' => $this->wsExport->getExportUrl( $context->getTitle(), 'pdf-a4' ),
 			],
 			'wikisource-export-any' => [
 				'msg' => 'wikisource-download-choose',
 				'title' => $context->msg( 'wikisource-download-choose-tooltip' )->text(),
 				'id' => 'wikisource-download-choose',
-				'href' => sprintf( $this->wsExportUrl . '/?lang=%s&title=%s', $lang, $title ),
+				'href' => $this->wsExport->getExportUrl( $context->getTitle() ),
 			],
 		];
 		return $links;

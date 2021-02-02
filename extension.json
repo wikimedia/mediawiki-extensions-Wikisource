@@ -21,12 +21,64 @@
 	},
 	"Hooks": {
 		"SidebarBeforeOutput": "SidebarBeforeOutput",
+		"ArticleViewHeader": "ArticleViewHeader",
 		"WikibaseClientSiteLinksForItem": "MediaWiki\\Extension\\Wikisource\\WikibaseClientSiteLinksForItemHandler::provideSiteLinks"
 	},
 	"HookHandlers": {
 		"SidebarBeforeOutput": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\SidebarBeforeOutputHandler",
 			"services": [ "MainConfig", "ContentLanguage" ]
+		},
+		"ArticleViewHeader": {
+			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\ArticleViewHeaderHandler",
+			"services": [ "MainConfig", "ContentLanguage" ]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Wikisource/modules"
+	},
+	"ResourceModules": {
+		"ext.wikisource.download": {
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui.styles.icons-content",
+				"oojs-ui-windows"
+			],
+			"packageFiles": [
+				"ext.wikisource.download.js",
+				"ext.wikisource.DownloadDialog.js",
+				"ext.wikisource.ChooserButton.js"
+			],
+			"styles": [
+				"ext.wikisource.ChooserButton.less"
+			],
+			"messages": [
+				"wikisource-download-button",
+				"wikisource-download-chooser-title",
+				"wikisource-download-chooser-epub",
+				"wikisource-download-chooser-epub-description",
+				"wikisource-download-chooser-mobi",
+				"wikisource-download-chooser-mobi-description",
+				"wikisource-download-chooser-pdf",
+				"wikisource-download-chooser-pdf-description"
+			]
+		},
+		"ext.wikisource.download.icons": {
+			"class": "ResourceLoaderImageModule",
+			"selector": ".ext-wikisource-icon-{name}",
+			"images": {
+				"desktop-and-printer": {
+					"file": "icons/desktop-and-printer.svg"
+				},
+				"laptop-and-mobile": {
+					"file": "icons/laptop-and-mobile.svg"
+				},
+				"tablet": {
+					"file": "icons/tablet.svg"
+				}
+			}
 		}
 	},
 	"config": {
