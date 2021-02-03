@@ -14,5 +14,10 @@
 	"wikisource-download-pdf": "Hent PDF",
 	"wikisource-download-pdf-tooltip": "Hent en PDF-udgave af dette værk ned",
 	"wikisource-download-choose": "Andre formater",
-	"wikisource-download-choose-tooltip": "Åben en formular til at vælge andre formater, skrifttyper osv."
+	"wikisource-download-choose-tooltip": "Åben en formular til at vælge andre formater, skrifttyper osv.",
+	"wikisource-download-button": "Hent ned",
+	"wikisource-download-chooser-title": "Vælg et format",
+	"wikisource-download-chooser-epub-description": "til computere, telefoner og tablets",
+	"wikisource-download-chooser-mobi-description": "til Kindle",
+	"wikisource-download-chooser-pdf-description": "til store skærme og udskrift"
 }

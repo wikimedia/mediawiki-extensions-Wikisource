@@ -13,5 +13,10 @@
 	"wikisource-download-pdf": "Scareche 'u PDF",
 	"wikisource-download-pdf-tooltip": "Scareche 'na versione PDF de sta fatìe",
 	"wikisource-download-choose": "Otre formate",
-	"wikisource-download-choose-tooltip": "Iapre 'nu module pe scacchià le otre formate e tipe de carattere etc."
+	"wikisource-download-choose-tooltip": "Iapre 'nu module pe scacchià le otre formate e tipe de carattere etc.",
+	"wikisource-download-button": "Scareche",
+	"wikisource-download-chooser-title": "Pigghie 'nu formate",
+	"wikisource-download-chooser-epub-description": "pe combiuter, mobbile, tablet",
+	"wikisource-download-chooser-mobi-description": "pe Kindle",
+	"wikisource-download-chooser-pdf-description": "pe scherme larije e stambande"
 }

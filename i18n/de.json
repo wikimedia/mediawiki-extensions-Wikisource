@@ -13,5 +13,10 @@
 	"wikisource-download-pdf": "PDF herunterladen",
 	"wikisource-download-pdf-tooltip": "Herunterladen einer PDF-Version dieses Werkes",
 	"wikisource-download-choose": "Andere Formate",
-	"wikisource-download-choose-tooltip": "Öffnen eines Formulars, um andere Formate und Schriftarten usw. auszuwählen."
+	"wikisource-download-choose-tooltip": "Öffnen eines Formulars, um andere Formate und Schriftarten usw. auszuwählen.",
+	"wikisource-download-button": "Herunterladen",
+	"wikisource-download-chooser-title": "Ein Format wählen",
+	"wikisource-download-chooser-epub-description": "für Computer, Handys, Tablets",
+	"wikisource-download-chooser-mobi-description": "für Kindle",
+	"wikisource-download-chooser-pdf-description": "für große Bildschirme und Druck"
 }

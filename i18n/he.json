@@ -13,5 +13,10 @@
 	"wikisource-download-pdf": "הורדת PDF",
 	"wikisource-download-pdf-tooltip": "הורדת גרסת PDF של היצירה הזאת",
 	"wikisource-download-choose": "תסדירים אחרים",
-	"wikisource-download-choose-tooltip": "פתיחת טופס לבחירת תסדירים וגופנים אחרים וכו'"
+	"wikisource-download-choose-tooltip": "פתיחת טופס לבחירת תסדירים וגופנים אחרים וכו'",
+	"wikisource-download-button": "הורדה",
+	"wikisource-download-chooser-title": "נא לבחור תסדיר",
+	"wikisource-download-chooser-epub-description": "למחשבים, מכשירים ניידים, ומחשבי לוח",
+	"wikisource-download-chooser-mobi-description": "למכשירי קינדל",
+	"wikisource-download-chooser-pdf-description": "למסכים גדולים והדפסה"
 }
