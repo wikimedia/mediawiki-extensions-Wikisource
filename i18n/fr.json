@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gomoko",
 			"Thibaut120094",
 			"VIGNERON",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"wikisource-desc": "Personnalisations de MediaWiki spécifiques à Wikisource",
@@ -15,5 +17,10 @@
 	"wikisource-download-pdf": "Télécharger en PDF",
 	"wikisource-download-pdf-tooltip": "Télécharger une version PDF de cette œuvre.",
 	"wikisource-download-choose": "Autres formats",
-	"wikisource-download-choose-tooltip": "Ouvrir un formulaire pour choisir d'autres formats et polices, etc."
+	"wikisource-download-choose-tooltip": "Ouvrir un formulaire pour choisir d'autres formats et polices, etc.",
+	"wikisource-download-button": "Télécharger",
+	"wikisource-download-chooser-title": "Choisir un format",
+	"wikisource-download-chooser-epub-description": "pour les ordinateurs, les mobiles, les tablettes",
+	"wikisource-download-chooser-mobi-description": "pour les Kindles",
+	"wikisource-download-chooser-pdf-description": "pour les grands écrans et l’impression"
 }

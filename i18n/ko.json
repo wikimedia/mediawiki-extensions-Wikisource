@@ -12,5 +12,7 @@
 	"wikisource-download-pdf": "PDF 다운로드",
 	"wikisource-download-pdf-tooltip": "이 작품의 PDF 버전 다운로드",
 	"wikisource-download-choose": "기타 형식",
-	"wikisource-download-choose-tooltip": "기타 포맷과 글꼴 등을 선택하려면 폼을 여십시오."
+	"wikisource-download-choose-tooltip": "기타 포맷과 글꼴 등을 선택하려면 폼을 여십시오.",
+	"wikisource-download-button": "다운로드",
+	"wikisource-download-chooser-title": "포맷 선택"
 }

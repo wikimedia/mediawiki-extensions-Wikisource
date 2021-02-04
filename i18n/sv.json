@@ -14,5 +14,10 @@
 	"wikisource-download-pdf": "Ladda ned PDF",
 	"wikisource-download-pdf-tooltip": "Ladda ned en PDF-version av detta verk",
 	"wikisource-download-choose": "Andra format",
-	"wikisource-download-choose-tooltip": "Öppna ett formulär för att välja andra filformat, typsnitt o.s.v."
+	"wikisource-download-choose-tooltip": "Öppna ett formulär för att välja andra filformat, typsnitt o.s.v.",
+	"wikisource-download-button": "Ladda ner",
+	"wikisource-download-chooser-title": "Välj ett format",
+	"wikisource-download-chooser-epub-description": "till datorer, mobiler, laptoppar",
+	"wikisource-download-chooser-mobi-description": "till Kindle",
+	"wikisource-download-chooser-pdf-description": "till stora skärmar och utskrifter"
 }
