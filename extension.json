@@ -89,7 +89,7 @@
 			"value": "P629"
 		},
 		"WikisourceWsExportUrl": {
-			"value": "https://wsexport.wmflabs.org"
+			"value": "https://ws-export.wmcloud.org"
 		}
 	},
 	"manifest_version": 2
