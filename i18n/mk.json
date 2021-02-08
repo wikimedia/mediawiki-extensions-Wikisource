@@ -13,5 +13,10 @@
 	"wikisource-download-pdf": "Преземи PDF",
 	"wikisource-download-pdf-tooltip": "Преземете PDF-верзија на делово",
 	"wikisource-download-choose": "Други формати",
-	"wikisource-download-choose-tooltip": "Отворете образец за да изберете други формати, фонтови итн."
+	"wikisource-download-choose-tooltip": "Отворете образец за да изберете други формати, фонтови итн.",
+	"wikisource-download-button": "Преземи",
+	"wikisource-download-chooser-title": "Изберете формат",
+	"wikisource-download-chooser-epub-description": "за сметачи, мобилни и таблични уреди",
+	"wikisource-download-chooser-mobi-description": "за Kindle",
+	"wikisource-download-chooser-pdf-description": "за големи екрани и печатење"
 }

@@ -2,10 +2,23 @@
 	"@metadata": {
 		"authors": [
 			"Chelin",
-			"Cryptex nap"
+			"Cryptex nap",
+			"Ruthven"
 		]
 	},
 	"wikisource-desc": "Personalizzazzione 'e MediaWiki specifiche pe Wikisource",
+	"wikisource-export-portlet": "Stampa/Esporta",
+	"wikisource-download-epub": "Scarreca 'o EPUB",
+	"wikisource-download-epub-tooltip": "Scarreca 'o EPUB 'e sta fatica",
 	"wikisource-download-mobi": "Scarreca MOBI",
-	"wikisource-download-pdf": "Scarreca 'o PDF"
+	"wikisource-download-mobi-tooltip": "Scarreca 'o MOBI 'e sta fatica",
+	"wikisource-download-pdf": "Scarreca 'o PDF",
+	"wikisource-download-pdf-tooltip": "Scarreca 'o PDF 'e sta fatica",
+	"wikisource-download-choose": "Ati furmati",
+	"wikisource-download-choose-tooltip": "Arape nu form pe scegliere ati furmati e fonte ecc.",
+	"wikisource-download-button": "Scarreca",
+	"wikisource-download-chooser-title": "Piglia nu furmato",
+	"wikisource-download-chooser-epub-description": "pe computer, cellulare, tavulette",
+	"wikisource-download-chooser-mobi-description": "pe Kindle",
+	"wikisource-download-chooser-pdf-description": "pe schermi gruossi e stampanti"
 }

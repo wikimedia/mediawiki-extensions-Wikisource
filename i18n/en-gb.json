@@ -1,17 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dick Bos"
+			"Dick Bos",
+			"Samwilson"
 		]
 	},
-	"wikisource-desc": "Wikisource-specifieke MediaWiki aanpassingen",
+	"wikisource-desc": "Wikisource-specific MediaWiki customisations",
 	"wikisource-export-portlet": "Print/export",
-	"wikisource-download-epub": "EPUB downloaden",
-	"wikisource-download-epub-tooltip": "Een EPUB versie van dit werk downloaden",
-	"wikisource-download-mobi": "MOBI downloaden",
-	"wikisource-download-mobi-tooltip": "Een MOBI versie van dit werk downloaden",
-	"wikisource-download-pdf": "PDF downloaden",
-	"wikisource-download-pdf-tooltip": "Een PDF versie van dit werk downloaden",
-	"wikisource-download-choose": "andere formaten",
-	"wikisource-download-choose-tooltip": "Open een formulier om andere formaten en fonts enz. te kiezen"
+	"wikisource-download-epub": "Download EPUB",
+	"wikisource-download-epub-tooltip": "Download an EPUB version of this work",
+	"wikisource-download-mobi": "Download MOBI",
+	"wikisource-download-mobi-tooltip": "Download a MOBI version of this work",
+	"wikisource-download-pdf": "Download PDF",
+	"wikisource-download-pdf-tooltip": "Download a PDF version of this work",
+	"wikisource-download-choose": "Other formats",
+	"wikisource-download-choose-tooltip": "Open a form to choose other formats and fonts etc.",
+	"wikisource-download-button": "Download"
 }
