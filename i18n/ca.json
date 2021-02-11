@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alan Mena",
 			"Aleator"
 		]
 	},
@@ -13,5 +14,8 @@
 	"wikisource-download-pdf": "Baixa com a PDF",
 	"wikisource-download-pdf-tooltip": "Descarregar una versió PDF d'aquesta obra",
 	"wikisource-download-choose": "Altres formats",
-	"wikisource-download-choose-tooltip": "Obrir formulari per escollir d'altres formats, fonts, etc."
+	"wikisource-download-choose-tooltip": "Obrir formulari per escollir d'altres formats, fonts, etc.",
+	"wikisource-download-button": "Baixa",
+	"wikisource-download-chooser-title": "Triar un format",
+	"wikisource-download-chooser-epub-description": "Per ordinadors, mòbils, tauletes"
 }

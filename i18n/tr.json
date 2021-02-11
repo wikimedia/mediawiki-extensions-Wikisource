@@ -3,6 +3,7 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Hedda",
+			"Joseph",
 			"MuratTheTurkish"
 		]
 	},
@@ -15,5 +16,10 @@
 	"wikisource-download-pdf": "PDF olarak indir",
 	"wikisource-download-pdf-tooltip": "Bu çalışmanın PDF sürümününü indirin",
 	"wikisource-download-choose": "Diğer biçimleri",
-	"wikisource-download-choose-tooltip": "Diğer biçimleri ve yazı tiplerini vb. seçmek için bir form açın."
+	"wikisource-download-choose-tooltip": "Diğer biçimleri ve yazı tiplerini vb. seçmek için bir form açın.",
+	"wikisource-download-button": "İndir",
+	"wikisource-download-chooser-title": "Bir biçim seçin",
+	"wikisource-download-chooser-epub-description": "bilgisayarlar, taşınabilir cihazlar, tabletler için",
+	"wikisource-download-chooser-mobi-description": "Kindle için",
+	"wikisource-download-chooser-pdf-description": "geniş ekranlar ve yazdırmak için"
 }
