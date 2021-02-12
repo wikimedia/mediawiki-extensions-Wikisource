@@ -3,10 +3,26 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
+			"Hamilton Abreu",
 			"Mansil alfalb"
 		]
 	},
 	"wikisource-desc": "Personalizações do MediaWiki específicas de Wikisource",
-	"wikisource-download-epub": "Transferir como EPUB",
-	"wikisource-download-epub-tooltip": "Transferir uma versão EPUB deste trabalho"
+	"wikisource-export-portlet": "Imprimir/exportar",
+	"wikisource-download-epub": "Descarregar como EPUB",
+	"wikisource-download-epub-tooltip": "Descarregar uma versão EPUB desta obra",
+	"wikisource-download-mobi": "Descarregar como MOBI",
+	"wikisource-download-mobi-tooltip": "Descarregar uma versão MOBI desta obra",
+	"wikisource-download-pdf": "Descarregar como PDF",
+	"wikisource-download-pdf-tooltip": "Descarregar uma versão PDF desta obra",
+	"wikisource-download-choose": "Outros formatos",
+	"wikisource-download-choose-tooltip": "Abrir um formulário para escolher outros formatos e fontes, etc.",
+	"wikisource-download-button": "Descarregar",
+	"wikisource-download-chooser-title": "Escolher um formato",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "para computadores, telemóveis, tablets",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "para Kindles",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "para ecrãs grandes e impressão"
 }
