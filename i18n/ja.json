@@ -4,6 +4,7 @@
 			"Likibp"
 		]
 	},
+	"wikisource-desc": "ウィキソース固有の MediaWiki カスタマイズ",
 	"wikisource-export-portlet": "印刷/書き出し",
 	"wikisource-download-epub": "EPUBをダウンロード",
 	"wikisource-download-epub-tooltip": "この作品のEPUB形式のファイルをダウンロードします",
@@ -16,9 +17,9 @@
 	"wikisource-download-button": "ダウンロード",
 	"wikisource-download-chooser-title": "ファイル形式の選択",
 	"wikisource-download-chooser-epub": "EPUB",
-	"wikisource-download-chooser-epub-description": "コンピュータ、モバイル、タブレット向け",
+	"wikisource-download-chooser-epub-description": "コンピューター、モバイル、タブレット用",
 	"wikisource-download-chooser-mobi": "MOBI",
-	"wikisource-download-chooser-mobi-description": "Kindle向け",
+	"wikisource-download-chooser-mobi-description": "Kindle用",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "大画面、印刷向け"
+	"wikisource-download-chooser-pdf-description": "大画面、印刷用"
 }

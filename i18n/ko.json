@@ -14,5 +14,8 @@
 	"wikisource-download-choose": "기타 형식",
 	"wikisource-download-choose-tooltip": "기타 포맷과 글꼴 등을 선택하려면 폼을 여십시오.",
 	"wikisource-download-button": "다운로드",
-	"wikisource-download-chooser-title": "포맷 선택"
+	"wikisource-download-chooser-title": "포맷 선택",
+	"wikisource-download-chooser-epub-description": "컴퓨터, 모바일, 태블릿용",
+	"wikisource-download-chooser-mobi-description": "킨들용",
+	"wikisource-download-chooser-pdf-description": "대형 화면 및 인쇄용"
 }

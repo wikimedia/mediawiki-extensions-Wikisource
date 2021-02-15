@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Janezdrilc"
+		]
+	},
+	"wikisource-desc": "Prilagoditve MediaWiki za Wikivir",
+	"wikisource-export-portlet": "Natisni/izvozi",
+	"wikisource-download-epub": "Prenesi EPUB",
+	"wikisource-download-epub-tooltip": "Prenesi EPUB različico tega dela",
+	"wikisource-download-mobi": "Prenesi MOBI",
+	"wikisource-download-mobi-tooltip": "Prenesi MOBI različico tega dela",
+	"wikisource-download-pdf": "Prenesi PDF",
+	"wikisource-download-pdf-tooltip": "Prenesi PDF različico tega dela",
+	"wikisource-download-choose": "Drugi formati",
+	"wikisource-download-choose-tooltip": "Odpri obrazec za izbor drugih formatov, pisav in drugo.",
+	"wikisource-download-button": "Prenesi",
+	"wikisource-download-chooser-title": "Izberi format",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "za računalnike, telefone, tablice",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "za Kindle",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "za večje zaslone in tiskanje"
+}

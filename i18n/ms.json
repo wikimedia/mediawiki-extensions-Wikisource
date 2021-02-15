@@ -8,5 +8,7 @@
 	"wikisource-download-epub": "Muat turun EPUB",
 	"wikisource-download-mobi": "Muat turun MOBI",
 	"wikisource-download-pdf": "Muat turun PDF",
-	"wikisource-download-choose": "Format lain"
+	"wikisource-download-choose": "Format lain",
+	"wikisource-download-button": "Muat turun",
+	"wikisource-download-chooser-title": "Pilih format"
 }
