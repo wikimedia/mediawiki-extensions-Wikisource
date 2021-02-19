@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajsmen91",
 			"Rail",
 			"Zdzislaw"
 		]
@@ -14,5 +15,10 @@
 	"wikisource-download-pdf": "Pobierz jako PDF",
 	"wikisource-download-pdf-tooltip": "Pobierz ten utwór jako plik PDF",
 	"wikisource-download-choose": "Inne formaty",
-	"wikisource-download-choose-tooltip": "Otwórz formularz, aby wybrać inne formaty, czcionki itd."
+	"wikisource-download-choose-tooltip": "Otwórz formularz, aby wybrać inne formaty, czcionki itd.",
+	"wikisource-download-button": "Pobierz",
+	"wikisource-download-chooser-title": "Wybierz format",
+	"wikisource-download-chooser-epub-description": "komputer, telefon, tablet",
+	"wikisource-download-chooser-mobi-description": "Kindle",
+	"wikisource-download-chooser-pdf-description": "duży ekran i druk"
 }

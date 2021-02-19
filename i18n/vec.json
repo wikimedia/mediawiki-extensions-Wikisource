@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Candalua"
+		]
+	},
+	"wikisource-desc": "Personalixasion de MediaWiki spesìfighe de Wikisource",
+	"wikisource-export-portlet": "Stanpa/esporta",
+	"wikisource-download-epub": "Descarga EPUB",
+	"wikisource-download-epub-tooltip": "Descarga na version ePub de sta opera",
+	"wikisource-download-mobi": "Descarga MOBI",
+	"wikisource-download-mobi-tooltip": "Descarga na version MOBI de sta opera",
+	"wikisource-download-pdf": "Descarga PDF",
+	"wikisource-download-pdf-tooltip": "Descarga na version PDF de sta opera",
+	"wikisource-download-choose": "Altri formati",
+	"wikisource-download-choose-tooltip": "Verxe un box par sièliar altri formati, font, ec.",
+	"wikisource-download-button": "Descarga",
+	"wikisource-download-chooser-title": "Sièli un formato",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "par computer, smartphone, tablet",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "par i Kindle",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "par i schermi grandi e par la stanpa"
+}

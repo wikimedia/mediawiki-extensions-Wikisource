@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Candalua"
 		]
 	},
+	"wikisource-desc": "Personalizzazioni di MediaWiki specifiche di Wikisource",
 	"wikisource-export-portlet": "Stampa/esporta",
 	"wikisource-download-epub": "Scarica ePub",
 	"wikisource-download-epub-tooltip": "Scarica una versione ePub di quest'opera",
@@ -12,5 +14,13 @@
 	"wikisource-download-pdf": "Scarica PDF",
 	"wikisource-download-pdf-tooltip": "Scarica una versione PDF di quest'opera",
 	"wikisource-download-choose": "Altri formati",
-	"wikisource-download-button": "Scarica"
+	"wikisource-download-choose-tooltip": "Apre un box per selezionare altri formati, font, ecc.",
+	"wikisource-download-button": "Scarica",
+	"wikisource-download-chooser-title": "Scegli un formato",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "per computer, smartphone, tablet",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "per Kindle",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "per grandi schermi e stampa"
 }
