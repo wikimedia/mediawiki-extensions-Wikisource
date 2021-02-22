@@ -5,7 +5,7 @@
 			"Candalua"
 		]
 	},
-	"wikisource-desc": "Personalizzazioni di MediaWiki specifiche di Wikisource",
+	"wikisource-desc": "Personalizzazioni di MediaWiki specifiche per Wikisource",
 	"wikisource-export-portlet": "Stampa/esporta",
 	"wikisource-download-epub": "Scarica ePub",
 	"wikisource-download-epub-tooltip": "Scarica una versione ePub di quest'opera",
@@ -14,7 +14,7 @@
 	"wikisource-download-pdf": "Scarica PDF",
 	"wikisource-download-pdf-tooltip": "Scarica una versione PDF di quest'opera",
 	"wikisource-download-choose": "Altri formati",
-	"wikisource-download-choose-tooltip": "Apre un box per selezionare altri formati, font, ecc.",
+	"wikisource-download-choose-tooltip": "Apre un modulo per selezionare altri formati, tipi di carattere, ecc.",
 	"wikisource-download-button": "Scarica",
 	"wikisource-download-chooser-title": "Scegli un formato",
 	"wikisource-download-chooser-epub": "EPUB",
