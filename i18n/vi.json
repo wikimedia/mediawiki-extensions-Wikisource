@@ -13,5 +13,13 @@
 	"wikisource-download-pdf": "Tải về PDF",
 	"wikisource-download-pdf-tooltip": "Tải tác phẩm này dưới dạng PDF",
 	"wikisource-download-choose": "Định dạng khác",
-	"wikisource-download-choose-tooltip": "Lựa chọn định dạng hoặc phông chữ khác v.v."
+	"wikisource-download-choose-tooltip": "Lựa chọn định dạng hoặc phông chữ khác v.v.",
+	"wikisource-download-button": "Tải về",
+	"wikisource-download-chooser-title": "Chọn định dạng",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "cho máy tính, điện thoại, máy tính bảng",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "cho Kindle",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "cho màn hình lớn và in ấn"
 }
