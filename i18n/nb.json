@@ -13,5 +13,13 @@
 	"wikisource-download-pdf": "Last ned PDF",
 	"wikisource-download-pdf-tooltip": "Last ned en PDF-versjon av dette verket",
 	"wikisource-download-choose": "Andre formater",
-	"wikisource-download-choose-tooltip": "Åpne et skjema for å velge andre formater, skrifttyper osv."
+	"wikisource-download-choose-tooltip": "Åpne et skjema for å velge andre formater, skrifttyper osv.",
+	"wikisource-download-button": "Last ned",
+	"wikisource-download-chooser-title": "Velg format",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "for datamaskiner, mobiler og nettbrett",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "for Kindle",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "for store skjermer og trykk"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gerongfenh",
 			"Hello903hello",
 			"Yfdyh000",
 			"沈澄心"
@@ -17,7 +18,7 @@
 	"wikisource-download-choose": "其他格式",
 	"wikisource-download-choose-tooltip": "下载此页面的其他格式版本",
 	"wikisource-download-button": "下载",
-	"wikisource-download-chooser-title": "选择文件格式",
+	"wikisource-download-chooser-title": "选择一个文件格式",
 	"wikisource-download-chooser-epub": "EPUB",
 	"wikisource-download-chooser-epub-description": "用于电脑、手机、平板",
 	"wikisource-download-chooser-mobi": "MOBI",

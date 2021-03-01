@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Umherirrender"
+		]
 	},
 	"wikisource-desc": "{{desc|name=Wikisource}}",
 	"wikisource-export-portlet": "Heading for a portlet/section of the sidebar. Usually exactly the same as {{msg-mw|coll-print_export}} and similar to {{msg-mw|toolbox}}.",
@@ -14,10 +16,10 @@
 	"wikisource-download-choose-tooltip": "Tooltip text for the 'other formats' link.",
 	"wikisource-download-button": "Label text for the main 'download' button adjacent to the page title.",
 	"wikisource-download-chooser-title": "Title for a small dialog window showing a list of download options.",
-	"wikisource-download-chooser-epub": "Link text for the EPUB download option.",
+	"wikisource-download-chooser-epub": "{{optional}}\nLink text for the EPUB download option.",
 	"wikisource-download-chooser-epub-description": "Description text for the EPUB download option, shown in grey below the link text.",
-	"wikisource-download-chooser-mobi": "Link text for the MOBI download option.",
+	"wikisource-download-chooser-mobi": "{{optional}}\nLink text for the MOBI download option.",
 	"wikisource-download-chooser-mobi-description": "Description text for the MOBI download option, shown in grey below the link text.",
-	"wikisource-download-chooser-pdf": "Link text for the PDF download option.",
+	"wikisource-download-chooser-pdf": "{{optional}}\nLink text for the PDF download option.",
 	"wikisource-download-chooser-pdf-description": "Description text for the PDF download option, shown in grey below the link text."
 }
