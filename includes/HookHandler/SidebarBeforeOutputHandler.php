@@ -93,7 +93,7 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 				'msg' => 'wikisource-download-epub',
 				'title' => $context->msg( 'wikisource-download-epub-tooltip' )->text(),
 				'id' => 'wikisource-download-epub',
-				'href' => $this->wsExport->getExportUrl( $context->getTitle(), 'epub-3' ),
+				'href' => $this->wsExport->getExportUrl( $context->getTitle(), 'epub' ),
 			],
 			'wikisource-export-mobi' => [
 				'msg' => 'wikisource-download-mobi',
@@ -105,7 +105,7 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 				'msg' => 'wikisource-download-pdf',
 				'title' => $context->msg( 'wikisource-download-pdf-tooltip' )->text(),
 				'id' => 'wikisource-download-pdf',
-				'href' => $this->wsExport->getExportUrl( $context->getTitle(), 'pdf-a4' ),
+				'href' => $this->wsExport->getExportUrl( $context->getTitle(), 'pdf' ),
 			],
 			'wikisource-export-any' => [
 				'msg' => 'wikisource-download-choose',
