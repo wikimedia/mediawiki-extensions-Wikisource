@@ -3,17 +3,29 @@
  * @param {Object} config
  */
 function ChooserButton( config ) {
-	var url, formatIcon, downloadIcon, $label, $labelDesc, label;
+	var url, formatIcon, downloadIcon, $label, $labelDesc, label, lang, serverName;
 	ChooserButton.super.call( this, config );
 
 	// Attributes of the link.
 	this.$element.addClass( 'ext-wikisource-ChooserButton' );
 
+	// Get the subdomain (language code). This duplicates what's done in PHP in the WsExport class.
+	// It's repeated here to avoid having another JS config variable passed to the frontend.
+	lang = mw.config.get( 'wgContentLanguage' );
+	serverName = mw.config.get( 'wgServerName' );
+	if ( serverName === 'wikisource.org' ) {
+		lang = 'mul';
+	} else if ( serverName.includes( 'en.wikisource.beta' ) ) {
+		lang = 'beta';
+	} else if ( serverName.includes( '.wikisource.org' ) ) {
+		lang = serverName.substr( 0, serverName.indexOf( '.wikisource.org' ) );
+	}
+
 	// @TODO Use URL() here when it's permitted in MediaWiki.
 	url = config.wsExportUrl +
-		'?page=' + encodeURIComponent( mw.config.get( 'wgPageName' ) ) +
-		'&lang=' + mw.config.get( 'wgContentLanguage' ) +
-		'&format=' + config.format;
+		'?format=' + config.format +
+		'&lang=' + lang +
+		'&page=' + encodeURIComponent( mw.config.get( 'wgPageName' ) );
 	this.$element.attr( 'href', url );
 
 	// There are three parts to the contents of the link: format-icon, label, and download-icon.

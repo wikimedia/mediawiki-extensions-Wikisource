@@ -21,7 +21,11 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 	 * @param Language $contentLanguage
 	 */
 	public function __construct( Config $config, Language $contentLanguage ) {
-		$this->wsExport = new WsExport( $contentLanguage, $config->get( 'WikisourceWsExportUrl' ) );
+		$this->wsExport = new WsExport(
+			$contentLanguage,
+			$config->get( 'WikisourceWsExportUrl' ),
+			$config->get( 'ServerName' )
+		);
 	}
 
 	/**
