@@ -4,5 +4,19 @@
 			"Bugoslav"
 		]
 	},
-	"wikisource-download-button": "Učitaj"
+	"wikisource-desc": "Prilagodbe MediaWikija za Wikizvor",
+	"wikisource-export-portlet": "Ispis/izvoz",
+	"wikisource-download-epub": "Preuzmi kao EPUB",
+	"wikisource-download-epub-tooltip": "Preuzimanje inačice u EPUB-u",
+	"wikisource-download-mobi": "Preuzmi kao MOBI",
+	"wikisource-download-mobi-tooltip": "Preuzimanje inačice u MOBI-ju",
+	"wikisource-download-pdf": "Preuzmi kao PDF",
+	"wikisource-download-pdf-tooltip": "Preuzimanje inačice u PDF-u",
+	"wikisource-download-choose": "Ostali formati",
+	"wikisource-download-choose-tooltip": "Otvaranje obrasca za izbor drugih formata, fontova i sl.",
+	"wikisource-download-button": "Preuzmi",
+	"wikisource-download-chooser-title": "Izbor formata",
+	"wikisource-download-chooser-epub-description": "za računala, telefone, tablete",
+	"wikisource-download-chooser-mobi-description": "za Kindle",
+	"wikisource-download-chooser-pdf-description": "za veće ekrane i ispis"
 }

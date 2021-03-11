@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Simbu123"
+		]
+	},
+	"wikisource-download-epub": "EPUB ডাউনলোড কৰক",
+	"wikisource-download-mobi": "MOBI ডাউনলোড কৰক",
+	"wikisource-download-pdf": "PDF ডাউনলোড কৰক",
+	"wikisource-download-choose": "আন ফৰমেট",
+	"wikisource-download-button": "ডাউনলোড"
+}
