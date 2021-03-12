@@ -13,5 +13,10 @@
 	"wikisource-download-pdf": "Laadi alla PDF-fail",
 	"wikisource-download-pdf-tooltip": "Laadi alla selle teose PDF-versioon",
 	"wikisource-download-choose": "Teised vormingud",
-	"wikisource-download-choose-tooltip": "Ava vorm teiste vormingute, fontide ja muu valimiseks"
+	"wikisource-download-choose-tooltip": "Ava vorm teiste vormingute, fontide ja muu valimiseks",
+	"wikisource-download-button": "Laadi alla",
+	"wikisource-download-chooser-title": "Vali vorming",
+	"wikisource-download-chooser-epub-description": "arvutis, mobiilis, tahvelarvutis",
+	"wikisource-download-chooser-mobi-description": "lugeris Kindle",
+	"wikisource-download-chooser-pdf-description": "suurel ekraanil ja printimiseks"
 }
