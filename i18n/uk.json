@@ -1,14 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
+			"Arxivist",
 			"Ата"
 		]
 	},
 	"wikisource-desc": "Налаштування MediaWiki, призначені для Вікіджерел",
+	"wikisource-export-portlet": "Друк/експорт",
 	"wikisource-download-epub": "Завантажити як EPUB",
 	"wikisource-download-epub-tooltip": "Завантажте цю версію EPUB для цієї сторінки",
 	"wikisource-download-mobi": "Завантажити як MOBI",
 	"wikisource-download-mobi-tooltip": "Завантажте цю версію MOBI для цієї сторінки",
+	"wikisource-download-pdf": "Завантажити як PDF",
+	"wikisource-download-pdf-tooltip": "Завантажте цю версію PDF для цієї роботи",
 	"wikisource-download-choose": "Інший формат",
-	"wikisource-download-choose-tooltip": "Завантажте версію роботи в інших форматах"
+	"wikisource-download-choose-tooltip": "Завантажте версію роботи в інших форматах",
+	"wikisource-download-button": "Завантажити",
+	"wikisource-download-chooser-title": "Виберіть формат",
+	"wikisource-download-chooser-epub-description": "для комп’ютерів, мобільних телефонів, планшетів",
+	"wikisource-download-chooser-mobi-description": "для Kindle",
+	"wikisource-download-chooser-pdf-description": "для великих екранів та друку"
 }
