@@ -7,8 +7,8 @@ use Title;
 
 class WsExport {
 
-	/** @var Language */
-	private $contentLanguage;
+	/** @var string Language code (Wikisource subdomain). */
+	private $lang;
 
 	/** @var string Base URL for the WS Export tool. */
 	private $wsExportUrl;
@@ -16,9 +16,20 @@ class WsExport {
 	/**
 	 * @param Language $contentLanguage
 	 * @param string $wsExportUrl
+	 * @param string $serverName
 	 */
-	public function __construct( Language $contentLanguage, string $wsExportUrl ) {
-		$this->contentLanguage = $contentLanguage;
+	public function __construct( Language $contentLanguage, string $wsExportUrl, string $serverName ) {
+		// Get the language code.
+		// This logic is duplicated for the frontend in modules/ext.wikisource.ChooserButton.js
+		$this->lang = $contentLanguage->getCode();
+		$wikisourcePos = strpos( $serverName, '.wikisource.org' );
+		if ( $serverName === 'wikisource.org' ) {
+			$this->lang = 'mul';
+		} elseif ( strpos( $serverName, 'en.wikisource.beta' ) !== false ) {
+			$this->lang = 'beta';
+		} elseif ( $wikisourcePos !== false ) {
+			$this->lang = substr( $serverName, 0, $wikisourcePos );
+		}
 		$this->wsExportUrl = $wsExportUrl;
 	}
 
@@ -36,14 +47,13 @@ class WsExport {
 	 * @return string
 	 */
 	public function getExportUrl( Title $title, ?string $format = null ): string {
-		$lang = $this->contentLanguage->getCode();
 		$title = wfUrlencode( $title->getPrefixedDBkey() );
 		if ( $format ) {
 			$urlFormat = $this->wsExportUrl . '/?format=%s&lang=%s&page=%s';
-			return sprintf( $urlFormat, $format, $lang, $title );
+			return sprintf( $urlFormat, $format, $this->lang, $title );
 		} else {
 			$urlFormat = $this->wsExportUrl . '/?lang=%s&title=%s';
-			return sprintf( $urlFormat, $lang, $title );
+			return sprintf( $urlFormat, $this->lang, $title );
 		}
 	}
 }
