@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Daud I.F. Argana"
+			"Daud I.F. Argana",
+			"Mnam23"
 		]
 	},
-	"wikisource-desc": "Kustomisasi MediaWiki khusus untuk Wikisource"
+	"wikisource-desc": "Kustomisasi MediaWiki khusus untuk Wikisource",
+	"wikisource-download-epub": "Unduh EPUB",
+	"wikisource-download-mobi": "Unduh MOBI",
+	"wikisource-download-pdf": "Unduh PDF",
+	"wikisource-download-choose": "Format lainnya",
+	"wikisource-download-button": "Unduh"
 }
