@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Obsuser"
+		]
+	},
+	"wikisource-download-epub": "Преузимање EPUB-а",
+	"wikisource-download-epub-tooltip": "Преузимање EPUB верзије овог рада",
+	"wikisource-download-mobi": "Преузимање MOBI-ја",
+	"wikisource-download-mobi-tooltip": "Преузимање MOBI верзије овог рада",
+	"wikisource-download-pdf": "Преузимање PDF-а",
+	"wikisource-download-pdf-tooltip": "Преузимање PDF верзије овог рада",
+	"wikisource-download-choose": "Остали формати",
+	"wikisource-download-choose-tooltip": "Отварање обрасца за одабир других формата и фонтова итд.",
+	"wikisource-download-button": "Преузимање",
+	"wikisource-download-chooser-title": "Изаберите формат",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "за компјутере, мобилне, таблете",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "за Kindles",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "за велике екране и принтовање"
+}
