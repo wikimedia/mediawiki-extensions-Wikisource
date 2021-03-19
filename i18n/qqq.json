@@ -21,5 +21,6 @@
 	"wikisource-download-chooser-mobi": "{{optional}}\nLink text for the MOBI download option.",
 	"wikisource-download-chooser-mobi-description": "Description text for the MOBI download option, shown in grey below the link text.",
 	"wikisource-download-chooser-pdf": "{{optional}}\nLink text for the PDF download option.",
-	"wikisource-download-chooser-pdf-description": "Description text for the PDF download option, shown in grey below the link text."
+	"wikisource-download-chooser-pdf-description": "Description text for the PDF download option, shown in grey below the link text.",
+	"wikisource-download-chooser-different-format": "\nLink text for different format download option."
 }
