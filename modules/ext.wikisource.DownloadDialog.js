@@ -24,16 +24,48 @@ DownloadDialog.prototype.getBodyHeight = function () {
 };
 
 DownloadDialog.prototype.initialize = function () {
-	var epubButton, mobiButton, pdfButton,
+	var lang, serverName, url, epubButton, mobiButton, pdfButton,
+		$otherFormatLabel, $otherFormatsLink,
 		ChooserButton = require( './ext.wikisource.ChooserButton.js' );
 	DownloadDialog.super.prototype.initialize.apply( this, arguments );
 
-	epubButton = new ChooserButton( { wsExportUrl: this.wsExportUrl, icon: 'laptop-and-mobile', format: 'epub' } );
-	mobiButton = new ChooserButton( { wsExportUrl: this.wsExportUrl, icon: 'tablet', format: 'mobi' } );
-	pdfButton = new ChooserButton( { wsExportUrl: this.wsExportUrl, icon: 'desktop-and-printer', format: 'pdf' } );
+	// Get the subdomain (language code). This duplicates what's done in PHP in the WsExport class.
+	// It's repeated here to avoid having another JS config variable passed to the frontend.
+	lang = mw.config.get( 'wgContentLanguage' );
+	serverName = mw.config.get( 'wgServerName' );
+	if ( serverName === 'wikisource.org' ) {
+		lang = 'mul';
+	} else if ( serverName.includes( 'en.wikisource.beta' ) ) {
+		lang = 'beta';
+	} else if ( serverName.includes( '.wikisource.org' ) ) {
+		lang = serverName.substr( 0, serverName.indexOf( '.wikisource.org' ) );
+	}
+
+	// @TODO Use URL() here when it's permitted in MediaWiki.
+	url = this.wsExportUrl +
+		'?lang=' + lang +
+		'&title=' + encodeURIComponent( mw.config.get( 'wgPageName' ) );
+
+	epubButton = new ChooserButton( { wsExportUrl: this.wsExportUrl, icon: 'laptop-and-mobile', format: 'epub', lang: lang } );
+	mobiButton = new ChooserButton( { wsExportUrl: this.wsExportUrl, icon: 'tablet', format: 'mobi', lang: lang } );
+	pdfButton = new ChooserButton( { wsExportUrl: this.wsExportUrl, icon: 'desktop-and-printer', format: 'pdf', lang: lang } );
+
+	$otherFormatLabel = $( '<span class="other-format-label">' )
+		.text( mw.msg( 'wikisource-download-chooser-different-format' ) );
+	$otherFormatsLink = $( '<a>' )
+		.attr( 'href', url )
+		.attr( 'target', '_blank' )
+		.attr( 'class', 'ext-wikisource-other-format-link' );
+	$otherFormatsLink.append( $( '<span class="left-space">' ) );
+	$otherFormatsLink.append( $otherFormatLabel );
 
 	this.content = new OO.ui.PanelLayout( { padded: false, expanded: false } );
-	this.content.$element.append( epubButton.$element, mobiButton.$element, pdfButton.$element );
+	this.content.$element.append(
+		epubButton.$element,
+		mobiButton.$element,
+		pdfButton.$element,
+		$otherFormatsLink
+	);
 
 	this.$body.append( this.content.$element );
 };

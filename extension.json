@@ -62,7 +62,8 @@
 				"wikisource-download-chooser-mobi",
 				"wikisource-download-chooser-mobi-description",
 				"wikisource-download-chooser-pdf",
-				"wikisource-download-chooser-pdf-description"
+				"wikisource-download-chooser-pdf-description",
+				"wikisource-download-chooser-different-format"
 			]
 		},
 		"ext.wikisource.download.icons": {
