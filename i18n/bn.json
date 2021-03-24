@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"R4356th"
+			"R4356th",
+			"আফতাবুজ্জামান"
 		]
 	},
+	"wikisource-desc": "উইকিসংকলন-নির্দিষ্ট মিডিয়াউইকির স্বনির্ধারণ",
+	"wikisource-export-portlet": "মুদ্রণ/রপ্তানি",
 	"wikisource-download-epub": "ইপাব ডাউনলোড",
 	"wikisource-download-epub-tooltip": "এই পাতার ইপাব সংস্করণ ডাউনলোড করুন",
 	"wikisource-download-mobi": "মোবি ডাউনলোড",
@@ -12,5 +15,12 @@
 	"wikisource-download-pdf-tooltip": "এই পাতার পিডিএফ সংস্করণ ডাউনলোড করুন",
 	"wikisource-download-choose": "অন্য সংস্করণ বাছুন",
 	"wikisource-download-choose-tooltip": "এই পাতার অন্য সংস্করণ ডাউনলোড করুন",
-	"wikisource-download-button": "ডাউনলোড করুন"
+	"wikisource-download-button": "ডাউনলোড করুন",
+	"wikisource-download-chooser-title": "একটি বিন্যাস বাছাই করুন",
+	"wikisource-download-chooser-epub": "ইপাব",
+	"wikisource-download-chooser-epub-description": "কম্পিউটার, মোবাইল, ট্যাবলেটের জন্য",
+	"wikisource-download-chooser-mobi": "মোবি",
+	"wikisource-download-chooser-mobi-description": "কিন্ডলের জন্য",
+	"wikisource-download-chooser-pdf": "পিডিএফ",
+	"wikisource-download-chooser-pdf-description": "বড় পর্দা ও মুদ্রণের জন্য"
 }
