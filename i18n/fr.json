@@ -25,5 +25,6 @@
 	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "pour les liseuses Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "pour les grands écrans et l’impression"
+	"wikisource-download-chooser-pdf-description": "pour les grands écrans et l’impression",
+	"wikisource-download-chooser-different-format": "Rechercher un format différent ?"
 }
