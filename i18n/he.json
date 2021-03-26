@@ -18,5 +18,6 @@
 	"wikisource-download-chooser-title": "נא לבחור תסדיר",
 	"wikisource-download-chooser-epub-description": "למחשבים, מכשירים ניידים, ומחשבי לוח",
 	"wikisource-download-chooser-mobi-description": "למכשירי קינדל",
-	"wikisource-download-chooser-pdf-description": "למסכים גדולים והדפסה"
+	"wikisource-download-chooser-pdf-description": "למסכים גדולים והדפסה",
+	"wikisource-download-chooser-different-format": "{{GENDER:|מחפש|מחפשת}} תסדיר שונה?"
 }

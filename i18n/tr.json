@@ -21,5 +21,6 @@
 	"wikisource-download-chooser-title": "Bir biçim seçin",
 	"wikisource-download-chooser-epub-description": "bilgisayarlar, taşınabilir cihazlar, tabletler için",
 	"wikisource-download-chooser-mobi-description": "Kindle için",
-	"wikisource-download-chooser-pdf-description": "geniş ekranlar ve yazdırmak için"
+	"wikisource-download-chooser-pdf-description": "geniş ekranlar ve yazdırmak için",
+	"wikisource-download-chooser-different-format": "Farklı bir biçim mi arıyorsunuz?"
 }
