@@ -10,5 +10,6 @@
 	"wikisource-download-pdf": "Muat turun PDF",
 	"wikisource-download-choose": "Format lain",
 	"wikisource-download-button": "Muat turun",
-	"wikisource-download-chooser-title": "Pilih format"
+	"wikisource-download-chooser-title": "Pilih format",
+	"wikisource-download-chooser-different-format": "Mencari format lain?"
 }
