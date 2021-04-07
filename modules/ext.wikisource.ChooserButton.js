@@ -43,7 +43,7 @@ function ChooserButton( config ) {
 		// * wikisource-download-chooser-pdf
 		.text( mw.msg( 'wikisource-download-chooser-' + config.format ) );
 	$labelDesc = $( '<span>' )
-		.addClass( 'ext-wikisource-description' )
+		.addClass( 'ext-wikisource-description ext-wikisource-subtle-text' )
 		// Messages can be:
 		// * wikisource-download-chooser-epub-description
 		// * wikisource-download-chooser-mobi-description

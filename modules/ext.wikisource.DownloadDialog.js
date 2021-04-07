@@ -50,16 +50,18 @@ DownloadDialog.prototype.initialize = function () {
 	mobiButton = new ChooserButton( { wsExportUrl: this.wsExportUrl, icon: 'tablet', format: 'mobi', lang: lang } );
 	pdfButton = new ChooserButton( { wsExportUrl: this.wsExportUrl, icon: 'desktop-and-printer', format: 'pdf', lang: lang } );
 
-	$otherFormatLabel = $( '<span class="other-format-label">' )
+	$otherFormatLabel = $( '<span>' )
+		.addClass( 'ext-wikisource-other-format-label ext-wikisource-subtle-text' )
 		.text( mw.msg( 'wikisource-download-chooser-different-format' ) );
 	$otherFormatsLink = $( '<a>' )
 		.attr( 'href', url )
 		.attr( 'target', '_blank' )
 		.attr( 'class', 'ext-wikisource-other-format-link' );
-	$otherFormatsLink.append( $( '<span class="left-space">' ) );
+	$otherFormatsLink.append( $( '<span class="ext-wikisource-left-space">' ) );
 	$otherFormatsLink.append( $otherFormatLabel );
 
 	this.content = new OO.ui.PanelLayout( { padded: false, expanded: false } );
+	this.content.$element.addClass( 'ext-wikisource-download-dialog' );
 	this.content.$element.append(
 		epubButton.$element,
 		mobiButton.$element,

@@ -1,0 +1,39 @@
+@import 'mediawiki.ui/variables';
+
+.ext-wikisource-download-dialog {
+	a:hover { text-decoration: none; }
+
+	.ext-wikisource-subtle-text{
+		font-size: smaller;
+		color: @color-base--subtle;
+	}
+	.ext-wikisource-ChooserButton {
+		display: flex;
+		height: 60px;
+		align-items: center;
+		color: @color-base;
+
+		.ext-wikisource-format-icon { flex: 1; }
+		.ext-wikisource-format-label { flex: 3; }
+		.ext-wikisource-download-icon { flex: 1; }
+
+		// Reinstate anchor's pointer cursor.
+		label { cursor: pointer; }
+
+		.ext-wikisource-description {
+			display: block;
+
+		}
+	}
+
+	.ext-wikisource-other-format-link {
+		display: flex;
+		height: 60px;
+		align-items: center;
+
+		.ext-wikisource-left-space { flex: 1; }
+		.ext-wikisource-other-format-label {
+			flex: 4;
+		}
+	}
+}

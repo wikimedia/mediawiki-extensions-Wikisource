@@ -52,7 +52,7 @@
 				"ext.wikisource.ChooserButton.js"
 			],
 			"styles": [
-				"ext.wikisource.ChooserButton.less"
+				"ext.wikisource.DownloadDialog.less"
 			],
 			"messages": [
 				"wikisource-download-button",
