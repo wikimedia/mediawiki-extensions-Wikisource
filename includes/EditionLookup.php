@@ -54,7 +54,7 @@ class EditionLookup {
 	 */
 	public static function newFromGlobalState( UsageAccumulator $usageAccumulator ) : self {
 		return new self(
-			WikibaseClient::getDefaultInstance()->getStore()->getEntityLookup(),
+			WikibaseClient::getEntityLookup(),
 			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionProperty' ),
 			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionOfProperty' ),
 			$usageAccumulator

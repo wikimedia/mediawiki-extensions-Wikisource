@@ -41,9 +41,8 @@ class WikibaseClientSiteLinksForItemHandler {
 	private static function newFromGlobalState(
 		UsageAccumulator $usageAccumulator
 	) {
-		$wikibaseClient = WikibaseClient::getDefaultInstance();
 		return new self(
-			$wikibaseClient->getStore()->getEntityLookup(),
+			WikibaseClient::getEntityLookup(),
 			EditionLookup::newFromGlobalState( $usageAccumulator ),
 			$usageAccumulator
 		);
