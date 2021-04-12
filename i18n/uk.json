@@ -19,5 +19,6 @@
 	"wikisource-download-chooser-title": "Виберіть формат",
 	"wikisource-download-chooser-epub-description": "для комп’ютерів, мобільних телефонів, планшетів",
 	"wikisource-download-chooser-mobi-description": "для Kindle",
-	"wikisource-download-chooser-pdf-description": "для великих екранів та друку"
+	"wikisource-download-chooser-pdf-description": "для великих екранів та друку",
+	"wikisource-download-chooser-different-format": "Шукаєте інший формат?"
 }
