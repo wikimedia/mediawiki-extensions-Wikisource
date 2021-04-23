@@ -22,6 +22,7 @@
 	"Hooks": {
 		"SidebarBeforeOutput": "SidebarBeforeOutput",
 		"ArticleViewHeader": "ArticleViewHeader",
+		"EditPage::showEditForm:initial": "EditPageShowEditFormInitial",
 		"WikibaseClientSiteLinksForItem": "MediaWiki\\Extension\\Wikisource\\WikibaseClientSiteLinksForItemHandler::provideSiteLinks"
 	},
 	"HookHandlers": {
@@ -32,6 +33,10 @@
 		"ArticleViewHeader": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\ArticleViewHeaderHandler",
 			"services": [ "MainConfig", "ContentLanguage" ]
+		},
+		"EditPageShowEditFormInitial": {
+			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler",
+			"services": [ "MainConfig" ]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -47,12 +52,12 @@
 				"oojs-ui-windows"
 			],
 			"packageFiles": [
-				"ext.wikisource.download.js",
-				"ext.wikisource.DownloadDialog.js",
-				"ext.wikisource.ChooserButton.js"
+				"ext.wikisource.WsExport/ext.wikisource.download.js",
+				"ext.wikisource.WsExport/ext.wikisource.DownloadDialog.js",
+				"ext.wikisource.WsExport/ext.wikisource.ChooserButton.js"
 			],
 			"styles": [
-				"ext.wikisource.DownloadDialog.less"
+				"ext.wikisource.WsExport/ext.wikisource.DownloadDialog.less"
 			],
 			"messages": [
 				"wikisource-download-button",
@@ -66,20 +71,45 @@
 				"wikisource-download-chooser-different-format"
 			]
 		},
-		"ext.wikisource.download.icons": {
+		"ext.wikisource.icons": {
 			"class": "ResourceLoaderImageModule",
 			"selector": ".ext-wikisource-icon-{name}",
 			"images": {
 				"desktop-and-printer": {
-					"file": "icons/desktop-and-printer.svg"
+					"file": "ext.wikisource.WsExport/icons/desktop-and-printer.svg"
 				},
 				"laptop-and-mobile": {
-					"file": "icons/laptop-and-mobile.svg"
+					"file": "ext.wikisource.WsExport/icons/laptop-and-mobile.svg"
 				},
 				"tablet": {
-					"file": "icons/tablet.svg"
+					"file": "ext.wikisource.WsExport/icons/tablet.svg"
+				},
+				"ocr": {
+					"file": "ext.wikisource.OCR/ocr.svg"
 				}
 			}
+		},
+		"ext.wikisource.OCR": {
+			"dependencies": [
+				"ext.wikisource.icons",
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"oojs-ui.styles.icons-layout"
+			],
+			"styles": [
+				"ext.wikisource.OCR/ExtractTextWidget.less"
+			],
+			"packageFiles": [
+				"ext.wikisource.OCR/index.js",
+				"ext.wikisource.OCR/OcrTool.js",
+				"ext.wikisource.OCR/ExtractTextWidget.js"
+			],
+			"messages": [
+				"wikisource-ocr-extract-text",
+				"wikisource-ocr-extract-text-title",
+				"wikisource-ocr-error",
+				"wikisource-ocr-no-text"
+			]
 		}
 	},
 	"config": {
@@ -91,6 +121,12 @@
 		},
 		"WikisourceWsExportUrl": {
 			"value": "https://ws-export.wmcloud.org"
+		},
+		"WikisourceEnableOcr": {
+			"value": false
+		},
+		"WikisourceOcrUrl": {
+			"value": "https://ocr.wmcloud.org/"
 		}
 	},
 	"manifest_version": 2
