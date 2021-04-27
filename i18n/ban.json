@@ -17,7 +17,11 @@
 	"wikisource-download-choose-tooltip": "Ngranjing formulir puniki antuk ngrereh format miwah aksara sané liyanan",
 	"wikisource-download-button": "Unduh",
 	"wikisource-download-chooser-title": "Pilih pormat",
+	"wikisource-download-chooser-epub": "EPUB",
 	"wikisource-download-chooser-epub-description": "antuk komputer, sélulér, tablét",
+	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "antuk Kindles",
-	"wikisource-download-chooser-pdf-description": "antuk layar ageng miwah pancetakan"
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "antuk layar ageng miwah pancetakan",
+	"wikisource-download-chooser-different-format": "Ngerereh antuk format tiosan?"
 }
