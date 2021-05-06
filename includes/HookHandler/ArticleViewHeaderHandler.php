@@ -54,7 +54,7 @@ class ArticleViewHeaderHandler implements ArticleViewHeaderHook {
 			'data' => [ 'wsExportUrl' => $this->wsExport->getBaseUrl() ],
 		] );
 		$out->addModules( [ 'ext.wikisource.download' ] );
-		$out->addModuleStyles( 'ext.wikisource.download.icons' );
+		$out->addModuleStyles( 'ext.wikisource.icons' );
 		// @HACK: Add a tilde to force sorting towards the end of the indicator list,
 		// because there's no way to set the indicators' order.
 		// Its ID ends up as #mw-indicator-.7Eext-wikisource-download
