@@ -19,5 +19,9 @@
 	"wikisource-download-chooser-epub-description": "за сметачи, мобилни и таблични уреди",
 	"wikisource-download-chooser-mobi-description": "за Kindle",
 	"wikisource-download-chooser-pdf-description": "за големи екрани и печатење",
-	"wikisource-download-chooser-different-format": "Барате поинаков формат?"
+	"wikisource-download-chooser-different-format": "Барате поинаков формат?",
+	"wikisource-ocr-extract-text": "Извади текст",
+	"wikisource-ocr-extract-text-title": "Дај OCR-текст од сликава",
+	"wikisource-ocr-error": "Грека од алатката OCR: $1",
+	"wikisource-ocr-no-text": "Алатката OCR не даде никаков текст."
 }

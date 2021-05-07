@@ -20,5 +20,9 @@
 	"wikisource-download-chooser-epub-description": "для комп’ютерів, мобільних телефонів, планшетів",
 	"wikisource-download-chooser-mobi-description": "для Kindle",
 	"wikisource-download-chooser-pdf-description": "для великих екранів та друку",
-	"wikisource-download-chooser-different-format": "Шукаєте інший формат?"
+	"wikisource-download-chooser-different-format": "Шукаєте інший формат?",
+	"wikisource-ocr-extract-text": "Вибрати текст",
+	"wikisource-ocr-extract-text-title": "Отримайте OCR-текст цього зображення",
+	"wikisource-ocr-error": "Помилка додатку OCR: $1",
+	"wikisource-ocr-no-text": "Інструмент OCR не розпізнав жодного тексту."
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Mariagarbin"
 		]
 	},
 	"wikisource-desc": "Personalizações do MediaWiki específicas de Wikisource",
@@ -20,5 +21,6 @@
 	"wikisource-download-chooser-epub-description": "para computadores, celulares, tablets",
 	"wikisource-download-chooser-mobi-description": "para Kindles",
 	"wikisource-download-chooser-pdf-description": "para telas grandes e impressão",
-	"wikisource-download-chooser-different-format": "Procurando um formato diferente?"
+	"wikisource-download-chooser-different-format": "Procurando um formato diferente?",
+	"wikisource-ocr-extract-text": "extrair texto"
 }
