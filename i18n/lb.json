@@ -11,5 +11,6 @@
 	"wikisource-download-pdf": "PDF eroflueden",
 	"wikisource-download-pdf-tooltip": "Eng PDF-Versioun vun dësem Wierk eroflueden",
 	"wikisource-download-choose": "Aner Formater",
-	"wikisource-download-button": "Eroflueden"
+	"wikisource-download-button": "Eroflueden",
+	"wikisource-ocr-error": "Feeler vum OCR Geschier: $1"
 }

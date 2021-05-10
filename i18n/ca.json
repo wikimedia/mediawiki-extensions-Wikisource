@@ -3,7 +3,8 @@
 		"authors": [
 			"Alan Mena",
 			"Aleator",
-			"Mguix"
+			"Mguix",
+			"Skurz0"
 		]
 	},
 	"wikisource-desc": "Personalitzacions de MediaWiki específiques de Wikisource",
@@ -18,5 +19,7 @@
 	"wikisource-download-choose-tooltip": "Obrir formulari per escollir d'altres formats, fonts, etc.",
 	"wikisource-download-button": "Baixa",
 	"wikisource-download-chooser-title": "Triar un format",
-	"wikisource-download-chooser-epub-description": "per ordinadors, mòbils, tauletes"
+	"wikisource-download-chooser-epub-description": "per ordinadors, mòbils, tauletes",
+	"wikisource-ocr-extract-text": "Extreure text",
+	"wikisource-ocr-error": "Error de l'eina d'OCR: $1"
 }

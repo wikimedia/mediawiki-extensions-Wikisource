@@ -22,5 +22,8 @@
 	"wikisource-download-chooser-mobi-description": "para Kindles",
 	"wikisource-download-chooser-pdf-description": "para telas grandes e impressão",
 	"wikisource-download-chooser-different-format": "Procurando um formato diferente?",
-	"wikisource-ocr-extract-text": "extrair texto"
+	"wikisource-ocr-extract-text": "extrair texto",
+	"wikisource-ocr-extract-text-title": "Obtenha o texto OCR desta imagem",
+	"wikisource-ocr-error": "Erro da ferramenta OCR: $1",
+	"wikisource-ocr-no-text": "Nenhum texto foi retornado pela ferramenta OCR."
 }
