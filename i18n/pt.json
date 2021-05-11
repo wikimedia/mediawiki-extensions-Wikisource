@@ -3,6 +3,7 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
+			"Emma Franzen",
 			"Hamilton Abreu",
 			"Mansil alfalb"
 		]
@@ -24,5 +25,9 @@
 	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "para Kindles",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "para ecrãs grandes e impressão"
+	"wikisource-download-chooser-pdf-description": "para ecrãs grandes e impressão",
+	"wikisource-ocr-extract-text": "Extrair texto",
+	"wikisource-ocr-extract-text-title": "Obtenha o texto OCR desta imagem",
+	"wikisource-ocr-error": "Erro da ferramenta OCR: $1",
+	"wikisource-ocr-no-text": "Nenhum texto foi retornado pela ferramenta OCR."
 }
