@@ -46,6 +46,7 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		if ( !$this->toolUrl ) {
 			throw new MWException( 'Please set tool URL with $wgWikisourceOcrUrl' );
 		}
+		$out->getCSP()->addDefaultSrc( $this->toolUrl );
 		// Add OCR modules.
 		$out->addModules( 'ext.wikisource.OCR' );
 		$out->addJsConfigVars( 'WikisourceOcrUrl', $this->toolUrl );
