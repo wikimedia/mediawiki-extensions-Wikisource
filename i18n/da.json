@@ -20,5 +20,9 @@
 	"wikisource-download-chooser-epub-description": "til computere, telefoner og tablets",
 	"wikisource-download-chooser-mobi-description": "til Kindle",
 	"wikisource-download-chooser-pdf-description": "til store skærme og udskrift",
-	"wikisource-download-chooser-different-format": "Leder du efter et andet format?"
+	"wikisource-download-chooser-different-format": "Leder du efter et andet format?",
+	"wikisource-ocr-extract-text": "Udtræk tekst",
+	"wikisource-ocr-extract-text-title": "Hent OCR-teksten for dette billede",
+	"wikisource-ocr-error": "Fejl fra OCR-værktøjet: $1",
+	"wikisource-ocr-no-text": "OCR-værktøjet gav ikke nogen tekst."
 }
