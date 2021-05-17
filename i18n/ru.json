@@ -2,13 +2,28 @@
 	"@metadata": {
 		"authors": [
 			"Kareyac",
-			"Okras"
+			"Okras",
+			"Putnik"
 		]
 	},
 	"wikisource-desc": "Настройки MediaWiki для Викитеки",
 	"wikisource-export-portlet": "Печать/экспорт",
 	"wikisource-download-epub": "Скачать EPUB",
+	"wikisource-download-epub-tooltip": "Скачать EPUB-версию этой работы",
+	"wikisource-download-mobi": "Скачать MOBI",
+	"wikisource-download-mobi-tooltip": "Скачать MOBI-версию этой работы",
 	"wikisource-download-pdf": "Скачать PDF",
+	"wikisource-download-pdf-tooltip": "Скачать PDF-версию этой работы",
 	"wikisource-download-choose": "Другие форматы",
-	"wikisource-download-button": "Скачать"
+	"wikisource-download-choose-tooltip": "Открыть форму выбора других форматов, шрифтов и т. д.",
+	"wikisource-download-button": "Скачать",
+	"wikisource-download-chooser-title": "Выберите формат",
+	"wikisource-download-chooser-epub-description": "для компьютеров, мобильных телефонов, планшетов",
+	"wikisource-download-chooser-mobi-description": "для Kindle",
+	"wikisource-download-chooser-pdf-description": "для больших экранов и печати",
+	"wikisource-download-chooser-different-format": "Ищете другой формат?",
+	"wikisource-ocr-extract-text": "Извлечь текст",
+	"wikisource-ocr-extract-text-title": "Получить OCR-текст этого изображения",
+	"wikisource-ocr-error": "Ошибка инструмента OCR: $1",
+	"wikisource-ocr-no-text": "Инструмент OCR не вернул никакого текста."
 }
