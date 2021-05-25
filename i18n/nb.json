@@ -21,5 +21,10 @@
 	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "for Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "for store skjermer og trykk"
+	"wikisource-download-chooser-pdf-description": "for store skjermer og trykk",
+	"wikisource-download-chooser-different-format": "Leter du etter et annet format?",
+	"wikisource-ocr-extract-text": "Trekk ut tekst",
+	"wikisource-ocr-extract-text-title": "Hent OCR-tekst for dette bildet",
+	"wikisource-ocr-error": "Feil fra OCR-verktøyet: $1",
+	"wikisource-ocr-no-text": "Ingen tekst ble returnert av OCR-verktøyet."
 }
