@@ -8,5 +8,14 @@
 	"wikisource-download-mobi": "MOBI ডাউনলোড কৰক",
 	"wikisource-download-pdf": "PDF ডাউনলোড কৰক",
 	"wikisource-download-choose": "আন ফৰমেট",
-	"wikisource-download-button": "ডাউনলোড"
+	"wikisource-download-choose-tooltip": "অন্য ফৰমেট আৰু ফণ্ট আদি বাছনি কৰিবলৈ এখন প্ৰ-পত্ৰ খোলক।",
+	"wikisource-download-button": "ডাউনলোড",
+	"wikisource-download-chooser-title": "ফৰমেট নিৰ্বাচন কৰক",
+	"wikisource-download-chooser-epub": "ই-পাব (EPUB)",
+	"wikisource-download-chooser-epub-description": "কম্পিউটাৰ, মোবাইল, টেবলেটৰ বাবে",
+	"wikisource-download-chooser-mobi": "ম'বি (MOBI)",
+	"wikisource-download-chooser-mobi-description": "কিণ্ডেলৰ বাবে",
+	"wikisource-download-chooser-pdf": "পি ডি এফ (PDF)",
+	"wikisource-download-chooser-pdf-description": "ডাঙৰ স্ক্ৰীণ আৰু মুদ্ৰণৰ বাবে",
+	"wikisource-download-chooser-different-format": "অন্য কিবা ফৰমেট বিচাৰিছে?"
 }
