@@ -58,6 +58,6 @@ class ArticleViewHeaderHandler implements ArticleViewHeaderHook {
 		// @HACK: Add a tilde to force sorting towards the end of the indicator list,
 		// because there's no way to set the indicators' order.
 		// Its ID ends up as #mw-indicator-.7Eext-wikisource-download
-		$out->setIndicators( [ '~ext-wikisource-download' => $button ] );
+		$out->setIndicators( [ '~ext-wikisource-download' => $button->toString() ] );
 	}
 }
