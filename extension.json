@@ -91,6 +91,7 @@
 		},
 		"ext.wikisource.OCR": {
 			"dependencies": [
+				"jquery.spinner",
 				"ext.wikisource.icons",
 				"oojs-ui-core",
 				"oojs-ui-widgets",
@@ -98,16 +99,20 @@
 				"oojs-ui.styles.icons-editing-core"
 			],
 			"styles": [
-				"ext.wikisource.OCR/ExtractTextWidget.less"
+				"ext.wikisource.OCR/ExtractTextWidget.less",
+				"ext.wikisource.OCR/LoadingWidget.less"
 			],
 			"packageFiles": [
 				"ext.wikisource.OCR/index.js",
 				"ext.wikisource.OCR/OcrTool.js",
-				"ext.wikisource.OCR/ExtractTextWidget.js"
+				"ext.wikisource.OCR/ExtractTextWidget.js",
+				"ext.wikisource.OCR/LoadingWidget.js"
 			],
 			"messages": [
 				"wikisource-ocr-extract-text",
 				"wikisource-ocr-extract-text-title",
+				"wikisource-ocr-extract-progress",
+				"wikisource-ocr-extract-cancel",
 				"wikisource-ocr-error",
 				"wikisource-ocr-no-text",
 				"wikisource-ocr-settings-menu",
