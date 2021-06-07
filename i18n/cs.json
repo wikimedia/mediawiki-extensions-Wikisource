@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Danny B.",
+			"Matěj Suchánek",
 			"Patrik L."
 		]
 	},
-	"wikisource-desc": "Modifikace Mediawiki určená pro Wikizdroje",
+	"wikisource-desc": "Modifikace MediaWiki určená pro Wikizdroje",
 	"wikisource-export-portlet": "Tisk/export",
 	"wikisource-download-epub": "Stáhnout jako EPUB",
 	"wikisource-download-epub-tooltip": "Stáhnout toto dílo ve formátu EPUB",
