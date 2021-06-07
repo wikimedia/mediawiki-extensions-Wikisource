@@ -94,7 +94,8 @@
 				"ext.wikisource.icons",
 				"oojs-ui-core",
 				"oojs-ui-widgets",
-				"oojs-ui.styles.icons-layout"
+				"oojs-ui.styles.icons-movement",
+				"oojs-ui.styles.icons-editing-core"
 			],
 			"styles": [
 				"ext.wikisource.OCR/ExtractTextWidget.less"
@@ -108,7 +109,13 @@
 				"wikisource-ocr-extract-text",
 				"wikisource-ocr-extract-text-title",
 				"wikisource-ocr-error",
-				"wikisource-ocr-no-text"
+				"wikisource-ocr-no-text",
+				"wikisource-ocr-settings-menu",
+				"wikisource-ocr-engine",
+				"wikisource-ocr-engine-tesseract",
+				"wikisource-ocr-engine-google",
+				"wikisource-ocr-advanced",
+				"wikisource-ocr-advanced-title"
 			]
 		}
 	},

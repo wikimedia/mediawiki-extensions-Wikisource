@@ -1,7 +1,44 @@
+@import 'mediawiki.ui/variables';
+
+.prp-page-container {
+	position: relative;
+}
+
 .ext-wikisource-ExtractTextWidget {
-	// The parent of this, .prp-page-image, has position: relative.
 	position: absolute;
-	z-index: 10;
+	z-index: 1;
 	top: 12px;
 	right: 12px;
+}
+
+.ext-wikisource-ocr-config-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	.ext-wikisource-ocr-engine-label,
+	.ext-wikisource-ocr-engineradios .oo-ui-radioOptionWidget {
+		display: flex;
+		align-items: center;
+		padding: 4px 12px;
+
+		.oo-ui-inputWidget,
+		.ext-wikisource-icon-wrapper {
+			width: 20px;
+		}
+
+		.oo-ui-labelElement-label {
+			padding-left: 12px;
+		}
+	}
+
+	.ext-wikisource-ocr-engineradios {
+		font-weight: bolder;
+	}
+
+	.ext-wikisource-ocr-advanced-link a {
+		width: 100%;
+		border-width: @border-width-base 0 0 0;
+		text-align: left;
+	}
 }

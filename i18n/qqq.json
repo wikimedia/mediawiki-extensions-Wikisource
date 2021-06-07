@@ -27,5 +27,11 @@
 	"wikisource-ocr-extract-text": "Displayed text of the OCR button.",
 	"wikisource-ocr-extract-text-title": "Tooltip text for the OCR button.",
 	"wikisource-ocr-error": "Error message.\n\n$1 is the message text.",
-	"wikisource-ocr-no-text": "Error message displayed when no text was retrieved but no actual error message was given (for example, the page is correctly blank)."
+	"wikisource-ocr-no-text": "Error message displayed when no text was retrieved but no actual error message was given (for example, the page is correctly blank).",
+	"wikisource-ocr-settings-menu": "Tooltip text for the OCR settings menu.",
+	"wikisource-ocr-engine": "Form label for the engine-selection field.",
+	"wikisource-ocr-engine-tesseract": "Radio button label for the Tesseract engine.",
+	"wikisource-ocr-engine-google": "Radio button label for the Google engine.",
+	"wikisource-ocr-advanced": "Button text for a link to open a new tab for the advanced settings.",
+	"wikisource-ocr-advanced-title": "Tooltip text for the advanced settings form."
 }

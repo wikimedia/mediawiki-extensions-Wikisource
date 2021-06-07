@@ -22,5 +22,11 @@
 	"wikisource-ocr-extract-text": "Extract text",
 	"wikisource-ocr-extract-text-title": "Get OCR text of this image",
 	"wikisource-ocr-error": "Error from the OCR tool: $1",
-	"wikisource-ocr-no-text": "No text was returned by the OCR tool."
+	"wikisource-ocr-no-text": "No text was returned by the OCR tool.",
+	"wikisource-ocr-settings-menu": "Change OCR settings",
+	"wikisource-ocr-engine": "Select your default text extraction tool",
+	"wikisource-ocr-engine-tesseract": "Tesseract OCR",
+	"wikisource-ocr-engine-google": "Google OCR",
+	"wikisource-ocr-advanced": "Advanced Options",
+	"wikisource-ocr-advanced-title": "Open the advanced options form in a new tab"
 }

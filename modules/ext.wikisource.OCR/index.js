@@ -6,5 +6,5 @@ var OcrTool = require( './OcrTool.js' ),
 
 // Add the OCR button to the UI.
 if ( $prpImage.length > 0 ) {
-	$prpImage.append( extractTextWidget.$element );
+	$prpImage.after( extractTextWidget.$element );
 }
