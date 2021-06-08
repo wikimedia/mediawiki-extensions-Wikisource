@@ -23,5 +23,9 @@
 	"wikisource-ocr-extract-text": "Text extrahieren",
 	"wikisource-ocr-extract-text-title": "OCR-Text dieses Bildes abrufen",
 	"wikisource-ocr-error": "Fehler vom OCR-Werkzeug: $1",
-	"wikisource-ocr-no-text": "Das OCR-Werkzeug hat keinen Text zurückgegeben."
+	"wikisource-ocr-no-text": "Das OCR-Werkzeug hat keinen Text zurückgegeben.",
+	"wikisource-ocr-settings-menu": "OCR-Einstellungen ändern",
+	"wikisource-ocr-engine": "Auswahl deines Standard-Textextraktionswerkzeugs",
+	"wikisource-ocr-advanced": "Erweiterte Optionen",
+	"wikisource-ocr-advanced-title": "Erweiterten Optionen in einem neuen Tab öffnen"
 }
