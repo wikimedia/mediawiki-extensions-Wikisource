@@ -23,5 +23,9 @@
 	"wikisource-ocr-extract-text": "Извади текст",
 	"wikisource-ocr-extract-text-title": "Дај OCR-текст од сликава",
 	"wikisource-ocr-error": "Грека од алатката OCR: $1",
-	"wikisource-ocr-no-text": "Алатката OCR не даде никаков текст."
+	"wikisource-ocr-no-text": "Алатката OCR не даде никаков текст.",
+	"wikisource-ocr-settings-menu": "Смени нагодувања на OCR",
+	"wikisource-ocr-engine": "Зададете ја вашата основна алатка за извлекување текст",
+	"wikisource-ocr-advanced": "Напредни можности",
+	"wikisource-ocr-advanced-title": "Отвори го образецот за напредни можности во ново јазиче"
 }

@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"NoiX180"
+		]
+	},
+	"wikisource-desc": "Kustomisasi MédiaWiki mligi Wikisumber",
+	"wikisource-export-portlet": "Cithak/èspor",
+	"wikisource-download-epub": "Undhuh EPUB",
+	"wikisource-download-epub-tooltip": "Undhuh vèrsi EPUB saka layang iki",
+	"wikisource-download-mobi": "Undhuh MOBI",
+	"wikisource-download-mobi-tooltip": "Undhuh vèrsi MOBI saka layang iki",
+	"wikisource-download-pdf": "Undhuh PDF",
+	"wikisource-download-pdf-tooltip": "Undhuh vèrsi PDF saka layang iki",
+	"wikisource-download-choose": "Format liyané",
+	"wikisource-download-choose-tooltip": "Bukak blangko kanggo milih format lan fon liyané.",
+	"wikisource-download-button": "Undhuh",
+	"wikisource-download-chooser-title": "Pilih format",
+	"wikisource-download-chooser-epub-description": "kanggo komputer, ponsèl, tablèt",
+	"wikisource-download-chooser-mobi-description": "kanggo Kindle",
+	"wikisource-download-chooser-pdf-description": "kanggo kelir amba lan cithak",
+	"wikisource-download-chooser-different-format": "Nggolèki format liya?",
+	"wikisource-ocr-extract-text": "Jupuk tèks",
+	"wikisource-ocr-extract-text-title": "Jupuk tèks OCR saka gambar iki",
+	"wikisource-ocr-error": "Masalah saka piranti OCR: $1",
+	"wikisource-ocr-no-text": "Ora ana tèks kang dibalèkaké piranti OCR.",
+	"wikisource-ocr-settings-menu": "Owahi setèlan OCR",
+	"wikisource-ocr-engine": "Pilih piranti panjupuk tèks kang baku",
+	"wikisource-ocr-advanced": "Opsi Lanjutan",
+	"wikisource-ocr-advanced-title": "Bukak blangko opsi lanjutan ing tab anyar"
+}

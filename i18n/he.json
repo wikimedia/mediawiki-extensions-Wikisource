@@ -23,5 +23,9 @@
 	"wikisource-ocr-extract-text": "חילוץ טקסט",
 	"wikisource-ocr-extract-text-title": "קבלת הטקסט של התמונה הזאת באצעות זיהוי תווים אופטי",
 	"wikisource-ocr-error": "שגיאה מכלי זיהוי התווים האופטי: $1",
-	"wikisource-ocr-no-text": "לא הוחזר שום טקסט על־די כלי זיהוי התווים האופטי."
+	"wikisource-ocr-no-text": "לא הוחזר שום טקסט על־די כלי זיהוי התווים האופטי.",
+	"wikisource-ocr-settings-menu": "שינוי הגדרות OCR",
+	"wikisource-ocr-engine": "נא לבחור את כלי חילוץ הטקסט שלך ההתחלתי שלך",
+	"wikisource-ocr-advanced": "אפשרויות מתקדמות",
+	"wikisource-ocr-advanced-title": "פתיחת האפשרויות המתקדמות בלשונית חדשה"
 }

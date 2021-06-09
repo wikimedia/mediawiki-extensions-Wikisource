@@ -30,5 +30,9 @@
 	"wikisource-ocr-extract-text": "Extraire le texte",
 	"wikisource-ocr-extract-text-title": "Obtenir le texte OCR de cette image",
 	"wikisource-ocr-error": "Erreur de l’outil d’OCR : $1",
-	"wikisource-ocr-no-text": "Aucun texte n’a été renvoyé par l’outil d’OCR."
+	"wikisource-ocr-no-text": "Aucun texte n’a été renvoyé par l’outil d’OCR.",
+	"wikisource-ocr-settings-menu": "Modifier les paramètres OCR",
+	"wikisource-ocr-engine": "Sélectionner votre outil d’extraction de texte par défaut",
+	"wikisource-ocr-advanced": "Options avancées",
+	"wikisource-ocr-advanced-title": "Ouvrir le formulaire des options avancées dans un nouvel onglet"
 }
