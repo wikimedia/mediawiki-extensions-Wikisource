@@ -23,5 +23,9 @@
 	"wikisource-ocr-extract-text": "Estrae 'u teste",
 	"wikisource-ocr-extract-text-title": "Pigghie 'u teste OCR da st'immaggine",
 	"wikisource-ocr-error": "Errore da 'u strumende de OCR: $1",
-	"wikisource-ocr-no-text": "Nisciune teste ha state turnate da 'u strumende de OCR."
+	"wikisource-ocr-no-text": "Nisciune teste ha state turnate da 'u strumende de OCR.",
+	"wikisource-ocr-settings-menu": "Cange le 'mbostaziune de l'OCR",
+	"wikisource-ocr-engine": "Scacchie 'u strumende predefinite de estrazione d'u teste",
+	"wikisource-ocr-advanced": "Opziune avanzate",
+	"wikisource-ocr-advanced-title": "Iapre 'a maschere de le opziune avanzate jndr'à 'na scheda nove"
 }
