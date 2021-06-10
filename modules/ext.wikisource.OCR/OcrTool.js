@@ -28,13 +28,18 @@ function OcrTool( toolUrl ) {
 	this.image = null;
 	// Whether an OCR request is in progress.
 	this.inProgress = false;
+	// Whether to show the onboarding pulsating dot and popup.
+	this.showOnboarding = true;
 
 	this.loadConfig();
 }
 
+OO.mixinClass( OcrTool, OO.EventEmitter );
+
 OcrTool.prototype.saveConfig = function () {
 	mwLocalStorage.set( 'wikisource-ocr', JSON.stringify( {
-		engine: this.engine
+		engine: this.engine,
+		showOnboarding: this.showOnboarding
 	} ) );
 };
 
@@ -47,6 +52,10 @@ OcrTool.prototype.loadConfig = function () {
 		config.engine = 'tesseract';
 	}
 	this.engine = config.engine;
+	if ( config.showOnboarding === undefined ) {
+		config.showOnboarding = true;
+	}
+	this.showOnboarding = config.showOnboarding;
 };
 
 /**
@@ -64,7 +73,19 @@ OcrTool.prototype.getEngine = function () {
 	return this.engine;
 };
 
-OO.mixinClass( OcrTool, OO.EventEmitter );
+/**
+ * Whether the onboarding popup should be shown.
+ *
+ * @return {boolean}
+ */
+OcrTool.prototype.getShowOnboarding = function () {
+	return this.showOnboarding;
+};
+
+OcrTool.prototype.setShowOnboarding = function ( showOnboarding ) {
+	this.showOnboarding = !!showOnboarding;
+	this.saveConfig();
+};
 
 /**
  * Get the full URL to the OCR tool.
