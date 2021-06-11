@@ -22,5 +22,16 @@
 	"wikisource-download-chooser-mobi": "মোবি",
 	"wikisource-download-chooser-mobi-description": "কিন্ডলের জন্য",
 	"wikisource-download-chooser-pdf": "পিডিএফ",
-	"wikisource-download-chooser-pdf-description": "বড় পর্দা ও মুদ্রণের জন্য"
+	"wikisource-download-chooser-pdf-description": "বড় পর্দা ও মুদ্রণের জন্য",
+	"wikisource-download-chooser-different-format": "একটি ভিন্ন বিন্যাস খুঁজছেন?",
+	"wikisource-ocr-extract-text": "পাঠ্য আহরণ করুন",
+	"wikisource-ocr-extract-text-title": "এই চিত্রের ওসিআর পাঠ্য পান",
+	"wikisource-ocr-error": "ওসিআর সরঞ্জামে ত্রুটি: $1",
+	"wikisource-ocr-no-text": "ওসিআর সরঞ্জাম ফলাফল হিসেবে কোনও পাঠ্য দেয়নি।",
+	"wikisource-ocr-settings-menu": "ওসিআর সেটিং পাল্টান",
+	"wikisource-ocr-engine": "আপনার পূর্বনির্ধারিত পাঠ্য আহরণ সরঞ্জাম নির্বাচন করুন",
+	"wikisource-ocr-engine-tesseract": "টেসারেক্ট ওসিআর",
+	"wikisource-ocr-engine-google": "গুগল ওসিআর",
+	"wikisource-ocr-advanced": "উচ্চতর বিকল্প",
+	"wikisource-ocr-advanced-title": "একটি নতুন ট্যাবে উচ্চতর বিকল্পের ফরমটি খুলুন"
 }
