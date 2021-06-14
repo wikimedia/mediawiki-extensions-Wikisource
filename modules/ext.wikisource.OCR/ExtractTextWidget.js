@@ -1,14 +1,16 @@
-var OcrTool = require( './OcrTool.js' );
+var LoadingWidget = require( './LoadingWidget.js' );
 
 /**
  * @class
  * @constructor
  * @param {OcrTool} ocrTool
  * @param {jQuery} $prpImage
+ * @param {jQuery} $textbox
  */
-function ExtractTextWidget( ocrTool, $prpImage ) {
+function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 	this.ocrTool = ocrTool;
-	this.prpImage = $prpImage.find( 'img' )[ 0 ].src;
+	this.ocrTool.setImage( $prpImage.find( 'img' )[ 0 ].src );
+	this.$textbox = $textbox;
 
 	var extractButton = new OO.ui.ButtonWidget( {
 		icon: 'ocr',
@@ -38,6 +40,20 @@ function ExtractTextWidget( ocrTool, $prpImage ) {
 	};
 
 	ExtractTextWidget.super.call( this, config );
+
+	this.loadingWidget = new LoadingWidget( this.ocrTool, this.$textbox );
+
+	// Enable and disable the extract button.
+	this.ocrTool.connect( extractButton, {
+		[ this.ocrTool.events.textExtractStart ]: [ 'setDisabled', true ],
+		[ this.ocrTool.events.cancelling ]: [ 'setDisabled', false ],
+		[ this.ocrTool.events.textExtracted ]: [ 'setDisabled', false ],
+		[ this.ocrTool.events.textExtractEnd ]: [ 'setDisabled', false ]
+	} );
+	// Handle the returned text.
+	this.ocrTool.connect( this, {
+		[ this.ocrTool.events.textExtracted ]: 'processOcrResult'
+	} );
 }
 
 OO.inheritClass( ExtractTextWidget, OO.ui.ButtonGroupWidget );
@@ -69,7 +85,7 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 	this.advancedLink = new OO.ui.ButtonWidget( {
 		label: mw.msg( 'wikisource-ocr-advanced' ),
 		title: mw.msg( 'wikisource-ocr-advanced-title' ),
-		href: this.ocrTool.getUrl( false, this.prpImage ),
+		href: this.ocrTool.getUrl( false ),
 		icon: 'linkExternal',
 		classes: [ 'ext-wikisource-ocr-advanced-link' ],
 		target: '_base'
@@ -90,26 +106,7 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 };
 
 ExtractTextWidget.prototype.onClick = function () {
-	var url = this.ocrTool.getUrl( true, this.prpImage ),
-		textbox = document.querySelector( '#wpTextbox1' ),
-		extractTextWidget = this;
-	// Disable the UI.
-	this.setDisabled( true );
-	textbox.disabled = true;
-	// Fetch the OCR text.
-	$.getJSON( url )
-		.done( function ( result ) {
-			extractTextWidget.processOcrResult( result, textbox );
-		} )
-		.fail( function ( result ) {
-			// Same handler, for simplicity.
-			extractTextWidget.processOcrResult( result, textbox );
-		} )
-		.always( function () {
-			// Re-enable the UI.
-			textbox.disabled = false;
-			extractTextWidget.setDisabled( false );
-		} );
+	this.ocrTool.extractText();
 };
 
 /**
@@ -117,9 +114,8 @@ ExtractTextWidget.prototype.onClick = function () {
  * this function.
  *
  * @param {string} response The response (either text or error) returned from the API.
- * @param {HTMLTextAreaElement} textbox The main editing textbox.
  */
-ExtractTextWidget.prototype.processOcrResult = function ( response, textbox ) {
+ExtractTextWidget.prototype.processOcrResult = function ( response ) {
 	if ( response.responseJSON !== undefined && response.responseJSON.error ) {
 		mw.notify( mw.msg( 'wikisource-ocr-error', response.responseJSON.error ) );
 		return;
@@ -128,7 +124,7 @@ ExtractTextWidget.prototype.processOcrResult = function ( response, textbox ) {
 		mw.notify( mw.msg( 'wikisource-ocr-no-text' ) );
 		return;
 	}
-	textbox.value = response.text;
+	this.$textbox[ 0 ].value = response.text;
 };
 
 /**
@@ -141,7 +137,7 @@ ExtractTextWidget.prototype.onEngineChoose = function ( item, selected ) {
 	if ( selected ) {
 		this.ocrTool.setEngine( item.data );
 		// Also update the advanced link's URL.
-		this.advancedLink.setHref( this.ocrTool.getUrl( false, this.prpImage ) );
+		this.advancedLink.setHref( this.ocrTool.getUrl( false ) );
 	}
 };
 

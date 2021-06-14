@@ -1,5 +1,8 @@
 {
 	"root": true,
+	"parserOptions": {
+		"ecmaVersion": 6
+	},
 	"extends": [
 		"wikimedia",
 		"wikimedia/mediawiki"
@@ -12,5 +15,12 @@
 	"globals": {
 		"mediaWiki": false,
 		"ve": false
+	},
+	"rules": {
+		"jsdoc/no-undefined-types": [ "warn", {
+			"definedTypes": [
+				"OcrTool"
+			]
+		} ]
 	}
 }
