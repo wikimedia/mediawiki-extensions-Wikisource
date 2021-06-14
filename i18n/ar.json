@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Meno25"
+			"Meno25",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
-	"wikisource-desc": "تخصيصات ميدياويكي الخاصة بويكي مصدر"
+	"wikisource-desc": "تخصيصات ميدياويكي الخاصة بويكي مصدر",
+	"wikisource-ocr-advanced": "خيارات متقدمة"
 }

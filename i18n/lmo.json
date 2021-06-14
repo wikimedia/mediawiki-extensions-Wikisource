@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Salvemm el lombard"
+		]
+	},
+	"wikisource-desc": "Personalizzazzion de MediaWiki specifiche per Wikisource",
+	"wikisource-export-portlet": "Stampa/esporta",
+	"wikisource-download-epub": "Descarega EPUB",
+	"wikisource-download-epub-tooltip": "Descarega una version EPUB de quell lavorà chì",
+	"wikisource-download-mobi": "Descarega MOBI",
+	"wikisource-download-mobi-tooltip": "Descarega una version MOBI de quell lavorà chì",
+	"wikisource-download-pdf": "Descarega PDF",
+	"wikisource-download-pdf-tooltip": "Descarega un PDF de quell lavorà chì",
+	"wikisource-download-choose": "Alter formad",
+	"wikisource-download-choose-tooltip": "El derva un modol per scernì foeura di alter formad, carater de stampa, ecc.",
+	"wikisource-download-button": "Descarega",
+	"wikisource-download-chooser-title": "Cata foeura un formad",
+	"wikisource-download-chooser-epub-description": "per i compiuter, i telefonin e i tablet",
+	"wikisource-download-chooser-mobi-description": "per i kindol",
+	"wikisource-download-chooser-pdf-description": "per grandi schermi e stampa",
+	"wikisource-download-chooser-different-format": "Te veouret un formad diferent?",
+	"wikisource-ocr-extract-text": "Tira foeura el est",
+	"wikisource-ocr-extract-text-title": "Oten un test OCR de quell'imagin chì",
+	"wikisource-ocr-error": "Eror de l'istrument OCR: $1",
+	"wikisource-ocr-no-text": "L'istrument OCR no l'è stad bon de dad indree del test",
+	"wikisource-ocr-settings-menu": "Cambia i impostazzion OCR",
+	"wikisource-ocr-engine": "Scerniss foeura el to istrument predefinid per tirà foeura el test",
+	"wikisource-ocr-advanced": "Opzion vanzade",
+	"wikisource-ocr-advanced-title": "Derva el modol di opzion vanzade in d'una scheda noeuva"
+}
