@@ -21,6 +21,8 @@
 	"wikisource-download-chooser-pdf-description": "für große Bildschirme und Druck",
 	"wikisource-download-chooser-different-format": "Suchst du ein anderes Format?",
 	"wikisource-ocr-extract-text": "Text extrahieren",
+	"wikisource-ocr-extract-progress": "OCR in Arbeit …",
+	"wikisource-ocr-extract-cancel": "Abbrechen",
 	"wikisource-ocr-extract-text-title": "OCR-Text dieses Bildes abrufen",
 	"wikisource-ocr-error": "Fehler vom OCR-Werkzeug: $1",
 	"wikisource-ocr-no-text": "Das OCR-Werkzeug hat keinen Text zurückgegeben.",
