@@ -21,6 +21,8 @@
 	"wikisource-download-chooser-pdf-description": "למסכים גדולים והדפסה",
 	"wikisource-download-chooser-different-format": "{{GENDER:|מחפש|מחפשת}} תסדיר שונה?",
 	"wikisource-ocr-extract-text": "חילוץ טקסט",
+	"wikisource-ocr-extract-progress": "מתבצע זיהוי תווים אופטי...",
+	"wikisource-ocr-extract-cancel": "ביטול",
 	"wikisource-ocr-extract-text-title": "קבלת הטקסט של התמונה הזאת באצעות זיהוי תווים אופטי",
 	"wikisource-ocr-error": "שגיאה מכלי זיהוי התווים האופטי: $1",
 	"wikisource-ocr-no-text": "לא הוחזר שום טקסט על־די כלי זיהוי התווים האופטי.",

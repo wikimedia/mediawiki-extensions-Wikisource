@@ -3,6 +3,7 @@
 		"authors": [
 			"Gerongfenh",
 			"Hello903hello",
+			"Shizhao",
 			"Yfdyh000",
 			"沈澄心"
 		]
@@ -24,5 +25,16 @@
 	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "用于Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "用于大屏幕与打印"
+	"wikisource-download-chooser-pdf-description": "用于大屏幕与打印",
+	"wikisource-download-chooser-different-format": "寻找不同的格式？",
+	"wikisource-ocr-extract-text": "提取文本",
+	"wikisource-ocr-extract-progress": "OCR处理中...",
+	"wikisource-ocr-extract-cancel": "取消",
+	"wikisource-ocr-extract-text-title": "获取此图像的OCR文本",
+	"wikisource-ocr-error": "OCR工具出错：$1",
+	"wikisource-ocr-no-text": "OCR工具未返回任何文本。",
+	"wikisource-ocr-settings-menu": "更改OCR设置",
+	"wikisource-ocr-engine": "选择您默认的文本提取工具",
+	"wikisource-ocr-advanced": "高级选项",
+	"wikisource-ocr-advanced-title": "在新标签页中打开高级选项表单"
 }
