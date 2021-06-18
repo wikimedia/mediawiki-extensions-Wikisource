@@ -30,5 +30,7 @@
 	"wikisource-ocr-engine-tesseract": "Tesseract OCR",
 	"wikisource-ocr-engine-google": "Google OCR",
 	"wikisource-ocr-advanced": "Advanced Options",
-	"wikisource-ocr-advanced-title": "Open the advanced options form in a new tab"
+	"wikisource-ocr-advanced-title": "Open the advanced options form in a new tab",
+	"wikisource-ocr-overwrite-warning": "You will lose the current page body text and it will be replaced with the newly transcribed text.",
+	"wikisource-ocr-overwrite-confirm": "Replace with new text transcription?"
 }

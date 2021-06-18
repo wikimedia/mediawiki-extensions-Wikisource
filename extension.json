@@ -95,6 +95,7 @@
 				"ext.wikisource.icons",
 				"oojs-ui-core",
 				"oojs-ui-widgets",
+				"oojs-ui-windows",
 				"oojs-ui.styles.icons-movement",
 				"oojs-ui.styles.icons-editing-core"
 			],
@@ -120,7 +121,9 @@
 				"wikisource-ocr-engine-tesseract",
 				"wikisource-ocr-engine-google",
 				"wikisource-ocr-advanced",
-				"wikisource-ocr-advanced-title"
+				"wikisource-ocr-advanced-title",
+				"wikisource-ocr-overwrite-warning",
+				"wikisource-ocr-overwrite-confirm"
 			]
 		}
 	},

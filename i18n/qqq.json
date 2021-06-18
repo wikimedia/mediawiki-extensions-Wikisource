@@ -35,5 +35,7 @@
 	"wikisource-ocr-engine-tesseract": "Radio button label for the Tesseract engine.",
 	"wikisource-ocr-engine-google": "Radio button label for the Google engine.",
 	"wikisource-ocr-advanced": "Button text for a link to open a new tab for the advanced settings.",
-	"wikisource-ocr-advanced-title": "Tooltip text for the advanced settings form."
+	"wikisource-ocr-advanced-title": "Tooltip text for the advanced settings form.",
+	"wikisource-ocr-overwrite-warning": "Warning message shown when trying to extract text but the edit area is not empty.",
+	"wikisource-ocr-overwrite-confirm": "Confirmation message shown together with {{msg-mw|wikisource-ocr-overwrite-warning}}"
 }

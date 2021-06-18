@@ -106,7 +106,18 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 };
 
 ExtractTextWidget.prototype.onClick = function () {
-	this.ocrTool.extractText();
+	if ( this.$textbox.val() !== '' ) {
+		var that = this;
+		OO.ui.confirm( mw.msg( 'wikisource-ocr-overwrite-warning' ), {
+			title: mw.msg( 'wikisource-ocr-overwrite-confirm' )
+		} ).done( function ( confirmed ) {
+			if ( confirmed ) {
+				that.ocrTool.extractText();
+			}
+		} );
+	} else {
+		this.ocrTool.extractText();
+	}
 };
 
 /**
