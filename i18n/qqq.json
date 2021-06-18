@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"Robby",
 			"Umherirrender"
 		]
 	},
@@ -26,7 +27,7 @@
 	"wikisource-download-chooser-different-format": "\nLink text for different format download option.",
 	"wikisource-ocr-extract-text": "Displayed text of the OCR button.",
 	"wikisource-ocr-extract-progress": "Label shown in the loading widget, followed by {{msg-mw|wikisource-ocr-extract-cancel}}.",
-	"wikisource-ocr-extract-cancel": "Button text for the 'cancel' button shown in the loading widget.",
+	"wikisource-ocr-extract-cancel": "Button text for the 'cancel' button shown in the loading widget.\n{{identical|Cancel}}",
 	"wikisource-ocr-extract-text-title": "Tooltip text for the OCR button.",
 	"wikisource-ocr-error": "Error message.\n\n$1 is the message text.",
 	"wikisource-ocr-no-text": "Error message displayed when no text was retrieved but no actual error message was given (for example, the page is correctly blank).",

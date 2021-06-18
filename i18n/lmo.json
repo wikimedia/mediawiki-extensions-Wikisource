@@ -21,6 +21,8 @@
 	"wikisource-download-chooser-pdf-description": "per grandi schermi e stampa",
 	"wikisource-download-chooser-different-format": "Te veouret un formad diferent?",
 	"wikisource-ocr-extract-text": "Tira foeura el est",
+	"wikisource-ocr-extract-progress": "l'OCR l'è 'dree a lavorà...",
+	"wikisource-ocr-extract-cancel": "Anula",
 	"wikisource-ocr-extract-text-title": "Oten un test OCR de quell'imagin chì",
 	"wikisource-ocr-error": "Eror de l'istrument OCR: $1",
 	"wikisource-ocr-no-text": "L'istrument OCR no l'è stad bon de dad indree del test",

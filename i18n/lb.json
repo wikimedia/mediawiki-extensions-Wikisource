@@ -14,6 +14,8 @@
 	"wikisource-download-button": "Eroflueden",
 	"wikisource-ocr-extract-text": "Text erauszéiehen",
 	"wikisource-ocr-extract-progress": "OCR ass am Gaang...",
+	"wikisource-ocr-extract-cancel": "Ofbriechen",
 	"wikisource-ocr-extract-text-title": "OCR_Text vun dësem Bild kréien",
-	"wikisource-ocr-error": "Feeler vum OCR Geschier: $1"
+	"wikisource-ocr-error": "Feeler vum OCR Geschier: $1",
+	"wikisource-ocr-advanced": "Erweidert Optiounen"
 }

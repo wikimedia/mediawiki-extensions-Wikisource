@@ -29,5 +29,7 @@
 	"wikisource-ocr-settings-menu": "OCR-Einstellungen ändern",
 	"wikisource-ocr-engine": "Auswahl deines Standard-Textextraktionswerkzeugs",
 	"wikisource-ocr-advanced": "Erweiterte Optionen",
-	"wikisource-ocr-advanced-title": "Erweiterten Optionen in einem neuen Tab öffnen"
+	"wikisource-ocr-advanced-title": "Erweiterten Optionen in einem neuen Tab öffnen",
+	"wikisource-ocr-overwrite-warning": "Der aktuelle Seitentext geht verloren und wird durch den neu transkribierten Text ersetzt.",
+	"wikisource-ocr-overwrite-confirm": "Ersetzen durch neue Texttranskription?"
 }
