@@ -36,5 +36,7 @@
 	"wikisource-ocr-settings-menu": "Modifier les paramètres OCR",
 	"wikisource-ocr-engine": "Sélectionner votre outil d’extraction de texte par défaut",
 	"wikisource-ocr-advanced": "Options avancées",
-	"wikisource-ocr-advanced-title": "Ouvrir le formulaire des options avancées dans un nouvel onglet"
+	"wikisource-ocr-advanced-title": "Ouvrir le formulaire des options avancées dans un nouvel onglet",
+	"wikisource-ocr-overwrite-warning": "Vous perdrez le texte du corps de la page actuelle et il sera remplacé par le texte nouvellement transcrit.",
+	"wikisource-ocr-overwrite-confirm": "Remplacer par la nouvelle transcription du texte ?"
 }

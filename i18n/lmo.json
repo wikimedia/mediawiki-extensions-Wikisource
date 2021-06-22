@@ -29,5 +29,7 @@
 	"wikisource-ocr-settings-menu": "Cambia i impostazzion OCR",
 	"wikisource-ocr-engine": "Scerniss foeura el to istrument predefinid per tirà foeura el test",
 	"wikisource-ocr-advanced": "Opzion vanzade",
-	"wikisource-ocr-advanced-title": "Derva el modol di opzion vanzade in d'una scheda noeuva"
+	"wikisource-ocr-advanced-title": "Derva el modol di opzion vanzade in d'una scheda noeuva",
+	"wikisource-ocr-overwrite-warning": "Te paedareet el test del corp de la pagina corenta, che 'l sarà cambiad cont el test apena trascrivud.",
+	"wikisource-ocr-overwrite-confirm": "Sostituì cont la noeuva trascrizzion del test?"
 }

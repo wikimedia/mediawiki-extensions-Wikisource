@@ -26,6 +26,7 @@
 	"wikisource-download-chooser-pdf-description": "geniş ekranlar ve yazdırmak için",
 	"wikisource-download-chooser-different-format": "Farklı bir biçim mi arıyorsunuz?",
 	"wikisource-ocr-extract-text": "Metin ayıkla",
+	"wikisource-ocr-extract-cancel": "İptal",
 	"wikisource-ocr-extract-text-title": "Bu görüntünün OCR metnini al",
 	"wikisource-ocr-error": "OCR aracındaki hata: $1",
 	"wikisource-ocr-no-text": "OCR aracı tarafından hiçbir metin döndürülmedi.",

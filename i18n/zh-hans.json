@@ -36,5 +36,7 @@
 	"wikisource-ocr-settings-menu": "更改OCR设置",
 	"wikisource-ocr-engine": "选择您默认的文本提取工具",
 	"wikisource-ocr-advanced": "高级选项",
-	"wikisource-ocr-advanced-title": "在新标签页中打开高级选项表单"
+	"wikisource-ocr-advanced-title": "在新标签页中打开高级选项表单",
+	"wikisource-ocr-overwrite-warning": "您将丢失当前页面的正文文本，它将被新编写的文本替换。",
+	"wikisource-ocr-overwrite-confirm": "替换为新的文本转录？"
 }

@@ -29,5 +29,7 @@
 	"wikisource-ocr-settings-menu": "שינוי הגדרות OCR",
 	"wikisource-ocr-engine": "נא לבחור את כלי חילוץ הטקסט שלך ההתחלתי שלך",
 	"wikisource-ocr-advanced": "אפשרויות מתקדמות",
-	"wikisource-ocr-advanced-title": "פתיחת האפשרויות המתקדמות בלשונית חדשה"
+	"wikisource-ocr-advanced-title": "פתיחת האפשרויות המתקדמות בלשונית חדשה",
+	"wikisource-ocr-overwrite-warning": "{{GENDER:|תאבד|תאבדי}} את גוף הטקסט הנוכחי והוא יוחלף בטקסט המועתק החדש.",
+	"wikisource-ocr-overwrite-confirm": "להחליף בטקסט המועתק החדש?"
 }
