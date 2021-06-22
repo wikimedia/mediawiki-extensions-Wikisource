@@ -32,5 +32,8 @@
 	"wikisource-ocr-advanced": "Advanced Options",
 	"wikisource-ocr-advanced-title": "Open the advanced options form in a new tab",
 	"wikisource-ocr-overwrite-warning": "You will lose the current page body text and it will be replaced with the newly transcribed text.",
-	"wikisource-ocr-overwrite-confirm": "Replace with new text transcription?"
+	"wikisource-ocr-overwrite-confirm": "Replace with new text transcription?",
+	"wikisource-ocr-onboarding-title": "Transcribe images into text",
+	"wikisource-ocr-onboarding-text": "Turn scanned documents into editable text, using Optical Character Recognition (OCR).",
+	"wikisource-ocr-onboarding-button": "Okay, got it"
 }

@@ -92,6 +92,7 @@
 		"ext.wikisource.OCR": {
 			"dependencies": [
 				"jquery.spinner",
+				"mediawiki.pulsatingdot",
 				"ext.wikisource.icons",
 				"oojs-ui-core",
 				"oojs-ui-widgets",
@@ -101,12 +102,14 @@
 			],
 			"styles": [
 				"ext.wikisource.OCR/ExtractTextWidget.less",
-				"ext.wikisource.OCR/LoadingWidget.less"
+				"ext.wikisource.OCR/LoadingWidget.less",
+				"ext.wikisource.OCR/OnboardingPopup.less"
 			],
 			"packageFiles": [
 				"ext.wikisource.OCR/index.js",
 				"ext.wikisource.OCR/OcrTool.js",
 				"ext.wikisource.OCR/ExtractTextWidget.js",
+				"ext.wikisource.OCR/OnboardingPopup.js",
 				"ext.wikisource.OCR/LoadingWidget.js"
 			],
 			"messages": [
@@ -123,7 +126,10 @@
 				"wikisource-ocr-advanced",
 				"wikisource-ocr-advanced-title",
 				"wikisource-ocr-overwrite-warning",
-				"wikisource-ocr-overwrite-confirm"
+				"wikisource-ocr-overwrite-confirm",
+				"wikisource-ocr-onboarding-title",
+				"wikisource-ocr-onboarding-text",
+				"wikisource-ocr-onboarding-button"
 			]
 		}
 	},

@@ -1,4 +1,5 @@
-var LoadingWidget = require( './LoadingWidget.js' );
+var LoadingWidget = require( './LoadingWidget.js' ),
+	OnboardingPopup = require( './OnboardingPopup.js' );
 
 /**
  * @class
@@ -54,6 +55,8 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 	this.ocrTool.connect( this, {
 		[ this.ocrTool.events.textExtracted ]: 'processOcrResult'
 	} );
+
+	extractButton.$element.append( ( new OnboardingPopup( this.ocrTool ) ).$element );
 }
 
 OO.inheritClass( ExtractTextWidget, OO.ui.ButtonGroupWidget );
