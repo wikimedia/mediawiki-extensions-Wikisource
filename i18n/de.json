@@ -31,5 +31,8 @@
 	"wikisource-ocr-advanced": "Erweiterte Optionen",
 	"wikisource-ocr-advanced-title": "Erweiterten Optionen in einem neuen Tab öffnen",
 	"wikisource-ocr-overwrite-warning": "Der aktuelle Seitentext geht verloren und wird durch den neu transkribierten Text ersetzt.",
-	"wikisource-ocr-overwrite-confirm": "Ersetzen durch neue Texttranskription?"
+	"wikisource-ocr-overwrite-confirm": "Ersetzen durch neue Texttranskription?",
+	"wikisource-ocr-onboarding-title": "Bilder in Text umwandeln",
+	"wikisource-ocr-onboarding-text": "Verwandelt gescannte Dokumente mithilfe der optischen Zeichenerkennung (OCR) in bearbeitbaren Text.",
+	"wikisource-ocr-onboarding-button": "Okay, verstanden."
 }

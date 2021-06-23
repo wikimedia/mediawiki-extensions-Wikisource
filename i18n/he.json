@@ -31,5 +31,8 @@
 	"wikisource-ocr-advanced": "אפשרויות מתקדמות",
 	"wikisource-ocr-advanced-title": "פתיחת האפשרויות המתקדמות בלשונית חדשה",
 	"wikisource-ocr-overwrite-warning": "{{GENDER:|תאבד|תאבדי}} את גוף הטקסט הנוכחי והוא יוחלף בטקסט המועתק החדש.",
-	"wikisource-ocr-overwrite-confirm": "להחליף בטקסט המועתק החדש?"
+	"wikisource-ocr-overwrite-confirm": "להחליף בטקסט המועתק החדש?",
+	"wikisource-ocr-onboarding-title": "העתקת תמונות לטקסט",
+	"wikisource-ocr-onboarding-text": "הפכו מסמכים סרוקים לטקסט שאפשר לערוך באמצעות זיהוי תווים אופטי (OCR)",
+	"wikisource-ocr-onboarding-button": "בסדר, הבנתי"
 }

@@ -31,5 +31,8 @@
 	"wikisource-ocr-advanced": "Напредни можности",
 	"wikisource-ocr-advanced-title": "Отвори го образецот за напредни можности во ново јазиче",
 	"wikisource-ocr-overwrite-warning": "Ќе ја изгубите тековната содржина на страницата и истата ќе биде заменета со новотранскрибираниот текст.",
-	"wikisource-ocr-overwrite-confirm": "Да заменам со новата транскрипција?"
+	"wikisource-ocr-overwrite-confirm": "Да заменам со новата транскрипција?",
+	"wikisource-ocr-onboarding-title": "Препис на слики во текст",
+	"wikisource-ocr-onboarding-text": "Претворање на отсликани документи во уредлив текст со Општичко препознавање на знаци (OCR).",
+	"wikisource-ocr-onboarding-button": "Јасно"
 }
