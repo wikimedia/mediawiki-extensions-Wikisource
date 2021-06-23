@@ -26,8 +26,8 @@ function OcrTool( toolUrl ) {
 	this.langs = [ mw.config.get( 'wgContentLanguage' ) ];
 	// Image URL.
 	this.image = null;
-	// Whether an OCR request is in progress.
-	this.inProgress = false;
+	// Whether an OCR request is in progress, or has been cancelled.
+	this.hasBeenCancelled = false;
 	// Whether to show the onboarding pulsating dot and popup.
 	this.showOnboarding = true;
 
@@ -108,27 +108,27 @@ OcrTool.prototype.setImage = function ( image ) {
 };
 
 OcrTool.prototype.cancel = function () {
-	this.inProgress = false;
+	this.hasBeenCancelled = true;
 	this.emit( this.events.cancelling );
 };
 
 OcrTool.prototype.extractText = function () {
-	this.inProgress = true;
+	this.hasBeenCancelled = false;
 	this.emit( this.events.textExtractStart );
 	var ocrTool = this;
+	// Use the same function for success and error.
+	var handleTextExtracted = function ( result ) {
+		if ( ocrTool.hasBeenCancelled ) {
+			// If the user has clicked 'cancel', ignore the result.
+			return;
+		}
+		ocrTool.emit( ocrTool.events.textExtracted, result );
+	};
 	$.ajax( {
 		url: ocrTool.getUrl( true ),
 		dataType: 'json',
-		success: function ( result ) {
-			if ( !ocrTool.inProgress ) {
-				// If the user has clicked 'cancel', ignore the result.
-				return;
-			}
-			ocrTool.emit( ocrTool.events.textExtracted, result );
-		},
-		error: function ( result ) {
-			ocrTool.emit( ocrTool.events.textExtracted, result );
-		},
+		success: handleTextExtracted,
+		error: handleTextExtracted,
 		complete: function ( jqXHR, textStatus ) {
 			ocrTool.emit( ocrTool.events.textExtractEnd, jqXHR, textStatus );
 		}
