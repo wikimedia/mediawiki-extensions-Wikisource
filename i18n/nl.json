@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"NthnH"
 		]
 	},
 	"wikisource-desc": "MediaWiki aanpassingen voor Wikisource",
 	"wikisource-download-epub": "Downloaden als EPUB",
-	"wikisource-download-epub-tooltip": "Download een EPUB versie van deze pagina"
+	"wikisource-download-epub-tooltip": "Download een EPUB versie van deze pagina",
+	"wikisource-ocr-onboarding-button": "Oké, ik snap het"
 }
