@@ -59,7 +59,8 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 		[ this.ocrTool.events.textExtracted ]: 'processOcrResult'
 	} );
 
-	extractButton.$element.append( ( new OnboardingPopup( this.ocrTool ) ).$element );
+	this.onboardingPopup = new OnboardingPopup( this.ocrTool );
+	extractButton.$element.append( this.onboardingPopup.$element );
 }
 
 OO.inheritClass( ExtractTextWidget, OO.ui.ButtonGroupWidget );
@@ -112,6 +113,20 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 };
 
 ExtractTextWidget.prototype.onClick = function () {
+	// If the onboarding popup is available and not yet open, open it when
+	// clicking the button. The button will need to be clicked again in order to
+	// run the OCR (at which point the popup will close and be dismissed forever).
+	if ( this.ocrTool.getShowOnboarding() ) {
+		if ( this.onboardingPopup.popup.isVisible() ) {
+			// Simulate clicking "Okay, got it".
+			this.onboardingPopup.onPopupButtonClick();
+		} else {
+			this.onboardingPopup.popup.toggle( true );
+			return;
+		}
+	}
+
+	// Run OCR.
 	const curText = this.$textbox.val();
 	if ( curText !== '' && curText !== this.initialText ) {
 		var that = this;
