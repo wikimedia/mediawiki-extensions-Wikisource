@@ -22,5 +22,22 @@
 	"wikisource-download-chooser-mobi-description": "cho Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
 	"wikisource-download-chooser-pdf-description": "cho màn hình lớn và in ấn",
-	"wikisource-download-chooser-different-format": "Tìm định dạng khác?"
+	"wikisource-download-chooser-different-format": "Tìm định dạng khác?",
+	"wikisource-ocr-extract-text": "Tách văn bản",
+	"wikisource-ocr-extract-progress": "Đang tách văn bản từ hình...",
+	"wikisource-ocr-extract-cancel": "Hủy",
+	"wikisource-ocr-extract-text-title": "Tách văn bản OCR từ hình này",
+	"wikisource-ocr-error": "Lỗi từ công cụ OCR: $1",
+	"wikisource-ocr-no-text": "Công cụ OCR không trả về văn bản nào.",
+	"wikisource-ocr-settings-menu": "Thay đổi thiết lập OCR",
+	"wikisource-ocr-engine": "Chọn công cụ tách văn bản mặc định",
+	"wikisource-ocr-engine-tesseract": "Tesseract OCR",
+	"wikisource-ocr-engine-google": "Google OCR",
+	"wikisource-ocr-advanced": "Tùy chọn nâng cao",
+	"wikisource-ocr-advanced-title": "Mở bảng tùy chọn nâng cao trong thẻ mới",
+	"wikisource-ocr-overwrite-warning": "Bạn sẽ mất nội dung văn bản tại trang này và được thay thế bằng văn bản mới được tách.",
+	"wikisource-ocr-overwrite-confirm": "Thay bằng văn bản mới?",
+	"wikisource-ocr-onboarding-title": "Chuyển hình ảnh thành văn bản",
+	"wikisource-ocr-onboarding-text": "Chuyển các tài liệu quét thành văn bản sửa đổi được bằng công nghệ Nhận dạng Ký tự Quang học (OCR).",
+	"wikisource-ocr-onboarding-button": "Đã hiểu"
 }

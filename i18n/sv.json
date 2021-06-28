@@ -19,5 +19,8 @@
 	"wikisource-download-chooser-title": "Välj ett format",
 	"wikisource-download-chooser-epub-description": "till datorer, mobiler, laptoppar",
 	"wikisource-download-chooser-mobi-description": "till Kindle",
-	"wikisource-download-chooser-pdf-description": "till stora skärmar och utskrifter"
+	"wikisource-download-chooser-pdf-description": "till stora skärmar och utskrifter",
+	"wikisource-ocr-extract-cancel": "Avbryt",
+	"wikisource-ocr-onboarding-title": "Transkribera bilder till text",
+	"wikisource-ocr-onboarding-button": "Okej, jag förstår"
 }

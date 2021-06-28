@@ -21,6 +21,8 @@
 	"wikisource-download-chooser-pdf-description": "pe scherme larije e stambande",
 	"wikisource-download-chooser-different-format": "Cercanne 'nu formate diverse?",
 	"wikisource-ocr-extract-text": "Estrae 'u teste",
+	"wikisource-ocr-extract-progress": "OCR in elabborazione...",
+	"wikisource-ocr-extract-cancel": "Annulle",
 	"wikisource-ocr-extract-text-title": "Pigghie 'u teste OCR da st'immaggine",
 	"wikisource-ocr-error": "Errore da 'u strumende de OCR: $1",
 	"wikisource-ocr-no-text": "Nisciune teste ha state turnate da 'u strumende de OCR.",

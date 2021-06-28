@@ -4,9 +4,14 @@
 			"Simbu123"
 		]
 	},
+	"wikisource-desc": "কেৱল ৱিকিউৎসত ব্যৱহৃত মিডিয়াৱিকি বাৰ্তাসমূহ",
+	"wikisource-export-portlet": "মুদ্ৰণ/ৰপ্তানী",
 	"wikisource-download-epub": "EPUB ডাউনলোড কৰক",
+	"wikisource-download-epub-tooltip": "এই কৰ্মৰ এটা EPUB সংস্কৰণ ডাউনলোড কৰক",
 	"wikisource-download-mobi": "MOBI ডাউনলোড কৰক",
+	"wikisource-download-mobi-tooltip": "এই কৰ্মৰ এটা MOBI সংস্কৰণ ডাউনলোড কৰক",
 	"wikisource-download-pdf": "PDF ডাউনলোড কৰক",
+	"wikisource-download-pdf-tooltip": "এই কৰ্মৰ এটা PDF সংস্কৰণ ডাউনলোড কৰক",
 	"wikisource-download-choose": "আন ফৰমেট",
 	"wikisource-download-choose-tooltip": "অন্য ফৰমেট আৰু ফণ্ট আদি বাছনি কৰিবলৈ এখন প্ৰ-পত্ৰ খোলক।",
 	"wikisource-download-button": "ডাউনলোড",
@@ -17,5 +22,22 @@
 	"wikisource-download-chooser-mobi-description": "কিণ্ডেলৰ বাবে",
 	"wikisource-download-chooser-pdf": "পি ডি এফ (PDF)",
 	"wikisource-download-chooser-pdf-description": "ডাঙৰ স্ক্ৰীণ আৰু মুদ্ৰণৰ বাবে",
-	"wikisource-download-chooser-different-format": "অন্য কিবা ফৰমেট বিচাৰিছে?"
+	"wikisource-download-chooser-different-format": "অন্য কিবা ফৰমেট বিচাৰিছে?",
+	"wikisource-ocr-extract-text": "পাঠ্য আহৰণ কৰক",
+	"wikisource-ocr-extract-progress": "অ'চিআৰ চলি আছে…",
+	"wikisource-ocr-extract-cancel": "বাতিল কৰক",
+	"wikisource-ocr-extract-text-title": "এই চিত্ৰখনৰ অ'চিআৰ পাঠ্য আহৰণ কৰক",
+	"wikisource-ocr-error": "অ'চিআৰ সঁজুলিত ত্ৰুটি: $1",
+	"wikisource-ocr-no-text": "অ'চিআৰ সঁজুলিৰ ফলাফল হিচাপে কোনো পাঠ্য পোৱা নগ'ল।",
+	"wikisource-ocr-settings-menu": "অ'চিআৰ ছেটিং সলনি কৰক",
+	"wikisource-ocr-engine": "আপোনাৰ পূৰ্বনিৰ্ধাৰিত পাঠ্য আহৰণ সঁজুলি বাছনি কৰক",
+	"wikisource-ocr-engine-tesseract": "টেচাৰেক্ট অ'চিআৰ",
+	"wikisource-ocr-engine-google": "গুগল অ'চিআৰ",
+	"wikisource-ocr-advanced": "উচ্চতৰ বিকল্পসমূহ",
+	"wikisource-ocr-advanced-title": "এটা নতুন টেবত উচ্চতৰ বিকল্পসমূহ প্ৰ-পত্ৰ খোলক",
+	"wikisource-ocr-overwrite-warning": "আপুনি বৰ্তমান পৃষ্ঠাৰ মূল পাঠ্য হেৰুৱাব আৰু ইয়াক নতুনকৈ লিপিবদ্ধ কৰা পাঠ্যৰ সৈতে সলনি কৰা হ'ব।",
+	"wikisource-ocr-overwrite-confirm": "নতুন পাঠ্য প্ৰতিলিপিৰ সৈতে সলনি কৰিবনে?",
+	"wikisource-ocr-onboarding-title": "চিত্ৰসমূহক পাঠ্যত প্ৰতিলিপি কৰক",
+	"wikisource-ocr-onboarding-text": "স্কেন কৰা ডকুমেণ্টবোৰ সম্পাদনাযোগ্য পাঠ্যলৈ পৰিৱৰ্তন কৰক, অপ্টিকেল কেৰেক্টাৰ ৰিকগনিশ্বন (অ'চিআৰ) ব্যৱহাৰ কৰি।",
+	"wikisource-ocr-onboarding-button": "বুজি পালোঁ"
 }

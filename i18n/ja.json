@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Likibp"
+			"Likibp",
+			"Omotecho"
 		]
 	},
 	"wikisource-desc": "ウィキソース固有のMediaWikiカスタマイズ",
@@ -21,5 +22,21 @@
 	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "Kindle用",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "大画面、印刷用"
+	"wikisource-download-chooser-pdf-description": "大画面、印刷用",
+	"wikisource-download-chooser-different-format": "別のファイル形式を探していますか？",
+	"wikisource-ocr-extract-text": "テキストの変換",
+	"wikisource-ocr-extract-progress": "画像から文字へ変換中...",
+	"wikisource-ocr-extract-cancel": "中止",
+	"wikisource-ocr-extract-text-title": "この画像のOCRテキストを取得する",
+	"wikisource-ocr-error": "OCRツールのエラー: $1",
+	"wikisource-ocr-no-text": "OCRツールで返されたテキストはありませんでした。",
+	"wikisource-ocr-settings-menu": "OCRの設定変更",
+	"wikisource-ocr-engine": "既定のテキスト転写ツールの選択",
+	"wikisource-ocr-advanced": "詳細設定",
+	"wikisource-ocr-advanced-title": "詳細設定のフォームを新しいタブで開く",
+	"wikisource-ocr-overwrite-warning": "現在のページの本文は失われ、新たに書き起こされたテキストに置き換わります。",
+	"wikisource-ocr-overwrite-confirm": "新たに書き起こされたテキストに置き換えますか？",
+	"wikisource-ocr-onboarding-title": "イメージをテキストに変換",
+	"wikisource-ocr-onboarding-text": "光学式文字認識(OCR)を使用して、スキャンされたドキュメントを編集可能なテキストに変換します。",
+	"wikisource-ocr-onboarding-button": "わかりました"
 }
