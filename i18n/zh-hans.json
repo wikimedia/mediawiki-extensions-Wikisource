@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gerongfenh",
+			"GuoPC",
 			"Hello903hello",
 			"Shizhao",
 			"Yfdyh000",
@@ -29,7 +30,7 @@
 	"wikisource-download-chooser-pdf-description": "用于大屏幕与打印",
 	"wikisource-download-chooser-different-format": "寻找不同的格式？",
 	"wikisource-ocr-extract-text": "提取文本",
-	"wikisource-ocr-extract-progress": "OCR处理中...",
+	"wikisource-ocr-extract-progress": "正在从图片提取文本……",
 	"wikisource-ocr-extract-cancel": "取消",
 	"wikisource-ocr-extract-text-title": "获取此图像的OCR文本",
 	"wikisource-ocr-error": "OCR工具出错：$1",
