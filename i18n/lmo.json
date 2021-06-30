@@ -20,16 +20,19 @@
 	"wikisource-download-chooser-mobi-description": "per i kindol",
 	"wikisource-download-chooser-pdf-description": "per grandi schermi e stampa",
 	"wikisource-download-chooser-different-format": "Te veouret un formad diferent?",
-	"wikisource-ocr-extract-text": "Tira foeura el est",
-	"wikisource-ocr-extract-progress": "l'OCR l'è 'dree a lavorà...",
+	"wikisource-ocr-extract-text": "Trascriv el test",
+	"wikisource-ocr-extract-progress": "Tracrizzion del test de l'imagin  in cors...",
 	"wikisource-ocr-extract-cancel": "Anula",
 	"wikisource-ocr-extract-text-title": "Oten un test OCR de quell'imagin chì",
 	"wikisource-ocr-error": "Eror de l'istrument OCR: $1",
 	"wikisource-ocr-no-text": "L'istrument OCR no l'è stad bon de dad indree del test",
 	"wikisource-ocr-settings-menu": "Cambia i impostazzion OCR",
-	"wikisource-ocr-engine": "Scerniss foeura el to istrument predefinid per tirà foeura el test",
+	"wikisource-ocr-engine": "Scerniss foeura el to istrument predefinid de trascrizzion.",
 	"wikisource-ocr-advanced": "Opzion vanzade",
 	"wikisource-ocr-advanced-title": "Derva el modol di opzion vanzade in d'una scheda noeuva",
 	"wikisource-ocr-overwrite-warning": "Te paedareet el test del corp de la pagina corenta, che 'l sarà cambiad cont el test apena trascrivud.",
-	"wikisource-ocr-overwrite-confirm": "Sostituì cont la noeuva trascrizzion del test?"
+	"wikisource-ocr-overwrite-confirm": "Sostituì cont la noeuva trascrizzion del test?",
+	"wikisource-ocr-onboarding-title": "Trascriv l'imagin in del test",
+	"wikisource-ocr-onboarding-text": "Trasforma i document scandid in test modificabil, cont el doperà el risconosciment otich di carater (OCR).",
+	"wikisource-ocr-onboarding-button": "Va ben, hoo capid"
 }

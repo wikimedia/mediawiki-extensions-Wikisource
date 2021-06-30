@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"Jeeputer",
+			"McDutchie",
 			"Robby",
 			"Umherirrender"
 		]
@@ -40,7 +41,7 @@
 	"wikisource-ocr-advanced-title": "Tooltip text for the advanced settings form.",
 	"wikisource-ocr-overwrite-warning": "Warning message shown when trying to extract text but the edit area is not empty.",
 	"wikisource-ocr-overwrite-confirm": "Confirmation message shown together with {{msg-mw|wikisource-ocr-overwrite-warning}}",
-	"wikisource-ocr-onboarding-title": "رونویسی تصاویر به‌شکل متن",
+	"wikisource-ocr-onboarding-title": "Title for the onboarding popup.",
 	"wikisource-ocr-onboarding-text": "Text paragraph for the onboarding popup.",
-	"wikisource-ocr-onboarding-button": "باشه، فهمیدم"
+	"wikisource-ocr-onboarding-button": "Confirmation button label for the onboarding popup."
 }
