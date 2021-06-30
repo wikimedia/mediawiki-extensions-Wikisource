@@ -12,6 +12,7 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 	this.ocrTool = ocrTool;
 	this.ocrTool.setImage( $prpImage.find( 'img' )[ 0 ].src );
 	this.$textbox = $textbox;
+	this.initialText = $textbox.val();
 
 	var extractButton = new OO.ui.ButtonWidget( {
 		icon: 'ocr',
@@ -109,7 +110,8 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 };
 
 ExtractTextWidget.prototype.onClick = function () {
-	if ( this.$textbox.val() !== '' ) {
+	const curText = this.$textbox.val();
+	if ( curText !== '' && curText !== this.initialText ) {
 		var that = this;
 		OO.ui.confirm( mw.msg( 'wikisource-ocr-overwrite-warning' ), {
 			title: mw.msg( 'wikisource-ocr-overwrite-confirm' )
