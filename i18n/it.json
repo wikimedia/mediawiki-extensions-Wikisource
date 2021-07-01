@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Candalua"
+			"Candalua",
+			"Lorem Ipsum"
 		]
 	},
 	"wikisource-desc": "Personalizzazioni di MediaWiki specifiche per Wikisource",
@@ -23,6 +24,10 @@
 	"wikisource-download-chooser-mobi-description": "per Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
 	"wikisource-download-chooser-pdf-description": "per grandi schermi e stampa",
+	"wikisource-ocr-extract-text": "Trascrivi il testo",
+	"wikisource-ocr-extract-progress": "Trascrizione del testo dall'immagine...",
 	"wikisource-ocr-extract-cancel": "Annulla",
+	"wikisource-ocr-engine": "Seleziona il tuo strumento di trascrizione del testo predefinito",
+	"wikisource-ocr-onboarding-title": "Trascrivi le immagini in testo",
 	"wikisource-ocr-onboarding-button": "Ok, capito"
 }

@@ -19,5 +19,20 @@
 	"wikisource-download-chooser-epub-description": "arvutis, mobiilis, tahvelarvutis",
 	"wikisource-download-chooser-mobi-description": "lugeris Kindle",
 	"wikisource-download-chooser-pdf-description": "suurel ekraanil ja printimiseks",
-	"wikisource-download-chooser-different-format": "Kas otsid teistsugust vormingut?"
+	"wikisource-download-chooser-different-format": "Kas otsid teistsugust vormingut?",
+	"wikisource-ocr-extract-text": "Transkribeeri tekst",
+	"wikisource-ocr-extract-progress": "Teksti transkribeerimine pildilt…",
+	"wikisource-ocr-extract-cancel": "Loobu",
+	"wikisource-ocr-extract-text-title": "Hangi selle pildi OCR-tekst",
+	"wikisource-ocr-error": "Tõrge OCR-tööriistas: $1",
+	"wikisource-ocr-no-text": "OCR-tööriist ei tagastanud teksti.",
+	"wikisource-ocr-settings-menu": "Muuda OCR-i sätteid",
+	"wikisource-ocr-engine": "Vali teksti transkribeerimise vaiketööriist",
+	"wikisource-ocr-advanced": "Täpsemad suvandid",
+	"wikisource-ocr-advanced-title": "Ava täpsemad suvandid uuel kaardil",
+	"wikisource-ocr-overwrite-warning": "Lehekülje praegune kehatekst läheb kaotsi ja asendatakse uue transkribeeritud tekstiga.",
+	"wikisource-ocr-overwrite-confirm": "Kas asendad teksti uue transkriptsiooniga?",
+	"wikisource-ocr-onboarding-title": "Transkribeeri pilt tekstiks",
+	"wikisource-ocr-onboarding-text": "Muuda skannitud dokument redigeeritavaks tekstiks, kasutades optilist märgituvastust (OCR).",
+	"wikisource-ocr-onboarding-button": "Hästi, sain aru"
 }
