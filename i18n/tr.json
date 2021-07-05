@@ -6,7 +6,8 @@
 			"Joseph",
 			"Melissadilara",
 			"Mim.saitkilic",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"SaldırganSincap"
 		]
 	},
 	"wikisource-desc": "Vikikaynak'a özgü MediaWiki özelleştirmeleri",
@@ -25,13 +26,13 @@
 	"wikisource-download-chooser-mobi-description": "Kindle için",
 	"wikisource-download-chooser-pdf-description": "geniş ekranlar ve yazdırmak için",
 	"wikisource-download-chooser-different-format": "Farklı bir biçim mi arıyorsunuz?",
-	"wikisource-ocr-extract-text": "Metin ayıkla",
+	"wikisource-ocr-extract-text": "Metni metne dönüştür",
 	"wikisource-ocr-extract-cancel": "İptal",
 	"wikisource-ocr-extract-text-title": "Bu görüntünün OCR metnini al",
 	"wikisource-ocr-error": "OCR aracındaki hata: $1",
 	"wikisource-ocr-no-text": "OCR aracı tarafından hiçbir metin döndürülmedi.",
 	"wikisource-ocr-settings-menu": "OCR ayarlarını değiştir",
-	"wikisource-ocr-engine": "Varsayılan metin çıkarma aracınızı seçin",
+	"wikisource-ocr-engine": "Varsayılan metin transkripsiyon aracınızı seçin",
 	"wikisource-ocr-advanced": "Gelişmiş Seçenekler",
 	"wikisource-ocr-advanced-title": "Gelişmiş seçenekler formunu yeni bir sekmede açın"
 }
