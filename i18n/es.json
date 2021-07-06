@@ -4,6 +4,7 @@
 			"Agent",
 			"Aleator",
 			"Fitoschido",
+			"Jackiezelaya",
 			"Rodney Araujo"
 		]
 	},
@@ -22,6 +23,16 @@
 	"wikisource-download-chooser-epub-description": "para computadores, teléfonos móviles, tablets",
 	"wikisource-download-chooser-mobi-description": "para Kindles",
 	"wikisource-download-chooser-pdf-description": "para pantallas grandes e impresión",
-	"wikisource-ocr-extract-progress": "LOC en progreso...",
-	"wikisource-ocr-extract-cancel": "Cancelar"
+	"wikisource-ocr-extract-text": "Transcribir texto",
+	"wikisource-ocr-extract-progress": "Transcribiendo texto de la imagen...",
+	"wikisource-ocr-extract-cancel": "Cancelar",
+	"wikisource-ocr-settings-menu": "Cambio OCR encuadres",
+	"wikisource-ocr-engine": "Seleccione su herramienta de transcripción de texto predeterminada",
+	"wikisource-ocr-advanced": "Opciones avanzadas",
+	"wikisource-ocr-advanced-title": "Abra el formulario de opciones avanzadas en una nueva pestaña",
+	"wikisource-ocr-overwrite-warning": "Perderá el texto del cuerpo de la página actual y se reemplazará con el texto recién transcrito.",
+	"wikisource-ocr-overwrite-confirm": "Reemplazar con nueva transcripción de texto?",
+	"wikisource-ocr-onboarding-title": "Transcribir imágenes en texto",
+	"wikisource-ocr-onboarding-text": "Convierta los documentos escaneados en texto editable, utilizando el reconocimiento óptico de caracteres (OCR).",
+	"wikisource-ocr-onboarding-button": "Entendido."
 }
