@@ -23,6 +23,7 @@
 	"wikisource-download-chooser-pdf-description": "для больших экранов и печати",
 	"wikisource-download-chooser-different-format": "Ищете другой формат?",
 	"wikisource-ocr-extract-text": "Извлечь текст",
+	"wikisource-ocr-extract-progress": "Расшифровка текста с изображения…",
 	"wikisource-ocr-extract-cancel": "Отменить",
 	"wikisource-ocr-extract-text-title": "Получить OCR-текст этого изображения",
 	"wikisource-ocr-error": "Ошибка инструмента OCR: $1",
