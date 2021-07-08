@@ -27,5 +27,7 @@
 	"wikisource-ocr-extract-cancel": "Отменить",
 	"wikisource-ocr-extract-text-title": "Получить OCR-текст этого изображения",
 	"wikisource-ocr-error": "Ошибка инструмента OCR: $1",
-	"wikisource-ocr-no-text": "Инструмент OCR не вернул никакого текста."
+	"wikisource-ocr-no-text": "Инструмент OCR не вернул никакого текста.",
+	"wikisource-ocr-onboarding-title": "Преобразование изображений в текст",
+	"wikisource-ocr-onboarding-button": "Окей, понятно"
 }
