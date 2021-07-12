@@ -27,6 +27,7 @@
 	"wikisource-download-chooser-pdf-description": "geniş ekranlar ve yazdırmak için",
 	"wikisource-download-chooser-different-format": "Farklı bir biçim mi arıyorsunuz?",
 	"wikisource-ocr-extract-text": "Metni metne dönüştür",
+	"wikisource-ocr-extract-progress": "Görüntüden metin kopyalanıyor…",
 	"wikisource-ocr-extract-cancel": "İptal",
 	"wikisource-ocr-extract-text-title": "Bu görüntünün OCR metnini al",
 	"wikisource-ocr-error": "OCR aracındaki hata: $1",
@@ -34,5 +35,9 @@
 	"wikisource-ocr-settings-menu": "OCR ayarlarını değiştir",
 	"wikisource-ocr-engine": "Varsayılan metin transkripsiyon aracınızı seçin",
 	"wikisource-ocr-advanced": "Gelişmiş Seçenekler",
-	"wikisource-ocr-advanced-title": "Gelişmiş seçenekler formunu yeni bir sekmede açın"
+	"wikisource-ocr-advanced-title": "Gelişmiş seçenekler formunu yeni bir sekmede açın",
+	"wikisource-ocr-overwrite-confirm": "Yeni metin transkripsiyonu ile değiştirilsin mi?",
+	"wikisource-ocr-onboarding-title": "Görüntüleri metne dönüştürün",
+	"wikisource-ocr-onboarding-text": "Optik Karakter Tanıma'yı (OCR) kullanarak taranan belgeleri düzenlenebilir metne dönüştürün.",
+	"wikisource-ocr-onboarding-button": "Tamam, anladım."
 }
