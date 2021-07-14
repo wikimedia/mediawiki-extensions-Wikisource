@@ -98,16 +98,17 @@ OcrTool.prototype.setShowOnboarding = function ( showOnboarding ) {
 /**
  * Get the full URL to the OCR tool.
  *
+ * @param {string} imageUrl URL of the image to transcribe.
  * @param {boolean} api Whether to include the API endpoint.
  * @return {string} Full URL to the tool.
  */
-OcrTool.prototype.getUrl = function ( api ) {
+OcrTool.prototype.getUrl = function ( imageUrl, api ) {
 	var endpoint = api ? '/api.php' : '/';
 	// @TODO Use URL() here when it's permitted in MediaWiki.
 	return this.toolUrl + endpoint +
 		'?engine=' + this.engine +
 		'&langs[]=' + this.langs.join( '&langs[]=' ) +
-		'&image=' + encodeURIComponent( this.image ) +
+		'&image=' + encodeURIComponent( imageUrl ) +
 		'&uselang=' + mw.config.get( 'wgUserLanguage' );
 };
 
@@ -142,12 +143,13 @@ OcrTool.prototype.extractText = function () {
 		ocrTool.emit( ocrTool.events.textExtracted, result );
 	};
 	$.ajax( {
-		url: ocrTool.getUrl( true ),
+		url: ocrTool.getUrl( this.image, true ),
 		dataType: 'json',
 		success: handleTextExtracted,
 		error: handleTextExtracted,
 		complete: function ( jqXHR, textStatus ) {
 			ocrTool.emit( ocrTool.events.textExtractEnd, jqXHR, textStatus );
+			ocrTool.preloadNextPage();
 		}
 	} );
 };
@@ -157,6 +159,15 @@ OcrTool.prototype.extractText = function () {
  */
 OcrTool.prototype.setOldText = function ( oldText ) {
 	this.oldText = oldText;
+};
+
+OcrTool.prototype.preloadNextPage = function () {
+	// TODO Can we do this reliably for more than one page?
+	const nextImageEl = $( 'link[title="prp-next-image"]' );
+	if ( nextImageEl.length ) {
+		// Ignore any error
+		$.get( this.getUrl( nextImageEl.get( 0 ).href, true ) );
+	}
 };
 
 module.exports = OcrTool;
