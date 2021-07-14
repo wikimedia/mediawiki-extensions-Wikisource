@@ -1,4 +1,4 @@
-.ext-wikisource-ocr-onboarding .mw-pulsating-dot {
+.ext-wikisource-ocr-onboarding-dot {
 	position: absolute;
 	left: 50%;
 	top: 100%;
@@ -6,13 +6,20 @@
 	z-index: 3;
 }
 
-.ext-wikisource-ocr-onboarding-image {
-	background-image: url( "./OnboardingPopup.svg" );
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 148px;
-}
+.ext-wikisource-ocr-onboarding-popup {
 
-.ext-wikisource-ocr-onboarding-button {
-	text-align: right;
+	.oo-ui-popupWidget-body-padded {
+		margin: 12px;
+	}
+
+	.ext-wikisource-ocr-onboarding-image {
+		background-image: url( "./OnboardingPopup.svg" );
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 148px;
+	}
+
+	.ext-wikisource-ocr-onboarding-button {
+		margin-top: 24px;
+	}
 }

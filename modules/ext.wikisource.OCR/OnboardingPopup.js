@@ -20,7 +20,7 @@ function OnboardingPopup( ocrTool ) {
 	okayButton.connect( this, { click: 'onPopupButtonClick' } );
 
 	// Pusating dot.
-	const $pulsatingDot = $( '<a>' ).addClass( 'mw-pulsating-dot' );
+	const $pulsatingDot = $( '<a>' ).addClass( 'ext-wikisource-ocr-onboarding-dot mw-pulsating-dot' );
 
 	// Popup.
 	const $popupContent = $( '<div>' ).append(
@@ -31,12 +31,14 @@ function OnboardingPopup( ocrTool ) {
 			.append( okayButton.$element )
 	);
 	const popup = new OO.ui.PopupWidget( {
+		classes: [ 'ext-wikisource-ocr-onboarding-popup' ],
 		$floatableContainer: $pulsatingDot,
 		$content: $popupContent,
 		padded: true,
 		width: 300,
 		align: 'backwards'
 	} );
+	this.popup = popup;
 
 	// Toggle the popup when the dot is clicked.
 	$pulsatingDot.on( 'click', function () {
@@ -44,15 +46,18 @@ function OnboardingPopup( ocrTool ) {
 	} );
 	// Close the popup when clicking anywhere outside it or the dot.
 	$( 'html' ).on( 'click', function ( event ) {
-		if ( $( event.target ).closest( '.ext-wikisource-ocr-onboarding' ).length === 0 && popup.isVisible() ) {
+		const $parents = $( event.target ).closest( '.ext-wikisource-ocr-onboarding-popup, .ext-wikisource-ocr-onboarding-dot' );
+		if ( $parents.length === 0 && popup.isVisible() ) {
 			popup.toggle( false );
 		}
 	} );
 
-	// Add all to this widget.
+	// Add the dot to this widget.
 	this.$element = $( '<div>' )
 		.addClass( 'ext-wikisource-ocr-onboarding' )
-		.append( $pulsatingDot, popup.$element );
+		.append( $pulsatingDot );
+	// Add the popup to the end of the document body.
+	$( 'body' ).append( popup.$element );
 }
 
 OO.inheritClass( OnboardingPopup, OO.ui.Widget );
@@ -60,6 +65,7 @@ OO.inheritClass( OnboardingPopup, OO.ui.Widget );
 OnboardingPopup.prototype.onPopupButtonClick = function () {
 	this.ocrTool.setShowOnboarding( false );
 	this.$element.remove();
+	this.popup.$element.remove();
 };
 
 module.exports = OnboardingPopup;
