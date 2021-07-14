@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\Wikisource\HookHandler;
 use Config;
 use EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
+use MediaWiki\MediaWikiServices;
 use MWException;
 use OutputPage;
 
@@ -46,6 +47,14 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		if ( !$this->toolUrl ) {
 			throw new MWException( 'Please set tool URL with $wgWikisourceOcrUrl' );
 		}
+		// Require the WikiEditor toolbar to be enabled.
+		$useBetaToolbar = MediaWikiServices::getInstance()
+			->getUserOptionsLookup()
+			->getOption( $out->getUser(), 'usebetatoolbar' );
+		if ( !$useBetaToolbar ) {
+			return;
+		}
+		// Add tool's URL to Content Security Policy.
 		$out->getCSP()->addDefaultSrc( $this->toolUrl );
 		// Add OCR modules.
 		$out->addModules( 'ext.wikisource.OCR' );

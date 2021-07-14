@@ -52,12 +52,10 @@ function OnboardingPopup( ocrTool ) {
 		}
 	} );
 
-	// Add the dot to this widget.
+	// Add the dot and popup to this widget.
 	this.$element = $( '<div>' )
 		.addClass( 'ext-wikisource-ocr-onboarding' )
-		.append( $pulsatingDot );
-	// Add the popup to the end of the document body.
-	$( 'body' ).append( popup.$element );
+		.append( $pulsatingDot, popup.$element );
 }
 
 OO.inheritClass( OnboardingPopup, OO.ui.Widget );

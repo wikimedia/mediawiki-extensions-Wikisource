@@ -5,10 +5,15 @@
 }
 
 .ext-wikisource-ExtractTextWidget {
-	position: absolute;
-	z-index: 1;
-	top: 12px;
-	right: 12px;
+	float: right;
+	// Keep enough margin to not obscure the right border of the toolbar.
+	margin-right: 1px;
+	z-index: 2;
+	border-left: 1px solid #eaecf0;
+
+	.oo-ui-buttonElement-button {
+		border: 0;
+	}
 }
 
 .ext-wikisource-ocr-config-panel {

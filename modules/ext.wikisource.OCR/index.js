@@ -5,7 +5,12 @@ var OcrTool = require( './OcrTool.js' ),
 	$wpTextbox1 = $( '#wpTextbox1' ),
 	extractTextWidget = new ExtractTextWidget( new OcrTool( toolUrl ), $prpImage, $wpTextbox1 );
 
-// Add the OCR button to the UI.
-if ( $prpImage.length > 0 ) {
-	$prpImage.after( extractTextWidget.$element );
+// Guard against the unlikely situation of there not being an image.
+if ( $prpImage.length === 0 ) {
+	return;
 }
+
+// Add the 'Extract text' button to the WikiEditor toolbar.
+$.when( mw.loader.using( 'ext.wikiEditor' ), $.ready ).then( function () {
+	$( '.wikiEditor-ui-toolbar .section-main' ).after( extractTextWidget.$element );
+} );

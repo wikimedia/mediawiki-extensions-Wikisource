@@ -98,6 +98,7 @@
 				"oojs-ui-widgets",
 				"oojs-ui-windows",
 				"oojs-ui.styles.icons-movement",
+				"oojs-ui.styles.indicators",
 				"oojs-ui.styles.icons-editing-core"
 			],
 			"styles": [

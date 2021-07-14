@@ -25,9 +25,10 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 	} );
 
 	var configButton = new OO.ui.PopupButtonWidget( {
-		icon: 'expand',
+		indicator: 'down',
 		title: mw.message( 'wikisource-ocr-settings-menu' ).text(),
 		invisibleLabel: true,
+		$overlay: OO.ui.getDefaultOverlay(),
 		popup: {
 			anchor: false,
 			$content: this.getConfigContent().$element,
@@ -60,7 +61,7 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 	} );
 
 	this.onboardingPopup = new OnboardingPopup( this.ocrTool );
-	extractButton.$element.append( this.onboardingPopup.$element );
+	this.$element.append( this.onboardingPopup.$element );
 }
 
 OO.inheritClass( ExtractTextWidget, OO.ui.ButtonGroupWidget );
