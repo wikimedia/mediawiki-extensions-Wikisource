@@ -4,7 +4,8 @@
 			"Alan Mena",
 			"Aleator",
 			"Mguix",
-			"Skurz0"
+			"Skurz0",
+			"Toniher"
 		]
 	},
 	"wikisource-desc": "Personalitzacions de MediaWiki específiques de Wikisource",
@@ -20,6 +21,6 @@
 	"wikisource-download-button": "Baixa",
 	"wikisource-download-chooser-title": "Triar un format",
 	"wikisource-download-chooser-epub-description": "per ordinadors, mòbils, tauletes",
-	"wikisource-ocr-extract-text": "Extreure text",
+	"wikisource-ocr-extract-text": "Transcriu el text",
 	"wikisource-ocr-error": "Error de l'eina d'OCR: $1"
 }
