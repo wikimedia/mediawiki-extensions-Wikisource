@@ -22,5 +22,9 @@
 	"wikisource-download-chooser-mobi-description": "par i Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
 	"wikisource-download-chooser-pdf-description": "par i schermi grandi e par la stanpa",
-	"wikisource-download-chooser-different-format": "Vuto n'antro formato?"
+	"wikisource-download-chooser-different-format": "Vuto n'antro formato?",
+	"wikisource-ocr-engine": "Sièli el to strumento preferìo per trascrìvar el testo",
+	"wikisource-ocr-advanced": "Opzion avansade",
+	"wikisource-ocr-onboarding-title": "Scrivi zò el testo da le imagini",
+	"wikisource-ocr-onboarding-text": "Tira fora un testo modificabile da un documento scanerixà, doparando el Reconosimento Òtego dei Caràteri (OCR)."
 }
