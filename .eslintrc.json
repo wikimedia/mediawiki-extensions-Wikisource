@@ -17,10 +17,13 @@
 		"ve": false
 	},
 	"rules": {
-		"jsdoc/no-undefined-types": [ "warn", {
-			"definedTypes": [
-				"OcrTool"
-			]
-		} ]
+		"jsdoc/no-undefined-types": [
+			"warn",
+			{
+				"definedTypes": [
+					"OcrTool"
+				]
+			}
+		]
 	}
 }
