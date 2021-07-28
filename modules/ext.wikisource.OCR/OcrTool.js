@@ -15,7 +15,8 @@ function OcrTool( toolUrl ) {
 		cancelling: 'cancelling',
 		textExtractStart: 'textExtractStart',
 		textExtracted: 'textExtracted',
-		textExtractEnd: 'textExtractEnd'
+		textExtractEnd: 'textExtractEnd',
+		undoing: 'undoing'
 	};
 
 	// Base URL of the tool.
@@ -30,11 +31,18 @@ function OcrTool( toolUrl ) {
 	this.hasBeenCancelled = false;
 	// Whether to show the onboarding pulsating dot and popup.
 	this.showOnboarding = true;
+	// The previous text in the edit box, to use when undoing. Must be set with setOldText().
+	this.oldText = null;
 
 	this.loadConfig();
 }
 
 OO.mixinClass( OcrTool, OO.EventEmitter );
+
+/**
+ * Time in milliseconds to hide or show loading and undo panel.
+ */
+OcrTool.static.normalSlideSpeed = 600;
 
 OcrTool.prototype.saveConfig = function () {
 	mwLocalStorage.set( 'wikisource-ocr', JSON.stringify( {
@@ -112,6 +120,15 @@ OcrTool.prototype.cancel = function () {
 	this.emit( this.events.cancelling );
 };
 
+OcrTool.prototype.undo = function () {
+	if ( this.oldText === null ) {
+		// The oldText should always have been set in ExtractTextWidget.processOcrResult(),
+		// even if it's to an empty string.
+		mw.log.error( 'OcrTool.undo() has been called without OcrTool.setOldText() being called first.' );
+	}
+	this.emit( this.events.undoing, this.oldText );
+};
+
 OcrTool.prototype.extractText = function () {
 	this.hasBeenCancelled = false;
 	this.emit( this.events.textExtractStart );
@@ -133,6 +150,13 @@ OcrTool.prototype.extractText = function () {
 			ocrTool.emit( ocrTool.events.textExtractEnd, jqXHR, textStatus );
 		}
 	} );
+};
+
+/**
+ * @param {string} oldText
+ */
+OcrTool.prototype.setOldText = function ( oldText ) {
+	this.oldText = oldText;
 };
 
 module.exports = OcrTool;

@@ -31,6 +31,8 @@
 	"wikisource-ocr-extract-text": "Displayed text of the OCR button.",
 	"wikisource-ocr-extract-progress": "Label shown in the loading widget, followed by {{msg-mw|wikisource-ocr-extract-cancel}}.",
 	"wikisource-ocr-extract-cancel": "Button text for the 'cancel' button shown in the loading widget.\n{{identical|Cancel}}",
+	"wikisource-ocr-extract-undo": "Button text for the 'undo' button shown in the undo widget.",
+	"wikisource-ocr-extract-close": "Tooltip text for 'X' button to close the undo widget.",
 	"wikisource-ocr-extract-text-title": "Tooltip text for the OCR button.",
 	"wikisource-ocr-error": "Error message.\n\n$1 is the message text.",
 	"wikisource-ocr-no-text": "Error message displayed when no text was retrieved but no actual error message was given (for example, the page is correctly blank).",
@@ -40,8 +42,6 @@
 	"wikisource-ocr-engine-google": "Radio button label for the Google engine.",
 	"wikisource-ocr-advanced": "Button text for a link to open a new tab for the advanced settings.",
 	"wikisource-ocr-advanced-title": "Tooltip text for the advanced settings form.",
-	"wikisource-ocr-overwrite-warning": "Warning message shown when trying to extract text but the edit area is not empty.",
-	"wikisource-ocr-overwrite-confirm": "Confirmation message shown together with {{msg-mw|wikisource-ocr-overwrite-warning}}",
 	"wikisource-ocr-onboarding-title": "Title for the onboarding popup.",
 	"wikisource-ocr-onboarding-text": "Text paragraph for the onboarding popup.",
 	"wikisource-ocr-onboarding-button": "Confirmation button label for the onboarding popup."

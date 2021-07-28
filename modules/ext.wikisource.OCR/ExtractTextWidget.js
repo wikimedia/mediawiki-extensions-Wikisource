@@ -1,4 +1,5 @@
 var LoadingWidget = require( './LoadingWidget.js' ),
+	UndoWidget = require( './UndoWidget.js' ),
 	OnboardingPopup = require( './OnboardingPopup.js' );
 
 /**
@@ -12,7 +13,6 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 	this.ocrTool = ocrTool;
 	this.ocrTool.setImage( $prpImage.find( 'img' )[ 0 ].src );
 	this.$textbox = $textbox;
-	this.initialText = $textbox.val();
 
 	var extractButton = new OO.ui.ButtonWidget( {
 		icon: 'ocr',
@@ -47,6 +47,7 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 	ExtractTextWidget.super.call( this, config );
 
 	this.loadingWidget = new LoadingWidget( this.ocrTool, this.$textbox );
+	this.undoWidget = new UndoWidget( this.ocrTool, this.$textbox );
 
 	// Enable and disable the extract button.
 	this.ocrTool.connect( extractButton, {
@@ -128,19 +129,7 @@ ExtractTextWidget.prototype.onClick = function () {
 	}
 
 	// Run OCR.
-	const curText = this.$textbox.val();
-	if ( curText !== '' && curText !== this.initialText ) {
-		var that = this;
-		OO.ui.confirm( mw.msg( 'wikisource-ocr-overwrite-warning' ), {
-			title: mw.msg( 'wikisource-ocr-overwrite-confirm' )
-		} ).done( function ( confirmed ) {
-			if ( confirmed ) {
-				that.ocrTool.extractText();
-			}
-		} );
-	} else {
-		this.ocrTool.extractText();
-	}
+	this.ocrTool.extractText();
 };
 
 /**
@@ -158,6 +147,7 @@ ExtractTextWidget.prototype.processOcrResult = function ( response ) {
 		mw.notify( mw.msg( 'wikisource-ocr-no-text' ) );
 		return;
 	}
+	this.ocrTool.setOldText( this.$textbox[ 0 ].value );
 	this.$textbox[ 0 ].value = response.text;
 };
 

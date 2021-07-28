@@ -6,7 +6,7 @@
  */
 function LoadingWidget( ocrTool, $textbox ) {
 	var config = {
-		classes: [ 'ext-wikisource-LoadingWidget' ],
+		classes: [ 'ext-wikisource-TextBoxWidget' ],
 		framed: true
 	};
 	LoadingWidget.super.call( this, config );
@@ -23,21 +23,20 @@ function LoadingWidget( ocrTool, $textbox ) {
 		label: mw.message( 'wikisource-ocr-extract-progress' ).text(),
 		input: cancelButton
 	} );
-	this.$element.append( $.createSpinner(), progressLabel.$element, cancelButton.$element );
+	this.$element.append( $.createSpinner().addClass( 'ext-wikisource-TextBoxWidget-icon' ), progressLabel.$element, cancelButton.$element );
 	// Start hidden.
 	this.$element.hide();
 
-	// Add the UI to the document.
+	// Add the UI to the document, above the textbox.
 	this.$textbox = $textbox;
-	this.$textbox.wrap( '<div class="ext-wikisource-LoadingWidget-wrapper"></div>' );
-	this.$textbox.after( this.$element );
+	this.$textbox.before( this.$element );
 
 	// Connect events.
 	this.ocrTool.connect( this, {
 		[ this.ocrTool.events.textExtractStart ]: 'show',
-		[ this.ocrTool.events.cancelling ]: 'hide',
-		[ this.ocrTool.events.textExtracted ]: 'hide',
-		[ this.ocrTool.events.textExtractEnd ]: 'hide'
+		[ this.ocrTool.events.cancelling ]: [ 'hide', this.ocrTool.normalSlideSpeed ],
+		[ this.ocrTool.events.textExtracted ]: [ 'hide', 0 ],
+		[ this.ocrTool.events.textExtractEnd ]: [ 'hide', this.ocrTool.normalSlideSpeed ]
 	} );
 	cancelButton.connect( cancelButton, {
 		click: function () {
@@ -46,7 +45,7 @@ function LoadingWidget( ocrTool, $textbox ) {
 	} );
 }
 
-OO.inheritClass( LoadingWidget, OO.ui.PanelLayout );
+OO.inheritClass( LoadingWidget, OO.ui.Widget );
 
 LoadingWidget.prototype.show = function () {
 	this.inProgress = true;
@@ -60,9 +59,9 @@ LoadingWidget.prototype.show = function () {
 	this.$textbox.attr( 'disabled', true );
 };
 
-LoadingWidget.prototype.hide = function () {
+LoadingWidget.prototype.hide = function ( speed ) {
 	this.inProgress = false;
-	this.$element.slideUp( 600 );
+	this.$element.slideUp( speed );
 	this.$textbox.attr( 'disabled', false );
 };
 

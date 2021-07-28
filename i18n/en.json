@@ -22,6 +22,8 @@
 	"wikisource-ocr-extract-text": "Transcribe text",
 	"wikisource-ocr-extract-progress": "Transcribing text from image…",
 	"wikisource-ocr-extract-cancel": "Cancel",
+	"wikisource-ocr-extract-undo": "Undo transcription",
+	"wikisource-ocr-extract-close": "Close this notice",
 	"wikisource-ocr-extract-text-title": "Get OCR text of this image",
 	"wikisource-ocr-error": "Error from the OCR tool: $1",
 	"wikisource-ocr-no-text": "No text was returned by the OCR tool.",
@@ -31,8 +33,6 @@
 	"wikisource-ocr-engine-google": "Google OCR",
 	"wikisource-ocr-advanced": "Advanced Options",
 	"wikisource-ocr-advanced-title": "Open the advanced options form in a new tab",
-	"wikisource-ocr-overwrite-warning": "You will lose the current page body text and it will be replaced with the newly transcribed text.",
-	"wikisource-ocr-overwrite-confirm": "Replace with new text transcription?",
 	"wikisource-ocr-onboarding-title": "Transcribe images into text",
 	"wikisource-ocr-onboarding-text": "Turn scanned documents into editable text, using Optical Character Recognition (OCR).",
 	"wikisource-ocr-onboarding-button": "Okay, got it"
