@@ -103,7 +103,7 @@
 			],
 			"styles": [
 				"ext.wikisource.OCR/ExtractTextWidget.less",
-				"ext.wikisource.OCR/LoadingWidget.less",
+				"ext.wikisource.OCR/TextBoxWidget.less",
 				"ext.wikisource.OCR/OnboardingPopup.less"
 			],
 			"packageFiles": [
@@ -111,13 +111,16 @@
 				"ext.wikisource.OCR/OcrTool.js",
 				"ext.wikisource.OCR/ExtractTextWidget.js",
 				"ext.wikisource.OCR/OnboardingPopup.js",
-				"ext.wikisource.OCR/LoadingWidget.js"
+				"ext.wikisource.OCR/LoadingWidget.js",
+				"ext.wikisource.OCR/UndoWidget.js"
 			],
 			"messages": [
 				"wikisource-ocr-extract-text",
 				"wikisource-ocr-extract-text-title",
 				"wikisource-ocr-extract-progress",
 				"wikisource-ocr-extract-cancel",
+				"wikisource-ocr-extract-undo",
+				"wikisource-ocr-extract-close",
 				"wikisource-ocr-error",
 				"wikisource-ocr-no-text",
 				"wikisource-ocr-settings-menu",
@@ -126,8 +129,6 @@
 				"wikisource-ocr-engine-google",
 				"wikisource-ocr-advanced",
 				"wikisource-ocr-advanced-title",
-				"wikisource-ocr-overwrite-warning",
-				"wikisource-ocr-overwrite-confirm",
 				"wikisource-ocr-onboarding-title",
 				"wikisource-ocr-onboarding-text",
 				"wikisource-ocr-onboarding-button"
