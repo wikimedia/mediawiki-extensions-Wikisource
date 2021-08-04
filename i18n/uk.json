@@ -34,8 +34,6 @@
 	"wikisource-ocr-engine": "Вибрати інструмент транскрибування тексту за замовчуванням",
 	"wikisource-ocr-advanced": "Розширені опції",
 	"wikisource-ocr-advanced-title": "Відкрити форму розширений опцій у новій вкладці",
-	"wikisource-ocr-overwrite-warning": "Ви втратите поточний текст тіла сторінки і його буде замінено на новотранскрибований текст.",
-	"wikisource-ocr-overwrite-confirm": "Замінити новотранскрибованим тектом?",
 	"wikisource-ocr-onboarding-title": "Транскрибувати зображення у текст",
 	"wikisource-ocr-onboarding-text": "Перетворіть відскановані документи на редаговний текст з допомогою оптичного розпізнавання символів (OCR).",
 	"wikisource-ocr-onboarding-button": "Гаразд, зрозуміло"

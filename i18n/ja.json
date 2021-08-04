@@ -34,8 +34,6 @@
 	"wikisource-ocr-engine": "既定の文章転記ツールの選択",
 	"wikisource-ocr-advanced": "詳細設定",
 	"wikisource-ocr-advanced-title": "新しいタブで詳細設定のフォームを開く",
-	"wikisource-ocr-overwrite-warning": "現在のページの文章は失われ、新たに転記された文章に置き換えられます。",
-	"wikisource-ocr-overwrite-confirm": "新たに転記された文章に置き換えますか？",
 	"wikisource-ocr-onboarding-title": "画像を文章に転記",
 	"wikisource-ocr-onboarding-text": "光学式文字認識(OCR)を使用して、スキャンされたドキュメントを編集可能なテキストに変換します。",
 	"wikisource-ocr-onboarding-button": "わかりました"

@@ -37,8 +37,6 @@
 	"wikisource-ocr-engine": "Sélectionner votre outil de transcription du texte par défaut",
 	"wikisource-ocr-advanced": "Options avancées",
 	"wikisource-ocr-advanced-title": "Ouvrir le formulaire des options avancées dans un nouvel onglet",
-	"wikisource-ocr-overwrite-warning": "Vous perdrez le texte du corps de la page actuelle et il sera remplacé par le texte nouvellement transcrit.",
-	"wikisource-ocr-overwrite-confirm": "Remplacer par la nouvelle transcription du texte ?",
 	"wikisource-ocr-onboarding-title": "Transcrire les images en texte",
 	"wikisource-ocr-onboarding-text": "Transformer les documents scannés en texte éditable, en utilisant la Reconnaissance Optique de Caractère (OCR)",
 	"wikisource-ocr-onboarding-button": "Ok, allons-y"

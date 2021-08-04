@@ -35,8 +35,6 @@
 	"wikisource-ocr-engine-google": "Google OCR",
 	"wikisource-ocr-advanced": "Tùy chọn nâng cao",
 	"wikisource-ocr-advanced-title": "Mở bảng tùy chọn nâng cao trong thẻ mới",
-	"wikisource-ocr-overwrite-warning": "Bạn sẽ mất nội dung văn bản tại trang này và được thay thế bằng văn bản mới được tách.",
-	"wikisource-ocr-overwrite-confirm": "Thay bằng văn bản mới?",
 	"wikisource-ocr-onboarding-title": "Chuyển hình ảnh thành văn bản",
 	"wikisource-ocr-onboarding-text": "Chuyển các tài liệu quét thành văn bản sửa đổi được bằng công nghệ Nhận dạng Ký tự Quang học (OCR).",
 	"wikisource-ocr-onboarding-button": "Đã hiểu"

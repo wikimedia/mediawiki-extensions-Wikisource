@@ -30,8 +30,6 @@
 	"wikisource-ocr-engine": "Vali teksti transkribeerimise vaiketööriist",
 	"wikisource-ocr-advanced": "Täpsemad suvandid",
 	"wikisource-ocr-advanced-title": "Ava täpsemad suvandid uuel kaardil",
-	"wikisource-ocr-overwrite-warning": "Lehekülje praegune kehatekst läheb kaotsi ja asendatakse uue transkribeeritud tekstiga.",
-	"wikisource-ocr-overwrite-confirm": "Kas asendad teksti uue transkriptsiooniga?",
 	"wikisource-ocr-onboarding-title": "Transkribeeri pilt tekstiks",
 	"wikisource-ocr-onboarding-text": "Muuda skannitud dokument redigeeritavaks tekstiks, kasutades optilist märgituvastust (OCR).",
 	"wikisource-ocr-onboarding-button": "Hästi, sain aru"
