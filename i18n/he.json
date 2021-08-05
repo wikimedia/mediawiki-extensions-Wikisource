@@ -23,6 +23,8 @@
 	"wikisource-ocr-extract-text": "העתקת טקסט",
 	"wikisource-ocr-extract-progress": "העתקת טקסט מתוך תמונה...",
 	"wikisource-ocr-extract-cancel": "ביטול",
+	"wikisource-ocr-extract-undo": "ביטול העתקת טקסט",
+	"wikisource-ocr-extract-close": "סגירת ההודעה הזאת",
 	"wikisource-ocr-extract-text-title": "קבלת הטקסט של התמונה הזאת באצעות זיהוי תווים אופטי",
 	"wikisource-ocr-error": "שגיאה מכלי זיהוי התווים האופטי: $1",
 	"wikisource-ocr-no-text": "לא הוחזר שום טקסט על־די כלי זיהוי התווים האופטי.",

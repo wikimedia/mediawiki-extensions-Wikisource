@@ -30,6 +30,8 @@
 	"wikisource-ocr-extract-text": "Transcrire le texte",
 	"wikisource-ocr-extract-progress": "Transcription du texte depuis l’image…",
 	"wikisource-ocr-extract-cancel": "Annuler",
+	"wikisource-ocr-extract-undo": "Annuler la transcription",
+	"wikisource-ocr-extract-close": "Clore cette note",
 	"wikisource-ocr-extract-text-title": "Obtenir le texte OCR de cette image",
 	"wikisource-ocr-error": "Erreur de l’outil d’OCR : $1",
 	"wikisource-ocr-no-text": "Aucun texte n’a été renvoyé par l’outil d’OCR.",
