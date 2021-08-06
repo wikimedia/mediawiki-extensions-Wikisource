@@ -23,6 +23,8 @@
 	"wikisource-ocr-extract-text": "Trascrive 'u teste",
 	"wikisource-ocr-extract-progress": "Stoche a trascrive 'u teste da l'immaggine...",
 	"wikisource-ocr-extract-cancel": "Annulle",
+	"wikisource-ocr-extract-undo": "Annulle 'a trascrizione",
+	"wikisource-ocr-extract-close": "Achiude sta notizie",
 	"wikisource-ocr-extract-text-title": "Pigghie 'u teste OCR da st'immaggine",
 	"wikisource-ocr-error": "Errore da 'u strumende de OCR: $1",
 	"wikisource-ocr-no-text": "Nisciune teste ha state turnate da 'u strumende de OCR.",

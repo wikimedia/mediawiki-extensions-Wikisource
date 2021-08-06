@@ -23,6 +23,8 @@
 	"wikisource-ocr-extract-text": "Trascriv el test",
 	"wikisource-ocr-extract-progress": "Tracrizzion del test de l'imagin  in cors...",
 	"wikisource-ocr-extract-cancel": "Anula",
+	"wikisource-ocr-extract-undo": "Anula la trascrizzion",
+	"wikisource-ocr-extract-close": "Sara su quell'avis chì",
 	"wikisource-ocr-extract-text-title": "Oten un test OCR de quell'imagin chì",
 	"wikisource-ocr-error": "Eror de l'istrument OCR: $1",
 	"wikisource-ocr-no-text": "L'istrument OCR no l'è stad bon de dad indree del test",

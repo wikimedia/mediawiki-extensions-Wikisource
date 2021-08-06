@@ -3,6 +3,7 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Hedda",
+			"Jelican9",
 			"Joseph",
 			"Melissadilara",
 			"Mim.saitkilic",
@@ -29,6 +30,8 @@
 	"wikisource-ocr-extract-text": "Metni metne dönüştür",
 	"wikisource-ocr-extract-progress": "Görüntüden metin kopyalanıyor…",
 	"wikisource-ocr-extract-cancel": "İptal",
+	"wikisource-ocr-extract-undo": "Çeviriyi geri al",
+	"wikisource-ocr-extract-close": "Bu bildirimi kapat",
 	"wikisource-ocr-extract-text-title": "Bu görüntünün OCR metnini al",
 	"wikisource-ocr-error": "OCR aracındaki hata: $1",
 	"wikisource-ocr-no-text": "OCR aracı tarafından hiçbir metin döndürülmedi.",
