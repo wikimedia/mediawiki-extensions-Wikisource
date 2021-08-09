@@ -27,6 +27,7 @@
 	"wikisource-ocr-extract-text": "পাঠ্য আহরণ করুন",
 	"wikisource-ocr-extract-progress": "চিত্র থেকে পাঠ্য আহরণ চলছে…",
 	"wikisource-ocr-extract-cancel": "বাতিল",
+	"wikisource-ocr-extract-close": "এই বিজ্ঞপ্তিটি বন্ধ করুন",
 	"wikisource-ocr-extract-text-title": "এই চিত্রের ওসিআর পাঠ্য পান",
 	"wikisource-ocr-error": "ওসিআর সরঞ্জামে ত্রুটি: $1",
 	"wikisource-ocr-no-text": "ওসিআর সরঞ্জাম ফলাফল হিসেবে কোনও পাঠ্য দেয়নি।",

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alistair3149",
+			"Impartial just",
 			"Kly",
 			"Neetp7k9"
 		]
@@ -22,5 +23,6 @@
 	"wikisource-download-chooser-mobi-description": "用於 Kindles",
 	"wikisource-download-chooser-pdf-description": "用於寬螢幕與列印",
 	"wikisource-download-chooser-different-format": "尋找不同格式？",
-	"wikisource-ocr-extract-text": "抽取文本"
+	"wikisource-ocr-extract-text": "抽取文本",
+	"wikisource-ocr-extract-close": "關閉公告"
 }
