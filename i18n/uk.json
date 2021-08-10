@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Arxivist",
+			"DDPAT",
 			"Ата"
 		]
 	},
@@ -27,11 +28,15 @@
 	"wikisource-ocr-extract-text": "Транскрибувати текст",
 	"wikisource-ocr-extract-progress": "Транскрибування тексту із зображення…",
 	"wikisource-ocr-extract-cancel": "Скасувати",
+	"wikisource-ocr-extract-undo": "Скасувати транскрипцію",
+	"wikisource-ocr-extract-close": "Закрити це повідомлення",
 	"wikisource-ocr-extract-text-title": "Отримайте OCR-текст цього зображення",
 	"wikisource-ocr-error": "Помилка додатку OCR: $1",
 	"wikisource-ocr-no-text": "Інструмент OCR не розпізнав жодного тексту.",
 	"wikisource-ocr-settings-menu": "Змінити налаштування OCR",
 	"wikisource-ocr-engine": "Вибрати інструмент транскрибування тексту за замовчуванням",
+	"wikisource-ocr-engine-tesseract": "Розпізнавання Tesseract",
+	"wikisource-ocr-engine-google": "OCR розпізнавання Google",
 	"wikisource-ocr-advanced": "Розширені опції",
 	"wikisource-ocr-advanced-title": "Відкрити форму розширений опцій у новій вкладці",
 	"wikisource-ocr-onboarding-title": "Транскрибувати зображення у текст",
