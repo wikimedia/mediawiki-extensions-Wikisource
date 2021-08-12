@@ -94,7 +94,7 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 	this.advancedLink = new OO.ui.ButtonWidget( {
 		label: mw.msg( 'wikisource-ocr-advanced' ),
 		title: mw.msg( 'wikisource-ocr-advanced-title' ),
-		href: this.ocrTool.getUrl( false ),
+		href: this.ocrTool.getUrl( null, false ),
 		icon: 'linkExternal',
 		classes: [ 'ext-wikisource-ocr-advanced-link' ],
 		target: '_base'
@@ -161,7 +161,7 @@ ExtractTextWidget.prototype.onEngineChoose = function ( item, selected ) {
 	if ( selected ) {
 		this.ocrTool.setEngine( item.data );
 		// Also update the advanced link's URL.
-		this.advancedLink.setHref( this.ocrTool.getUrl( false ) );
+		this.advancedLink.setHref( this.ocrTool.getUrl( null, false ) );
 	}
 };
 

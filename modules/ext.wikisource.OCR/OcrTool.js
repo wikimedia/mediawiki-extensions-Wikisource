@@ -98,7 +98,8 @@ OcrTool.prototype.setShowOnboarding = function ( showOnboarding ) {
 /**
  * Get the full URL to the OCR tool.
  *
- * @param {string} imageUrl URL of the image to transcribe.
+ * @param {string} imageUrl URL of the image to transcribe. Set to null to use
+ * the image set via this.setImage().
  * @param {boolean} api Whether to include the API endpoint.
  * @return {string} Full URL to the tool.
  */
@@ -108,7 +109,7 @@ OcrTool.prototype.getUrl = function ( imageUrl, api ) {
 	return this.toolUrl + endpoint +
 		'?engine=' + this.engine +
 		'&langs[]=' + this.langs.join( '&langs[]=' ) +
-		'&image=' + encodeURIComponent( imageUrl ) +
+		'&image=' + encodeURIComponent( imageUrl || this.image ) +
 		'&uselang=' + mw.config.get( 'wgUserLanguage' );
 };
 
@@ -143,7 +144,7 @@ OcrTool.prototype.extractText = function () {
 		ocrTool.emit( ocrTool.events.textExtracted, result );
 	};
 	$.ajax( {
-		url: ocrTool.getUrl( this.image, true ),
+		url: ocrTool.getUrl( null, true ),
 		dataType: 'json',
 		success: handleTextExtracted,
 		error: handleTextExtracted,
