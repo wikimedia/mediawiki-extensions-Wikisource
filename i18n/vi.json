@@ -26,6 +26,8 @@
 	"wikisource-ocr-extract-text": "Tách văn bản",
 	"wikisource-ocr-extract-progress": "Đang tách văn bản từ hình...",
 	"wikisource-ocr-extract-cancel": "Hủy",
+	"wikisource-ocr-extract-undo": "Lùi tách văn bản",
+	"wikisource-ocr-extract-close": "Đóng thông báo này",
 	"wikisource-ocr-extract-text-title": "Tách văn bản OCR từ hình này",
 	"wikisource-ocr-error": "Lỗi từ công cụ OCR: $1",
 	"wikisource-ocr-no-text": "Công cụ OCR không trả về văn bản nào.",
