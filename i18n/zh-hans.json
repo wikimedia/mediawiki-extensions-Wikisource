@@ -32,6 +32,8 @@
 	"wikisource-ocr-extract-text": "提取文本",
 	"wikisource-ocr-extract-progress": "正在从图片提取文本……",
 	"wikisource-ocr-extract-cancel": "取消",
+	"wikisource-ocr-extract-undo": "撤销翻译",
+	"wikisource-ocr-extract-close": "关闭这个通知",
 	"wikisource-ocr-extract-text-title": "获取此图像的OCR文本",
 	"wikisource-ocr-error": "OCR工具出错：$1",
 	"wikisource-ocr-no-text": "OCR工具未返回任何文本。",
