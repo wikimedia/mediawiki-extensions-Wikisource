@@ -21,10 +21,10 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 	} );
 	extractButton.$icon.addClass( 'ext-wikisource-icon-ocr' );
 	extractButton.connect( this, {
-		click: 'onClick'
+		click: 'onClickExtractButton'
 	} );
 
-	var configButton = new OO.ui.PopupButtonWidget( {
+	this.configButton = new OO.ui.PopupButtonWidget( {
 		indicator: 'down',
 		title: mw.message( 'wikisource-ocr-settings-menu' ).text(),
 		invisibleLabel: true,
@@ -38,10 +38,13 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 			hideWhenOutOfView: false
 		}
 	} );
+	// Replace the build in click handler with our own.
+	this.configButton.disconnect( this.configButton, { click: 'onAction' } );
+	this.configButton.connect( this, { click: 'onClickConfigButton' } );
 
 	var config = {
 		classes: [ 'ext-wikisource-ExtractTextWidget' ],
-		items: [ extractButton, configButton ]
+		items: [ extractButton, this.configButton ]
 	};
 
 	ExtractTextWidget.super.call( this, config );
@@ -114,18 +117,51 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 	return content;
 };
 
-ExtractTextWidget.prototype.onClick = function () {
+/**
+ * @private
+ * @param {Function} nextCloseAction
+ * @return {boolean} Whether to continue or not after calling this.
+ */
+ExtractTextWidget.prototype.handleOnboardingDisplay = function ( nextCloseAction ) {
 	// If the onboarding popup is available and not yet open, open it when
 	// clicking the button. The button will need to be clicked again in order to
 	// run the OCR (at which point the popup will close and be dismissed forever).
 	if ( this.ocrTool.getShowOnboarding() ) {
 		if ( this.onboardingPopup.popup.isVisible() ) {
-			// Simulate clicking "Okay, got it".
+			// If the onboarding popup is already shown, clicking on the config
+			// button hides it by simulating clicking "Okay, got it".
 			this.onboardingPopup.onPopupButtonClick();
+			return true;
 		} else {
+			// Open the onboarding popup and set the desired behaviour when clicking "Okay, got it."
+			this.onboardingPopup.setNextCloseAction( nextCloseAction );
 			this.onboardingPopup.popup.toggle( true );
-			return;
+			return false;
 		}
+	}
+	return true;
+};
+
+ExtractTextWidget.prototype.onClickConfigButton = function () {
+	var popup = this.configButton.popup;
+	var onboardingHandled = this.handleOnboardingDisplay( function () {
+		popup.toggle();
+	} );
+	if ( !onboardingHandled ) {
+		return;
+	}
+
+	// Replicate the behaviour from OO.ui.PopupButtonWidget.prototype.onAction
+	this.configButton.popup.toggle();
+};
+
+ExtractTextWidget.prototype.onClickExtractButton = function () {
+	var ocrTool = this.ocrTool;
+	var onboardingHandled = this.handleOnboardingDisplay( function () {
+		ocrTool.extractText();
+	} );
+	if ( !onboardingHandled ) {
+		return;
 	}
 
 	// Run OCR.

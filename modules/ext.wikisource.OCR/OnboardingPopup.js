@@ -60,7 +60,24 @@ function OnboardingPopup( ocrTool ) {
 
 OO.inheritClass( OnboardingPopup, OO.ui.Widget );
 
+/**
+ * @param {Function} callback
+ */
+OnboardingPopup.prototype.setNextCloseAction = function ( callback ) {
+	// Only register a next-action if the onboarding popup is not currently shown.
+	// For example, if someone clicks the options button, gets the onboarding popup,
+	// but then clicks the OCR button, we don't want to register another next-action.
+	if ( this.popup.isVisible() ) {
+		return;
+	}
+	this.nextCloseAction = callback;
+};
+
 OnboardingPopup.prototype.onPopupButtonClick = function () {
+	// First run any close-action that's been registered.
+	if ( this.nextCloseAction instanceof Function ) {
+		this.nextCloseAction.call();
+	}
 	this.ocrTool.setShowOnboarding( false );
 	this.$element.remove();
 	this.popup.$element.remove();
