@@ -12,7 +12,7 @@ use Wikibase\DataModel\Entity\EntityId;
 use Wikibase\DataModel\Entity\EntityIdValue;
 use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\ItemId;
-use Wikibase\DataModel\Entity\PropertyId;
+use Wikibase\DataModel\Entity\NumericPropertyId;
 use Wikibase\DataModel\Services\Lookup\EntityLookup;
 use Wikibase\DataModel\Services\Lookup\EntityLookupException;
 use Wikibase\DataModel\Snak\PropertyValueSnak;
@@ -34,12 +34,12 @@ class EditionLookup {
 	private $entityLookup;
 
 	/**
-	 * @var PropertyId
+	 * @var NumericPropertyId
 	 */
 	private $editionPropertyId;
 
 	/**
-	 * @var PropertyId
+	 * @var NumericPropertyId
 	 */
 	private $editionOfPropertyId;
 
@@ -61,20 +61,20 @@ class EditionLookup {
 		);
 	}
 
-	private static function getPropertyIdFromConfig( string $configParamName ): PropertyId {
-		return new PropertyId( RequestContext::getMain()->getConfig()->get( $configParamName ) );
+	private static function getPropertyIdFromConfig( string $configParamName ): NumericPropertyId {
+		return new NumericPropertyId( RequestContext::getMain()->getConfig()->get( $configParamName ) );
 	}
 
 	/**
 	 * @param EntityLookup $entityLookup
-	 * @param PropertyId $editionPropertyId
-	 * @param PropertyId $editionOfPropertyId
+	 * @param NumericPropertyId $editionPropertyId
+	 * @param NumericPropertyId $editionOfPropertyId
 	 * @param UsageAccumulator $usageAccumulator
 	 */
 	public function __construct(
 		EntityLookup $entityLookup,
-		PropertyId $editionPropertyId,
-		PropertyId $editionOfPropertyId,
+		NumericPropertyId $editionPropertyId,
+		NumericPropertyId $editionOfPropertyId,
 		UsageAccumulator $usageAccumulator
 	) {
 		$this->entityLookup = $entityLookup;
@@ -101,10 +101,10 @@ class EditionLookup {
 
 	/**
 	 * @param Item $item
-	 * @param PropertyId $propertyId
+	 * @param NumericPropertyId $propertyId
 	 * @return Item[]
 	 */
-	private function getItemValuesForItem( Item $item, PropertyId $propertyId ): array {
+	private function getItemValuesForItem( Item $item, NumericPropertyId $propertyId ): array {
 		$items = [];
 		foreach ( $this->getItemIdValuesForItem( $item, $propertyId ) as $itemId ) {
 			$item = $this->getEntity( $itemId );
@@ -117,10 +117,10 @@ class EditionLookup {
 
 	/**
 	 * @param Item $item
-	 * @param PropertyId $propertyId
+	 * @param NumericPropertyId $propertyId
 	 * @return ItemId[]
 	 */
-	private function getItemIdValuesForItem( Item $item, PropertyId $propertyId ): array {
+	private function getItemIdValuesForItem( Item $item, NumericPropertyId $propertyId ): array {
 		$this->usageAccumulator->addStatementUsage( $item->getId(), $propertyId );
 
 		$statements = $item->getStatements()->getByPropertyId( $propertyId );

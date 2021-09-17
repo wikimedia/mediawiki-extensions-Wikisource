@@ -7,7 +7,7 @@ use Wikibase\Client\Usage\UsageAccumulator;
 use Wikibase\DataModel\Entity\EntityIdValue;
 use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\ItemId;
-use Wikibase\DataModel\Entity\PropertyId;
+use Wikibase\DataModel\Entity\NumericPropertyId;
 use Wikibase\DataModel\Services\Lookup\InMemoryEntityLookup;
 use Wikibase\DataModel\SiteLink;
 use Wikibase\DataModel\Snak\PropertySomeValueSnak;
@@ -40,8 +40,8 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 			$entityLookup,
 			new EditionLookup(
 				$entityLookup,
-				new PropertyId( 'P747' ),
-				new PropertyId( 'P629' ),
+				new NumericPropertyId( 'P747' ),
+				new NumericPropertyId( 'P629' ),
 				$this->createMock( UsageAccumulator::class )
 			),
 			$this->createMock( UsageAccumulator::class )
@@ -94,10 +94,10 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 	public function q1() {
 		$item = new Item( new ItemId( 'Q1' ) );
 		$item->getStatements()->addNewStatement(
-			new PropertyValueSnak( new PropertyId( 'P629' ), new EntityIdValue( new ItemId( 'Q2' ) ) )
+			new PropertyValueSnak( new NumericPropertyId( 'P629' ), new EntityIdValue( new ItemId( 'Q2' ) ) )
 		);
 		$item->getStatements()->addNewStatement(
-			new PropertySomeValueSnak( new PropertyId( 'P629' ) )
+			new PropertySomeValueSnak( new NumericPropertyId( 'P629' ) )
 		);
 		return $item;
 	}
@@ -113,7 +113,7 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 		$item = new Item( new ItemId( 'Q3' ) );
 		$item->getStatements()->addNewStatement(
 			new PropertyValueSnak(
-				new PropertyId( 'P629' ),
+				new NumericPropertyId( 'P629' ),
 				new EntityIdValue( new ItemId( 'Q999' ) )
 			)
 		);
