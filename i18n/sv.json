@@ -20,7 +20,18 @@
 	"wikisource-download-chooser-epub-description": "till datorer, mobiler, laptoppar",
 	"wikisource-download-chooser-mobi-description": "till Kindle",
 	"wikisource-download-chooser-pdf-description": "till stora skärmar och utskrifter",
+	"wikisource-download-chooser-different-format": "Letar du efter ett annat format?",
+	"wikisource-ocr-extract-text": "Transkribera text",
+	"wikisource-ocr-extract-progress": "Transkriberar text från bild...",
 	"wikisource-ocr-extract-cancel": "Avbryt",
+	"wikisource-ocr-extract-undo": "Ångra transkribering",
+	"wikisource-ocr-extract-close": "Stäng detta meddelande",
+	"wikisource-ocr-extract-text-title": "Hämta OCR-texten för denna bild",
+	"wikisource-ocr-error": "Fel från OCR-verktyget: $1",
+	"wikisource-ocr-no-text": "Ingen text returnerades av OCR-verktyget.",
+	"wikisource-ocr-settings-menu": "Ändra OCR-inställningar",
+	"wikisource-ocr-engine": "Väj ditt standard-texttranskriberingsverktyg",
+	"wikisource-ocr-advanced": "Avancerade alternativ",
 	"wikisource-ocr-onboarding-title": "Transkribera bilder till text",
 	"wikisource-ocr-onboarding-button": "Okej, jag förstår"
 }
