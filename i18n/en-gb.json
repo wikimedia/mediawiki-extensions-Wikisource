@@ -5,15 +5,5 @@
 			"Samwilson"
 		]
 	},
-	"wikisource-desc": "Wikisource-specific MediaWiki customisations",
-	"wikisource-export-portlet": "Print/export",
-	"wikisource-download-epub": "Download EPUB",
-	"wikisource-download-epub-tooltip": "Download an EPUB version of this work",
-	"wikisource-download-mobi": "Download MOBI",
-	"wikisource-download-mobi-tooltip": "Download a MOBI version of this work",
-	"wikisource-download-pdf": "Download PDF",
-	"wikisource-download-pdf-tooltip": "Download a PDF version of this work",
-	"wikisource-download-choose": "Other formats",
-	"wikisource-download-choose-tooltip": "Open a form to choose other formats and fonts etc.",
-	"wikisource-download-button": "Download"
+	"wikisource-desc": "Wikisource-specific MediaWiki customisations"
 }
