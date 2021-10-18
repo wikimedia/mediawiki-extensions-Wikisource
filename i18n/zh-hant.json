@@ -7,7 +7,7 @@
 			"Neetp7k9"
 		]
 	},
-	"wikisource-desc": "維基文庫特定的 MediaWiki 自訂",
+	"wikisource-desc": "維基文庫特定的 MediaWiki 客製化",
 	"wikisource-export-portlet": "列印/匯出",
 	"wikisource-download-epub": "下載 EPUB",
 	"wikisource-download-epub-tooltip": "下載此作品的 EPUB 版本",
@@ -23,6 +23,19 @@
 	"wikisource-download-chooser-mobi-description": "用於 Kindles",
 	"wikisource-download-chooser-pdf-description": "用於寬螢幕與列印",
 	"wikisource-download-chooser-different-format": "尋找不同格式？",
-	"wikisource-ocr-extract-text": "抽取文本",
-	"wikisource-ocr-extract-close": "關閉公告"
+	"wikisource-ocr-extract-text": "轉譯文字",
+	"wikisource-ocr-extract-progress": "正在從圖片轉譯成文字…",
+	"wikisource-ocr-extract-cancel": "取消",
+	"wikisource-ocr-extract-undo": "撤銷轉譯",
+	"wikisource-ocr-extract-close": "關閉此通知",
+	"wikisource-ocr-extract-text-title": "取得此圖片的 OCR 文字",
+	"wikisource-ocr-error": "OCR 工具錯誤：$1",
+	"wikisource-ocr-no-text": "OCR 工具未回傳文字。",
+	"wikisource-ocr-settings-menu": "更改 OCR 設定",
+	"wikisource-ocr-engine": "選擇您的預設文字轉譯工具",
+	"wikisource-ocr-advanced": "進階選項",
+	"wikisource-ocr-advanced-title": "在新分頁開啟進階選項表單",
+	"wikisource-ocr-onboarding-title": "將圖片轉譯成文字",
+	"wikisource-ocr-onboarding-text": "使用光學字元辨識（OCR）來將掃描過的文件轉成可編輯的文字。",
+	"wikisource-ocr-onboarding-button": "好的，了解"
 }
