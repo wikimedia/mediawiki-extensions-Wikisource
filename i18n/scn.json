@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"wikisource-download-epub": "Scàrrica ePub",
+	"wikisource-download-mobi": "Scàrrica MOBI",
+	"wikisource-download-pdf": "Scàrrica PDF",
+	"wikisource-download-button": "Scàrrica",
+	"wikisource-ocr-extract-cancel": "Annulla",
+	"wikisource-ocr-onboarding-button": "Ok, caputu"
+}
