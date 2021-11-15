@@ -146,7 +146,7 @@
 			"value": "https://ws-export.wmcloud.org"
 		},
 		"WikisourceEnableOcr": {
-			"value": false
+			"value": true
 		},
 		"WikisourceOcrUrl": {
 			"value": "https://ocr.wmcloud.org/"
