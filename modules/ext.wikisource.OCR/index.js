@@ -11,6 +11,7 @@ if ( $prpImage.length === 0 ) {
 }
 
 // Add the 'Extract text' button to the WikiEditor toolbar.
-$.when( mw.loader.using( 'ext.wikiEditor' ), $.ready ).then( function () {
-	$( '.wikiEditor-ui-toolbar .section-main' ).after( extractTextWidget.$element );
+mw.hook( 'wikiEditor.toolbarReady' ).add( function () {
+	$( '.wikiEditor-ui-toolbar .section-main' )
+		.after( extractTextWidget.$element );
 } );
