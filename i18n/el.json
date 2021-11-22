@@ -7,5 +7,7 @@
 	"wikisource-download-epub": "Λήψη EPUB",
 	"wikisource-download-mobi": "Λήψη MOBI",
 	"wikisource-download-pdf": "Λήψη PDF",
-	"wikisource-download-button": "Λήψη"
+	"wikisource-download-button": "Λήψη",
+	"wikisource-ocr-error": "Σφάλμα από το εργαλείο OCR: $1",
+	"wikisource-ocr-advanced": "Σύνθετες Επιλογές"
 }
