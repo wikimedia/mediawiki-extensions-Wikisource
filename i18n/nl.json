@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"NthnH"
+			"NthnH",
+			"Romaine"
 		]
 	},
 	"wikisource-desc": "MediaWiki aanpassingen voor Wikisource",
 	"wikisource-download-epub": "Downloaden als EPUB",
 	"wikisource-download-epub-tooltip": "Download een EPUB versie van deze pagina",
+	"wikisource-ocr-extract-cancel": "Annuleren",
 	"wikisource-ocr-onboarding-button": "Oké, ik snap het"
 }
