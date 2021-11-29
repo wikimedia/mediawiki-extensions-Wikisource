@@ -8,6 +8,8 @@
 	"wikisource-download-mobi": "Λήψη MOBI",
 	"wikisource-download-pdf": "Λήψη PDF",
 	"wikisource-download-button": "Λήψη",
+	"wikisource-ocr-extract-undo": "Αναίρεση μεταγραφής",
 	"wikisource-ocr-error": "Σφάλμα από το εργαλείο OCR: $1",
+	"wikisource-ocr-engine": "Επιλέξτε προεπιλεγμένο εργαλείο μεταγραφής κειμένου",
 	"wikisource-ocr-advanced": "Σύνθετες Επιλογές"
 }
