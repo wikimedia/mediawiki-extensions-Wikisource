@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Salvemm el lombard"
+		]
+	},
+	"wikisource-desc": "Personalizzazzion de MediaWiki specifiche per Wikisource",
+	"wikisource-export-portlet": "Stampa/esporta",
+	"wikisource-download-epub": "Descarega EPUB",
+	"wikisource-download-epub-tooltip": "Descarega una version EPUB de quell lavorà chì",
+	"wikisource-download-mobi": "Descarega MOBI",
+	"wikisource-download-mobi-tooltip": "Descarega una version MOBI de quell lavorà chì",
+	"wikisource-download-pdf": "Descarega PDF",
+	"wikisource-download-pdf-tooltip": "Descarega un PDF de quell lavorà chì",
+	"wikisource-download-choose": "Alter formad",
+	"wikisource-download-choose-tooltip": "El derva un modol per scernì foeura di alter formad, carater de stampa, ecc.",
+	"wikisource-download-button": "Descarega",
+	"wikisource-download-chooser-title": "Cata foeura un formad",
+	"wikisource-download-chooser-epub-description": "per i compiuter, i telefonin e i tablet",
+	"wikisource-download-chooser-mobi-description": "per i kindol",
+	"wikisource-download-chooser-pdf-description": "per grandi schermi e stampa",
+	"wikisource-download-chooser-different-format": "Te veouret un formad diferent?"
+}

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Likibp"
+			"Likibp",
+			"Omotecho"
 		]
 	},
 	"wikisource-desc": "ウィキソース固有のMediaWikiカスタマイズ",
@@ -21,5 +22,6 @@
 	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "Kindle用",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "大画面、印刷用"
+	"wikisource-download-chooser-pdf-description": "大画面、印刷用",
+	"wikisource-download-chooser-different-format": "別のファイル形式を探していますか？"
 }

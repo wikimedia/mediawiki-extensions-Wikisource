@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Danny B.",
+			"Matěj Suchánek",
+			"Patrik L."
+		]
+	},
+	"wikisource-desc": "Modifikace MediaWiki určená pro Wikizdroje",
+	"wikisource-export-portlet": "Tisk/export",
+	"wikisource-download-epub": "Stáhnout jako EPUB",
+	"wikisource-download-epub-tooltip": "Stáhnout toto dílo ve formátu EPUB",
+	"wikisource-download-mobi": "Stáhnout jako MOBI",
+	"wikisource-download-mobi-tooltip": "Stáhnout toto dílo ve formátu MOBI",
+	"wikisource-download-pdf": "Stáhnout jako PDF",
+	"wikisource-download-pdf-tooltip": "Stáhnout toto dílo ve formátu PDF",
+	"wikisource-download-choose": "Jiné formáty",
+	"wikisource-download-choose-tooltip": "Otevřít formulář pro další formáty, fonty atd.",
+	"wikisource-download-button": "Stáhnout",
+	"wikisource-download-chooser-title": "Vyberte si formát",
+	"wikisource-download-chooser-epub-description": "pro počítače, mobily a tablety",
+	"wikisource-download-chooser-mobi-description": "pro Kindle",
+	"wikisource-download-chooser-pdf-description": "pro velké obrazovky a tisk",
+	"wikisource-download-chooser-different-format": "Hledáte jiný formát?"
+}

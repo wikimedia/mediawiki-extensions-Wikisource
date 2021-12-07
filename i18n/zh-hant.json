@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Alistair3149",
-			"Kly"
+			"Kly",
+			"Impartial just",
+			"Neetp7k9"
 		]
 	},
-	"wikisource-desc": "維基文庫特定的 MediaWiki 自訂",
+	"wikisource-desc": "維基文庫特定的 MediaWiki 客製化",
 	"wikisource-export-portlet": "列印/匯出",
 	"wikisource-download-epub": "下載 EPUB",
 	"wikisource-download-epub-tooltip": "下載此作品的 EPUB 版本",
