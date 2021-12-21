@@ -21,6 +21,22 @@
 	"wikisource-download-button": "Baixa",
 	"wikisource-download-chooser-title": "Triar un format",
 	"wikisource-download-chooser-epub-description": "per ordinadors, mòbils, tauletes",
+	"wikisource-download-chooser-mobi-description": "per a Kindles",
+	"wikisource-download-chooser-pdf-description": "per impressió i pantalles grans",
+	"wikisource-download-chooser-different-format": "Buscant un format diferent?",
 	"wikisource-ocr-extract-text": "Transcriu el text",
-	"wikisource-ocr-error": "Error de l'eina d'OCR: $1"
+	"wikisource-ocr-extract-progress": "Transcrivint text de la imatge…",
+	"wikisource-ocr-extract-cancel": "Cancel·la",
+	"wikisource-ocr-extract-undo": "Desfà transcripció",
+	"wikisource-ocr-extract-close": "Tanca aquest avís",
+	"wikisource-ocr-extract-text-title": "Aconsegueix text d'OCR d'aquesta imatge",
+	"wikisource-ocr-error": "Error de l'eina d'OCR: $1",
+	"wikisource-ocr-no-text": "L'eina d'OCR no ha retornat cap text.",
+	"wikisource-ocr-settings-menu": "Canvia configuració d'OCR",
+	"wikisource-ocr-engine": "Selecciona la teva eina de transcripció de text predeterminada",
+	"wikisource-ocr-advanced": "Opcions avançades",
+	"wikisource-ocr-advanced-title": "Obre el formulari d'opcions avançades en una nova pestanya",
+	"wikisource-ocr-onboarding-title": "Transcriure imatges a text",
+	"wikisource-ocr-onboarding-text": "Torni els documents escannejats en text editable utilitzant el reconeixement òptic de caràcters (OCR).",
+	"wikisource-ocr-onboarding-button": "D'acord"
 }
