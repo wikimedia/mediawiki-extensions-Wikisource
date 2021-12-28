@@ -3,7 +3,9 @@
 		"authors": [
 			"Aleator",
 			"Fitoschido",
-			"Rodney Araujo"
+			"Rodney Araujo",
+			"Agent",
+			"Jackiezelaya"
 		]
 	},
 	"wikisource-desc": "Personalizaciones de MediaWiki específicas de Wikisource",
@@ -20,5 +22,6 @@
 	"wikisource-download-chooser-title": "Elige un formato",
 	"wikisource-download-chooser-epub-description": "para computadores, teléfonos móviles, tablets",
 	"wikisource-download-chooser-mobi-description": "para Kindles",
-	"wikisource-download-chooser-pdf-description": "para pantallas grandes e impresión"
+	"wikisource-download-chooser-pdf-description": "para pantallas grandes e impresión",
+	"wikisource-download-chooser-different-format": "¿Buscando un formato diferente?"
 }

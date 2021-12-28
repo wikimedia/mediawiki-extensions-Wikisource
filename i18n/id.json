@@ -6,9 +6,19 @@
 		]
 	},
 	"wikisource-desc": "Kustomisasi MediaWiki khusus untuk Wikisource",
+	"wikisource-export-portlet": "Cetak/ekspor",
 	"wikisource-download-epub": "Unduh EPUB",
+	"wikisource-download-epub-tooltip": "Unduh versi EPUB dari karya ini",
 	"wikisource-download-mobi": "Unduh MOBI",
+	"wikisource-download-mobi-tooltip": "Unduh versi MOBI dari karya ini",
 	"wikisource-download-pdf": "Unduh PDF",
+	"wikisource-download-pdf-tooltip": "Unduh versi PDF dari karya ini",
 	"wikisource-download-choose": "Format lainnya",
-	"wikisource-download-button": "Unduh"
+	"wikisource-download-choose-tooltip": "Buka formulir untuk memilih format lain, fon, dan sebagainya.",
+	"wikisource-download-button": "Unduh",
+	"wikisource-download-chooser-title": "Pilih format",
+	"wikisource-download-chooser-epub-description": "untuk komputer, ''mobile'', tablet",
+	"wikisource-download-chooser-mobi-description": "untuk Kindle",
+	"wikisource-download-chooser-pdf-description": "untuk layar lebar dan pencetakan",
+	"wikisource-download-chooser-different-format": "Mencari format lain?"
 }
