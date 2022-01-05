@@ -23,6 +23,8 @@
 	"wikisource-ocr-extract-text": "Transkribeeri tekst",
 	"wikisource-ocr-extract-progress": "Teksti transkribeerimine pildilt…",
 	"wikisource-ocr-extract-cancel": "Loobu",
+	"wikisource-ocr-extract-undo": "Võta transkribeerimine tagasi",
+	"wikisource-ocr-extract-close": "Sule see teade",
 	"wikisource-ocr-extract-text-title": "Hangi selle pildi OCR-tekst",
 	"wikisource-ocr-error": "Tõrge OCR-tööriistas: $1",
 	"wikisource-ocr-no-text": "OCR-tööriist ei tagastanud teksti.",

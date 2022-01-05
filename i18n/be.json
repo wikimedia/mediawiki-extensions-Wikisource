@@ -1,10 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Chadyka"
 		]
 	},
 	"wikisource-export-portlet": "Друк/экспарт",
 	"wikisource-download-epub": "Скачать EPUB",
-	"wikisource-download-choose": "Іншыя фарматы"
+	"wikisource-download-epub-tooltip": "Загрузіць EPUB-версію гэтага твора",
+	"wikisource-download-mobi": "Загрузіць MOBI",
+	"wikisource-download-mobi-tooltip": "Загрузіць MOBI-версію гэтага твора",
+	"wikisource-download-pdf": "Загрузіць PDF",
+	"wikisource-download-pdf-tooltip": "Загрузіць PDF-версію гэтага твора",
+	"wikisource-download-choose": "Іншыя фарматы",
+	"wikisource-download-choose-tooltip": "Адкрыць форму, каб выбраць іншыя фарматы і шрыфты і г.д.",
+	"wikisource-download-button": "Загрузіць",
+	"wikisource-download-chooser-title": "Выбраць фармат",
+	"wikisource-download-chooser-epub-description": "для камп'ютараў, мабільных тэлефонаў, планшэтаў",
+	"wikisource-download-chooser-mobi-description": "для Kindle",
+	"wikisource-download-chooser-pdf-description": "для вялікіх экранаў і друку",
+	"wikisource-download-chooser-different-format": "Шукаеце іншы фармат?",
+	"wikisource-ocr-extract-text": "Аблічбаваць тэкст",
+	"wikisource-ocr-extract-progress": "Аблічбоўка тэксту з выявы...",
+	"wikisource-ocr-extract-cancel": "Адмена",
+	"wikisource-ocr-extract-undo": "Адмена аблічбоўкі",
+	"wikisource-ocr-extract-close": "Закрыць гэтае апавяшчэнне",
+	"wikisource-ocr-extract-text-title": "Атрымаць OCR-тэкст гэтай выявы",
+	"wikisource-ocr-error": "Памылка інструменту OCR: $1",
+	"wikisource-ocr-no-text": "Інструмент OCR не вярнуў ніякага тэксту.",
+	"wikisource-ocr-settings-menu": "Змяніць налады OCR",
+	"wikisource-ocr-engine": "Выбраць прадвызначаны інструмент аблічбоўкі тэксту",
+	"wikisource-ocr-advanced": "Пашыраныя налады",
+	"wikisource-ocr-advanced-title": "Адкрыць форму пашыраных наладаў у новай укладцы",
+	"wikisource-ocr-onboarding-title": "Аблічбаваць выявы ў тэкст",
+	"wikisource-ocr-onboarding-text": "Ператварыце адсканаваныя дакументы ў тэкст, які можна рэдагаваць, з дапамогай аптычнага распазнавання сімвалаў (OCR).",
+	"wikisource-ocr-onboarding-button": "Так, зразумела"
 }
