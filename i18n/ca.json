@@ -27,7 +27,7 @@
 	"wikisource-ocr-extract-text": "Transcriu el text",
 	"wikisource-ocr-extract-progress": "Transcrivint text de la imatge…",
 	"wikisource-ocr-extract-cancel": "Cancel·la",
-	"wikisource-ocr-extract-undo": "Desfà transcripció",
+	"wikisource-ocr-extract-undo": "Desfés transcripció",
 	"wikisource-ocr-extract-close": "Tanca aquest avís",
 	"wikisource-ocr-extract-text-title": "Aconsegueix text d'OCR d'aquesta imatge",
 	"wikisource-ocr-error": "Error de l'eina d'OCR: $1",
