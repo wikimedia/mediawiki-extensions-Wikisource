@@ -1,10 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Chadyka"
 		]
 	},
+	"wikisource-desc": "Налады MediaWiki для Вікікрыніцаў",
 	"wikisource-export-portlet": "Друк/экспарт",
 	"wikisource-download-epub": "Скачать EPUB",
-	"wikisource-download-choose": "Іншыя фарматы"
+	"wikisource-download-epub-tooltip": "Загрузіць EPUB-версію гэтага твора",
+	"wikisource-download-mobi": "Загрузіць MOBI",
+	"wikisource-download-mobi-tooltip": "Загрузіць MOBI-версію гэтага твора",
+	"wikisource-download-pdf": "Загрузіць PDF",
+	"wikisource-download-pdf-tooltip": "Загрузіць PDF-версію гэтага твора",
+	"wikisource-download-choose": "Іншыя фарматы",
+	"wikisource-download-choose-tooltip": "Адкрыць форму, каб выбраць іншыя фарматы і шрыфты і г.д.",
+	"wikisource-download-button": "Загрузіць",
+	"wikisource-download-chooser-title": "Выбраць фармат",
+	"wikisource-download-chooser-epub-description": "для камп'ютараў, мабільных тэлефонаў, планшэтаў",
+	"wikisource-download-chooser-mobi-description": "для Kindle",
+	"wikisource-download-chooser-pdf-description": "для вялікіх экранаў і друку",
+	"wikisource-download-chooser-different-format": "Шукаеце іншы фармат?"
 }

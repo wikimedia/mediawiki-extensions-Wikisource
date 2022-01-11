@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"VIGNERON",
-			"Gwendal"
+			"Gwendal",
+			"Y-M D"
 		]
 	},
 	"wikisource-desc": "Personeladurioù Mediawiki arbennik evit Wikimammenn",
@@ -15,5 +16,7 @@
 	"wikisource-download-pdf-tooltip": "Pellgargañ ur stumm PDF an oberenn-mañ",
 	"wikisource-download-choose": "Furmadoù all",
 	"wikisource-download-choose-tooltip": "Digeriñ ur furm evit dibab furmadoù ha fontoù all h.a",
-	"wikisource-download-button": "Pellgargañ"
+	"wikisource-download-button": "Pellgargañ",
+	"wikisource-download-chooser-title": "Dibab ur mentrezh",
+	"wikisource-download-chooser-epub-description": "evit urzhiataeroù, poellgomzerioù, tablezennoù"
 }
