@@ -27,6 +27,8 @@
 	"wikisource-ocr-extract-text": "文章の転記",
 	"wikisource-ocr-extract-progress": "画像から文章を転記中...",
 	"wikisource-ocr-extract-cancel": "中止",
+	"wikisource-ocr-extract-undo": "転記を元に戻す",
+	"wikisource-ocr-extract-close": "この通知を閉じます",
 	"wikisource-ocr-extract-text-title": "この画像のOCRテキストを取得する",
 	"wikisource-ocr-error": "OCRツールのエラー: $1",
 	"wikisource-ocr-no-text": "OCRツールで返されたテキストはありませんでした。",

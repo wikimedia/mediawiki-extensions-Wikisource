@@ -20,5 +20,20 @@
 	"wikisource-download-chooser-epub-description": "untuk komputer, ''mobile'', tablet",
 	"wikisource-download-chooser-mobi-description": "untuk Kindle",
 	"wikisource-download-chooser-pdf-description": "untuk layar lebar dan pencetakan",
-	"wikisource-download-chooser-different-format": "Mencari format lain?"
+	"wikisource-download-chooser-different-format": "Mencari format lain?",
+	"wikisource-ocr-extract-text": "Transkripkan teks",
+	"wikisource-ocr-extract-progress": "Mentranskripkan teks dari gambar…",
+	"wikisource-ocr-extract-cancel": "Batal",
+	"wikisource-ocr-extract-undo": "Balikkan transkripsi",
+	"wikisource-ocr-extract-close": "Tutup pemberitahuan ini",
+	"wikisource-ocr-extract-text-title": "Dapatkan teks OCR dari gambar ini",
+	"wikisource-ocr-error": "Galat dari alat OCR: $1",
+	"wikisource-ocr-no-text": "Tidak ada teks yang dihasilkan oleh alat OCR.",
+	"wikisource-ocr-settings-menu": "Ubah pengaturan OCR",
+	"wikisource-ocr-engine": "Pilih peralatan transkripsi teks baku Anda",
+	"wikisource-ocr-advanced": "Opsi Lanjutan",
+	"wikisource-ocr-advanced-title": "Buka formulir opsi lanjutan di tab baru",
+	"wikisource-ocr-onboarding-title": "Transkripkan gambar menjadi teks",
+	"wikisource-ocr-onboarding-text": "Mengubah dokumen yang dipindai menjadi teks yang bisa disunting, menggunakan Pengenalan Karakter Optis (OCR).",
+	"wikisource-ocr-onboarding-button": "Oke, saya paham"
 }
