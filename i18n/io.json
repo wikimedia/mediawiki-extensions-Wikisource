@@ -5,6 +5,9 @@
 		]
 	},
 	"wikisource-export-portlet": "Imprimar/exportacar",
+	"wikisource-download-epub": "Descharjez EPUB",
+	"wikisource-download-pdf": "Descharjez PDF",
+	"wikisource-download-pdf-tooltip": "Descharjez PDF-versiono di ca artiklo",
 	"wikisource-ocr-onboarding-title": "Transskribez imaji per texti",
 	"wikisource-ocr-onboarding-button": "O.K., me komprenis"
 }
