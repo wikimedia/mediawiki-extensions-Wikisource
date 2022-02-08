@@ -4,5 +4,8 @@
 			"Joao Xavier"
 		]
 	},
-	"wikisource-export-portlet": "Imprimar/exportacar"
+	"wikisource-export-portlet": "Imprimar/exportacar",
+	"wikisource-download-epub": "Descharjez EPUB",
+	"wikisource-download-pdf": "Descharjez PDF",
+	"wikisource-download-pdf-tooltip": "Descharjez PDF-versiono di ca artiklo"
 }
