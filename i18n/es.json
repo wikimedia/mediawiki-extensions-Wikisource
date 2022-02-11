@@ -32,11 +32,5 @@
 	"wikisource-ocr-extract-text-title": "Consigue texto OCR de esta imagen",
 	"wikisource-ocr-error": "Error de la herramienta de OCR: $1",
 	"wikisource-ocr-no-text": "La herramienta OCR no devolvió ningún texto.",
-	"wikisource-ocr-settings-menu": "Cambio OCR encuadres",
-	"wikisource-ocr-engine": "Seleccione su herramienta de transcripción de texto predeterminada",
-	"wikisource-ocr-advanced": "Opciones avanzadas",
-	"wikisource-ocr-advanced-title": "Abra el formulario de opciones avanzadas en una nueva pestaña",
-	"wikisource-ocr-onboarding-title": "Transcribir imágenes en texto",
-	"wikisource-ocr-onboarding-text": "Convierta los documentos escaneados en texto editable, utilizando el reconocimiento óptico de caracteres (OCR).",
-	"wikisource-ocr-onboarding-button": "Entendido."
+	"wikisource-ocr-engine": "Seleccione su herramienta de transcripción de texto predeterminada"
 }
