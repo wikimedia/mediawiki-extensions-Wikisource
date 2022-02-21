@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"Seudo",
 			"Thibaut120094",
 			"VIGNERON",
 			"Verdy p",
@@ -13,7 +14,7 @@
 	"wikisource-download-epub": "Télécharger en EPUB",
 	"wikisource-download-epub-tooltip": "Télécharger une version EPUB de cette œuvre",
 	"wikisource-download-mobi": "Télécharger en MOBI",
-	"wikisource-download-mobi-tooltip": "Télécharger une version MOBI de ce livre",
+	"wikisource-download-mobi-tooltip": "Télécharger une version MOBI de cette œuvre.",
 	"wikisource-download-pdf": "Télécharger en PDF",
 	"wikisource-download-pdf-tooltip": "Télécharger une version PDF de cette œuvre.",
 	"wikisource-download-choose": "Autres formats",
