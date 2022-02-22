@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kotwys"
+		]
+	},
+	"wikisource-export-portlet": "Печать/поттон",
+	"wikisource-download-epub": "EPUB-ен кысконо",
+	"wikisource-download-epub-tooltip": "Та ужлэсь EPUB версизэ кысконо",
+	"wikisource-download-mobi": "MOBI-ен кысконо",
+	"wikisource-download-mobi-tooltip": "Та ужлэсь MOBI версизэ кысконо",
+	"wikisource-download-pdf": "PDF-ен кысконо",
+	"wikisource-download-pdf-tooltip": "Та ужлэсь PDF версизэ кысконо",
+	"wikisource-download-choose": "Мукет форматъёс",
+	"wikisource-download-button": "Кысконо"
+}
