@@ -4,9 +4,9 @@ namespace MediaWiki\Extension\Wikisource\HookHandler;
 
 use Config;
 use ExtensionRegistry;
-use GadgetRepo;
 use IContextSource;
 use Language;
+use MediaWiki\Extension\Gadgets\GadgetRepo;
 use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
 use Skin;
