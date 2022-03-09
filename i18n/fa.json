@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Beginneruser",
 			"Jeeputer"
 		]
 	},
 	"wikisource-ocr-extract-text": "رونویسی متن",
-	"wikisource-ocr-extract-close": "بستن این اعلان"
+	"wikisource-ocr-extract-close": "بستن این اعلان",
+	"wikisource-ocr-onboarding-button": "باشه، فهمیدم"
 }
