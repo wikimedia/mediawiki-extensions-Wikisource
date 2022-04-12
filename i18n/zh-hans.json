@@ -5,6 +5,7 @@
 			"GuoPC",
 			"Hello903hello",
 			"Shizhao",
+			"Stang",
 			"Yfdyh000",
 			"Zhang8569",
 			"沈澄心"
@@ -42,6 +43,6 @@
 	"wikisource-ocr-advanced": "高级选项",
 	"wikisource-ocr-advanced-title": "在新标签页中打开高级选项表单",
 	"wikisource-ocr-onboarding-title": "将图片转译成文字",
-	"wikisource-ocr-onboarding-text": "将被扫描的文档转换为可编辑的文字，使用光学字符辨识（OCR）。",
+	"wikisource-ocr-onboarding-text": "使用光学字符识别（OCR）将扫描文档转换为可编辑的文字。",
 	"wikisource-ocr-onboarding-button": "好的，明白了"
 }
