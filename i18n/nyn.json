@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kakonjo"
+		]
+	},
+	"wikisource-desc": "WikiOburugo-yenyini MediaWiki customizations",
+	"wikisource-export-portlet": "Shohoza",
+	"wikisource-download-epub": "Yihayo EPUB",
+	"wikisource-download-epub-tooltip": "Yihayo ekyika kya EPUB ekya omurimo ogu",
+	"wikisource-download-mobi": "Yihayo MOBI",
+	"wikisource-download-mobi-tooltip": "Yihayo ekyika kya MOBI ekya omurimo ogu",
+	"wikisource-download-pdf": "Yihayo PDF",
+	"wikisource-download-pdf-tooltip": "Yihayo ekyika kya PDF ekya omurimo ogu",
+	"wikisource-download-choose": "Ezindi Enkora",
+	"wikisource-download-choose-tooltip": "Yigura form KU torana Ezindi enkora nana font zaazo etc.",
+	"wikisource-download-button": "Yihayo",
+	"wikisource-download-chooser-title": "Torana enkora",
+	"wikisource-download-chooser-epub-description": "Eya za computa, Esiimu, tabletis",
+	"wikisource-download-chooser-mobi-description": "Eya kindle",
+	"wikisource-download-chooser-pdf-description": "Eya sikurini empango na okushohoza",
+	"wikisource-download-chooser-different-format": "Nooronda enkora endiijo?"
+}
