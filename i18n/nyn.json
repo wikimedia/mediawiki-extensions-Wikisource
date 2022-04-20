@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kakonjo"
+		]
+	},
+	"wikisource-desc": "WikiOburugo-yenyini MediaWiki customizations",
+	"wikisource-export-portlet": "Shohoza",
+	"wikisource-download-epub": "Yihayo EPUB",
+	"wikisource-download-epub-tooltip": "Yihayo ekyika kya EPUB ekya omurimo ogu",
+	"wikisource-download-mobi": "Yihayo MOBI",
+	"wikisource-download-mobi-tooltip": "Yihayo ekyika kya MOBI ekya omurimo ogu",
+	"wikisource-download-pdf": "Yihayo PDF",
+	"wikisource-download-pdf-tooltip": "Yihayo ekyika kya PDF ekya omurimo ogu",
+	"wikisource-download-choose": "Ezindi Enkora",
+	"wikisource-download-choose-tooltip": "Yigura form KU torana Ezindi enkora nana font zaazo etc.",
+	"wikisource-download-button": "Yihayo",
+	"wikisource-download-chooser-title": "Torana enkora",
+	"wikisource-download-chooser-epub-description": "Eya za computa, Esiimu, tabletis",
+	"wikisource-download-chooser-mobi-description": "Eya kindle",
+	"wikisource-download-chooser-pdf-description": "Eya sikurini empango na okushohoza",
+	"wikisource-download-chooser-different-format": "Nooronda enkora endiijo?",
+	"wikisource-ocr-extract-text": "Shoborora ekyigambo",
+	"wikisource-ocr-extract-progress": "Shoborora ekyigambo kuruga omu kishushani",
+	"wikisource-ocr-extract-cancel": "Shazamu",
+	"wikisource-ocr-extract-undo": "Shazamu okushoborora",
+	"wikisource-ocr-extract-close": "Kyiinga egi notice",
+	"wikisource-ocr-extract-text-title": "Tunga ekyigambo Kya OCR ekya ekishushani ekyi",
+	"wikisource-ocr-error": "Enshobi kuruga omu OCR tool:$1",
+	"wikisource-ocr-no-text": "Tihariho Ebigambo ebyagarurwa OCR tool.",
+	"wikisource-ocr-settings-menu": "Hindura Setingi za OCR",
+	"wikisource-ocr-engine": "Toraana enshoborora ey'entandikirwaho",
+	"wikisource-ocr-advanced": "Ebindi Ebirikukiraho",
+	"wikisource-ocr-advanced-title": "Yigura form ya ebindi ebikukyiraho omu tab ensya",
+	"wikisource-ocr-onboarding-title": "Shoborora ebishushani omu Ebigambo",
+	"wikisource-ocr-onboarding-text": "Hindura ebihandiiko ebi scaningire obite omu bigambo ebikubasa kuhindurwa, kwejunisa Optical Character Recognition (OCR).",
+	"wikisource-ocr-onboarding-button": "Kale, nakyitunga"
+}
