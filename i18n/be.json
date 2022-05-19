@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Chadyka",
-			"Kareyac"
+			"Kareyac",
+			"No Sleep till Krupki"
 		]
 	},
 	"wikisource-desc": "Налады MediaWiki для Вікікрыніцаў",
 	"wikisource-export-portlet": "Друк/экспарт",
-	"wikisource-download-epub": "Скачать EPUB",
+	"wikisource-download-epub": "Спампаваць EPUB",
 	"wikisource-download-epub-tooltip": "Загрузіць EPUB-версію гэтага твора",
 	"wikisource-download-mobi": "Загрузіць MOBI",
 	"wikisource-download-mobi-tooltip": "Загрузіць MOBI-версію гэтага твора",
