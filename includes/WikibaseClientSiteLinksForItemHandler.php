@@ -5,9 +5,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extension\Wikisource;
 
 use Wikibase\Client\Usage\UsageAccumulator;
-use Wikibase\Client\WikibaseClient;
 use Wikibase\DataModel\Entity\Item;
-use Wikibase\DataModel\Services\Lookup\EntityLookup;
 use Wikibase\DataModel\SiteLink;
 
 /**
@@ -18,11 +16,6 @@ use Wikibase\DataModel\SiteLink;
  * @author  Thomas Pellissier Tanon
  */
 class WikibaseClientSiteLinksForItemHandler {
-
-	/**
-	 * @var EntityLookup
-	 */
-	private $entityLookup;
 
 	/**
 	 * @var EditionLookup
@@ -42,23 +35,19 @@ class WikibaseClientSiteLinksForItemHandler {
 		UsageAccumulator $usageAccumulator
 	) {
 		return new self(
-			WikibaseClient::getEntityLookup(),
 			EditionLookup::newFromGlobalState( $usageAccumulator ),
 			$usageAccumulator
 		);
 	}
 
 	/**
-	 * @param EntityLookup $entityLookup
 	 * @param EditionLookup $editionLookup
 	 * @param UsageAccumulator $usageAccumulator
 	 */
 	public function __construct(
-		EntityLookup $entityLookup,
 		EditionLookup $editionLookup,
 		UsageAccumulator $usageAccumulator
 	) {
-		$this->entityLookup = $entityLookup;
 		$this->editionLookup = $editionLookup;
 		$this->usageAccumulator = $usageAccumulator;
 	}

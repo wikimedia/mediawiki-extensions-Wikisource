@@ -37,7 +37,6 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 		$entityLookup->addEntity( $this->q3() );
 
 		$handler = new WikibaseClientSiteLinksForItemHandler(
-			$entityLookup,
 			new EditionLookup(
 				$entityLookup,
 				new NumericPropertyId( 'P747' ),
