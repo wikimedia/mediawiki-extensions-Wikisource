@@ -38,7 +38,7 @@ DownloadDialog.prototype.initialize = function () {
 	} else if ( serverName.includes( 'en.wikisource.beta' ) ) {
 		lang = 'beta';
 	} else if ( serverName.includes( '.wikisource.org' ) ) {
-		lang = serverName.substr( 0, serverName.indexOf( '.wikisource.org' ) );
+		lang = serverName.slice( 0, Math.max( 0, serverName.indexOf( '.wikisource.org' ) ) );
 	}
 
 	// @TODO Use URL() here when it's permitted in MediaWiki.
