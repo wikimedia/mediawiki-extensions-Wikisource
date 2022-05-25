@@ -2,9 +2,39 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"NEHAOUA"
 		]
 	},
 	"wikisource-desc": "تخصيصات ميدياويكي الخاصة بويكي مصدر",
-	"wikisource-ocr-advanced": "خيارات متقدمة"
+	"wikisource-export-portlet": "طباعة/تصدير",
+	"wikisource-download-epub": "تنزيل بصيغة EPUB",
+	"wikisource-download-epub-tooltip": "نَزّل نسخة من هذا العمل بصيغة EPUB",
+	"wikisource-download-mobi": "تنزيل بصيغة MOBI",
+	"wikisource-download-mobi-tooltip": "نَزّل نسخة من هذا العمل بصيغة MOBI",
+	"wikisource-download-pdf": "تنزيل بصيغة PDF",
+	"wikisource-download-pdf-tooltip": "نَزّل نسخة من هذا العمل بصيغة PDF",
+	"wikisource-download-choose": "صيغ أخرى",
+	"wikisource-download-choose-tooltip": "افتح نموذجًا لاختيار التنسيقات والخطوط الأخرى وما إلى ذلك.",
+	"wikisource-download-button": "تنزيل",
+	"wikisource-download-chooser-title": "اختر تنسيقًا",
+	"wikisource-download-chooser-epub-description": "لأجهزة الكمبيوتر والهواتف المحمولة والأجهزة اللوحية",
+	"wikisource-download-chooser-mobi-description": "لأجهزة كيندال",
+	"wikisource-download-chooser-pdf-description": "للشاشات العريضة والطباعة",
+	"wikisource-download-chooser-different-format": "تبحث عن صيغة أخرى؟",
+	"wikisource-ocr-extract-text": "نسخ النص",
+	"wikisource-ocr-extract-progress": "نسخ النص من الصورة",
+	"wikisource-ocr-extract-cancel": "إلغاء",
+	"wikisource-ocr-extract-undo": "تراجع عن نسخ النص",
+	"wikisource-ocr-extract-close": "أغلق هذا التنويه",
+	"wikisource-ocr-extract-text-title": "احصل على نص التعرف على المحارف لهذه الصورة",
+	"wikisource-ocr-error": "خطأ من أداة التعرف الضوئي على المحارف: $1",
+	"wikisource-ocr-no-text": "لا يوجد نص مستخرج من أداة التعرف الضوئي على المحارف.",
+	"wikisource-ocr-settings-menu": "بَدل إعدادات التعرف الضوئي على المحارف",
+	"wikisource-ocr-engine": "حدد أداة نسخ النص الافتراضية الخاصة بك",
+	"wikisource-ocr-advanced": "خيارات متقدمة",
+	"wikisource-ocr-advanced-title": "افتح نموذج الخيارات المتقدمة في علامة تبويب جديدة",
+	"wikisource-ocr-onboarding-title": "حول صورة إلى نص",
+	"wikisource-ocr-onboarding-text": "تحويل المستندات الممسوحة ضوئيًا إلى نص قابل للتحرير باستخدام التعرف الضوئي على المحارف (OCR).",
+	"wikisource-ocr-onboarding-button": "فهمت"
 }
