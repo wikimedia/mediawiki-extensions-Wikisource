@@ -24,7 +24,7 @@ function OnboardingPopup( ocrTool ) {
 
 	// Popup.
 	const $popupContent = $( '<div>' ).append(
-		$( '<div>' ).addClass( 'ext-wikisource-ocr-onboarding-image' ),
+		$( '<div>' ).addClass( 'ext-wikisource-icon-ocr-onboarding' ),
 		$( '<h3>' ).text( mw.msg( 'wikisource-ocr-onboarding-title' ) ),
 		$( '<p>' ).text( mw.msg( 'wikisource-ocr-onboarding-text' ) ),
 		$( '<div>' ).addClass( 'ext-wikisource-ocr-onboarding-button' )
