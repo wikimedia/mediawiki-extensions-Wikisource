@@ -54,7 +54,7 @@ class EditionLookup {
 	 */
 	public static function newFromGlobalState( UsageAccumulator $usageAccumulator ): self {
 		return new self(
-			WikibaseClient::getEntityLookup(),
+			WikibaseClient::getRestrictedEntityLookup(),
 			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionProperty' ),
 			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionOfProperty' ),
 			$usageAccumulator
@@ -138,7 +138,10 @@ class EditionLookup {
 			if ( $snak instanceof PropertyValueSnak ) {
 				$value = $snak->getDataValue();
 				if ( $value instanceof EntityIdValue ) {
-					$values[] = $value->getEntityId();
+					$entityId = $value->getEntityId();
+					if ( $entityId instanceof ItemId ) {
+						$values[] = $entityId;
+					}
 				}
 			}
 		}
