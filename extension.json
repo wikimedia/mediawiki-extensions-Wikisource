@@ -83,6 +83,9 @@
 				},
 				"tablet": {
 					"file": "ext.wikisource.WsExport/icons/tablet.svg"
+				},
+				"ocr-onboarding": {
+					"file": "ext.wikisource.OCR/OnboardingPopup.svg"
 				}
 			}
 		},
