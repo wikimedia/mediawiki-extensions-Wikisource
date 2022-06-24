@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Minh Nguyen",
 			"Vinhtantran"
 		]
 	},
@@ -24,7 +25,7 @@
 	"wikisource-download-chooser-pdf-description": "cho màn hình lớn và in ấn",
 	"wikisource-download-chooser-different-format": "Tìm định dạng khác?",
 	"wikisource-ocr-extract-text": "Tách văn bản",
-	"wikisource-ocr-extract-progress": "Đang tách văn bản từ hình...",
+	"wikisource-ocr-extract-progress": "Đang tách văn bản từ hình…",
 	"wikisource-ocr-extract-cancel": "Hủy",
 	"wikisource-ocr-extract-undo": "Lùi tách văn bản",
 	"wikisource-ocr-extract-close": "Đóng thông báo này",
