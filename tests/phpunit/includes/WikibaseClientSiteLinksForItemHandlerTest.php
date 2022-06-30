@@ -9,6 +9,7 @@ use Wikibase\DataModel\Entity\Item;
 use Wikibase\DataModel\Entity\ItemId;
 use Wikibase\DataModel\Entity\NumericPropertyId;
 use Wikibase\DataModel\Services\Lookup\InMemoryEntityLookup;
+use Wikibase\DataModel\Services\Lookup\RestrictedEntityLookup;
 use Wikibase\DataModel\SiteLink;
 use Wikibase\DataModel\Snak\PropertySomeValueSnak;
 use Wikibase\DataModel\Snak\PropertyValueSnak;
@@ -117,5 +118,46 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 			)
 		);
 		return $item;
+	}
+
+	public function q4() {
+		$item = new Item( new ItemId( 'Q4' ) );
+		$item->getSiteLinkList()->addNewSiteLink( 'dewiki', 'Foo' );
+		$item->getStatements()->addNewStatement(
+			new PropertyValueSnak( new NumericPropertyId( 'P629' ), new EntityIdValue( new ItemId( 'Q2' ) ) )
+		);
+		return $item;
+	}
+
+	public function testDoProvideSiteLinksWithLimit() {
+		$item = new Item( new ItemId( 'Q1' ) );
+		$item->getStatements()->addNewStatement(
+			new PropertyValueSnak( new NumericPropertyId( 'P629' ), new EntityIdValue( new ItemId( 'Q2' ) ) )
+		);
+		$item->getStatements()->addNewStatement(
+			new PropertyValueSnak( new NumericPropertyId( 'P629' ), new EntityIdValue( new ItemId( 'Q4' ) ) )
+		);
+
+		$entityLookup = new InMemoryEntityLookup();
+		$entityLookup->addEntity( $item );
+		$entityLookup->addEntity( $this->q2() );
+		$entityLookup->addEntity( $this->q3() );
+		$entityLookup->addEntity( $this->q4() );
+
+		$handler = new WikibaseClientSiteLinksForItemHandler(
+			new EditionLookup(
+				new RestrictedEntityLookup( $entityLookup, 1 ),
+				new NumericPropertyId( 'P747' ),
+				new NumericPropertyId( 'P629' ),
+				$this->createMock( UsageAccumulator::class )
+			),
+			$this->createMock( UsageAccumulator::class )
+		);
+		$siteLinks = [];
+		$handler->doProvideSiteLinks( $item, $siteLinks );
+		$this->assertEquals( $siteLinks, [
+			'enwiki' => new SiteLink( 'enwiki', 'Foo' ),
+			'frwiki' => new SiteLink( 'frwiki', 'Foo' ),
+		] );
 	}
 }
