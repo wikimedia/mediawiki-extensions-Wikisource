@@ -64,9 +64,9 @@ UndoWidget.prototype.show = function () {
 UndoWidget.prototype.undo = function ( oldText ) {
 	var that = this;
 	// Momentarily empty the text box, to give visual indication of the text changing.
-	this.$textbox[ 0 ].value = '';
+	this.$textbox.textSelection( 'setContents', '' );
 	window.setTimeout( function () {
-		that.$textbox[ 0 ].value = oldText;
+		that.$textbox.textSelection( 'setContents', oldText );
 	}, 100 );
 	// Pause for a moment before hiding the widget.
 	window.setTimeout( function () {

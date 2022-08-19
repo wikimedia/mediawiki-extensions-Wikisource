@@ -183,8 +183,8 @@ ExtractTextWidget.prototype.processOcrResult = function ( response ) {
 		mw.notify( mw.msg( 'wikisource-ocr-no-text' ) );
 		return;
 	}
-	this.ocrTool.setOldText( this.$textbox[ 0 ].value );
-	this.$textbox[ 0 ].value = response.text;
+	this.ocrTool.setOldText( this.$textbox.textSelection( 'getContents' ) );
+	this.$textbox.textSelection( 'setContents', response.text );
 };
 
 /**
