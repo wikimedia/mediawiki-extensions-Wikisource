@@ -26,8 +26,20 @@
 	"wikisource-download-chooser-mobi-description": "para Kindles",
 	"wikisource-download-chooser-pdf": "PDF",
 	"wikisource-download-chooser-pdf-description": "para ecrãs grandes e impressão",
+	"wikisource-download-chooser-different-format": "Procura um formato diferente?",
 	"wikisource-ocr-extract-text": "Transcrever texto",
-	"wikisource-ocr-extract-text-title": "Obtenha o texto OCR desta imagem",
+	"wikisource-ocr-extract-progress": "A transcrever o texto da imagem...",
+	"wikisource-ocr-extract-cancel": "Cancelar",
+	"wikisource-ocr-extract-undo": "Desfazer transcrição",
+	"wikisource-ocr-extract-close": "Fechar este aviso",
+	"wikisource-ocr-extract-text-title": "Obter texto OCR desta imagem",
 	"wikisource-ocr-error": "Erro da ferramenta OCR: $1",
-	"wikisource-ocr-no-text": "Nenhum texto foi retornado pela ferramenta OCR."
+	"wikisource-ocr-no-text": "A ferramenta de OCR não devolveu nenhum texto.",
+	"wikisource-ocr-settings-menu": "Alterar configurações de OCR",
+	"wikisource-ocr-engine": "Selecionar a sua ferramenta padrão de transcrição de texto",
+	"wikisource-ocr-advanced": "Opções avançadas",
+	"wikisource-ocr-advanced-title": "Abrir o formulário de opções avançadas num separador novo",
+	"wikisource-ocr-onboarding-title": "Transcrever imagens para texto",
+	"wikisource-ocr-onboarding-text": "Transformar documentos digitalizados em texto editável, usando o Reconhecimento Ótico de Caracteres (OCR).",
+	"wikisource-ocr-onboarding-button": "Compreendi"
 }
