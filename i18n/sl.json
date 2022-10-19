@@ -23,5 +23,14 @@
 	"wikisource-download-chooser-mobi-description": "za Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
 	"wikisource-download-chooser-pdf-description": "za večje zaslone in tiskanje",
-	"wikisource-ocr-extract-cancel": "Prekliči"
+	"wikisource-download-chooser-different-format": "Želite drugačen format?",
+	"wikisource-ocr-extract-cancel": "Prekliči",
+	"wikisource-ocr-engine": "Izberite svoje privzeto orodje za prepisovanje",
+	"wikisource-ocr-engine-tesseract": "OCR Tesseract",
+	"wikisource-ocr-engine-google": "OCR Google",
+	"wikisource-ocr-advanced": "Napredne možnosti",
+	"wikisource-ocr-advanced-title": "Odprite obrazec za napredne možnosti na novem zavihku",
+	"wikisource-ocr-onboarding-title": "Prepišite slike v besedilo",
+	"wikisource-ocr-onboarding-text": "Z optičnim prepoznavanjem znakov (OCR) pretvorite optično prebrane dokumente v besedilo, ki ga je mogoče urejati.",
+	"wikisource-ocr-onboarding-button": "V redu, razumem"
 }
