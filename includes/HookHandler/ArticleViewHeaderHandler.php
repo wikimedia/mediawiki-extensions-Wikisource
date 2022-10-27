@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\Wikisource\HookHandler;
 
 use Article;
 use Config;
+use ExtensionRegistry;
 use Language;
 use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Page\Hook\ArticleViewHeaderHook;
@@ -15,6 +16,9 @@ class ArticleViewHeaderHandler implements ArticleViewHeaderHook {
 	/** @var WsExport */
 	private $wsExport;
 
+	/** @var int[] */
+	private $allowNamespaces;
+
 	/**
 	 * @param Config $config
 	 * @param Language $contentLanguage
@@ -25,6 +29,14 @@ class ArticleViewHeaderHandler implements ArticleViewHeaderHook {
 			$config->get( 'WikisourceWsExportUrl' ),
 			$config->get( 'ServerName' )
 		);
+
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'ProofreadPage' ) ) {
+			$this->allowNamespaces = $config->get( 'ProofreadPageBookNamespaces' );
+		} else {
+			// We should not be here since Wikisource is supposed to be loaded with ProofreadPage,
+			// but just in case we default to only main namespace.
+			$this->allowNamespaces = [ NS_MAIN ];
+		}
 	}
 
 	/**
@@ -34,8 +46,10 @@ class ArticleViewHeaderHandler implements ArticleViewHeaderHook {
 	 * @return bool|void
 	 */
 	public function onArticleViewHeader( $article, &$outputDone, &$pcache ) {
-		// Only show on mainspace pages that exist (and not the mainpage).
-		if ( !$article->getTitle()->inNamespace( NS_MAIN )
+		// Only show on pages that exist (and not the mainpage).
+		// and are allowed to host books as (based on a
+		// per-wiki configuration variable, $wgProofreadPageBookNamespaces).
+		if ( !$article->getTitle()->inNamespaces( $this->allowNamespaces )
 			|| !$article->getTitle()->exists()
 			|| $article->getTitle()->isMainPage()
 		) {
