@@ -1,8 +1,44 @@
 {
 	"@metadata": {
 		"authors": [
-			"Abbas dhothar"
+			"Abbas dhothar",
+			"Bgo eiu"
 		]
 	},
-	"wikisource-download-pdf": "پی ڈی ایف ڈاؤنلوڈ"
+	"wikisource-desc": "وِکی سروت دیاں چوݨاں",
+	"wikisource-export-portlet": "پرنٹ کرو یا ایکسپورٹ کرو",
+	"wikisource-download-epub": "ای‌پب فائل ڈاؤن‌لوڈ کرو",
+	"wikisource-download-epub-tooltip": "ایس لکھت لئی ای‌پب فائل ڈاؤن‌لوڈ کرو",
+	"wikisource-download-mobi": "موبی فائل ڈاؤن‌لوڈ کرو",
+	"wikisource-download-mobi-tooltip": "ایس لکھت لئی موبی فائل ڈاؤن‌لوڈ کرو",
+	"wikisource-download-pdf": "پی ڈی ایف ڈاؤنلوڈ",
+	"wikisource-download-pdf-tooltip": "ایس لکھت لئی پی‌ڈی‌ایف فائل ڈاؤن‌لوڈ کرو",
+	"wikisource-download-choose": "پور فورمیٹ",
+	"wikisource-download-choose-tooltip": "ہور فورمیٹ، فونٹ، وغیرہ۔",
+	"wikisource-download-button": "ڈاؤن‌لوڈ کرو",
+	"wikisource-download-chooser-title": "فورمیٹ چݨو",
+	"wikisource-download-chooser-epub": "ای‌پب فائل",
+	"wikisource-download-chooser-epub-description": "کمپوٹر، موبائیل، ٹیبلیٹ، وغیرہ",
+	"wikisource-download-chooser-mobi": "موبی فائل",
+	"wikisource-download-chooser-mobi-description": "آمازون کِنڈل",
+	"wikisource-download-chooser-pdf": "پی‌ڈی‌ایف فائل",
+	"wikisource-download-chooser-pdf-description": "وڈی سکرین، پرنٹ کرن",
+	"wikisource-download-chooser-different-format": "تسیں ہور فورمیٹ چاہڈے؟",
+	"wikisource-ocr-extract-text": "تصویر توں لکھت لے جاؤ",
+	"wikisource-ocr-extract-progress": "تصویر توں لکھت لئی رہی اے۔۔۔",
+	"wikisource-ocr-extract-cancel": "رد کرو",
+	"wikisource-ocr-extract-undo": "لکھݨ موڑو",
+	"wikisource-ocr-extract-close": "بند کرو",
+	"wikisource-ocr-extract-text-title": "ایس تصویر توں لکھت لے جاؤ",
+	"wikisource-ocr-error": "غلطی آئی اے: $1",
+	"wikisource-ocr-no-text": "کوئی لکھت نہیں لیݨی اے۔",
+	"wikisource-ocr-settings-menu": "سیٹنگاں بدلو",
+	"wikisource-ocr-engine": "سند دا مول چݨو",
+	"wikisource-ocr-engine-tesseract": "ٹیسرکٹ",
+	"wikisource-ocr-engine-google": "گوگل",
+	"wikisource-ocr-advanced": "ہور سیٹنگاں",
+	"wikisource-ocr-advanced-title": "نویں ٹیب وچ ہور سیٹنگاں کھُلھو",
+	"wikisource-ocr-onboarding-title": "تصویراں توں لکھت لے جاؤ",
+	"wikisource-ocr-onboarding-text": "درشٹی سمبندی اکھر پچھاݨ نال تصویراں توں لکھت لے جایو۔",
+	"wikisource-ocr-onboarding-button": "آہو، ٹھیک اے"
 }
