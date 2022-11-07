@@ -6,7 +6,8 @@
 			"McDutchie",
 			"Pikne",
 			"Robby",
-			"Umherirrender"
+			"Umherirrender",
+			"Verdy p"
 		]
 	},
 	"wikisource-desc": "{{desc|name=Wikisource}}",
@@ -40,7 +41,7 @@
 	"wikisource-ocr-engine": "Form label for the engine-selection field.",
 	"wikisource-ocr-engine-tesseract": "Radio button label for the Tesseract engine.",
 	"wikisource-ocr-engine-google": "Radio button label for the Google engine.",
-	"wikisource-ocr-advanced": "Button text for a link to open a new tab for the advanced settings.",
+	"wikisource-ocr-advanced": "Button text for a link to open a new tab for the advanced settings.\n{{Identical|Advanced options}}",
 	"wikisource-ocr-advanced-title": "Tooltip text for the advanced settings form.",
 	"wikisource-ocr-onboarding-title": "Title for the onboarding popup.",
 	"wikisource-ocr-onboarding-text": "Text paragraph for the onboarding popup.",
