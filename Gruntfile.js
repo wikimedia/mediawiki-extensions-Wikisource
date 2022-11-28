@@ -20,6 +20,9 @@ module.exports = function ( grunt ) {
 		},
 		banana: conf.MessagesDirs,
 		stylelint: {
+			options: {
+				fix: grunt.option( 'fix' )
+			},
 			all: [
 				'*.{less,css}',
 				'**/*.{less,css}',
@@ -32,7 +35,8 @@ module.exports = function ( grunt ) {
 	grunt.registerTask( 'test', [ 'eslint', 'banana', 'stylelint' ] );
 	grunt.registerTask( 'fix', function () {
 		grunt.config.set( 'eslint.options.fix', true );
-		grunt.task.run( [ 'eslint', 'banana' ] );
+		grunt.config.set( 'stylelint.options.fix', true );
+		grunt.task.run( [ 'eslint', 'banana', 'stylelint' ] );
 	} );
 	grunt.registerTask( 'default', 'test' );
 };
