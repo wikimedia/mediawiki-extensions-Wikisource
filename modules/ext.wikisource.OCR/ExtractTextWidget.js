@@ -33,9 +33,7 @@ function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
 			anchor: false,
 			$content: this.getConfigContent().$element,
 			padded: false,
-			align: 'force-left',
-			// @TODO Remove this workaround for RTL scroll bug T285912.
-			hideWhenOutOfView: false
+			align: 'force-left'
 		}
 	} );
 	// Replace the build in click handler with our own.
