@@ -6,12 +6,11 @@ var LoadingWidget = require( './LoadingWidget.js' ),
  * @class
  * @constructor
  * @param {OcrTool} ocrTool
- * @param {jQuery} $prpImage
  * @param {jQuery} $textbox
  */
-function ExtractTextWidget( ocrTool, $prpImage, $textbox ) {
+function ExtractTextWidget( ocrTool, $textbox ) {
 	this.ocrTool = ocrTool;
-	this.ocrTool.setImage( $prpImage.find( 'img' )[ 0 ].src );
+	this.openseadragonInstance = null;
 	this.$textbox = $textbox;
 
 	var extractButton = new OO.ui.ButtonWidget( {
@@ -95,6 +94,8 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 	this.advancedLink = new OO.ui.ButtonWidget( {
 		label: mw.msg( 'wikisource-ocr-advanced' ),
 		title: mw.msg( 'wikisource-ocr-advanced-title' ),
+		// If Openseadragon is already initialized, dynamically generate
+		// the image. Otherwise, use the default image
 		href: this.ocrTool.getUrl( null, false ),
 		icon: 'linkExternal',
 		classes: [ 'ext-wikisource-ocr-advanced-link' ],
@@ -138,6 +139,27 @@ ExtractTextWidget.prototype.handleOnboardingDisplay = function ( nextCloseAction
 		}
 	}
 	return true;
+};
+
+/**
+ * Manage changing the current Openseadragon instance. Since the advanced link is a link (and cannot
+ * dynamically pull the image URL from Openseadragon), we bind a event handler to reset/set
+ * the advanced options link every time Openseadragon is reinitialized (which is required to load
+ * an Image eithier by EditInSequence or via userscripts.
+ *
+ * @param {Object} openseadragonInstance Current instance of Openseadragon being used by the page
+ */
+ExtractTextWidget.prototype.setOSDInstance = function ( openseadragonInstance ) {
+	if ( this.openseadragonInstance !== null ) {
+		this.openseadragonInstance.off( 'prp-osd-after-creation', this.resetAdvancedLink.bind( this ) );
+	}
+	this.openseadragonInstance = openseadragonInstance;
+	this.ocrTool.setOSDInstance( this.openseadragonInstance );
+	this.openseadragonInstance.on( 'prp-osd-after-creation', this.resetAdvancedLink.bind( this ) );
+};
+
+ExtractTextWidget.prototype.resetAdvancedLink = function () {
+	this.advancedLink.setHref( this.ocrTool.getUrl( null, false ) );
 };
 
 ExtractTextWidget.prototype.onClickConfigButton = function () {

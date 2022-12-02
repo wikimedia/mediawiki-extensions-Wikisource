@@ -4,10 +4,11 @@ var mwLocalStorage = require( 'mediawiki.storage' ).local;
  * This is the central model for the OCR process.
  *
  * @param {string} toolUrl Base URL for the OCR tool.
+ * @param {string} backupPageImageURL Image URL to use if Openseadragon has not been initialized yet
  * @class
  * @constructor
  */
-function OcrTool( toolUrl ) {
+function OcrTool( toolUrl, backupPageImageURL ) {
 	OO.EventEmitter.call( this );
 
 	// Event names.
@@ -25,8 +26,10 @@ function OcrTool( toolUrl ) {
 	this.engine = 'tesseract';
 	// Array of language codes.
 	this.langs = [ mw.config.get( 'wgContentLanguage' ) ];
-	// Image URL.
-	this.image = null;
+	// Openseadragon instance associated with the page
+	this.openseadragonInstance = null;
+	// Backup $prpImage URL
+	this.backupPageImageURL = backupPageImageURL;
 	// Whether an OCR request is in progress, or has been cancelled.
 	this.hasBeenCancelled = false;
 	// Whether to show the onboarding pulsating dot and popup.
@@ -98,23 +101,37 @@ OcrTool.prototype.setShowOnboarding = function ( showOnboarding ) {
 /**
  * Get the full URL to the OCR tool.
  *
- * @param {string} imageUrl URL of the image to transcribe. Set to null to use
- * the image set via this.setImage().
+ * @param {string} imageUrl URL of the image to transcribe. This will use the Openseadragon instance
+ * passed by the constructor
  * @param {boolean} api Whether to include the API endpoint.
  * @return {string} Full URL to the tool.
  */
 OcrTool.prototype.getUrl = function ( imageUrl, api ) {
 	var endpoint = api ? '/api.php' : '/';
+
+	if ( !imageUrl ) {
+		if ( this.openseadragonInstance ) {
+			imageUrl = this.openseadragonInstance.getCurrentImage();
+		} else {
+			imageUrl = this.backupPageImageURL;
+		}
+	}
+
 	// @TODO Use URL() here when it's permitted in MediaWiki.
 	return this.toolUrl + endpoint +
 		'?engine=' + this.engine +
 		'&langs[]=' + this.langs.join( '&langs[]=' ) +
-		'&image=' + encodeURIComponent( imageUrl || this.image ) +
+		'&image=' + encodeURIComponent( imageUrl ) +
 		'&uselang=' + mw.config.get( 'wgUserLanguage' );
 };
 
-OcrTool.prototype.setImage = function ( image ) {
-	this.image = image;
+/**
+ * Sets the Openseadragon instance
+ *
+ * @param {Object} openseadragonInstance Instance of Openseadragon associated with the page
+ */
+OcrTool.prototype.setOSDInstance = function ( openseadragonInstance ) {
+	this.openseadragonInstance = openseadragonInstance;
 };
 
 OcrTool.prototype.cancel = function () {

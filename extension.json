@@ -92,6 +92,7 @@
 		"ext.wikisource.OCR": {
 			"dependencies": [
 				"jquery.spinner",
+				"ext.proofreadpage.page.edit",
 				"mediawiki.pulsatingdot",
 				"ext.wikisource.icons",
 				"oojs-ui-core",
