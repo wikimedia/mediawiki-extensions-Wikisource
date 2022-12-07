@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Mariagarbin"
+			"Mariagarbin",
+			"Fúlvio"
 		]
 	},
 	"wikisource-desc": "Personalizações do MediaWiki específicas de Wikisource",
@@ -25,6 +26,8 @@
 	"wikisource-ocr-extract-text": "Transcrever o texto",
 	"wikisource-ocr-extract-progress": "Transcrevendo texto de imagem…",
 	"wikisource-ocr-extract-cancel": "Cancelar",
+	"wikisource-ocr-extract-undo": "Desfazer transcrição",
+	"wikisource-ocr-extract-close": "Fechar este aviso",
 	"wikisource-ocr-extract-text-title": "Obtenha o texto OCR desta imagem",
 	"wikisource-ocr-error": "Erro da ferramenta OCR: $1",
 	"wikisource-ocr-no-text": "Nenhum texto foi retornado pela ferramenta OCR.",
@@ -33,5 +36,6 @@
 	"wikisource-ocr-advanced": "Opções avançadas",
 	"wikisource-ocr-advanced-title": "Abra o formulário de opções avançadas em uma nova guia",
 	"wikisource-ocr-onboarding-title": "Transcrever imagens em texto",
+	"wikisource-ocr-onboarding-text": "Transforme documentos digitalizados em texto editável, usando o reconhecimento óptico de caracteres (OCR).",
 	"wikisource-ocr-onboarding-button": "Ok, entendi"
 }
