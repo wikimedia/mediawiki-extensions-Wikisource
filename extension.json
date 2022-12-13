@@ -45,6 +45,10 @@
 	},
 	"ResourceModules": {
 		"ext.wikisource.download": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
 			"dependencies": [
 				"oojs-ui-core",
 				"oojs-ui-widgets",
@@ -90,6 +94,9 @@
 			}
 		},
 		"ext.wikisource.OCR": {
+			"targets": [
+				"desktop"
+			],
 			"dependencies": [
 				"jquery.spinner",
 				"ext.proofreadpage.page.edit",
