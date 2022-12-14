@@ -1,20 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Theklan"
+			"Theklan",
+			"Xabier Armendaritz"
 		]
 	},
 	"wikisource-desc": "Wikitekako MediaWiki aldaketa espezifikoak",
 	"wikisource-export-portlet": "Inprimatu/esportatu",
-	"wikisource-download-epub": "Jaitsi EPUB gisa",
-	"wikisource-download-epub-tooltip": "Jaitsi lan honen EPUB bertsio bat",
-	"wikisource-download-mobi": "Jaitsi MOBI gisa",
-	"wikisource-download-mobi-tooltip": "Jaitsi lan honen MOBI bertsio bat",
-	"wikisource-download-pdf": "Jaitsi PDF gisa",
-	"wikisource-download-pdf-tooltip": "Jaitsi lan honen PDF bertsio bat",
+	"wikisource-download-epub": "Deskargatu EPUB formatuan",
+	"wikisource-download-epub-tooltip": "Deskargatu lan honen EPUB bertsioa",
+	"wikisource-download-mobi": "Deskargatu MOBI formatuan",
+	"wikisource-download-mobi-tooltip": "Deskargatu lan honen MOBI bertsioa",
+	"wikisource-download-pdf": "Deskargatu PDF formatuan",
+	"wikisource-download-pdf-tooltip": "Deskargatu lan honen PDF bertsioa",
 	"wikisource-download-choose": "Beste formatuak",
 	"wikisource-download-choose-tooltip": "Beste formatu eta tipografia batzuk aukeratzeko formularioa ireki.",
-	"wikisource-download-button": "Jaitsi",
+	"wikisource-download-button": "Deskargatu",
 	"wikisource-download-chooser-title": "Formatu bat aukeratu",
 	"wikisource-download-chooser-epub-description": "ordenagailu, mugikor, tabletentzat",
 	"wikisource-download-chooser-mobi-description": "Kindle-entzat",
