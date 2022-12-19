@@ -4,7 +4,7 @@ var OcrTool = require( './OcrTool.js' ),
 	$prpImage = $( '.prp-page-image' ),
 	$wpTextbox1 = $( '#wpTextbox1' );
 
-if ( $prpImage.length === 0 ) {
+if ( $prpImage.find( 'img' ).length === 0 ) {
 	return;
 }
 
