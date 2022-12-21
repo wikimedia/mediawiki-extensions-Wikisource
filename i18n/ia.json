@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"wikisource-desc": "Personalisationes de MediaWiki specific a Wikisource",
+	"wikisource-export-portlet": "Imprimer/exportar",
+	"wikisource-download-epub": "Discargar EPUB",
+	"wikisource-download-epub-tooltip": "Discargar un version EPUB de iste obra",
+	"wikisource-download-mobi": "Discargar MOBI",
+	"wikisource-download-mobi-tooltip": "Discargar un version MOBI de iste obra",
+	"wikisource-download-pdf": "Discargar PDF",
+	"wikisource-download-pdf-tooltip": "Discargar un version PDF de iste obra",
+	"wikisource-download-choose": "Altere formatos",
+	"wikisource-download-choose-tooltip": "Aperir un formulario pro eliger altere formatos, typos de litteras, etc.",
+	"wikisource-download-button": "Discargar",
+	"wikisource-download-chooser-title": "Selige un formato",
+	"wikisource-download-chooser-epub-description": "pro computatores, apparatos mobile, tablettas`",
+	"wikisource-download-chooser-mobi-description": "pro Kindle",
+	"wikisource-download-chooser-pdf-description": "pro grande schermos e pro imprimer",
+	"wikisource-download-chooser-different-format": "Cerca tu un altere formato?",
+	"wikisource-ocr-extract-text": "Transcriber texto",
+	"wikisource-ocr-extract-progress": "Transcribe texto de imagine…",
+	"wikisource-ocr-extract-cancel": "Cancellar",
+	"wikisource-ocr-extract-undo": "Disfacer transcription",
+	"wikisource-ocr-extract-close": "Clauder iste aviso",
+	"wikisource-ocr-extract-text-title": "Obtener le texto OCR de iste imagine",
+	"wikisource-ocr-error": "Error del utensile de OCR: $1",
+	"wikisource-ocr-no-text": "Le utensile OCR non ha restituite alcun texto.",
+	"wikisource-ocr-settings-menu": "Cambiar le parametros de OCR",
+	"wikisource-ocr-engine": "Selige tu utensile de transcription de texto predefinite",
+	"wikisource-ocr-advanced": "Optiones avantiate",
+	"wikisource-ocr-advanced-title": "Aperir le formulario de optiones avantiate in un nove scheda",
+	"wikisource-ocr-onboarding-title": "Transcriber imagines in texto",
+	"wikisource-ocr-onboarding-text": "Transforma documentos scannate in texto modificabile usante le recognition optic de characteres (OCR, ''Optical Character Recognition'').",
+	"wikisource-ocr-onboarding-button": "Ben, io comprende"
+}
