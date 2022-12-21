@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"wikisource-download-epub": "Preuzimanje EPUB-a",
+	"wikisource-download-epub-tooltip": "Preuzimanje EPUB verzije ovog rada",
+	"wikisource-download-mobi": "Preuzimanje MOBI-ja",
+	"wikisource-download-mobi-tooltip": "Preuzimanje MOBI verzije ovog rada",
+	"wikisource-download-pdf": "Preuzimanje PDF-a",
+	"wikisource-download-pdf-tooltip": "Preuzimanje PDF verzije ovog rada",
+	"wikisource-download-choose": "Ostali formati",
+	"wikisource-download-choose-tooltip": "Otvaranje obrasca za odabir drugih formata i fontova itd.",
+	"wikisource-download-button": "Preuzimanje",
+	"wikisource-download-chooser-title": "Izaberite format",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "za kompjutere, mobilne, tablete",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "za Kindles",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "za velike ekrane i printovanje"
+}
