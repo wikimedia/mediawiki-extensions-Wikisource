@@ -3,7 +3,8 @@
 		"authors": [
 			"Chadyka",
 			"Kareyac",
-			"No Sleep till Krupki"
+			"No Sleep till Krupki",
+			"Plaga med"
 		]
 	},
 	"wikisource-desc": "Налады MediaWiki для Вікікрыніцаў",
@@ -26,7 +27,7 @@
 	"wikisource-ocr-extract-progress": "Аблічбоўка тэксту з выявы...",
 	"wikisource-ocr-extract-cancel": "Адмена",
 	"wikisource-ocr-extract-undo": "Адмена аблічбоўкі",
-	"wikisource-ocr-extract-close": "Зачыніць гэтае апавяшчэнне",
+	"wikisource-ocr-extract-close": "Закрыць гэта апавяшчэнне",
 	"wikisource-ocr-extract-text-title": "Атрымаць OCR-тэкст гэтай выявы",
 	"wikisource-ocr-error": "Памылка інструменту OCR: $1",
 	"wikisource-ocr-no-text": "Інструмент OCR не вярнуў ніякага тэксту.",
