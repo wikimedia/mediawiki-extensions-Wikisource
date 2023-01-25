@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"wikisource-desc": "Addasiadau MediaWici ar gyfer Wicidestun",
+	"wikisource-export-portlet": "Argraffu / allforio",
+	"wikisource-download-epub": "Lawrlwytho EPUB",
+	"wikisource-download-epub-tooltip": "Lawrlwytho fersiwn EPUB o'r gwaith hwn",
+	"wikisource-download-mobi": "Lawrlwytho MOBI",
+	"wikisource-download-mobi-tooltip": "Lawrlwytho fersiwn MOBI o'r gwaith hwn",
+	"wikisource-download-pdf": "Lawrlwytho PDF",
+	"wikisource-download-pdf-tooltip": "Lawrlwytho fersiwn PDF o'r gwaith hwn",
+	"wikisource-download-choose": "Fformatau eraill",
+	"wikisource-download-choose-tooltip": "Agor ffurflen i ddewis fformatau a ffontiau eraill ayb.",
+	"wikisource-download-button": "Lawrlwytho",
+	"wikisource-download-chooser-title": "Dewiswch fformat",
+	"wikisource-download-chooser-epub-description": "ar gyfer cyfrifiaduron, ffonau symudol, tabledi",
+	"wikisource-download-chooser-mobi-description": "ar gyfer Kindle",
+	"wikisource-download-chooser-pdf-description": "ar gyfer sgriniau mawr ac argraffu",
+	"wikisource-download-chooser-different-format": "Ydych chi'n chwilio am fformat gwahanol?",
+	"wikisource-ocr-extract-text": "Trawsgrifio testun",
+	"wikisource-ocr-extract-cancel": "Canslo",
+	"wikisource-ocr-extract-undo": "Dadwneud trawsgrifio",
+	"wikisource-ocr-extract-close": "Cau'r hysbysiad hwn",
+	"wikisource-ocr-advanced": "Dewisiadau uwch",
+	"wikisource-ocr-onboarding-button": "Iawn"
+}
