@@ -9,7 +9,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.39.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"MessagesDirs": {
 		"Wikisource": [
@@ -28,15 +28,23 @@
 	"HookHandlers": {
 		"SidebarBeforeOutput": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\SidebarBeforeOutputHandler",
-			"services": [ "MainConfig", "ContentLanguage" ]
+			"services": [
+				"MainConfig",
+				"ContentLanguage"
+			]
 		},
 		"ArticleViewHeader": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\ArticleViewHeaderHandler",
-			"services": [ "MainConfig", "ContentLanguage" ]
+			"services": [
+				"MainConfig",
+				"ContentLanguage"
+			]
 		},
 		"EditPageShowEditFormInitial": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler",
-			"services": [ "MainConfig" ]
+			"services": [
+				"MainConfig"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
