@@ -68,18 +68,27 @@ function ExtractTextWidget( ocrTool, $textbox ) {
 OO.inheritClass( ExtractTextWidget, OO.ui.ButtonGroupWidget );
 
 ExtractTextWidget.prototype.getConfigContent = function () {
+	let ocrOptions = [
+		new OO.ui.RadioOptionWidget( {
+			data: 'tesseract',
+			label: mw.msg( 'wikisource-ocr-engine-tesseract' )
+		} ),
+		new OO.ui.RadioOptionWidget( {
+			data: 'google',
+			label: mw.msg( 'wikisource-ocr-engine-google' )
+		} )
+	];
+	if ( this.modelIsSet() ) {
+		ocrOptions.push(
+			new OO.ui.RadioOptionWidget( {
+				data: 'transkribus',
+				label: mw.msg( 'wikisource-ocr-engine-transkribus' )
+			} )
+		);
+	}
 	var radioSelect = new OO.ui.RadioSelectWidget( {
 			classes: [ 'ext-wikisource-ocr-engineradios' ],
-			items: [
-				new OO.ui.RadioOptionWidget( {
-					data: 'tesseract',
-					label: mw.msg( 'wikisource-ocr-engine-tesseract' )
-				} ),
-				new OO.ui.RadioOptionWidget( {
-					data: 'google',
-					label: mw.msg( 'wikisource-ocr-engine-google' )
-				} )
-			]
+			items: ocrOptions
 		} ),
 		label = new OO.ui.LabelWidget( {
 			classes: [ 'ext-wikisource-ocr-engine-label' ],
@@ -216,9 +225,26 @@ ExtractTextWidget.prototype.processOcrResult = function ( response ) {
 ExtractTextWidget.prototype.onEngineChoose = function ( item, selected ) {
 	if ( selected ) {
 		this.ocrTool.setEngine( item.data );
+		this.ocrTool.setLanguage();
 		// Also update the advanced link's URL.
 		this.advancedLink.setHref( this.ocrTool.getUrl( null, false ) );
 	}
+};
+
+/**
+ * Check if there is a model set for Transkribus OCR engine.
+ *
+ * @return {boolean}
+ */
+ExtractTextWidget.prototype.modelIsSet = function () {
+	if ( mw.config.get( 'WikisourceTranskribusModels' ) ) {
+		let transkribusModels = mw.config.get( 'WikisourceTranskribusModels' );
+		let modelkey = mw.config.get( 'wgDBname' );
+		if ( transkribusModels[ modelkey ] ) {
+			return true;
+		}
+	}
+	return false;
 };
 
 module.exports = ExtractTextWidget;

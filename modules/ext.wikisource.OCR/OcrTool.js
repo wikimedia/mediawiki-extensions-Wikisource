@@ -24,8 +24,6 @@ function OcrTool( toolUrl, backupPageImageURL ) {
 	this.toolUrl = toolUrl;
 	// Engine name.
 	this.engine = 'tesseract';
-	// Array of language codes.
-	this.langs = [ mw.config.get( 'wgContentLanguage' ) ];
 	// Openseadragon instance associated with the page
 	this.openseadragonInstance = null;
 	// Backup $prpImage URL
@@ -38,6 +36,7 @@ function OcrTool( toolUrl, backupPageImageURL ) {
 	this.oldText = null;
 
 	this.loadConfig();
+	this.setLanguage();
 }
 
 OO.mixinClass( OcrTool, OO.EventEmitter );
@@ -177,6 +176,23 @@ OcrTool.prototype.extractText = function () {
  */
 OcrTool.prototype.setOldText = function ( oldText ) {
 	this.oldText = oldText;
+};
+
+/**
+ * Set models as languages if Transkribus OCR engine is selected
+ * else use default content language.
+ */
+OcrTool.prototype.setLanguage = function () {
+	this.langs = [ mw.config.get( 'wgContentLanguage' ) ];
+
+	if ( this.engine === 'transkribus' ) {
+		let transkribusModels = mw.config.get( 'WikisourceTranskribusModels' );
+		let modelkey = mw.config.get( 'wgDBname' );
+		if ( transkribusModels[ modelkey ] ) {
+			this.langs = transkribusModels[ modelkey ].slice( 0, 1 );
+		}
+
+	}
 };
 
 OcrTool.prototype.preloadNextPage = function () {

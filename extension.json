@@ -135,6 +135,7 @@
 				"wikisource-ocr-engine",
 				"wikisource-ocr-engine-tesseract",
 				"wikisource-ocr-engine-google",
+				"wikisource-ocr-engine-transkribus",
 				"wikisource-ocr-advanced",
 				"wikisource-ocr-advanced-title",
 				"wikisource-ocr-onboarding-title",
@@ -158,6 +159,57 @@
 		},
 		"WikisourceOcrUrl": {
 			"value": "https://ocr.wmcloud.org/"
+		},
+		"WikisourceTranskribusModels": {
+			"value": {
+				"banwikisource": [
+					"bali"
+				],
+				"bnwikisource": [
+					"ben-print",
+					"dev"
+				],
+				"dewikisource": [
+					"de-17",
+					"de-hd-m1",
+					"ger-hd-m1",
+					"ger-15"
+				],
+				"enwikisource": [
+					"en-b2022",
+					"en-handwritten-m3",
+					"en-print-m1",
+					"en-typewriter"
+				],
+				"esnwikisource": [
+					"es-md"
+				],
+				"fiwikisource": [
+					"fin"
+				],
+				"frnwikisource": [
+					"fr-m1"
+				],
+				"itwikisource": [
+					"it-hd-m1"
+				],
+				"plwikisource": [
+					"pl-m2"
+				],
+				"ruwikisource": [
+					"rus-hd-2",
+					"rus-print"
+				],
+				"sawikisource": [
+					"san"
+				],
+				"swwikisource": [
+					"swe-2.1"
+				],
+				"yiwikisource": [
+					"yi-hd"
+				]
+			}
 		}
 	},
 	"manifest_version": 2

@@ -18,12 +18,16 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 	/** @var string */
 	private $toolUrl;
 
+	/** @var array */
+	private $WikisourceTranskribusModels;
+
 	/**
 	 * @param Config $config
 	 */
 	public function __construct( Config $config ) {
 		$this->enabled = (bool)$config->get( 'WikisourceEnableOcr' );
 		$this->toolUrl = rtrim( $config->get( 'WikisourceOcrUrl' ), '/' );
+		$this->WikisourceTranskribusModels = $config->get( 'WikisourceTranskribusModels' );
 	}
 
 	/**
@@ -58,6 +62,9 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		$out->getCSP()->addDefaultSrc( $this->toolUrl );
 		// Add OCR modules.
 		$out->addModules( 'ext.wikisource.OCR' );
-		$out->addJsConfigVars( 'WikisourceOcrUrl', $this->toolUrl );
+		$out->addJsConfigVars( [
+			'WikisourceOcrUrl' => $this->toolUrl,
+			'WikisourceTranskribusModels' => $this->WikisourceTranskribusModels,
+		] );
 	}
 }
