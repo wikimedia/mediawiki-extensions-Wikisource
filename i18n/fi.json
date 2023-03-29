@@ -3,10 +3,16 @@
 		"authors": [
 			"01miki10",
 			"MITO",
-			"Nike"
+			"Nike",
+			"Pyscowicz"
 		]
 	},
 	"wikisource-desc": "Wikiaineistoon liittyvät MediaWikin muutokset",
+	"wikisource-export-portlet": "Tulosta/vie",
+	"wikisource-download-epub": "Lataa EPUB-tiedostona",
+	"wikisource-download-mobi": "Lataa MOBI-tiedostona",
+	"wikisource-download-pdf": "Lataa PDF-tiedostona",
+	"wikisource-download-choose": "Muut muodot",
 	"wikisource-download-button": "Lataa",
 	"wikisource-download-chooser-title": "Valitse muoto",
 	"wikisource-download-chooser-epub-description": "tietokoneille, puhelimille ja tableteille",
@@ -14,5 +20,6 @@
 	"wikisource-download-chooser-pdf-description": "isoille näytöille ja tulostamiseen",
 	"wikisource-ocr-extract-cancel": "Peruuta",
 	"wikisource-ocr-extract-close": "Sulje tämä ilmoitus",
+	"wikisource-ocr-advanced": "Lisäasetukset",
 	"wikisource-ocr-onboarding-button": "Selvä"
 }
