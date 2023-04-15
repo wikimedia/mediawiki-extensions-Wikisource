@@ -39,6 +39,15 @@ function ExtractTextWidget( ocrTool, $textbox ) {
 	this.configButton.disconnect( this.configButton, { click: 'onAction' } );
 	this.configButton.connect( this, { click: 'onClickConfigButton' } );
 
+	// While the PopupWidget.toggle() closes the popup,
+	// the RadioSelectWidget.onDocumentKeyDown() method retains focus on the
+	// radio buttons and allows the arrow keys to change the selected engine,
+	// even when the popup is closed
+	// So, disable the RadioSelect widget when the popup is closed
+	this.configButton.popup.connect( this, { closing: () => {
+		this.radioSelect.setDisabled( true );
+	} } );
+
 	var config = {
 		classes: [ 'ext-wikisource-ExtractTextWidget' ],
 		items: [ extractButton, this.configButton ]
@@ -86,19 +95,19 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 			} )
 		);
 	}
-	var radioSelect = new OO.ui.RadioSelectWidget( {
-			classes: [ 'ext-wikisource-ocr-engineradios' ],
-			items: ocrOptions
-		} ),
-		label = new OO.ui.LabelWidget( {
-			classes: [ 'ext-wikisource-ocr-engine-label' ],
-			label: mw.msg( 'wikisource-ocr-engine' ),
-			input: radioSelect
-		} );
-	radioSelect.connect( this, {
+	this.radioSelect = new OO.ui.RadioSelectWidget( {
+		classes: [ 'ext-wikisource-ocr-engineradios' ],
+		items: ocrOptions
+	} );
+	var label = new OO.ui.LabelWidget( {
+		classes: [ 'ext-wikisource-ocr-engine-label' ],
+		label: mw.msg( 'wikisource-ocr-engine' ),
+		input: this.radioSelect
+	} );
+	this.radioSelect.connect( this, {
 		choose: 'onEngineChoose'
 	} );
-	radioSelect.selectItemByData( this.ocrTool.getEngine() );
+	this.radioSelect.selectItemByData( this.ocrTool.getEngine() );
 
 	this.advancedLink = new OO.ui.ButtonWidget( {
 		label: mw.msg( 'wikisource-ocr-advanced' ),
@@ -118,7 +127,7 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 	} );
 	content.$element.append(
 		label.$element,
-		radioSelect.$element,
+		this.radioSelect.$element,
 		this.advancedLink.$element
 	);
 
@@ -182,6 +191,9 @@ ExtractTextWidget.prototype.onClickConfigButton = function () {
 
 	// Replicate the behaviour from OO.ui.PopupButtonWidget.prototype.onAction
 	this.configButton.popup.toggle();
+
+	// Enable the radio select widget based on popup visibilty
+	this.radioSelect.setDisabled( !this.configButton.popup.isVisible() );
 };
 
 ExtractTextWidget.prototype.onClickExtractButton = function () {
