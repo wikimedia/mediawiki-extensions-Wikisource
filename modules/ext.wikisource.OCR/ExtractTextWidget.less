@@ -1,4 +1,4 @@
-@import 'mediawiki.ui/variables';
+@import 'mediawiki.skin.variables.less';
 
 .prp-page-container {
 	position: relative;
@@ -9,7 +9,7 @@
 	// Keep enough margin to not obscure the right border of the toolbar.
 	margin-right: 1px;
 	z-index: 2;
-	border-left: 1px solid #eaecf0;
+	border-left: @border-subtle;
 
 	.oo-ui-buttonElement-button {
 		border: 0;
@@ -38,6 +38,7 @@
 	}
 
 	.ext-wikisource-ocr-engineradios {
+		// TODO: We're not using `bolder` in Codex Design System for Wikimedia.
 		font-weight: bolder;
 		margin-bottom: 12px;
 	}

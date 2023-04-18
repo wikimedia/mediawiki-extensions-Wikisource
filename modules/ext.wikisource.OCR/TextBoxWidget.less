@@ -1,14 +1,15 @@
-@import 'mediawiki.ui/variables';
+@import 'mediawiki.skin.variables.less';
 
 .ext-wikisource-TextBoxWidget {
-	background-color: @colorGray14;
+	background-color: @background-color-interactive;
 	display: flex;
 	align-items: center;
 	bottom: auto;
+	// TODO: We're not using `bolder` in Codex Design System for Wikimedia.
 	font-weight: bolder;
-	border-color: @colorGray12;
-	border-width: 1px 0;
-	border-style: solid;
+	border-color: @border-color-subtle;
+	border-width: @border-width-base 0;
+	border-style: @border-style-base;
 
 	.ext-wikisource-TextBoxWidget-icon {
 		margin: 0 1em;

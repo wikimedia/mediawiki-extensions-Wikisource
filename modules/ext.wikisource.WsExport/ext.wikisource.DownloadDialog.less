@@ -1,4 +1,4 @@
-@import 'mediawiki.ui/variables';
+@import 'mediawiki.skin.variables.less';
 
 .ext-wikisource-download-dialog {
 	a:hover {
@@ -7,7 +7,7 @@
 
 	.ext-wikisource-subtle-text {
 		font-size: smaller;
-		color: @color-base--subtle;
+		color: @color-subtle;
 	}
 
 	.ext-wikisource-ChooserButton {
@@ -29,8 +29,8 @@
 		}
 
 		// Reinstate anchor's pointer cursor.
-		label {
-			cursor: pointer;
+		label:hover {
+			cursor: @cursor-base--hover;
 		}
 
 		.ext-wikisource-description {
