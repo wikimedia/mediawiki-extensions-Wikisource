@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"KuboF",
 			"Wierzbowski"
 		]
 	},
@@ -20,5 +21,6 @@
 	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "por la bitlibrolegilo Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "por grandaj ekranoj kaj printado"
+	"wikisource-download-chooser-pdf-description": "por grandaj ekranoj kaj printado",
+	"wikisource-ocr-extract-text": "Transskribi tekston"
 }
