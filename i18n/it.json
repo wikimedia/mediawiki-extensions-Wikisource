@@ -28,7 +28,9 @@
 	"wikisource-ocr-extract-text": "Trascrivi il testo",
 	"wikisource-ocr-extract-progress": "Trascrizione del testo dall'immagine...",
 	"wikisource-ocr-extract-cancel": "Annulla",
+	"wikisource-ocr-extract-undo": "Annulla la trascrizione",
 	"wikisource-ocr-engine": "Seleziona il tuo strumento di trascrizione del testo predefinito",
+	"wikisource-ocr-advanced": "Opzioni avanzate",
 	"wikisource-ocr-onboarding-title": "Trascrivi le immagini in testo",
 	"wikisource-ocr-onboarding-button": "Ok, capito"
 }

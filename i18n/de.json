@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Umherirrender"
+			"Umherirrender",
+			"Brettchenweber"
 		]
 	},
 	"wikisource-desc": "Wikisource-spezifische MediaWiki-Anpassungen",
@@ -29,9 +30,9 @@
 	"wikisource-ocr-error": "Fehler vom OCR-Werkzeug: $1",
 	"wikisource-ocr-no-text": "Das OCR-Werkzeug hat keinen Text zurückgegeben.",
 	"wikisource-ocr-settings-menu": "OCR-Einstellungen ändern",
-	"wikisource-ocr-engine": "Auswahl deines Standard-Transkriptionswerkzeug",
+	"wikisource-ocr-engine": "Auswahl deines Standard-Transkriptionswerkzeugs",
 	"wikisource-ocr-advanced": "Erweiterte Optionen",
-	"wikisource-ocr-advanced-title": "Erweiterten Optionen in einem neuen Tab öffnen",
+	"wikisource-ocr-advanced-title": "Erweiterte Optionen in einem neuen Tab öffnen",
 	"wikisource-ocr-onboarding-title": "Bilder in Text umwandeln",
 	"wikisource-ocr-onboarding-text": "Verwandelt gescannte Dokumente mithilfe der optischen Zeichenerkennung (OCR) in bearbeitbaren Text.",
 	"wikisource-ocr-onboarding-button": "Okay, verstanden."
