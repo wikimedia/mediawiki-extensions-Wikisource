@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
 use Config;
-use EditPage;
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\MediaWikiServices;
 use MWException;
