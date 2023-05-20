@@ -14,7 +14,7 @@ use Title;
 class WsExportTest extends TestCase {
 
 	/**
-	 * @dataProvider provideServerName()
+	 * @dataProvider provideServerName
 	 */
 	public function testServerName( $langCode, $serverName, $exportUrl ) {
 		$lang = MediaWikiServices::getInstance()->getLanguageFactory()->getLanguage( $langCode );
@@ -22,7 +22,7 @@ class WsExportTest extends TestCase {
 		$this->assertSame( $exportUrl, $wsExport->getExportUrl( Title::newFromText( 'Lorem' ) ) );
 	}
 
-	public function provideServerName() {
+	public static function provideServerName() {
 		return [
 			[ 'ru', 'localhost', 'exportUrl/?lang=ru&title=Lorem' ],
 			[ 'en', 'en.wikisource.org', 'exportUrl/?lang=en&title=Lorem' ],

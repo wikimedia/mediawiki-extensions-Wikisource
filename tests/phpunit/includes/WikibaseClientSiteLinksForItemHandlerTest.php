@@ -33,9 +33,9 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 		Item $item
 	) {
 		$entityLookup = new InMemoryEntityLookup();
-		$entityLookup->addEntity( $this->q1() );
-		$entityLookup->addEntity( $this->q2() );
-		$entityLookup->addEntity( $this->q3() );
+		$entityLookup->addEntity( self::q1() );
+		$entityLookup->addEntity( self::q2() );
+		$entityLookup->addEntity( self::q3() );
 
 		$handler = new WikibaseClientSiteLinksForItemHandler(
 			new EditionLookup(
@@ -50,7 +50,7 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 		$this->assertEquals( $expected, $beginning );
 	}
 
-	public function doProvideSiteLinksProvider() {
+	public static function doProvideSiteLinksProvider() {
 		return [
 			'Item with work' => [
 				[
@@ -58,7 +58,7 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 					'frwiki' => new SiteLink( 'frwiki', 'Foo' ),
 				],
 				[],
-				$this->q1()
+				self::q1()
 			],
 			'Item with work with existing' => [
 				[
@@ -68,7 +68,7 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 				[
 					'enwiki' => new SiteLink( 'enwiki', 'Bar' ),
 				],
-				$this->q1()
+				self::q1()
 			],
 			'Item without work' => [
 				[
@@ -77,7 +77,7 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 				[
 					'enwiki' => new SiteLink( 'enwiki', 'Bar' ),
 				],
-				$this->q2()
+				self::q2()
 			],
 			'Not existing work item' => [
 				[
@@ -86,12 +86,12 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 				[
 					'enwiki' => new SiteLink( 'enwiki', 'Bar' ),
 				],
-				$this->q3()
+				self::q3()
 			],
 		];
 	}
 
-	public function q1() {
+	public static function q1() {
 		$item = new Item( new ItemId( 'Q1' ) );
 		$item->getStatements()->addNewStatement(
 			new PropertyValueSnak( new NumericPropertyId( 'P629' ), new EntityIdValue( new ItemId( 'Q2' ) ) )
@@ -102,14 +102,14 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 		return $item;
 	}
 
-	public function q2() {
+	public static function q2() {
 		$item = new Item( new ItemId( 'Q2' ) );
 		$item->getSiteLinkList()->addNewSiteLink( 'enwiki', 'Foo' );
 		$item->getSiteLinkList()->addNewSiteLink( 'frwiki', 'Foo' );
 		return $item;
 	}
 
-	public function q3() {
+	public static function q3() {
 		$item = new Item( new ItemId( 'Q3' ) );
 		$item->getStatements()->addNewStatement(
 			new PropertyValueSnak(
@@ -120,7 +120,7 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 		return $item;
 	}
 
-	public function q4() {
+	public static function q4() {
 		$item = new Item( new ItemId( 'Q4' ) );
 		$item->getSiteLinkList()->addNewSiteLink( 'dewiki', 'Foo' );
 		$item->getStatements()->addNewStatement(
@@ -140,9 +140,9 @@ class WikibaseClientSiteLinksForItemHandlerTest extends TestCase {
 
 		$entityLookup = new InMemoryEntityLookup();
 		$entityLookup->addEntity( $item );
-		$entityLookup->addEntity( $this->q2() );
-		$entityLookup->addEntity( $this->q3() );
-		$entityLookup->addEntity( $this->q4() );
+		$entityLookup->addEntity( self::q2() );
+		$entityLookup->addEntity( self::q3() );
+		$entityLookup->addEntity( self::q4() );
 
 		$handler = new WikibaseClientSiteLinksForItemHandler(
 			new EditionLookup(
