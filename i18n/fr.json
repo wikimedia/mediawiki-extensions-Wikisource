@@ -40,6 +40,7 @@
 	"wikisource-ocr-engine": "Sélectionner votre outil de transcription du texte par défaut",
 	"wikisource-ocr-engine-tesseract": "OCR de Tesseract",
 	"wikisource-ocr-engine-google": "OCR de Google",
+	"wikisource-ocr-engine-transkribus": "ROC de Transkribus",
 	"wikisource-ocr-advanced": "Options avancées",
 	"wikisource-ocr-advanced-title": "Ouvrir le formulaire des options avancées dans un nouvel onglet",
 	"wikisource-ocr-onboarding-title": "Transcrire les images en texte",
