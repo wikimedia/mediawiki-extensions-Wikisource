@@ -3,10 +3,10 @@
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
 use Config;
+use ConfigException;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\MediaWikiServices;
-use MWException;
 use OutputPage;
 
 // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
@@ -49,7 +49,7 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		}
 		// Make sure there's a tool URL defined.
 		if ( !$this->toolUrl ) {
-			throw new MWException( 'Please set tool URL with $wgWikisourceOcrUrl' );
+			throw new ConfigException( 'Please set tool URL with $wgWikisourceOcrUrl' );
 		}
 		// Require the WikiEditor toolbar to be enabled.
 		$useBetaToolbar = MediaWikiServices::getInstance()
