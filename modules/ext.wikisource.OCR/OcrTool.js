@@ -47,16 +47,24 @@ OO.mixinClass( OcrTool, OO.EventEmitter );
 OcrTool.static.normalSlideSpeed = 600;
 
 OcrTool.prototype.saveConfig = function () {
-	mwLocalStorage.set( 'wikisource-ocr', JSON.stringify( {
+	var stringifiedConfig = JSON.stringify( {
 		engine: this.engine,
 		showOnboarding: this.showOnboarding
-	} ) );
+	} );
+	if ( mw.user.isAnon() ) {
+		mwLocalStorage.set( 'wikisource-ocr', stringifiedConfig );
+	} else {
+		mwLocalStorage.remove( 'wikisource-ocr' );
+		mw.user.options.set( 'wikisource-ocr', stringifiedConfig );
+		( new mw.Api() ).saveOption( 'wikisource-ocr', stringifiedConfig );
+	}
 };
 
 OcrTool.prototype.loadConfig = function () {
-	var config = JSON.parse( mwLocalStorage.get( 'wikisource-ocr' ) );
+	var config = JSON.parse( mw.user.options.get( 'wikisource-ocr' ) );
 	if ( config === null ) {
-		config = {};
+		// Legacy config
+		config = JSON.parse( mwLocalStorage.get( 'wikisource-ocr' ) ) || {};
 	}
 	if ( config.engine === undefined ) {
 		config.engine = 'tesseract';
