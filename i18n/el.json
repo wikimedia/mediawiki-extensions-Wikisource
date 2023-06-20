@@ -1,15 +1,39 @@
 {
 	"@metadata": {
 		"authors": [
-			"Αντιγόνη"
+			"Αντιγόνη",
+			"DesVaMan"
 		]
 	},
+	"wikisource-desc": "Προσαρμογές MediaWiki για συγκεκριμένα Wikisource",
+	"wikisource-export-portlet": "Εκτύπωση/εξαγωγή",
 	"wikisource-download-epub": "Λήψη EPUB",
+	"wikisource-download-epub-tooltip": "Κατεβάστε μια έκδοση EPUB αυτού του έργου",
 	"wikisource-download-mobi": "Λήψη MOBI",
+	"wikisource-download-mobi-tooltip": "Κάντε λήψη μιας έκδοσης MOBI αυτού του έργου",
 	"wikisource-download-pdf": "Λήψη PDF",
+	"wikisource-download-pdf-tooltip": "Κατεβάστε μια έκδοση PDF αυτής της εργασίας",
+	"wikisource-download-choose": "Άλλες μορφές",
+	"wikisource-download-choose-tooltip": "Ανοίξτε μια φόρμα για να επιλέξετε άλλες μορφές και γραμματοσειρές κ.λπ.",
 	"wikisource-download-button": "Λήψη",
+	"wikisource-download-chooser-title": "Επιλέξτε μια μορφή",
+	"wikisource-download-chooser-epub-description": "για υπολογιστές, κινητά, tablet",
+	"wikisource-download-chooser-mobi-description": "για Kindles",
+	"wikisource-download-chooser-pdf-description": "για μεγάλες οθόνες και εκτύπωση",
+	"wikisource-download-chooser-different-format": "Ψάχνετε για διαφορετική μορφή;",
+	"wikisource-ocr-extract-text": "Μεταγραφή κειμένου",
+	"wikisource-ocr-extract-progress": "Μεταγραφή κειμένου από εικόνα…",
+	"wikisource-ocr-extract-cancel": "Ακύρωση",
 	"wikisource-ocr-extract-undo": "Αναίρεση μεταγραφής",
+	"wikisource-ocr-extract-close": "Κλείστε αυτήν την ειδοποίηση",
+	"wikisource-ocr-extract-text-title": "Λάβετε κείμενο OCR αυτής της εικόνας",
 	"wikisource-ocr-error": "Σφάλμα από το εργαλείο OCR: $1",
+	"wikisource-ocr-no-text": "Δεν επιστράφηκε κείμενο από το εργαλείο OCR.",
+	"wikisource-ocr-settings-menu": "Αλλάξτε τις ρυθμίσεις OCR",
 	"wikisource-ocr-engine": "Επιλέξτε προεπιλεγμένο εργαλείο μεταγραφής κειμένου",
-	"wikisource-ocr-advanced": "Σύνθετες Επιλογές"
+	"wikisource-ocr-advanced": "Σύνθετες Επιλογές",
+	"wikisource-ocr-advanced-title": "Ανοίξτε τη φόρμα σύνθετων επιλογών σε μια νέα καρτέλα",
+	"wikisource-ocr-onboarding-title": "Μεταγραφή εικόνων σε κείμενο",
+	"wikisource-ocr-onboarding-text": "Μετατρέψτε τα σαρωμένα έγγραφα σε επεξεργάσιμο κείμενο, χρησιμοποιώντας την οπτική αναγνώριση χαρακτήρων (OCR).",
+	"wikisource-ocr-onboarding-button": "Εντάξει, το 'πιασα"
 }
