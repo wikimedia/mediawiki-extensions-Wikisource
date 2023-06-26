@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajsmen91",
+			"Msz2001",
 			"Rail",
 			"Zdzislaw"
 		]
@@ -21,5 +22,20 @@
 	"wikisource-download-chooser-epub-description": "komputer, telefon, tablet",
 	"wikisource-download-chooser-mobi-description": "Kindle",
 	"wikisource-download-chooser-pdf-description": "duży ekran i druk",
-	"wikisource-download-chooser-different-format": "Szukasz innego formatu?"
+	"wikisource-download-chooser-different-format": "Szukasz innego formatu?",
+	"wikisource-ocr-extract-text": "Transkrybuj tekst",
+	"wikisource-ocr-extract-progress": "Transkrypcja tekstu z obrazu…",
+	"wikisource-ocr-extract-cancel": "Anuluj",
+	"wikisource-ocr-extract-undo": "Cofnij transkrypcję",
+	"wikisource-ocr-extract-close": "Zamknij to powiadomienie",
+	"wikisource-ocr-extract-text-title": "Uzyskaj tekst OCR tego obrazu",
+	"wikisource-ocr-error": "Błąd narzędzia OCR: $1",
+	"wikisource-ocr-no-text": "Narzędzie OCR nie zwróciło żadnego tekstu.",
+	"wikisource-ocr-settings-menu": "Zmień ustawienia OCR",
+	"wikisource-ocr-engine": "Wybierz domyślne narzędzie do transkrypcji tekstu",
+	"wikisource-ocr-advanced": "Opcje zaawansowane",
+	"wikisource-ocr-advanced-title": "Otwórz formularz opcji zaawansowanych w nowej karcie",
+	"wikisource-ocr-onboarding-title": "Transkrypcja obrazów na tekst",
+	"wikisource-ocr-onboarding-text": "Zamień zeskanowane dokumenty w edytowalny tekst za pomocą optycznego rozpoznawania znaków (OCR).",
+	"wikisource-ocr-onboarding-button": "Ok, rozumiem"
 }
