@@ -95,7 +95,8 @@
 		},
 		"ext.wikisource.OCR": {
 			"targets": [
-				"desktop"
+				"desktop",
+				"mobile"
 			],
 			"dependencies": [
 				"jquery.spinner",
