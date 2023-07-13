@@ -46,7 +46,7 @@ class ArticleViewHeaderHandler implements ArticleViewHeaderHook {
 	 * @return bool|void
 	 */
 	public function onArticleViewHeader( $article, &$outputDone, &$pcache ) {
-		// Only show on pages that exist (and not the mainpage or a disambig age).
+		// Only show on pages that exist (and not the mainpage or a disambiguation page).
 		// and are allowed to host books as (based on a
 		// per-wiki configuration variable, $wgProofreadPageBookNamespaces).
 		if ( !$article->getTitle()->inNamespaces( $this->allowNamespaces )
