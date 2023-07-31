@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Milicevic01",
 			"Obsuser"
 		]
 	},
@@ -19,5 +20,7 @@
 	"wikisource-download-chooser-mobi": "MOBI",
 	"wikisource-download-chooser-mobi-description": "за Kindles",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "за велике екране и принтовање"
+	"wikisource-download-chooser-pdf-description": "за велике екране и принтовање",
+	"wikisource-ocr-extract-cancel": "Откажи",
+	"wikisource-ocr-onboarding-button": "У реду, разумем"
 }
