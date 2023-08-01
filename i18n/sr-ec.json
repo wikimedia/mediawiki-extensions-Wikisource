@@ -5,6 +5,7 @@
 			"Obsuser"
 		]
 	},
+	"wikisource-export-portlet": "Штампање/извоз",
 	"wikisource-download-epub": "Преузимање EPUB-а",
 	"wikisource-download-epub-tooltip": "Преузимање EPUB верзије овог рада",
 	"wikisource-download-mobi": "Преузимање MOBI-ја",
@@ -21,6 +22,9 @@
 	"wikisource-download-chooser-mobi-description": "за Kindles",
 	"wikisource-download-chooser-pdf": "PDF",
 	"wikisource-download-chooser-pdf-description": "за велике екране и принтовање",
+	"wikisource-ocr-extract-text": "Транскрипуј текст",
 	"wikisource-ocr-extract-cancel": "Откажи",
+	"wikisource-ocr-extract-close": "Затвори напомену",
+	"wikisource-ocr-advanced": "Напредне опције",
 	"wikisource-ocr-onboarding-button": "У реду, разумем"
 }
