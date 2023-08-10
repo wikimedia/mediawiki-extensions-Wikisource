@@ -121,6 +121,7 @@ OcrTool.prototype.getUrl = function ( imageUrl, api ) {
 		'?engine=' + this.engine +
 		'&langs[]=' + this.langs.join( '&langs[]=' ) +
 		'&image=' + encodeURIComponent( imageUrl ) +
+		'&line_id=' + ( this.lineId || '' ) +
 		'&uselang=' + mw.config.get( 'wgUserLanguage' );
 };
 
@@ -188,10 +189,28 @@ OcrTool.prototype.setLanguage = function () {
 	if ( this.engine === 'transkribus' ) {
 		let transkribusModels = mw.config.get( 'WikisourceTranskribusModels' );
 		let modelkey = mw.config.get( 'wgDBname' );
-		if ( transkribusModels[ modelkey ] ) {
-			this.langs = transkribusModels[ modelkey ].slice( 0, 1 );
+		if ( transkribusModels[ modelkey ] && transkribusModels[ modelkey ].htr ) {
+			this.langs = transkribusModels[ modelkey ].htr.slice( 0, 1 );
 		}
+	}
+};
 
+/**
+ * Set line detection model ID if Transkribus OCR engine is selected
+ *
+ * @param {boolean} unset
+ */
+OcrTool.prototype.setLineId = function ( unset ) {
+	if ( this.engine === 'transkribus' ) {
+		if ( unset ) {
+			this.lineId = null;
+		} else {
+			let transkribusModels = mw.config.get( 'WikisourceTranskribusModels' );
+			let modelkey = mw.config.get( 'wgDBname' );
+			if ( transkribusModels[ modelkey ] && transkribusModels[ modelkey ].line ) {
+				this.lineId = transkribusModels[ modelkey ].line;
+			}
+		}
 	}
 };
 

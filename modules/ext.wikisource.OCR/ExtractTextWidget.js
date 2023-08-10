@@ -87,7 +87,7 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 			label: mw.msg( 'wikisource-ocr-engine-google' )
 		} )
 	];
-	if ( this.modelIsSet() ) {
+	if ( this.htrModelIsSet() ) {
 		ocrOptions.push(
 			new OO.ui.RadioOptionWidget( {
 				data: 'transkribus',
@@ -95,6 +95,18 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 			} )
 		);
 	}
+	// create fieldset for line detection checkbox
+	this.fieldset = new OO.ui.FieldsetLayout( {} );
+	this.lineDetectionCheckBox = new OO.ui.CheckboxInputWidget( {
+		selected: false
+	} );
+	this.fieldset.addItems( [
+		new OO.ui.FieldLayout( this.lineDetectionCheckBox, { label: mw.msg( 'wikisource-ocr-engine-line-model-checkbox-label' ), align: 'inline' } )
+	] );
+	this.lineDetectionCheckBox.connect( this, {
+		change: 'setLineDetectionModel'
+	} );
+	this.fieldset.toggle( this.htrModelIsSet() && this.ocrTool.getEngine() === 'transkribus' );
 	this.radioSelect = new OO.ui.RadioSelectWidget( {
 		classes: [ 'ext-wikisource-ocr-engineradios' ],
 		items: ocrOptions
@@ -128,6 +140,7 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 	content.$element.append(
 		label.$element,
 		this.radioSelect.$element,
+		this.fieldset.$element,
 		this.advancedLink.$element
 	);
 
@@ -238,21 +251,38 @@ ExtractTextWidget.prototype.onEngineChoose = function ( item, selected ) {
 	if ( selected ) {
 		this.ocrTool.setEngine( item.data );
 		this.ocrTool.setLanguage();
+		// enable the checkbox for line detection only if the
+		// selected engine is Transkribus
+		this.lineDetectionCheckBox.setDisabled( item.data !== 'transkribus' );
 		// Also update the advanced link's URL.
 		this.advancedLink.setHref( this.ocrTool.getUrl( null, false ) );
 	}
 };
 
 /**
- * Check if there is a model set for Transkribus OCR engine.
+ * On changing the line detection model checkbox selection.
+ *
+ */
+ExtractTextWidget.prototype.setLineDetectionModel = function () {
+	if ( this.lineDetectionCheckBox.selected ) {
+		this.ocrTool.setLineId( false );
+	} else {
+		this.ocrTool.setLineId( true );
+	}
+	// Also update the advanced link's URL.
+	this.advancedLink.setHref( this.ocrTool.getUrl( null, false ) );
+};
+
+/**
+ * Check if there is an HTR model set for Transkribus OCR engine.
  *
  * @return {boolean}
  */
-ExtractTextWidget.prototype.modelIsSet = function () {
+ExtractTextWidget.prototype.htrModelIsSet = function () {
 	if ( mw.config.get( 'WikisourceTranskribusModels' ) ) {
 		let transkribusModels = mw.config.get( 'WikisourceTranskribusModels' );
 		let modelkey = mw.config.get( 'wgDBname' );
-		if ( transkribusModels[ modelkey ] ) {
+		if ( transkribusModels[ modelkey ] && transkribusModels[ modelkey ].htr ) {
 			return true;
 		}
 	}

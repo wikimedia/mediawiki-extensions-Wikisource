@@ -137,6 +137,7 @@
 				"wikisource-ocr-engine-tesseract",
 				"wikisource-ocr-engine-google",
 				"wikisource-ocr-engine-transkribus",
+				"wikisource-ocr-engine-line-model-checkbox-label",
 				"wikisource-ocr-advanced",
 				"wikisource-ocr-advanced-title",
 				"wikisource-ocr-onboarding-title",
@@ -163,53 +164,80 @@
 		},
 		"WikisourceTranskribusModels": {
 			"value": {
-				"banwikisource": [
-					"bali"
-				],
-				"bnwikisource": [
-					"ben-print",
-					"dev"
-				],
-				"dewikisource": [
-					"de-17",
-					"de-hd-m1",
-					"ger-hd-m1",
-					"ger-15"
-				],
-				"enwikisource": [
-					"en-b2022",
-					"en-handwritten-m3",
-					"en-print-m1",
-					"en-typewriter"
-				],
-				"esnwikisource": [
-					"es-md"
-				],
-				"fiwikisource": [
-					"fin"
-				],
-				"frnwikisource": [
-					"fr-m1"
-				],
-				"itwikisource": [
-					"it-hd-m1"
-				],
-				"plwikisource": [
-					"pl-m2"
-				],
-				"ruwikisource": [
-					"rus-hd-2",
-					"rus-print"
-				],
-				"sawikisource": [
-					"san"
-				],
-				"svwikisource": [
-					"swe-2.1"
-				],
-				"yiwikisource": [
-					"yi-hd"
-				]
+				"banwikisource": {
+					"htr": [
+						"bali"
+					],
+					"line": 45612
+				},
+				"bnwikisource": {
+					"htr": [
+						"ben-print",
+						"dev"
+					]
+				},
+				"dewikisource": {
+					"htr": [
+						"de-17",
+						"de-hd-m1",
+						"ger-hd-m1",
+						"ger-15"
+					]
+				},
+				"enwikisource": {
+					"htr": [
+						"en-b2022",
+						"en-handwritten-m3",
+						"en-print-m1",
+						"en-typewriter"
+					]
+				},
+				"esnwikisource": {
+					"htr": [
+						"es-md"
+					]
+				},
+				"fiwikisource": {
+					"htr": [
+						"fin"
+					]
+				},
+				"frnwikisource": {
+					"htr": [
+						"fr-m1"
+					]
+				},
+				"itwikisource": {
+					"htr": [
+						"it-hd-m1"
+					]
+				},
+				"plwikisource": {
+					"htr": [
+						"pl-m2"
+					]
+				},
+				"ruwikisource": {
+					"htr": [
+						"rus-hd-2",
+						"rus-print"
+					]
+				},
+				"sawikisource": {
+					"htr": [
+						"san"
+					]
+				},
+				"svwikisource": {
+					"htr": [
+						"swe-2.1"
+					]
+				},
+				"yiwikisource": {
+					"htr": [
+						"yi-hd"
+					]
+				}
 			}
 		}
 	},

@@ -32,6 +32,7 @@
 	"wikisource-ocr-engine-tesseract": "Tesseract OCR",
 	"wikisource-ocr-engine-google": "Google OCR",
 	"wikisource-ocr-engine-transkribus": "Transkribus OCR",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Use line detection model",
 	"wikisource-ocr-advanced": "Advanced Options",
 	"wikisource-ocr-advanced-title": "Open the advanced options form in a new tab",
 	"wikisource-ocr-onboarding-title": "Transcribe images into text",

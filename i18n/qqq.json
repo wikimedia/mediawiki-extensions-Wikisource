@@ -42,6 +42,7 @@
 	"wikisource-ocr-engine-tesseract": "Radio button label for the Tesseract engine.",
 	"wikisource-ocr-engine-google": "Radio button label for the Google engine.",
 	"wikisource-ocr-engine-transkribus": "Radio button label for the Transkribus engine.",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Checkbox label for the line detection model selection for Transkribus",
 	"wikisource-ocr-advanced": "Button text for a link to open a new tab for the advanced settings.\n{{Identical|Advanced options}}",
 	"wikisource-ocr-advanced-title": "Tooltip text for the advanced settings form.",
 	"wikisource-ocr-onboarding-title": "Title for the onboarding popup.",
