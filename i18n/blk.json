@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"ခွန်ဖန်ဒွဲ့",
 			"咽頭べさ"
 		]
 	},
-	"wikisource-export-portlet": "ထေထန်ႏ/ပရင့်"
+	"wikisource-desc": "ဝီခီရွီးခိုႏ-မဲန်ႏဗဲက်တနꩻစွိုꩻ့ မီဒီယာဝီခီ ကမ်းသꩻထာꩻဖျင်မာꩻဖိုင်ႏ",
+	"wikisource-export-portlet": "ထေထန်ႏ/ပရင့်",
+	"wikisource-download-epub": "ထူႏလင်ꩻ EPUB",
+	"wikisource-download-epub-tooltip": "ထူႏလင်ꩻသွော့ꩻ EPUBဗားသိဉ်းထာꩻမာꩻယိုဖိုင်ႏ တဗာႏ။",
+	"wikisource-download-mobi": "ထူႏလင်ꩻ MOBI",
+	"wikisource-download-pdf": "ထူႏလင်ꩻ PDF",
+	"wikisource-download-button": "ထူႏလင်ꩻ",
+	"wikisource-ocr-extract-cancel": "မာꩻတဝ်းဒွုမ်"
 }
