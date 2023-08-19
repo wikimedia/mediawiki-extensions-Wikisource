@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\Wikisource;
 
 use Language;
-use Title;
+use MediaWiki\Title\Title;
 
 class WsExport {
 

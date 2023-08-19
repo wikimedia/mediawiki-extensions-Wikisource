@@ -28,15 +28,23 @@
 	"HookHandlers": {
 		"SidebarBeforeOutput": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\SidebarBeforeOutputHandler",
-			"services": [ "MainConfig", "ContentLanguage" ]
+			"services": [
+				"MainConfig",
+				"ContentLanguage"
+			]
 		},
 		"ArticleViewHeader": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\ArticleViewHeaderHandler",
-			"services": [ "MainConfig", "ContentLanguage" ]
+			"services": [
+				"MainConfig",
+				"ContentLanguage"
+			]
 		},
 		"EditPageShowEditFormInitial": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler",
-			"services": [ "MainConfig" ]
+			"services": [
+				"MainConfig"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {

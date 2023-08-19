@@ -3,8 +3,8 @@
 namespace MediaWiki\Extension\Wikisource;
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use PHPUnit\Framework\TestCase;
-use Title;
 
 /**
  * @covers \MediaWiki\Extension\Wikisource\WsExport
