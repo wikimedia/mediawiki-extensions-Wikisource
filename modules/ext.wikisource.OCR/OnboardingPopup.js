@@ -48,9 +48,11 @@ function OnboardingPopup( ocrTool ) {
 	$( 'html' ).on( 'click', function ( event ) {
 		const $parents = $( event.target ).closest( '.ext-wikisource-ocr-onboarding-popup, .ext-wikisource-ocr-onboarding-dot' );
 		if ( $parents.length === 0 && popup.isVisible() ) {
-			popup.toggle( false );
+			this.ocrTool.setShowOnboarding( false );
+			this.$element.remove();
+			this.popup.$element.remove();
 		}
-	} );
+	}.bind( this ) );
 
 	// Add the dot and popup to this widget.
 	this.$element = $( '<div>' )

@@ -23,6 +23,7 @@
 		"SidebarBeforeOutput": "SidebarBeforeOutput",
 		"ArticleViewHeader": "ArticleViewHeader",
 		"EditPage::showEditForm:initial": "EditPageShowEditFormInitial",
+		"GetPreferences": "GetPreferences",
 		"WikibaseClientSiteLinksForItem": "MediaWiki\\Extension\\Wikisource\\WikibaseClientSiteLinksForItemHandler::provideSiteLinks"
 	},
 	"HookHandlers": {
@@ -42,9 +43,10 @@
 		},
 		"EditPageShowEditFormInitial": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler",
-			"services": [
-				"MainConfig"
-			]
+			"services": [ "MainConfig" ]
+		},
+		"GetPreferences": {
+			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\GetPreferencesHandler"
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -102,10 +104,6 @@
 			}
 		},
 		"ext.wikisource.OCR": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"dependencies": [
 				"jquery.spinner",
 				"ext.proofreadpage.page.edit",
