@@ -36,6 +36,7 @@
 	"wikisource-ocr-engine": "Izberite svoje privzeto orodje za prepisovanje",
 	"wikisource-ocr-engine-tesseract": "OCR Tesseract",
 	"wikisource-ocr-engine-google": "OCR Google",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Uporabi model zaznavanja črt",
 	"wikisource-ocr-advanced": "Napredne možnosti",
 	"wikisource-ocr-advanced-title": "Odprite obrazec za napredne možnosti na novem zavihku",
 	"wikisource-ocr-onboarding-title": "Prepišite slike v besedilo",

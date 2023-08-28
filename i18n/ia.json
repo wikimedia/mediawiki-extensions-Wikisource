@@ -30,6 +30,7 @@
 	"wikisource-ocr-no-text": "Le utensile OCR non ha restituite alcun texto.",
 	"wikisource-ocr-settings-menu": "Cambiar le parametros de OCR",
 	"wikisource-ocr-engine": "Selige tu utensile de transcription de texto predefinite",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Usar modello de detection de lineas",
 	"wikisource-ocr-advanced": "Optiones avantiate",
 	"wikisource-ocr-advanced-title": "Aperir le formulario de optiones avantiate in un nove scheda",
 	"wikisource-ocr-onboarding-title": "Transcriber imagines in texto",

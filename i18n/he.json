@@ -30,6 +30,7 @@
 	"wikisource-ocr-no-text": "לא הוחזר שום טקסט על־ידי כלי זיהוי התווים האופטי.",
 	"wikisource-ocr-settings-menu": "שינוי הגדרות OCR",
 	"wikisource-ocr-engine": "נא לבחור את כלי העתקת הטקסט שלך ההתחלתי שלך",
+	"wikisource-ocr-engine-line-model-checkbox-label": "להשתמש במודל זיהוי שורה",
 	"wikisource-ocr-advanced": "אפשרויות מתקדמות",
 	"wikisource-ocr-advanced-title": "פתיחת האפשרויות המתקדמות בלשונית חדשה",
 	"wikisource-ocr-onboarding-title": "העתקת תמונות לטקסט",

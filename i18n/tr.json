@@ -37,6 +37,7 @@
 	"wikisource-ocr-no-text": "OCR aracı tarafından hiçbir metin döndürülmedi.",
 	"wikisource-ocr-settings-menu": "OCR ayarlarını değiştir",
 	"wikisource-ocr-engine": "Varsayılan metin transkripsiyon aracınızı seçin",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Çizgi algılama biçimini kullan",
 	"wikisource-ocr-advanced": "Gelişmiş Seçenekler",
 	"wikisource-ocr-advanced-title": "Gelişmiş seçenekler formunu yeni bir sekmede açın",
 	"wikisource-ocr-onboarding-title": "Görüntüleri metne dönüştürün",

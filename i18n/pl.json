@@ -33,6 +33,7 @@
 	"wikisource-ocr-no-text": "Narzędzie OCR nie zwróciło żadnego tekstu.",
 	"wikisource-ocr-settings-menu": "Zmień ustawienia OCR",
 	"wikisource-ocr-engine": "Wybierz domyślne narzędzie do transkrypcji tekstu",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Użyj modelu wykrywania linii",
 	"wikisource-ocr-advanced": "Opcje zaawansowane",
 	"wikisource-ocr-advanced-title": "Otwórz formularz opcji zaawansowanych w nowej karcie",
 	"wikisource-ocr-onboarding-title": "Transkrypcja obrazów na tekst",
