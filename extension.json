@@ -217,9 +217,10 @@
 						"en-typewriter"
 					]
 				},
-				"esnwikisource": {
+				"eswikisource": {
 					"htr": [
-						"es-md"
+						"es-md",
+						"es-redonda-extended-v1_2"
 					]
 				},
 				"etwikisource": {
