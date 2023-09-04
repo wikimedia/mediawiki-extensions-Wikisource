@@ -182,12 +182,31 @@
 						"dev"
 					]
 				},
+				"cswikisource": {
+					"htr": [
+						"cs-space",
+						"cs-no-space"
+					]
+				},
+				"dawikisource": {
+					"htr": [
+						"da-goth",
+						"da-goth-print",
+						"da-gjen"
+					]
+				},
 				"dewikisource": {
 					"htr": [
 						"de-17",
 						"de-hd-m1",
 						"ger-hd-m1",
 						"ger-15"
+					]
+				},
+				"elwikisource": {
+					"htr": [
+						"el-ligo",
+						"el-print"
 					]
 				},
 				"enwikisource": {
@@ -203,6 +222,11 @@
 						"es-md"
 					]
 				},
+				"etwikisource": {
+					"htr": [
+						"et-court"
+					]
+				},
 				"fiwikisource": {
 					"htr": [
 						"fin"
@@ -213,14 +237,55 @@
 						"fr-m1"
 					]
 				},
+				"hewikisource": {
+					"htr": [
+						"he-dijest"
+					]
+				},
+				"huwikisource": {
+					"htr": [
+						"hu-hand-19"
+					]
+				},
 				"itwikisource": {
 					"htr": [
 						"it-hd-m1"
 					]
 				},
+				"lawikisource": {
+					"htr": [
+						"la-caro",
+						"la-med",
+						"la-neo"
+					]
+				},
+				"nlwikisource": {
+					"htr": [
+						"nl-1605",
+						"nl-mount",
+						"nl-news"
+					]
+				},
+				"nowikisource": {
+					"htr": [
+						"no-1820",
+						"no-1874"
+					]
+				},
 				"plwikisource": {
 					"htr": [
 						"pl-m2"
+					]
+				},
+				"ptwikisource": {
+					"htr": [
+						"pt-m1",
+						"pt-17"
+					]
+				},
+				"ro-wikisource": {
+					"htr": [
+						"ro-print"
 					]
 				},
 				"ruwikisource": {
@@ -232,6 +297,16 @@
 				"sawikisource": {
 					"htr": [
 						"san"
+					]
+				},
+				"skwikisource": {
+					"htr": [
+						"sk-hand"
+					]
+				},
+				"slwikisource": {
+					"htr": [
+						"sl-hand-18"
 					]
 				},
 				"svwikisource": {
