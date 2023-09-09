@@ -197,8 +197,6 @@
 				},
 				"dewikisource": {
 					"htr": [
-						"de-17",
-						"de-hd-m1",
 						"ger-hd-m1",
 						"ger-15"
 					]
@@ -262,6 +260,7 @@
 				},
 				"nlwikisource": {
 					"htr": [
+						"de-17",
 						"nl-1605",
 						"nl-mount",
 						"nl-news"
