@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bangrapip"
+		]
+	},
+	"wikisource-desc": "Penyènglian MédiaWiki husus bakal Wikisumber",
+	"wikisource-export-portlet": "Apdrek/èkspor",
+	"wikisource-download-epub": "Comot EPUB",
+	"wikisource-download-epub-tooltip": "Comot pèrsi EPUB deri ni gawéan",
+	"wikisource-download-mobi": "Comot MOBI",
+	"wikisource-download-mobi-tooltip": "Comot pèrsi MOBI deri ni gawéan",
+	"wikisource-download-pdf": "Comot PDF",
+	"wikisource-download-pdf-tooltip": "Comot pèrsi PDF deri ni gawéan",
+	"wikisource-download-choose": "Laèn-laèn bentukan",
+	"wikisource-download-choose-tooltip": "Buka blangko bakal milih bentukan laèn, hodeng , èns.",
+	"wikisource-download-button": "Comot",
+	"wikisource-download-chooser-title": "Pilih bentukan",
+	"wikisource-download-chooser-epub-description": "bakal kumpiuter, pesawat, papan lè",
+	"wikisource-download-chooser-mobi-description": "bakal Kindle",
+	"wikisource-download-chooser-pdf-description": "bakal layar lèbar ama pengapdrekan",
+	"wikisource-download-chooser-different-format": "Nyari bentukan laèn?",
+	"wikisource-ocr-extract-text": "Tukerserat tèks",
+	"wikisource-ocr-extract-progress": "Nukerserat tèks deri gambar...",
+	"wikisource-ocr-extract-cancel": "Urungin",
+	"wikisource-ocr-extract-undo": "Balikin tukerserat",
+	"wikisource-ocr-extract-close": "Tutup ni peratian",
+	"wikisource-ocr-extract-text-title": "Dapetin tèks OCR deri ni gambar",
+	"wikisource-ocr-error": "Kengabluan deri peranti OCR: $1",
+	"wikisource-ocr-no-text": "Kaga' ada tèks nyang dibalikin ama peranti OCR.",
+	"wikisource-ocr-settings-menu": "Robah penyetèlan OCR",
+	"wikisource-ocr-engine": "Pilih lu punya peranti tukerserat tèks bawaan",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Paké modèl pengendusan baris",
+	"wikisource-ocr-advanced": "Pilihan Lanjutan",
+	"wikisource-ocr-advanced-title": "Buka blangko pilihan lanjutan di lembaran baru",
+	"wikisource-ocr-onboarding-title": "Tukerserat gambar jadi tèks",
+	"wikisource-ocr-onboarding-text": "Robah dokumèn répéan jadi tèks nyang kena dipermak, maké Penangkepan Lèter Optik (OCR).",
+	"wikisource-ocr-onboarding-button": "Baè', gua paham"
+}
