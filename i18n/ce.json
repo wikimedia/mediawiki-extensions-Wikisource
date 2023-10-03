@@ -4,5 +4,15 @@
 			"Умар"
 		]
 	},
-	"wikisource-download-pdf": "Схьаэца PDF"
+	"wikisource-export-portlet": "Зорба/экспорт",
+	"wikisource-download-epub": "Схьаэца EPUB",
+	"wikisource-download-epub-tooltip": "Схьаэца EPUB-верси кху белхан",
+	"wikisource-download-mobi": "Схьаэца MOBI",
+	"wikisource-download-mobi-tooltip": "Схьаэца MOBI-верси кху белхан",
+	"wikisource-download-pdf": "Схьаэца PDF",
+	"wikisource-download-pdf-tooltip": "Схьаэца PDF-верси кху белхан",
+	"wikisource-download-choose": "Кхин форматаш",
+	"wikisource-download-button": "Схьаэца",
+	"wikisource-download-chooser-title": "Харжа формат",
+	"wikisource-ocr-extract-cancel": "Йухайаккха"
 }
