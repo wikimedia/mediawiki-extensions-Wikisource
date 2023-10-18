@@ -8,7 +8,9 @@
 			"Stang",
 			"Yfdyh000",
 			"Zhang8569",
-			"沈澄心"
+			"沈澄心",
+			"H78c67c",
+			"LittlePaw365"
 		]
 	},
 	"wikisource-desc": "维基文库特定的MediaWiki自定义",
@@ -40,6 +42,7 @@
 	"wikisource-ocr-no-text": "OCR工具未返回任何文本。",
 	"wikisource-ocr-settings-menu": "更改OCR设置",
 	"wikisource-ocr-engine": "选择您的默认文本转录工具",
+	"wikisource-ocr-engine-line-model-checkbox-label": "使用行检测模型",
 	"wikisource-ocr-advanced": "高级选项",
 	"wikisource-ocr-advanced-title": "在新标签页中打开高级选项表单",
 	"wikisource-ocr-onboarding-title": "将图片转录成文字",
