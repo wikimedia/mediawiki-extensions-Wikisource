@@ -2,10 +2,40 @@
 	"@metadata": {
 		"authors": [
 			"Beginneruser",
-			"Jeeputer"
+			"Jeeputer",
+			"Yoosef Pooranvary"
 		]
 	},
+	"wikisource-desc": "موارد سفارشی‌سازی مدیاویکی مخصوص ویکی‌نبشته",
+	"wikisource-export-portlet": "چاپ/برون‌ریزی",
+	"wikisource-download-epub": "بارگیری EPUB",
+	"wikisource-download-epub-tooltip": "بارگیری نسخه EPUB این اثر",
+	"wikisource-download-mobi": "بارگیری MOBI",
+	"wikisource-download-mobi-tooltip": "بارگیری نسخه MOBI این اثر",
+	"wikisource-download-pdf": "بارگیری PDF",
+	"wikisource-download-pdf-tooltip": "نسخه PDF این اثر را بارگیری کنید",
+	"wikisource-download-choose": "قالب‌های دیگر",
+	"wikisource-download-choose-tooltip": "گشودن یک فرم به منظور انتخاب قالب، قلم‌ و موارد دیگر.",
+	"wikisource-download-button": "بارگیری",
+	"wikisource-download-chooser-title": "انتخاب یک قالب",
+	"wikisource-download-chooser-epub-description": "برای رایانه، موبایل، تبلت",
+	"wikisource-download-chooser-mobi-description": "برای کیندلز",
+	"wikisource-download-chooser-pdf-description": "برای صفحات بزرگ و چاپ",
+	"wikisource-download-chooser-different-format": "به دنبال قالب متفاوتی هستید؟",
 	"wikisource-ocr-extract-text": "رونویسی متن",
+	"wikisource-ocr-extract-progress": "رونویسی متن از تصویر…",
+	"wikisource-ocr-extract-cancel": "لغو",
+	"wikisource-ocr-extract-undo": "واگردانی رونویسی",
 	"wikisource-ocr-extract-close": "بستن این اعلان",
+	"wikisource-ocr-extract-text-title": "متن OCR این تصویر را دریافت کنید",
+	"wikisource-ocr-error": "خطا از ابزار OCR: $1",
+	"wikisource-ocr-no-text": "هیچ متنی توسط ابزار OCR برگردانده نشد.",
+	"wikisource-ocr-settings-menu": "تغییر تنظیمات OCR",
+	"wikisource-ocr-engine": "انتخاب ابزار پیش‌فرض رونویسی متن",
+	"wikisource-ocr-engine-line-model-checkbox-label": "بکارگیری مدل تشخیص خط",
+	"wikisource-ocr-advanced": "گزینه‌های پیشرفته",
+	"wikisource-ocr-advanced-title": "فرم گزینه های پیشرفته را در یک تب جدید باز کنید",
+	"wikisource-ocr-onboarding-title": "رونویسی متن از تصاویر",
+	"wikisource-ocr-onboarding-text": "با استفاده از تشخیص نویسه نوری (OCR) اسناد اسکن شده را به متن قابل ویرایش تبدیل کنید.",
 	"wikisource-ocr-onboarding-button": "باشه، فهمیدم"
 }
