@@ -1,4 +1,5 @@
 var mwLocalStorage = require( 'mediawiki.storage' ).local;
+var Langs = require( './Langs.json' );
 
 /**
  * This is the central model for the OCR process.
@@ -17,7 +18,8 @@ function OcrTool( toolUrl, backupPageImageURL ) {
 		textExtractStart: 'textExtractStart',
 		textExtracted: 'textExtracted',
 		textExtractEnd: 'textExtractEnd',
-		undoing: 'undoing'
+		undoing: 'undoing',
+		languageLoaded: 'languageLoaded'
 	};
 
 	// Base URL of the tool.
@@ -34,9 +36,12 @@ function OcrTool( toolUrl, backupPageImageURL ) {
 	this.showOnboarding = true;
 	// The previous text in the edit box, to use when undoing. Must be set with setOldText().
 	this.oldText = null;
+	// Selected languages/models for engine
+	this.langs = [];
+	// Available languages/models for engines
+	this.allLangs = Langs;
 
 	this.loadConfig();
-	this.setLanguage();
 }
 
 OO.mixinClass( OcrTool, OO.EventEmitter );
@@ -49,6 +54,7 @@ OcrTool.static.normalSlideSpeed = 600;
 OcrTool.prototype.saveConfig = function () {
 	var stringifiedConfig = JSON.stringify( {
 		engine: this.engine,
+		langs: this.langs,
 		showOnboarding: this.showOnboarding
 	} );
 	if ( mw.user.isAnon() ) {
@@ -74,6 +80,12 @@ OcrTool.prototype.loadConfig = function () {
 		config.showOnboarding = true;
 	}
 	this.showOnboarding = config.showOnboarding;
+
+	if ( config.langs === undefined ) {
+		config.langs = this.langs;
+	}
+	this.langs = config.langs;
+	this.emit( this.events.languageLoaded, this.engine );
 };
 
 /**
@@ -85,10 +97,25 @@ OcrTool.prototype.setEngine = function ( engine ) {
 };
 
 /**
+ * @param {Array} langs
+ */
+OcrTool.prototype.setLangs = function ( langs ) {
+	this.langs = langs;
+	this.saveConfig();
+};
+
+/**
  * @return {string}
  */
 OcrTool.prototype.getEngine = function () {
 	return this.engine;
+};
+
+/**
+ * @return {Array}
+ */
+OcrTool.prototype.getLangs = function () {
+	return this.langs;
 };
 
 /**
@@ -185,22 +212,6 @@ OcrTool.prototype.extractText = function () {
  */
 OcrTool.prototype.setOldText = function ( oldText ) {
 	this.oldText = oldText;
-};
-
-/**
- * Set models as languages if Transkribus OCR engine is selected
- * else use default content language.
- */
-OcrTool.prototype.setLanguage = function () {
-	this.langs = [ mw.config.get( 'wgContentLanguage' ) ];
-
-	if ( this.engine === 'transkribus' ) {
-		let transkribusModels = mw.config.get( 'WikisourceTranskribusModels' );
-		let modelkey = mw.config.get( 'wgDBname' );
-		if ( transkribusModels[ modelkey ] && transkribusModels[ modelkey ].htr ) {
-			this.langs = transkribusModels[ modelkey ].htr.slice( 0, 1 );
-		}
-	}
 };
 
 /**

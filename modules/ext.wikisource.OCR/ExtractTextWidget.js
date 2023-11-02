@@ -65,9 +65,10 @@ function ExtractTextWidget( ocrTool, $textbox ) {
 		[ this.ocrTool.events.textExtracted ]: [ 'setDisabled', false ],
 		[ this.ocrTool.events.textExtractEnd ]: [ 'setDisabled', false ]
 	} );
-	// Handle the returned text.
+	// Handle the returned text and language updates.
 	this.ocrTool.connect( this, {
-		[ this.ocrTool.events.textExtracted ]: 'processOcrResult'
+		[ this.ocrTool.events.textExtracted ]: 'processOcrResult',
+		[ this.ocrTool.events.languageLoaded ]: 'updateMoreOptionsFields'
 	} );
 
 	this.onboardingPopup = new OnboardingPopup( this.ocrTool );
@@ -85,16 +86,17 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 		new OO.ui.RadioOptionWidget( {
 			data: 'google',
 			label: mw.msg( 'wikisource-ocr-engine-google' )
+		} ),
+		new OO.ui.RadioOptionWidget( {
+			data: 'transkribus',
+			label: mw.msg( 'wikisource-ocr-engine-transkribus' )
 		} )
 	];
-	if ( this.htrModelIsSet() ) {
-		ocrOptions.push(
-			new OO.ui.RadioOptionWidget( {
-				data: 'transkribus',
-				label: mw.msg( 'wikisource-ocr-engine-transkribus' )
-			} )
-		);
-	}
+
+	this.moreOptionsFieldset = new OO.ui.FieldsetLayout( {
+		classes: [ 'ext-wikisource-ocr-more-options' ]
+	} );
+
 	// create fieldset for line detection checkbox
 	this.fieldset = new OO.ui.FieldsetLayout( {} );
 	this.lineDetectionCheckBox = new OO.ui.CheckboxInputWidget( {
@@ -106,7 +108,8 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 	this.lineDetectionCheckBox.connect( this, {
 		change: 'setLineDetectionModel'
 	} );
-	this.fieldset.toggle( this.htrModelIsSet() && this.ocrTool.getEngine() === 'transkribus' );
+
+	this.fieldset.toggle( this.ocrTool.getEngine() === 'transkribus' );
 	this.radioSelect = new OO.ui.RadioSelectWidget( {
 		classes: [ 'ext-wikisource-ocr-engineradios' ],
 		items: ocrOptions
@@ -131,7 +134,7 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 		classes: [ 'ext-wikisource-ocr-advanced-link' ],
 		target: '_base'
 	} );
-
+	this.updateMoreOptionsFields();
 	var content = new OO.ui.PanelLayout( {
 		padded: false,
 		expanded: false,
@@ -141,6 +144,7 @@ ExtractTextWidget.prototype.getConfigContent = function () {
 		label.$element,
 		this.radioSelect.$element,
 		this.fieldset.$element,
+		this.moreOptionsFieldset.$element,
 		this.advancedLink.$element
 	);
 
@@ -250,10 +254,12 @@ ExtractTextWidget.prototype.processOcrResult = function ( response ) {
 ExtractTextWidget.prototype.onEngineChoose = function ( item, selected ) {
 	if ( selected ) {
 		this.ocrTool.setEngine( item.data );
-		this.ocrTool.setLanguage();
 		// enable the checkbox for line detection only if the
 		// selected engine is Transkribus
 		this.lineDetectionCheckBox.setDisabled( item.data !== 'transkribus' );
+		this.fieldset.toggle( item.data === 'transkribus' );
+
+		this.updateMoreOptionsFields();
 		// Also update the advanced link's URL.
 		this.advancedLink.setHref( this.ocrTool.getUrl( null, false ) );
 	}
@@ -273,20 +279,73 @@ ExtractTextWidget.prototype.setLineDetectionModel = function () {
 	this.advancedLink.setHref( this.ocrTool.getUrl( null, false ) );
 };
 
-/**
- * Check if there is an HTR model set for Transkribus OCR engine.
- *
- * @return {boolean}
- */
-ExtractTextWidget.prototype.htrModelIsSet = function () {
-	if ( mw.config.get( 'WikisourceTranskribusModels' ) ) {
-		let transkribusModels = mw.config.get( 'WikisourceTranskribusModels' );
-		let modelkey = mw.config.get( 'wgDBname' );
-		if ( transkribusModels[ modelkey ] && transkribusModels[ modelkey ].htr ) {
-			return true;
-		}
+ExtractTextWidget.prototype.setLanguages = function ( items ) {
+	let langs = [];
+	items.forEach( element => {
+		langs.push( element.data );
+	} );
+	this.updateOcrTool( langs );
+};
+
+ExtractTextWidget.prototype.setModel = function ( item ) {
+	this.updateOcrTool( [ item ] );
+};
+
+ExtractTextWidget.prototype.updateOcrTool = function ( item ) {
+	this.ocrTool.setLangs( item );
+	this.advancedLink.setHref( this.ocrTool.getUrl( null, false ) );
+};
+
+ExtractTextWidget.prototype.updateMoreOptionsFields = function () {
+	let engine = this.ocrTool.getEngine();
+	this.moreOptionsFieldset.clearItems();
+	let options = this.getLanguages( engine );
+	let fieldLabel = this.setLanguageDropdownLabel( engine );
+	this.ocrTool.setLangs( [] );
+	if ( engine !== 'transkribus' ) {
+		this.languageDropdown = new OO.ui.MenuTagMultiselectWidget( {
+			options: options
+		} );
+		this.languageDropdown.connect( this, {
+			change: 'setLanguages'
+		} );
+	} else {
+		this.languageDropdown = new OO.ui.DropdownInputWidget( {
+			options: options
+		} );
+		this.languageDropdown.connect( this, {
+			change: 'setModel'
+		} );
+		let value = this.languageDropdown.getValue();
+		this.setModel( value );
 	}
-	return false;
+
+	let dropdowns = [
+		new OO.ui.FieldLayout( this.languageDropdown, { label: fieldLabel, align: 'inline' } )
+	];
+
+	this.moreOptionsFieldset.addItems( dropdowns );
+};
+
+ExtractTextWidget.prototype.setLanguageDropdownLabel = function ( engine ) {
+	let fieldLabel = mw.msg( 'wikisource-ocr-language-dropdown-label' );
+	if ( engine === 'transkribus' ) {
+		fieldLabel = mw.msg( 'wikisource-ocr-model-dropdown-label' );
+	}
+	return fieldLabel;
+};
+
+ExtractTextWidget.prototype.getLanguages = function ( engine ) {
+	let items = [];
+	let engineLanguages = this.ocrTool.allLangs[ engine ];
+	for ( let key in engineLanguages ) {
+		let data = engineLanguages[ key ];
+		items.push( {
+			data: key,
+			label: data
+		} );
+	}
+	return items;
 };
 
 module.exports = ExtractTextWidget;

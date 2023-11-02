@@ -43,7 +43,10 @@
 		},
 		"EditPageShowEditFormInitial": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler",
-			"services": [ "MainConfig" ]
+			"services": [
+				"MainConfig",
+				"HttpRequestFactory"
+			]
 		},
 		"GetPreferences": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\GetPreferencesHandler"
@@ -123,7 +126,11 @@
 				"ext.wikisource.OCR/ExtractTextWidget.js",
 				"ext.wikisource.OCR/OnboardingPopup.js",
 				"ext.wikisource.OCR/LoadingWidget.js",
-				"ext.wikisource.OCR/UndoWidget.js"
+				"ext.wikisource.OCR/UndoWidget.js",
+				{
+					"name": "ext.wikisource.OCR/Langs.json",
+					"callback": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler::getLangs"
+				}
 			],
 			"messages": [
 				"wikisource-ocr-extract-text",
@@ -144,7 +151,9 @@
 				"wikisource-ocr-advanced-title",
 				"wikisource-ocr-onboarding-title",
 				"wikisource-ocr-onboarding-text",
-				"wikisource-ocr-onboarding-button"
+				"wikisource-ocr-onboarding-button",
+				"wikisource-ocr-language-dropdown-label",
+				"wikisource-ocr-model-dropdown-label"
 			]
 		}
 	},

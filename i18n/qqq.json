@@ -47,5 +47,7 @@
 	"wikisource-ocr-advanced-title": "Tooltip text for the advanced settings form.",
 	"wikisource-ocr-onboarding-title": "Title for the onboarding popup.",
 	"wikisource-ocr-onboarding-text": "Text paragraph for the onboarding popup.",
-	"wikisource-ocr-onboarding-button": "Confirmation button label for the onboarding popup."
+	"wikisource-ocr-onboarding-button": "Confirmation button label for the onboarding popup.",
+	"wikisource-ocr-language-dropdown-label": "Label for language dropdown",
+	"wikisource-ocr-model-dropdown-label": "Label for model dropdown"
 }
