@@ -33,6 +33,7 @@
 	"wikisource-ocr-no-text": "Ingen tekst ble returnert av OCR-verktøyet.",
 	"wikisource-ocr-settings-menu": "Endre OCR-innstillinger",
 	"wikisource-ocr-engine": "Velg standard teksttranskriberingsverktøy",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Bruk linjegjenkjenningsmodell",
 	"wikisource-ocr-advanced": "Avanserte alternativer",
 	"wikisource-ocr-advanced-title": "Åpne skjemaet for avanserte alternativer i ei ny fane",
 	"wikisource-ocr-onboarding-title": "Transkriberer bilder til tekst",
