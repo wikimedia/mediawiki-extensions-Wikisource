@@ -1,13 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Դավիթ Սարոյան"
 		]
 	},
 	"wikisource-export-portlet": "Տպել/արտահանել",
 	"wikisource-download-epub": "Ներբեռնել որպես EPUB",
 	"wikisource-download-epub-tooltip": "Ներբեռնել այս էջի EPUB տարբերակը",
+	"wikisource-download-mobi": "Ներբեռնել MOBI",
+	"wikisource-download-mobi-tooltip": "Ներբեռնել այս էջի MOBI տարբերակը",
+	"wikisource-download-pdf": "Ներբեռնել PDF",
+	"wikisource-download-pdf-tooltip": "Ներբեռնել այս էջի PDF տարբերակը",
 	"wikisource-download-choose": "Այլ ձևաչափեր",
+	"wikisource-download-button": "Ներբեռնել",
+	"wikisource-download-chooser-title": "Ընտրել ձևաչափը",
+	"wikisource-download-chooser-epub-description": "համակարգիչների, բջջային հեռախոսների և պլանշետների համար",
+	"wikisource-download-chooser-mobi-description": "Քինդլների համար",
+	"wikisource-download-chooser-pdf-description": "մեծ էկրանների և տպագրության համար",
+	"wikisource-download-chooser-different-format": "Փնտրում եք ա՞յլ ձևաչափ։",
+	"wikisource-ocr-extract-text": "Տառաճանաչել տեքստը",
 	"wikisource-ocr-extract-cancel": "Չեղարկել",
 	"wikisource-ocr-onboarding-button": "Լավ, հասկացա"
 }
