@@ -2,10 +2,10 @@
 
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
-use Config;
 use ExtensionRegistry;
 use IContextSource;
 use Language;
+use MediaWiki\Config\Config;
 use MediaWiki\Extension\Gadgets\GadgetRepo;
 use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Hook\SidebarBeforeOutputHook;

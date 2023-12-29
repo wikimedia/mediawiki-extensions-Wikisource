@@ -3,13 +3,13 @@
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
 use Article;
-use Config;
 use ExtensionRegistry;
 use Language;
+use MediaWiki\Config\Config;
 use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Page\Hook\ArticleViewHeaderHook;
+use MediaWiki\Parser\ParserOutput;
 use OOUI\ButtonWidget;
-use ParserOutput;
 
 class ArticleViewHeaderHandler implements ArticleViewHeaderHook {
 

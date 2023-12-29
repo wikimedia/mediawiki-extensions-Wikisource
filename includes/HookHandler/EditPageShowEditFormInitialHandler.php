@@ -2,12 +2,12 @@
 
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
-use Config;
-use ConfigException;
+use MediaWiki\Config\Config;
+use MediaWiki\Config\ConfigException;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\MediaWikiServices;
-use OutputPage;
+use MediaWiki\Output\OutputPage;
 
 // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initialHook {
