@@ -55,10 +55,6 @@
 	},
 	"ResourceModules": {
 		"ext.wikisource.download": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"dependencies": [
 				"oojs-ui-core",
 				"oojs-ui-widgets",
