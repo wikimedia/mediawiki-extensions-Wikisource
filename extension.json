@@ -82,7 +82,7 @@
 			]
 		},
 		"ext.wikisource.icons": {
-			"class": "ResourceLoaderImageModule",
+			"class": "MediaWiki\\ResourceLoader\\ImageModule",
 			"selector": ".ext-wikisource-icon-{name}",
 			"images": {
 				"desktop-and-printer": {
