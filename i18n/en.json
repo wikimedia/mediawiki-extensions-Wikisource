@@ -38,6 +38,6 @@
 	"wikisource-ocr-onboarding-title": "Transcribe images into text",
 	"wikisource-ocr-onboarding-text": "Turn scanned documents into editable text, using Optical Character Recognition (OCR).",
 	"wikisource-ocr-onboarding-button": "Okay, got it",
-	"wikisource-ocr-language-dropdown-label": "Languages(optional):",
+	"wikisource-ocr-language-dropdown-label": "Languages (optional):",
 	"wikisource-ocr-model-dropdown-label": "Text recognition model"
 }
