@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ahmed Alyamoor",
 			"Meno25",
 			"NEHAOUA",
 			"محمد أحمد عبد الفتاح"
@@ -36,5 +37,6 @@
 	"wikisource-ocr-advanced-title": "افتح نموذج الخيارات المتقدمة في علامة تبويب جديدة",
 	"wikisource-ocr-onboarding-title": "حول صورة إلى نص",
 	"wikisource-ocr-onboarding-text": "تحويل المستندات الممسوحة ضوئيًا إلى نص قابل للتحرير باستخدام التعرف الضوئي على المحارف (OCR).",
-	"wikisource-ocr-onboarding-button": "فهمت"
+	"wikisource-ocr-onboarding-button": "فهمت",
+	"wikisource-ocr-language-dropdown-label": "اللغات (اختياري):"
 }

@@ -41,5 +41,7 @@
 	"wikisource-ocr-advanced-title": "Odprite obrazec za napredne možnosti na novem zavihku",
 	"wikisource-ocr-onboarding-title": "Prepišite slike v besedilo",
 	"wikisource-ocr-onboarding-text": "Z optičnim prepoznavanjem znakov (OCR) pretvorite optično prebrane dokumente v besedilo, ki ga je mogoče urejati.",
-	"wikisource-ocr-onboarding-button": "V redu, razumem"
+	"wikisource-ocr-onboarding-button": "V redu, razumem",
+	"wikisource-ocr-language-dropdown-label": "Jeziki (neobvezno):",
+	"wikisource-ocr-model-dropdown-label": "Model prepoznavanja besedila"
 }

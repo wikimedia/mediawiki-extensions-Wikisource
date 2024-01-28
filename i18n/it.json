@@ -32,5 +32,6 @@
 	"wikisource-ocr-engine": "Seleziona il tuo strumento di trascrizione del testo predefinito",
 	"wikisource-ocr-advanced": "Opzioni avanzate",
 	"wikisource-ocr-onboarding-title": "Trascrivi le immagini in testo",
-	"wikisource-ocr-onboarding-button": "Ok, capito"
+	"wikisource-ocr-onboarding-button": "Ok, capito",
+	"wikisource-ocr-language-dropdown-label": "Lingue (facoltativo):"
 }

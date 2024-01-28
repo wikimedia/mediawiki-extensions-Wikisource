@@ -42,5 +42,7 @@
 	"wikisource-ocr-advanced-title": "Abrir o formulário de opções avançadas num separador novo",
 	"wikisource-ocr-onboarding-title": "Transcrever imagens para texto",
 	"wikisource-ocr-onboarding-text": "Transformar documentos digitalizados em texto editável, usando o Reconhecimento Ótico de Caracteres (OCR).",
-	"wikisource-ocr-onboarding-button": "Compreendi"
+	"wikisource-ocr-onboarding-button": "Compreendi",
+	"wikisource-ocr-language-dropdown-label": "Línguas (opcional):",
+	"wikisource-ocr-model-dropdown-label": "Modelo de reconhecimento de texto"
 }

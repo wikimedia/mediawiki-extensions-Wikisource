@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kalakpagh",
 			"Sir Amugi"
 		]
 	},
-	"wikisource-download-chooser-different-format": "Lihiri MI bori So sheli?"
+	"wikisource-download-chooser-different-format": "Lihiri MI bori So sheli?",
+	"wikisource-ocr-language-dropdown-label": "Balla (suhi'yubu):"
 }

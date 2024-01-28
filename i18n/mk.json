@@ -35,5 +35,7 @@
 	"wikisource-ocr-advanced-title": "Отвори го образецот за напредни можности во ново јазиче",
 	"wikisource-ocr-onboarding-title": "Препис на слики во текст",
 	"wikisource-ocr-onboarding-text": "Претворање на отсликани документи во уредлив текст со Општичко препознавање на знаци (OCR).",
-	"wikisource-ocr-onboarding-button": "Јасно"
+	"wikisource-ocr-onboarding-button": "Јасно",
+	"wikisource-ocr-language-dropdown-label": "Јазици (незадолж.):",
+	"wikisource-ocr-model-dropdown-label": "Модел за препознавање текст"
 }
