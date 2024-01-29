@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Geonuch"
+			"Geonuch",
+			"Patsagorn Y.",
+			"RidJasper"
 		]
 	},
 	"wikisource-desc": "การปรับแต่งมีเดียวิกิสำหรับวิกิซอร์ซโดยเฉพาะ",
@@ -13,5 +15,12 @@
 	"wikisource-download-pdf": "ดาวน์โหลด PDF",
 	"wikisource-download-pdf-tooltip": "ดาวน์โหลดรุ่น PDF สำหรับงานนี้",
 	"wikisource-download-choose": "เลือกรูปแบบ",
-	"wikisource-download-choose-tooltip": "ดาวน์โหลดรุ่นของงานในรูปแบบอื่น"
+	"wikisource-download-choose-tooltip": "ดาวน์โหลดรุ่นของงานในรูปแบบอื่น",
+	"wikisource-download-button": "ดาวน์โหลด",
+	"wikisource-download-chooser-title": "เลือกรูปแบบ",
+	"wikisource-download-chooser-epub-description": "สำหรับคอมพิวเตอร์ โทรศัพท์มือถือ แท็บเล็ต",
+	"wikisource-ocr-extract-cancel": "ยกเลิก",
+	"wikisource-ocr-extract-close": "ปิดประกาศนี้",
+	"wikisource-ocr-advanced": "ตัวเลือกขั้นสูง",
+	"wikisource-ocr-onboarding-button": "ตกลง เข้าใจแล้ว"
 }
