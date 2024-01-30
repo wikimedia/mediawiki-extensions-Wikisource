@@ -38,5 +38,7 @@
 	"wikisource-ocr-advanced-title": "Åpne skjemaet for avanserte alternativer i ei ny fane",
 	"wikisource-ocr-onboarding-title": "Transkriberer bilder til tekst",
 	"wikisource-ocr-onboarding-text": "Gjør skannede dokumenter til redigerbar tekst med optisk tegngjenkjenning (OCR).",
-	"wikisource-ocr-onboarding-button": "OK, skjønner"
+	"wikisource-ocr-onboarding-button": "OK, skjønner",
+	"wikisource-ocr-language-dropdown-label": "Språk (valgfritt):",
+	"wikisource-ocr-model-dropdown-label": "Tekstgjenkjenningsmodell"
 }

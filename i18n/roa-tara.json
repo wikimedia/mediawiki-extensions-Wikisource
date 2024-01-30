@@ -35,5 +35,7 @@
 	"wikisource-ocr-advanced-title": "Iapre 'a maschere de le opziune avanzate jndr'à 'na scheda nove",
 	"wikisource-ocr-onboarding-title": "Trascrive le immaggine jndr'à 'u teste",
 	"wikisource-ocr-onboarding-text": "Trasforme le documinde scansionate jndr'à teste cangiabbele, ausanne 'u recanuscimende otteche de le carattere (OCR).",
-	"wikisource-ocr-onboarding-button": "Apposte, pigghiale"
+	"wikisource-ocr-onboarding-button": "Apposte, pigghiale",
+	"wikisource-ocr-language-dropdown-label": "Lènghe (facoltative):",
+	"wikisource-ocr-model-dropdown-label": "Modelle de recanuscimedne d'u teste"
 }
