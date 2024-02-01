@@ -49,6 +49,6 @@
 	"wikisource-ocr-onboarding-title": "Transcrire les images en texte",
 	"wikisource-ocr-onboarding-text": "Transformer les facsimilés numérisés de documents en texte modifiable, à l’aide de la reconnaissance optique des caractères (OCR).",
 	"wikisource-ocr-onboarding-button": "Ok, allons-y",
-	"wikisource-ocr-language-dropdown-label": "Langues (facultatif)",
+	"wikisource-ocr-language-dropdown-label": "Langues (facultatif) :",
 	"wikisource-ocr-model-dropdown-label": "Modèle de reconnaissance de texte"
 }

@@ -34,5 +34,6 @@
 	"wikisource-ocr-advanced-title": "Ava täpsemad suvandid uuel kaardil",
 	"wikisource-ocr-onboarding-title": "Transkribeeri pilt tekstiks",
 	"wikisource-ocr-onboarding-text": "Muuda skannitud dokument redigeeritavaks tekstiks, kasutades optilist märgituvastust (OCR).",
-	"wikisource-ocr-onboarding-button": "Hästi, sain aru"
+	"wikisource-ocr-onboarding-button": "Hästi, sain aru",
+	"wikisource-ocr-language-dropdown-label": "Keel (valikuline):"
 }
