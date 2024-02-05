@@ -4,7 +4,8 @@
 			"Alistair3149",
 			"Impartial just",
 			"Kly",
-			"Neetp7k9"
+			"Neetp7k9",
+			"Winston Sung"
 		]
 	},
 	"wikisource-desc": "維基文庫特定的 MediaWiki 客製化",
@@ -37,5 +38,7 @@
 	"wikisource-ocr-advanced-title": "在新分頁開啟進階選項表單",
 	"wikisource-ocr-onboarding-title": "將圖片轉譯成文字",
 	"wikisource-ocr-onboarding-text": "使用光學字元辨識（OCR）來將掃描過的文件轉成可編輯的文字。",
-	"wikisource-ocr-onboarding-button": "好的，了解"
+	"wikisource-ocr-onboarding-button": "好的，了解",
+	"wikisource-ocr-language-dropdown-label": "語言（選擇性）：",
+	"wikisource-ocr-model-dropdown-label": "文字辨識模型"
 }

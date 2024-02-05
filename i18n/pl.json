@@ -38,5 +38,7 @@
 	"wikisource-ocr-advanced-title": "Otwórz formularz opcji zaawansowanych w nowej karcie",
 	"wikisource-ocr-onboarding-title": "Transkrypcja obrazów na tekst",
 	"wikisource-ocr-onboarding-text": "Zamień zeskanowane dokumenty w edytowalny tekst za pomocą optycznego rozpoznawania znaków (OCR).",
-	"wikisource-ocr-onboarding-button": "Ok, rozumiem"
+	"wikisource-ocr-onboarding-button": "Ok, rozumiem",
+	"wikisource-ocr-language-dropdown-label": "Języki (opcjonalnie):",
+	"wikisource-ocr-model-dropdown-label": "Model rozpoznawania tekstu"
 }
