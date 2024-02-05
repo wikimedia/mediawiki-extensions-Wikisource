@@ -7,6 +7,7 @@ use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigException;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
+use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\ResourceLoader\Context;
@@ -93,24 +94,29 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 	 */
 	protected static function getLangsForEngine( $engine, $config ) {
 		$http = MediaWikiServices::getInstance()->getHttpRequestFactory();
-		$cache = MediaWikiServices::getInstance()->getLocalServerObjectCache();
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$logger = LoggerFactory::getInstance( 'Wikisource' );
 		$toolUrl = rtrim( $config->get( 'WikisourceOcrUrl' ), '/' );
 		$url = $toolUrl . '/api/available_langs?engine=' . $engine;
-		return $cache->getWithSetCallback(
+		$langs = $cache->getWithSetCallback(
 			$cache->makeGlobalKey( 'wikisource-ocr-langs', $engine ),
 			$cache::TTL_DAY,
-			static function () use ( $url, $http ) {
+			static function () use ( $url, $http, $logger ) {
 				try {
 					$response = $http->get( $url );
 					if ( $response === null ) {
+						$logger->warning( 'OCR empty response from tool', [ 'url' => $url ] );
 						return false;
 					}
 					$contents = json_decode( $response );
 					return $contents->available_langs ?? false;
 				} catch ( Exception $error ) {
+					$logger->error( 'OCR exception', [ 'exception' => $error ] );
 					return false;
 				}
-			}
+			},
+			[ 'staleTTL' => $cache::TTL_WEEK ]
 		);
+		return $langs === false ? [] : $langs;
 	}
 }
