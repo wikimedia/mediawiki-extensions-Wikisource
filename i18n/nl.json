@@ -3,6 +3,7 @@
 		"authors": [
 			"Mainframe98",
 			"McDutchie",
+			"Mitsjol",
 			"NthnH",
 			"Romaine",
 			"Sjoerddebruin"
@@ -42,5 +43,6 @@
 	"wikisource-ocr-onboarding-title": "Afbeeldingen in tekst transcriberen",
 	"wikisource-ocr-onboarding-text": "Zet gescande documenten om in bewerkbare tekst met behulp van Optical Character Recognition (OCR).",
 	"wikisource-ocr-onboarding-button": "Oké, ik snap het",
-	"wikisource-ocr-language-dropdown-label": "Talen (optioneel):"
+	"wikisource-ocr-language-dropdown-label": "Talen (optioneel):",
+	"wikisource-ocr-model-dropdown-label": "Tekstherkenningsmodel"
 }
