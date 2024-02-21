@@ -173,6 +173,10 @@
 		"WikisourceOcrUrl": {
 			"value": "https://ocr.wmcloud.org/"
 		},
+		"WikisourceHttpProxy": {
+			"value": false,
+			"description": "HTTP proxy URL to use for requests to external APIs."
+		},
 		"WikisourceTranskribusModels": {
 			"value": {
 				"banwikisource": {
