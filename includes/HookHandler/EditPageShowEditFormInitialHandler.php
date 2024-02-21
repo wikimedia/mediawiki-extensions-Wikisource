@@ -97,13 +97,27 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$logger = LoggerFactory::getInstance( 'Wikisource' );
 		$toolUrl = rtrim( $config->get( 'WikisourceOcrUrl' ), '/' );
+		$proxy = $config->get( 'WikisourceHttpProxy' );
 		$url = $toolUrl . '/api/available_langs?engine=' . $engine;
 		$langs = $cache->getWithSetCallback(
 			$cache->makeGlobalKey( 'wikisource-ocr-langs', $engine ),
 			$cache::TTL_DAY,
-			static function () use ( $url, $http, $logger ) {
+			static function () use ( $url, $http, $proxy, $logger, $engine ) {
+				$logger->debug( 'Language list not cached for {engine}, fetching now', [ 'engine' => $engine ] );
 				try {
-					$response = $http->get( $url );
+					$options = [];
+					if ( $proxy ) {
+						$options[ 'proxy' ] = $proxy;
+					}
+					$startTime = microtime( true );
+					$response = $http->get( $url, $options );
+					$logger->info(
+						'OCR tool responded with {response_size} bytes after {response_time}ms',
+						[
+							'response_size' => strlen( (string)$response ),
+							'response_time' => ( microtime( true ) - $startTime ) * 1000,
+						]
+					);
 					if ( $response === null ) {
 						$logger->warning( 'OCR empty response from tool', [ 'url' => $url ] );
 						return false;
