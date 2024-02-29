@@ -2,7 +2,6 @@
 
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
-use Exception;
 use MediaWiki\Config\Config;
 use MediaWiki\Config\ConfigException;
 use MediaWiki\EditPage\EditPage;
@@ -101,30 +100,25 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 			$cache::TTL_DAY,
 			static function () use ( $url, $http, $proxy, $logger, $engine ) {
 				$logger->debug( 'Language list not cached for {engine}, fetching now', [ 'engine' => $engine ] );
-				try {
-					$options = [];
-					if ( $proxy ) {
-						$options[ 'proxy' ] = $proxy;
-					}
-					$startTime = microtime( true );
-					$response = $http->get( $url, $options );
-					$logger->info(
-						'OCR tool responded with {response_size} bytes after {response_time}ms',
-						[
-							'response_size' => strlen( (string)$response ),
-							'response_time' => ( microtime( true ) - $startTime ) * 1000,
-						]
-					);
-					if ( $response === null ) {
-						$logger->warning( 'OCR empty response from tool', [ 'url' => $url ] );
-						return false;
-					}
-					$contents = json_decode( $response );
-					return $contents->available_langs ?? false;
-				} catch ( Exception $error ) {
-					$logger->error( 'OCR exception', [ 'exception' => $error ] );
+				$options = [];
+				if ( $proxy ) {
+					$options[ 'proxy' ] = $proxy;
+				}
+				$startTime = microtime( true );
+				$response = $http->get( $url, $options );
+				$logger->info(
+					'OCR tool responded with {response_size} bytes after {response_time}ms',
+					[
+						'response_size' => strlen( (string)$response ),
+						'response_time' => ( microtime( true ) - $startTime ) * 1000,
+					]
+				);
+				if ( $response === null ) {
+					$logger->warning( 'OCR empty response from tool', [ 'url' => $url ] );
 					return false;
 				}
+				$contents = json_decode( $response );
+				return $contents->available_langs ?? false;
 			},
 			[ 'staleTTL' => $cache::TTL_WEEK ]
 		);
