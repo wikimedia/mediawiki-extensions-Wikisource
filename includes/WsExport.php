@@ -47,13 +47,18 @@ class WsExport {
 	 * @return string
 	 */
 	public function getExportUrl( Title $title, ?string $format = null ): string {
-		$title = wfUrlencode( $title->getPrefixedDBkey() );
 		if ( $format ) {
-			$urlFormat = $this->wsExportUrl . '/?format=%s&lang=%s&page=%s';
-			return sprintf( $urlFormat, $format, $this->lang, $title );
+			$params = [
+				'format' => $format,
+				'lang' => $this->lang,
+				'page' => $title->getPrefixedDBkey()
+			];
 		} else {
-			$urlFormat = $this->wsExportUrl . '/?lang=%s&title=%s';
-			return sprintf( $urlFormat, $this->lang, $title );
+			$params = [
+				'lang' => $this->lang,
+				'title' => $title->getPrefixedDBkey()
+			];
 		}
+		return $this->wsExportUrl . '/?' . wfArrayToCgi( $params );
 	}
 }
