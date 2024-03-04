@@ -301,7 +301,8 @@ ExtractTextWidget.prototype.updateMoreOptionsFields = function () {
 	this.moreOptionsFieldset.clearItems();
 	let options = this.getLanguages( engine );
 	let fieldLabel = this.setLanguageDropdownLabel( engine );
-	this.ocrTool.setLangs( [] );
+	let selectedLanguages = this.sortSelectedLangs( engine );
+
 	if ( engine !== 'transkribus' ) {
 		this.languageDropdown = new OO.ui.MenuTagMultiselectWidget( {
 			options: options
@@ -309,6 +310,7 @@ ExtractTextWidget.prototype.updateMoreOptionsFields = function () {
 		this.languageDropdown.connect( this, {
 			change: 'setLanguages'
 		} );
+		this.languageDropdown.setValue( selectedLanguages );
 	} else {
 		this.languageDropdown = new OO.ui.DropdownInputWidget( {
 			options: options
@@ -316,8 +318,10 @@ ExtractTextWidget.prototype.updateMoreOptionsFields = function () {
 		this.languageDropdown.connect( this, {
 			change: 'setModel'
 		} );
-		let value = this.languageDropdown.getValue();
-		this.setModel( value );
+		if ( selectedLanguages[ 0 ] !== undefined ) {
+			let value = selectedLanguages[ 0 ].data;
+			this.languageDropdown.setValue( value );
+		}
 	}
 
 	let dropdowns = [
@@ -346,6 +350,23 @@ ExtractTextWidget.prototype.getLanguages = function ( engine ) {
 		} );
 	}
 	return items;
+};
+
+ExtractTextWidget.prototype.sortSelectedLangs = function ( engine ) {
+	let selectedLangs = this.ocrTool.getLangs();
+	let langs = [];
+	let engineLanguages = this.ocrTool.allLangs[ engine ];
+	for ( let langIndex in selectedLangs ) {
+		for ( let key in engineLanguages ) {
+			if ( key === selectedLangs[ langIndex ] ) {
+				langs.push( {
+					data: key,
+					label: engineLanguages[ key ]
+				} );
+			}
+		}
+	}
+	return langs;
 };
 
 module.exports = ExtractTextWidget;
