@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby"
 		]
 	},
 	"wikisource-desc": "Wikikilden-spesifikke MediaWiki-tilpasninger",
-	"wikisource-export-portlet": "Skriv ut/eksporter",
+	"wikisource-export-portlet": "Skriv ut / eksporter",
 	"wikisource-download-epub": "Last ned EPUB",
 	"wikisource-download-epub-tooltip": "Last ned en EPUB-versjon av dette verket",
 	"wikisource-download-mobi": "Last ned MOBI",
