@@ -132,6 +132,7 @@
 					"callback": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler::getLangs"
 				}
 			],
+			"skipStructureTest": true,
 			"messages": [
 				"wikisource-ocr-extract-text",
 				"wikisource-ocr-extract-text-title",
