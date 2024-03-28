@@ -39,6 +39,6 @@
 	"wikisource-ocr-onboarding-title": "將圖片轉譯成文字",
 	"wikisource-ocr-onboarding-text": "使用光學字元辨識（OCR）來將掃描過的文件轉成可編輯的文字。",
 	"wikisource-ocr-onboarding-button": "好的，了解",
-	"wikisource-ocr-language-dropdown-label": "語言（選擇性）：",
+	"wikisource-ocr-language-dropdown-label": "語言（非必填）：",
 	"wikisource-ocr-model-dropdown-label": "文字辨識模型"
 }
