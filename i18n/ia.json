@@ -35,5 +35,7 @@
 	"wikisource-ocr-advanced-title": "Aperir le formulario de optiones avantiate in un nove scheda",
 	"wikisource-ocr-onboarding-title": "Transcriber imagines in texto",
 	"wikisource-ocr-onboarding-text": "Transforma documentos scannate in texto modificabile usante le recognition optic de characteres (OCR, ''Optical Character Recognition'').",
-	"wikisource-ocr-onboarding-button": "Ben, io comprende"
+	"wikisource-ocr-onboarding-button": "Ben, io comprende",
+	"wikisource-ocr-language-dropdown-label": "Linguas (optional):",
+	"wikisource-ocr-model-dropdown-label": "Modello de recognoscentia de texto"
 }
