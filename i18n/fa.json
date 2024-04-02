@@ -3,7 +3,8 @@
 		"authors": [
 			"Beginneruser",
 			"Jeeputer",
-			"Yoosef Pooranvary"
+			"Yoosef Pooranvary",
+			"Ebraminio"
 		]
 	},
 	"wikisource-desc": "موارد سفارشی‌سازی مدیاویکی مخصوص ویکی‌نبشته",
@@ -33,7 +34,7 @@
 	"wikisource-ocr-settings-menu": "تغییر تنظیمات OCR",
 	"wikisource-ocr-engine": "انتخاب ابزار پیش‌فرض رونویسی متن",
 	"wikisource-ocr-advanced": "گزینه‌های پیشرفته",
-	"wikisource-ocr-advanced-title": "فرم گزینه های پیشرفته را در یک تب جدید باز کنید",
+	"wikisource-ocr-advanced-title": "فرم گزینه‌های پیشرفته را در یک تب جدید باز کنید",
 	"wikisource-ocr-onboarding-title": "رونویسی متن از تصاویر",
 	"wikisource-ocr-onboarding-text": "با استفاده از تشخیص نویسه نوری (OCR) اسناد اسکن شده را به متن قابل ویرایش تبدیل کنید.",
 	"wikisource-ocr-onboarding-button": "باشه، فهمیدم"
