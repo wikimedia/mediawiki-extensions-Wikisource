@@ -4,7 +4,9 @@
 			"Alistair3149",
 			"Impartial just",
 			"Kly",
-			"Neetp7k9"
+			"Neetp7k9",
+			"Cookai1205",
+			"Winston Sung"
 		]
 	},
 	"wikisource-desc": "維基文庫特定的 MediaWiki 客製化",
@@ -13,7 +15,7 @@
 	"wikisource-download-epub-tooltip": "下載此作品的 EPUB 版本",
 	"wikisource-download-mobi": "下載為 MOBI",
 	"wikisource-download-mobi-tooltip": "下載此作品的 MOBI 版本",
-	"wikisource-download-pdf": "下載為 PDF",
+	"wikisource-download-pdf": "下載為PDF",
 	"wikisource-download-pdf-tooltip": "下載此作品的 PDF 版本",
 	"wikisource-download-choose": "其它格式",
 	"wikisource-download-choose-tooltip": "開啟表單來挑選其它格式、或是字型等等。",
@@ -33,6 +35,7 @@
 	"wikisource-ocr-no-text": "OCR 工具未回傳文字。",
 	"wikisource-ocr-settings-menu": "更改 OCR 設定",
 	"wikisource-ocr-engine": "選擇您的預設文字轉譯工具",
+	"wikisource-ocr-engine-line-model-checkbox-label": "使用文字行檢測模型",
 	"wikisource-ocr-advanced": "進階選項",
 	"wikisource-ocr-advanced-title": "在新分頁開啟進階選項表單",
 	"wikisource-ocr-onboarding-title": "將圖片轉譯成文字",
