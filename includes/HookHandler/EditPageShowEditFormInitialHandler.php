@@ -89,6 +89,9 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 	 * @return array
 	 */
 	protected static function getLangsForEngine( $engine, $config ) {
+		if ( defined( 'MW_PHPUNIT_TEST' ) ) {
+			return [];
+		}
 		$http = MediaWikiServices::getInstance()->getHttpRequestFactory();
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$logger = LoggerFactory::getInstance( 'Wikisource' );
