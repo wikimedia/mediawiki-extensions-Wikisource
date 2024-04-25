@@ -1,15 +1,42 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hakimi97",
 			"Tofeiku"
 		]
 	},
+	"wikisource-desc": "Penyesuaian MediaWiki khusus Wikisumber",
 	"wikisource-export-portlet": "Cetak/eksport",
 	"wikisource-download-epub": "Muat turun EPUB",
+	"wikisource-download-epub-tooltip": "Muat turun versi EPUB karya ini",
 	"wikisource-download-mobi": "Muat turun MOBI",
+	"wikisource-download-mobi-tooltip": "Muat turun versi MOBI karya ini",
 	"wikisource-download-pdf": "Muat turun PDF",
+	"wikisource-download-pdf-tooltip": "Muat turun versi PDF karya ini",
 	"wikisource-download-choose": "Format lain",
+	"wikisource-download-choose-tooltip": "Buka borang untuk memilih format dan pasuan lain dan sebagainya.",
 	"wikisource-download-button": "Muat turun",
 	"wikisource-download-chooser-title": "Pilih format",
-	"wikisource-download-chooser-different-format": "Mencari format lain?"
+	"wikisource-download-chooser-epub-description": "untuk komputer, telefon bimbit, tablet",
+	"wikisource-download-chooser-mobi-description": "untuk Kindle",
+	"wikisource-download-chooser-pdf-description": "untuk skrin besar dan pencetakan",
+	"wikisource-download-chooser-different-format": "Mencari format lain?",
+	"wikisource-ocr-extract-text": "Transkripsikan teks",
+	"wikisource-ocr-extract-progress": "Mentranskripkan teks dari imej…",
+	"wikisource-ocr-extract-cancel": "Batalkan",
+	"wikisource-ocr-extract-undo": "Balikkan transkripsi",
+	"wikisource-ocr-extract-close": "Tutup notis ini",
+	"wikisource-ocr-extract-text-title": "Dapatkan teks OCR imej ini",
+	"wikisource-ocr-error": "Ralat daripada alat OCR: $1",
+	"wikisource-ocr-no-text": "Tiada teks dikembalikan oleh alat OCR.",
+	"wikisource-ocr-settings-menu": "Tukar tetapan OCR",
+	"wikisource-ocr-engine": "Pilih alat transkripsi teks lalai anda",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Gunakan model pengesanan garisan",
+	"wikisource-ocr-advanced": "Pilihan lanjutan",
+	"wikisource-ocr-advanced-title": "Buka borang pilihan lanjutan dalam tab baharu",
+	"wikisource-ocr-onboarding-title": "Transkripsikan imej ke dalam teks",
+	"wikisource-ocr-onboarding-text": "Tukar dokumen yang diimbas menjadi teks boleh disunting, menggunakan Pengecaman Aksara Optik (OCR).",
+	"wikisource-ocr-onboarding-button": "Baiklah, saya faham",
+	"wikisource-ocr-language-dropdown-label": "Bahasa (pilihan)",
+	"wikisource-ocr-model-dropdown-label": "Model pengecaman teks"
 }
