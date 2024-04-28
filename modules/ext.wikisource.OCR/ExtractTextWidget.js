@@ -211,6 +211,9 @@ ExtractTextWidget.prototype.onClickConfigButton = function () {
 
 	// Enable the radio select widget based on popup visibilty
 	this.radioSelect.setDisabled( !this.configButton.popup.isVisible() );
+	// Focus the radio button on clicking the config button
+	// allowing the option to be changed by arrow keys on the keyboard
+	this.radioSelect.focus();
 };
 
 ExtractTextWidget.prototype.onClickExtractButton = function () {
