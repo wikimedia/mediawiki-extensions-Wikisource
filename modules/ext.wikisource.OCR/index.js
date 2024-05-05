@@ -20,7 +20,15 @@ if ( mw.proofreadpage && mw.proofreadpage.openseadragon ) {
 }
 
 // Add the 'Extract text' button to the WikiEditor toolbar.
-mw.hook( 'wikiEditor.toolbarReady' ).add( function () {
-	$( '.wikiEditor-ui-toolbar .section-main' )
-		.after( extractTextWidget.$element );
+mw.hook( 'wikiEditor.toolbarReady' ).add( function ( $textarea ) {
+	$textarea.wikiEditor( 'addToToolbar', {
+		section: 'secondary',
+		group: 'default',
+		tools: {
+			wikisourceExtractTextWidget: {
+				type: 'element',
+				element: extractTextWidget.$element
+			}
+		}
+	} );
 } );
