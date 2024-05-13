@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nemoralis",
+			"Toghrul Rahimli"
+		]
+	},
+	"wikisource-desc": "Vikimənbəyə aid MediaWiki fərdiləşdirmələri",
+	"wikisource-export-portlet": "Çap et/ixrac et",
+	"wikisource-download-epub": "EPUB kimi yüklə",
+	"wikisource-download-epub-tooltip": "Bu işin EPUB versiyasını yüklə",
+	"wikisource-download-mobi": "MOBI olaraq yüklə",
+	"wikisource-download-mobi-tooltip": "Bu işin MOBI versiyasını yüklə",
+	"wikisource-download-pdf": "PDF kimi yüklə",
+	"wikisource-download-pdf-tooltip": "Bu işin PDF versiyasını yüklə",
+	"wikisource-download-choose": "Digər formatlar",
+	"wikisource-download-choose-tooltip": "Digər formatları və şriftləri seçmək üçün bir forma aç.",
+	"wikisource-download-button": "Yüklə",
+	"wikisource-download-chooser-title": "Format seç",
+	"wikisource-download-chooser-epub-description": "kompüterlər, mobil telefonlar, planşetlər üçün",
+	"wikisource-download-chooser-mobi-description": "Kindles üçün",
+	"wikisource-download-chooser-pdf-description": "böyük ekranlar və çap üçün",
+	"wikisource-download-chooser-different-format": "Fərqli format axtarırsınız?",
+	"wikisource-ocr-extract-text": "Mətni çıxar",
+	"wikisource-ocr-extract-progress": "Şəkildən mətn transkripsiya edilir…",
+	"wikisource-ocr-extract-cancel": "İmtina",
+	"wikisource-ocr-extract-undo": "Transkripsiyanı geri qaytar",
+	"wikisource-ocr-extract-close": "Bu bildirişi bağla",
+	"wikisource-ocr-extract-text-title": "Bu şəklin OCR mətnini çıxar",
+	"wikisource-ocr-error": "OCR alətindən xəta: $1",
+	"wikisource-ocr-no-text": "OCR aləti tərəfindən heç bir mətn verilmədi.",
+	"wikisource-ocr-settings-menu": "OCR parametrlərini dəyişdir",
+	"wikisource-ocr-engine": "Susmaya görə mətn çıxarma alətini seçin",
+	"wikisource-ocr-engine-tesseract": "Tesseract OCR",
+	"wikisource-ocr-advanced": "Təkmilləşmiş Seçimlər",
+	"wikisource-ocr-advanced-title": "Qabaqcıl seçimlər formasını yeni vərəqədə aç",
+	"wikisource-ocr-onboarding-title": "Şəkilləri mətnə transkripsiya et",
+	"wikisource-ocr-onboarding-text": "Optik Simvol Tanıma (OCR) istifadə edərək, skan edilmiş sənədləri redaktə edilə bilən mətnə çevirin.",
+	"wikisource-ocr-onboarding-button": "Tamam, başa düşdüm"
+}
