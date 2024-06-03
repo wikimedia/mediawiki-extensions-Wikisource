@@ -5,6 +5,13 @@
 			"Kimberli Mäkäräinen (WMNO)"
 		]
 	},
+	"wikisource-download-epub": "Viečča EPUB-fiilan",
+	"wikisource-download-epub-tooltip": "Viečča EPUB-veršuvnna dán barggus",
+	"wikisource-download-mobi": "Viečča MOBI-fiilan",
+	"wikisource-download-mobi-tooltip": "Viečča MOBI-veršuvnna dán barggus",
+	"wikisource-download-pdf": "Viečča PDF-fiilan",
+	"wikisource-download-pdf-tooltip": "Viečča PDF-veršuvnna dán barggus",
+	"wikisource-download-button": "Viečča",
 	"wikisource-ocr-extract-cancel": "Gaskkalduhte",
 	"wikisource-ocr-advanced": "Lasseásahusat",
 	"wikisource-ocr-onboarding-button": "Ášši lea čielggas."
