@@ -34,6 +34,7 @@
 	"wikisource-ocr-no-text": "L'eina d'OCR no ha retornat cap text.",
 	"wikisource-ocr-settings-menu": "Canvia configuració d'OCR",
 	"wikisource-ocr-engine": "Selecciona la teva eina de transcripció de text predeterminada",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Utilitzeu el model de detecció de línies",
 	"wikisource-ocr-advanced": "Opcions avançades",
 	"wikisource-ocr-advanced-title": "Obre el formulari d'opcions avançades en una nova pestanya",
 	"wikisource-ocr-onboarding-title": "Transcriure imatges a text",

@@ -5,7 +5,8 @@
 			"Aleator",
 			"Fitoschido",
 			"Jackiezelaya",
-			"Rodney Araujo"
+			"Rodney Araujo",
+			"Eulalio"
 		]
 	},
 	"wikisource-desc": "Personalizaciones de MediaWiki específicas de Wikisource",
@@ -34,6 +35,7 @@
 	"wikisource-ocr-no-text": "La herramienta OCR no devolvió ningún texto.",
 	"wikisource-ocr-settings-menu": "Cambia la configuración de OCR",
 	"wikisource-ocr-engine": "Seleccione su herramienta de transcripción de texto predeterminada",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Usar modelo de detección de líneas",
 	"wikisource-ocr-advanced": "Opciones avanzadas",
 	"wikisource-ocr-advanced-title": "Abre el formulario de opciones avanzadas en una nueva pestaña",
 	"wikisource-ocr-onboarding-title": "Transcribir imágenes en texto",
