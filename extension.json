@@ -106,6 +106,7 @@
 			"dependencies": [
 				"jquery.spinner",
 				"ext.proofreadpage.page.edit",
+				"mediawiki.api",
 				"mediawiki.pulsatingdot",
 				"ext.wikisource.icons",
 				"oojs-ui-core",
