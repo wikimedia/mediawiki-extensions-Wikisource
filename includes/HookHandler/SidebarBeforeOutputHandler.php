@@ -2,7 +2,6 @@
 
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
-use ExtensionRegistry;
 use Language;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
@@ -16,16 +15,20 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 	/** @var WsExport */
 	private $wsExport;
 
+	private ?GadgetRepo $gadgetRepo;
+
 	/**
 	 * @param Config $config
 	 * @param Language $contentLanguage
+	 * @param GadgetRepo|null $gadgetRepo
 	 */
-	public function __construct( Config $config, Language $contentLanguage ) {
+	public function __construct( Config $config, Language $contentLanguage, ?GadgetRepo $gadgetRepo ) {
 		$this->wsExport = new WsExport(
 			$contentLanguage,
 			$config->get( 'WikisourceWsExportUrl' ),
 			$config->get( 'ServerName' )
 		);
+		$this->gadgetRepo = $gadgetRepo;
 	}
 
 	/**
@@ -36,16 +39,14 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 	public function onSidebarBeforeOutput( $skin, &$sidebar ): void {
 		// Do not add the export links if the user has a gadget that does the same.
 		// @TODO Remove this after all these gadgets have been removed.
-		if ( ExtensionRegistry::getInstance()->isLoaded( 'Gadgets' ) ) {
-			// @phan-suppress-next-line PhanUndeclaredClassMethod
-			$gadgetRepo = GadgetRepo::singleton();
+		if ( $this->gadgetRepo ) {
 			// Gadget names are case sensitive. See T256392 for a list.
 			$exportGadgets = [ 'ePubDownloadLink', 'WSexport' ];
 			foreach ( $exportGadgets as $exportGadget ) {
-				if ( array_search( $exportGadget, $gadgetRepo->getGadgetIds() ) === false ) {
+				if ( array_search( $exportGadget, $this->gadgetRepo->getGadgetIds() ) === false ) {
 					continue;
 				}
-				if ( $gadgetRepo->getGadget( $exportGadget )->isEnabled( $skin->getUser() ) ) {
+				if ( $this->gadgetRepo->getGadget( $exportGadget )->isEnabled( $skin->getUser() ) ) {
 					return;
 				}
 			}
