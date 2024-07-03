@@ -2,22 +2,21 @@
 
 namespace MediaWiki\Extension\Wikisource;
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
-use PHPUnit\Framework\TestCase;
+use MediaWikiIntegrationTestCase;
 
 /**
  * @covers \MediaWiki\Extension\Wikisource\WsExport
  *
  * @group Wikisource
  */
-class WsExportTest extends TestCase {
+class WsExportTest extends MediaWikiIntegrationTestCase {
 
 	/**
 	 * @dataProvider provideServerName
 	 */
 	public function testServerName( $langCode, $serverName, $exportUrl ) {
-		$lang = MediaWikiServices::getInstance()->getLanguageFactory()->getLanguage( $langCode );
+		$lang = $this->getServiceContainer()->getLanguageFactory()->getLanguage( $langCode );
 		$wsExport = new WsExport( $lang, 'exportUrl', $serverName );
 		$this->assertSame( $exportUrl, $wsExport->getExportUrl( Title::newFromText( 'Lorem' ) ) );
 	}
