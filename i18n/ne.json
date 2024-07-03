@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"बडा काजी"
+			"बडा काजी",
+			"पर्वत सुबेदी"
 		]
 	},
-	"wikisource-export-portlet": "छाप्नुहोस्/निर्यात गर्नुहोस्"
+	"wikisource-export-portlet": "छाप्नुहोस्/निर्यात गर्नुहोस्",
+	"wikisource-download-chooser-pdf": "पिडिएफ"
 }
