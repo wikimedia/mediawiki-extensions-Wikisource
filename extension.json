@@ -32,6 +32,9 @@
 			"services": [
 				"MainConfig",
 				"ContentLanguage"
+			],
+			"optional_services": [
+				"GadgetsRepo"
 			]
 		},
 		"ArticleViewHeader": {
