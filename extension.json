@@ -48,7 +48,7 @@
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\EditPageShowEditFormInitialHandler",
 			"services": [
 				"MainConfig",
-				"HttpRequestFactory"
+				"UserOptionsLookup"
 			]
 		},
 		"GetPreferences": {

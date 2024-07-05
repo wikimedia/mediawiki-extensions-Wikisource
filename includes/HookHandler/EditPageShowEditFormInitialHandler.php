@@ -10,6 +10,7 @@ use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\ResourceLoader\Context;
+use MediaWiki\User\Options\UserOptionsLookup;
 
 // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initialHook {
@@ -23,13 +24,16 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 	/** @var array */
 	private $WikisourceTranskribusModels;
 
-	/**
-	 * @param Config $config
-	 */
-	public function __construct( Config $config ) {
+	private UserOptionsLookup $userOptionsLookup;
+
+	public function __construct(
+		Config $config,
+		UserOptionsLookup $userOptionsLookup
+	) {
 		$this->enabled = (bool)$config->get( 'WikisourceEnableOcr' );
 		$this->toolUrl = rtrim( $config->get( 'WikisourceOcrUrl' ), '/' );
 		$this->WikisourceTranskribusModels = $config->get( 'WikisourceTranskribusModels' );
+		$this->userOptionsLookup = $userOptionsLookup;
 	}
 
 	/**
@@ -51,8 +55,7 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 			throw new ConfigException( 'Please set tool URL with $wgWikisourceOcrUrl' );
 		}
 		// Require the WikiEditor toolbar to be enabled.
-		$useBetaToolbar = MediaWikiServices::getInstance()
-			->getUserOptionsLookup()
+		$useBetaToolbar = $this->userOptionsLookup
 			->getOption( $out->getUser(), 'usebetatoolbar' );
 		if ( !$useBetaToolbar ) {
 			return;
