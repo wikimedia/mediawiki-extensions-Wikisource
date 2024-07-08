@@ -4,6 +4,7 @@
 			"Умар"
 		]
 	},
+	"wikisource-desc": "Викихьостан MediaWiki-хӀоттамаш",
 	"wikisource-export-portlet": "Зорба/экспорт",
 	"wikisource-download-epub": "Схьаэца EPUB",
 	"wikisource-download-epub-tooltip": "Схьаэца EPUB-верси кху белхан",
@@ -12,7 +13,12 @@
 	"wikisource-download-pdf": "Схьаэца PDF",
 	"wikisource-download-pdf-tooltip": "Схьаэца PDF-верси кху белхан",
 	"wikisource-download-choose": "Кхин форматаш",
+	"wikisource-download-choose-tooltip": "Кхин форматаш, шрифташ, и.дӀ.кх.а къасторан форма схьайелла.",
 	"wikisource-download-button": "Схьаэца",
 	"wikisource-download-chooser-title": "Харжа формат",
-	"wikisource-ocr-extract-cancel": "Йухайаккха"
+	"wikisource-download-chooser-epub-description": "компьютершна, мобилан телефонашна, планшеташна",
+	"wikisource-download-chooser-mobi-description": "Kindle-на",
+	"wikisource-ocr-extract-cancel": "Йухайаккха",
+	"wikisource-ocr-onboarding-title": "Суьрташ тексте дерзор",
+	"wikisource-ocr-onboarding-button": "Окей, кхетта"
 }
