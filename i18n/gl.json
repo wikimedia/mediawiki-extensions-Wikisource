@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Toliño"
 		]
 	},
-	"wikisource-desc": "Personalizacións de MediaWiki específicas de Wikisource"
+	"wikisource-desc": "Personalizacións de MediaWiki específicas de Wikisource",
+	"wikisource-export-portlet": "Imprimir/exportar",
+	"wikisource-download-button": "Descargar",
+	"wikisource-ocr-extract-cancel": "Cancelar",
+	"wikisource-ocr-onboarding-button": "Entendido"
 }
