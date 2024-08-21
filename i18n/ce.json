@@ -23,11 +23,17 @@
 	"wikisource-ocr-extract-text": "Текст схьайастар",
 	"wikisource-ocr-extract-progress": "Суьртан тӀера текст схьайастар…",
 	"wikisource-ocr-extract-cancel": "Йухайаккха",
+	"wikisource-ocr-extract-undo": "Транскрипци йухайаккха",
 	"wikisource-ocr-extract-close": "ХӀара хаам дӀакъовла",
 	"wikisource-ocr-extract-text-title": "ХӀокху суьртан OCR текст схьаэца",
 	"wikisource-ocr-error": "OCR гӀирсан гӀалат: $1",
 	"wikisource-ocr-no-text": "OCR гӀирсо цхьа а текст йуха ца йелира.",
+	"wikisource-ocr-settings-menu": "OCR параметраш хийца",
+	"wikisource-ocr-engine": "Ӏад битаран кепаца текстан транскрипцин гӀирс схьахаржа",
+	"wikisource-ocr-engine-line-model-checkbox-label": "МогӀамаш лехаман модель лелайе",
 	"wikisource-ocr-advanced": "Шорбина нисдаран гӀирс",
+	"wikisource-ocr-advanced-title": "Керлачу вкладкехь схьайелла кхин сов параметрийн форма",
 	"wikisource-ocr-onboarding-title": "Суьрташ тексте дерзор",
+	"wikisource-ocr-onboarding-text": "Сканерца дӀайаздина документаш хийца йиш йолчу тексте дерзаде, оптикин хьаьркаш довзаран (OCR) гӀоьнца.",
 	"wikisource-ocr-onboarding-button": "Окей, кхетта"
 }
