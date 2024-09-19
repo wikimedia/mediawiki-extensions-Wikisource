@@ -4,22 +4,30 @@
 			"01miki10",
 			"MITO",
 			"Nike",
-			"Pyscowicz"
+			"Pyscowicz",
+			"Samoasambia"
 		]
 	},
 	"wikisource-desc": "Wikiaineistoon liittyvät MediaWikin muutokset",
 	"wikisource-export-portlet": "Tulosta/vie",
 	"wikisource-download-epub": "Lataa EPUB-tiedostona",
+	"wikisource-download-epub-tooltip": "Lataa EPUB-versio tästä teoksesta",
 	"wikisource-download-mobi": "Lataa MOBI-tiedostona",
+	"wikisource-download-mobi-tooltip": "Lataa MOBI-versio tästä teoksesta",
 	"wikisource-download-pdf": "Lataa PDF-tiedostona",
+	"wikisource-download-pdf-tooltip": "Lataa PDF-versio tästä teoksesta",
 	"wikisource-download-choose": "Muut muodot",
+	"wikisource-download-choose-tooltip": "Avaa lomake valitaksesi muita tiedostomuotoja ja fontteja jne.",
 	"wikisource-download-button": "Lataa",
 	"wikisource-download-chooser-title": "Valitse muoto",
 	"wikisource-download-chooser-epub-description": "tietokoneille, puhelimille ja tableteille",
 	"wikisource-download-chooser-mobi-description": "Kindleille",
 	"wikisource-download-chooser-pdf-description": "isoille näytöille ja tulostamiseen",
+	"wikisource-download-chooser-different-format": "Etsitkö jotain muuta tiedostomuotoa?",
 	"wikisource-ocr-extract-cancel": "Peruuta",
 	"wikisource-ocr-extract-close": "Sulje tämä ilmoitus",
 	"wikisource-ocr-advanced": "Lisäasetukset",
-	"wikisource-ocr-onboarding-button": "Selvä"
+	"wikisource-ocr-onboarding-button": "Selvä",
+	"wikisource-ocr-language-dropdown-label": "Kielet (valinnainen):",
+	"wikisource-ocr-model-dropdown-label": "Tekstintunnistusmalli"
 }
