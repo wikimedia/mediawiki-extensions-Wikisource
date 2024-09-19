@@ -101,17 +101,18 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		$toolUrl = rtrim( $config->get( 'WikisourceOcrUrl' ), '/' );
 		$proxy = $config->get( 'WikisourceHttpProxy' );
 		$url = $toolUrl . '/api/available_langs?engine=' . $engine;
+		$fname = __METHOD__;
 		$langs = $cache->getWithSetCallback(
 			$cache->makeGlobalKey( 'wikisource-ocr-langs', $engine ),
 			$cache::TTL_DAY,
-			static function () use ( $url, $http, $proxy, $logger, $engine ) {
+			static function () use ( $url, $http, $proxy, $logger, $engine, $fname ) {
 				$logger->debug( 'Language list not cached for {engine}, fetching now', [ 'engine' => $engine ] );
 				$options = [];
 				if ( $proxy ) {
 					$options[ 'proxy' ] = $proxy;
 				}
 				$startTime = microtime( true );
-				$response = $http->get( $url, $options );
+				$response = $http->get( $url, $options, $fname );
 				$logger->info(
 					'OCR tool responded with {response_size} bytes after {response_time}ms',
 					[
