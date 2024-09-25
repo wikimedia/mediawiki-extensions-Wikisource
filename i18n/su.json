@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kandar"
+			"Kandar",
+			"Akbar Soepadhi"
 		]
 	},
 	"wikisource-desc": "Kustomisasi MediaWiki hususon-Wikisource",
@@ -20,8 +21,8 @@
 	"wikisource-download-chooser-mobi-description": "pikeun Kindles",
 	"wikisource-download-chooser-pdf-description": "pikeun layar badag jeung percitakan",
 	"wikisource-download-chooser-different-format": "Néangan pormat nu béda?",
-	"wikisource-ocr-extract-text": "Transkrip téx",
-	"wikisource-ocr-extract-progress": "Nranskrip téx tina gambar...",
+	"wikisource-ocr-extract-text": "Transkripsikeun téks",
+	"wikisource-ocr-extract-progress": "Nranskrip téks tina gambar...",
 	"wikisource-ocr-extract-cancel": "Bolay",
 	"wikisource-ocr-extract-undo": "Bedokeun transkripsi",
 	"wikisource-ocr-extract-close": "Tutup ieu wawar",
@@ -29,11 +30,11 @@
 	"wikisource-ocr-error": "Galat ti alat OCR: $1",
 	"wikisource-ocr-no-text": "Henteu aya téx anu dipulangkeun ku alat OCR.",
 	"wikisource-ocr-settings-menu": "Robah setélan OCR",
-	"wikisource-ocr-engine": "Pilih alat transkripsi téx baku anjeun",
+	"wikisource-ocr-engine": "Pilih alat transkripsi téks baku anjeun",
 	"wikisource-ocr-engine-line-model-checkbox-label": "Paké modél detéksi garis",
 	"wikisource-ocr-advanced": "Pilihan Lengkep",
 	"wikisource-ocr-advanced-title": "Buka pormulir pilihan leuwih lengkep dina tab anyar",
-	"wikisource-ocr-onboarding-title": "Nranskrip gambar kana téx",
+	"wikisource-ocr-onboarding-title": "Prosés transkrip gambar kana téks",
 	"wikisource-ocr-onboarding-text": "Ngarobah dokumén hasil minday kana téx anu bisa diédit, maké Optical Character Recognition (OCR).",
 	"wikisource-ocr-onboarding-button": "Okéh, ngarti"
 }
