@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"BHARATHESHA ALASANDEMAJALU"
+		]
+	},
+	"wikisource-desc": "ವಿಕಿಸೋರ್ಸ್-ನಿರ್ದಿಷ್ಟ ಮಾಧ್ಯಮವಿಕಿ ಬೋಡಾಯಿನಂಚ",
+	"wikisource-export-portlet": "ಮುದ್ರಿಸಾಲೆ/ಕಡಪುಡ್ಲೆ",
+	"wikisource-download-epub": "EPUB ನ್ ಡೌನ್ ಲೋಡ್ ಮಲ್ಪುಲೆ",
+	"wikisource-download-mobi": "MOBI ಡೌನ್ ಲೋಡ್ ಮಲ್ಪುಲೆ",
+	"wikisource-download-mobi-tooltip": "ಈ ಬೇಲೆದ ಒಂಜಿ MOBI ಆವೃತ್ತಿನ್ ಡೌನ್‌‍ಲೋಡ್ ಮಲ್ಪುಲೆ",
+	"wikisource-download-pdf": "ಪಿಡಿಎಫ್ ಡೌನ್‌‍ಲೋಡ್ ಮಲ್ಪುಲೆ",
+	"wikisource-download-pdf-tooltip": "ಈ ಬೇಲೆದ ಪಿಡಿಎಫ್ ಆವೃತ್ತಿನ್ ಡೌನ್‌‍ಲೋಡ್ ಮಲ್ಪುಲೆ",
+	"wikisource-download-choose": "ಬೇತೆ ಸ್ವರೂಪೊಲು",
+	"wikisource-download-button": "ಡೌನ್‍ಲೋಡ್",
+	"wikisource-download-chooser-title": "ಒಂಜಿ ಸ್ವರೂಪೊನು ಆಯ್ಕೆ ಮಲ್ಪುಲೆ",
+	"wikisource-download-chooser-epub-description": "ಕಂಪ್ಯೂಟರ್, ಮೊಬೈಲ್, ಟ್ಯಾಬ್ಲೆಟ್‌‍ಗ್",
+	"wikisource-download-chooser-mobi-description": "ಕಿಂಡಲ್ಸ್‌‍ಗ್",
+	"wikisource-download-chooser-pdf-description": "ಮಲ್ಲ ಪರದೆಲೆಗ್ ಬೊಕ್ಕ ಮುದ್ರಣೊಗು",
+	"wikisource-download-chooser-different-format": "ಬೇತೆ ಸ್ವರೂಪೊನು ತೂವೊಂದುಲ್ಲರೆ?",
+	"wikisource-ocr-extract-progress": "ಚಿತ್ರೊಡ್ದ್ ಪಠ್ಯೊನು ಲಿಪ್ಯಂತರ ಮಲ್ಪುನವ್...",
+	"wikisource-ocr-extract-cancel": "ದೆಪ್ಪುಲೆ",
+	"wikisource-ocr-extract-close": "ಈ ಸೂಚನೆನ್ ಮುಚ್ಚಿಲೆ",
+	"wikisource-ocr-extract-text-title": "ಈ ಚಿತ್ರೊದ ಒಸಿಆರ್ ಪಠ್ಯೊನು ಪಡೆಯೊಲಿ",
+	"wikisource-ocr-error": "ಒಸಿಆರ್ ಸಾಧನೊಡ್ದ್ ದೋಷ: $1",
+	"wikisource-ocr-no-text": "ಒಸಿಆರ್ ಸಾಧನೊಡ್ದ್ ಒವ್ವೆ ಒಂಜಿ ಪಠ್ಯೊನು ವಾಪಸ್ ಕೊರ್ತಿಜಿ.",
+	"wikisource-ocr-settings-menu": "ಒಸಿಆರ್ ಸೆಟ್ಟಿಂಗ್‌‍ಲೆನ್ ಬದಲಾವೊಡು",
+	"wikisource-ocr-advanced": "ಸುಧಾರಿತ ಆಯ್ಕೆಲು",
+	"wikisource-ocr-onboarding-title": "ಚಿತ್ರೊಲೆನ್ ಪಠ್ಯೊಗು ಲಿಪ್ಯಂತರ ಮಲ್ಪುಲೆ",
+	"wikisource-ocr-onboarding-button": "ಸರಿ, ಗೊತ್ತುಂಡ್"
+}
