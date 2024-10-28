@@ -1,8 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mehtab ahmed"
+			"Mehtab ahmed",
+			"مومن خان ڏاهري"
 		]
 	},
+	"wikisource-export-portlet": "ڇاپيو/برآمديو",
+	"wikisource-download-epub": "پي.ڊي.ايف طور لاھيو",
+	"wikisource-download-epub-tooltip": "هن ڪم جو هڪ EPUB نسخو ڊائون لوڊ ڪريو",
+	"wikisource-download-mobi": "MOBI ڊائون لوڊ ڪريو",
+	"wikisource-download-mobi-tooltip": "هن ڪم جو هڪ EPUB نسخو ڊائون لوڊ ڪريو",
+	"wikisource-download-pdf": "PDF ڊائون لوڊ ڪريو",
+	"wikisource-download-pdf-tooltip": "هن ڪم جو PDF ورجن ڊائون لوڊ ڪريو",
+	"wikisource-download-choose": "ٻيا فارميٽَ",
+	"wikisource-download-choose-tooltip": "ٻيو فارميٽ ۽ فونٽ وغيره چونڊڻ لاءِ فارم کوليو.",
+	"wikisource-download-button": "ڊائون لوڊ",
+	"wikisource-download-chooser-title": "هڪ فارميٽ چونڊيو",
+	"wikisource-download-chooser-epub-description": "ڪمپيوٽرن، موبائيل، ٽيبليٽ لاء",
+	"wikisource-download-chooser-mobi-description": "ٻارڻ لاء",
+	"wikisource-download-chooser-pdf-description": "وڏي اسڪرين ۽ ڇپائيء لاء",
+	"wikisource-download-chooser-different-format": "هڪ مختلف شڪل ڳولي رهيا آهيو؟",
+	"wikisource-ocr-extract-text": "متن نقل ڪريو",
+	"wikisource-ocr-extract-progress": "تصوير مان متن نقل ڪري رهيو آهي…",
+	"wikisource-ocr-extract-cancel": "رد",
+	"wikisource-ocr-extract-undo": "نقل واپس ڪريو",
+	"wikisource-ocr-extract-close": "هن نوٽيس کي بند ڪريو",
+	"wikisource-ocr-extract-text-title": "هن تصوير جو OCR ٽيڪسٽ حاصل ڪريو",
+	"wikisource-ocr-error": "OCR اوزار مان نقص: $1",
+	"wikisource-ocr-no-text": "OCR ٽول طرفان ڪوبه متن واپس نه ڪيو ويو.",
+	"wikisource-ocr-settings-menu": "OCR سيٽنگون تبديل ڪريو",
+	"wikisource-ocr-engine": "پنھنجي ڊفالٽ ٽيڪسٽ ٽرانسپشن جو اوزار چونڊيو",
+	"wikisource-ocr-advanced": "متقدم چارا",
+	"wikisource-ocr-advanced-title": "نئين ٽيب ۾ ترقي يافته اختيارن جو فارم کوليو",
+	"wikisource-ocr-onboarding-title": "تصويرن کي متن ۾ نقل ڪريو",
+	"wikisource-ocr-onboarding-text": "اسڪين ٿيل دستاويزن کي تبديل ڪريو قابل تدوين متن ۾، استعمال ڪندي نظرياتي ڪردار جي سڃاڻپ (OCR).",
 	"wikisource-ocr-onboarding-button": "ٺيڪ، سمجهي ويس"
 }
