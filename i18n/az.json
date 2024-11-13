@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Nemoralis",
-			"Toghrul Rahimli"
+			"Toghrul Rahimli",
+			"Əkrəm Cəfər"
 		]
 	},
 	"wikisource-desc": "Vikimənbəyə aid MediaWiki fərdiləşdirmələri",
@@ -30,7 +31,7 @@
 	"wikisource-ocr-error": "OCR alətindən xəta: $1",
 	"wikisource-ocr-no-text": "OCR aləti tərəfindən heç bir mətn verilmədi.",
 	"wikisource-ocr-settings-menu": "OCR parametrlərini dəyişdir",
-	"wikisource-ocr-engine": "Susmaya görə mətn çıxarma alətini seçin",
+	"wikisource-ocr-engine": "Defolt mətn transkripsiya alətini seçin",
 	"wikisource-ocr-engine-tesseract": "Tesseract OCR",
 	"wikisource-ocr-engine-line-model-checkbox-label": "Xətt aşkarlama modelindən istifadə et",
 	"wikisource-ocr-advanced": "Təkmilləşmiş Seçimlər",
