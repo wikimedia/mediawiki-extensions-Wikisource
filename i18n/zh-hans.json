@@ -11,7 +11,8 @@
 			"沈澄心",
 			"Anterdc99",
 			"H78c67c",
-			"LittlePaw365"
+			"LittlePaw365",
+			"Diskdance"
 		]
 	},
 	"wikisource-desc": "维基文库特定的MediaWiki自定义",
@@ -32,7 +33,7 @@
 	"wikisource-download-chooser-mobi-description": "用于Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
 	"wikisource-download-chooser-pdf-description": "适用于大屏幕和打印",
-	"wikisource-download-chooser-different-format": "寻找不同的格式？",
+	"wikisource-download-chooser-different-format": "想要使用其他格式？",
 	"wikisource-ocr-extract-text": "转录文本",
 	"wikisource-ocr-extract-progress": "正在从图片中转录文字……",
 	"wikisource-ocr-extract-cancel": "取消",
