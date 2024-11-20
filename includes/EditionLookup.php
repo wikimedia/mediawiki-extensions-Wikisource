@@ -5,6 +5,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extension\Wikisource;
 
 use MediaWiki\Context\RequestContext;
+use MediaWiki\MediaWikiServices;
 use Wikibase\Client\Usage\UsageAccumulator;
 use Wikibase\Client\WikibaseClient;
 use Wikibase\DataModel\Entity\EntityDocument;
@@ -54,7 +55,10 @@ class EditionLookup {
 	 */
 	public static function newFromGlobalState( UsageAccumulator $usageAccumulator ): self {
 		return new self(
-			WikibaseClient::getRestrictedEntityLookup(),
+			WikibaseClient::getRestrictedEntityLookupFactory()->getRestrictedEntityLookup(
+				// TODO: There has to be a better place we can get a parser instance from...
+				MediaWikiServices::getInstance()->getParser()
+			),
 			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionProperty' ),
 			self::getPropertyIdFromConfig( 'WikisourceWikibaseEditionOfProperty' ),
 			$usageAccumulator
