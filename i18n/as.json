@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dibya Dutta",
 			"Simbu123"
 		]
 	},
@@ -26,6 +27,8 @@
 	"wikisource-ocr-extract-text": "পাঠ্য আহৰণ কৰক",
 	"wikisource-ocr-extract-progress": "অ'চিআৰ চলি আছে…",
 	"wikisource-ocr-extract-cancel": "বাতিল কৰক",
+	"wikisource-ocr-extract-undo": "পাঠ্য আহৰণ কৰা বাতিল কৰক",
+	"wikisource-ocr-extract-close": "এই জাননী বন্ধ কৰক",
 	"wikisource-ocr-extract-text-title": "এই চিত্ৰখনৰ অ'চিআৰ পাঠ্য আহৰণ কৰক",
 	"wikisource-ocr-error": "অ'চিআৰ সঁজুলিত ত্ৰুটি: $1",
 	"wikisource-ocr-no-text": "অ'চিআৰ সঁজুলিৰ ফলাফল হিচাপে কোনো পাঠ্য পোৱা নগ'ল।",
@@ -33,9 +36,13 @@
 	"wikisource-ocr-engine": "আপোনাৰ পূৰ্বনিৰ্ধাৰিত পাঠ্য আহৰণ সঁজুলি বাছনি কৰক",
 	"wikisource-ocr-engine-tesseract": "টেচাৰেক্ট অ'চিআৰ",
 	"wikisource-ocr-engine-google": "গুগল অ'চিআৰ",
+	"wikisource-ocr-engine-transkribus": "ট্ৰেন্সক্ৰিবাছ OCR",
+	"wikisource-ocr-engine-line-model-checkbox-label": "ৰেখা চিনাক্তকৰণ আৰ্হি ব্যৱহাৰ কৰক",
 	"wikisource-ocr-advanced": "উচ্চতৰ বিকল্পসমূহ",
 	"wikisource-ocr-advanced-title": "এটা নতুন টেবত উচ্চতৰ বিকল্পসমূহ প্ৰ-পত্ৰ খোলক",
 	"wikisource-ocr-onboarding-title": "চিত্ৰসমূহক পাঠ্যত প্ৰতিলিপি কৰক",
 	"wikisource-ocr-onboarding-text": "স্কেন কৰা ডকুমেণ্টবোৰ সম্পাদনাযোগ্য পাঠ্যলৈ পৰিৱৰ্তন কৰক, অপ্টিকেল কেৰেক্টাৰ ৰিকগনিশ্বন (অ'চিআৰ) ব্যৱহাৰ কৰি।",
-	"wikisource-ocr-onboarding-button": "বুজি পালোঁ"
+	"wikisource-ocr-onboarding-button": "বুজি পালোঁ",
+	"wikisource-ocr-language-dropdown-label": "ভাষাসমূহ (ঐচ্ছিক):",
+	"wikisource-ocr-model-dropdown-label": "লিখনী চিনাক্তকৰণৰ আৰ্হি"
 }
