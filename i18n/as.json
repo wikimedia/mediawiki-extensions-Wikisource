@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Simbu123"
+			"Simbu123",
+			"Dibya Dutta"
 		]
 	},
 	"wikisource-desc": "কেৱল ৱিকিউৎসত ব্যৱহৃত মিডিয়াৱিকি বাৰ্তাসমূহ",
@@ -26,6 +27,8 @@
 	"wikisource-ocr-extract-text": "পাঠ্য আহৰণ কৰক",
 	"wikisource-ocr-extract-progress": "অ'চিআৰ চলি আছে…",
 	"wikisource-ocr-extract-cancel": "বাতিল কৰক",
+	"wikisource-ocr-extract-undo": "পাঠ্য আহৰণ কৰা বাতিল কৰক",
+	"wikisource-ocr-extract-close": "এই জাননী বন্ধ কৰক",
 	"wikisource-ocr-extract-text-title": "এই চিত্ৰখনৰ অ'চিআৰ পাঠ্য আহৰণ কৰক",
 	"wikisource-ocr-error": "অ'চিআৰ সঁজুলিত ত্ৰুটি: $1",
 	"wikisource-ocr-no-text": "অ'চিআৰ সঁজুলিৰ ফলাফল হিচাপে কোনো পাঠ্য পোৱা নগ'ল।",
