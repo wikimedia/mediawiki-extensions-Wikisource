@@ -33,10 +33,12 @@
 	"wikisource-ocr-no-text": "لا يوجد نص مستخرج من أداة التعرف الضوئي على المحارف.",
 	"wikisource-ocr-settings-menu": "بَدل إعدادات التعرف الضوئي على المحارف",
 	"wikisource-ocr-engine": "حدد أداة نسخ النص الافتراضية الخاصة بك",
+	"wikisource-ocr-engine-line-model-checkbox-label": "استخدم نموذج اكتشاف الخط",
 	"wikisource-ocr-advanced": "خيارات متقدمة",
 	"wikisource-ocr-advanced-title": "افتح نموذج الخيارات المتقدمة في علامة تبويب جديدة",
 	"wikisource-ocr-onboarding-title": "حول صورة إلى نص",
 	"wikisource-ocr-onboarding-text": "تحويل المستندات الممسوحة ضوئيًا إلى نص قابل للتحرير باستخدام التعرف الضوئي على المحارف (OCR).",
 	"wikisource-ocr-onboarding-button": "فهمت",
-	"wikisource-ocr-language-dropdown-label": "اللغات (اختياري):"
+	"wikisource-ocr-language-dropdown-label": "اللغات (اختياري):",
+	"wikisource-ocr-model-dropdown-label": "نموذج التعرف على النص"
 }
