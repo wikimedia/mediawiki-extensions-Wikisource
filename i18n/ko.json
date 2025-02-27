@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Namoroka"
 		]
 	},
+	"wikisource-desc": "위키문헌-관련 미디어위키 사용자 정의",
 	"wikisource-export-portlet": "인쇄/내보내기",
 	"wikisource-download-epub": "EPUB 다운로드",
 	"wikisource-download-epub-tooltip": "이 작품의 EPUB 버전 다운로드",
@@ -18,13 +20,26 @@
 	"wikisource-download-chooser-epub-description": "컴퓨터, 모바일, 태블릿용",
 	"wikisource-download-chooser-mobi-description": "킨들용",
 	"wikisource-download-chooser-pdf-description": "대형 화면 및 인쇄용",
-	"wikisource-ocr-extract-text": "텍스트 추출",
+	"wikisource-download-chooser-different-format": "다른 형식을 찾으시나요?",
+	"wikisource-ocr-extract-text": "텍스트 변환",
+	"wikisource-ocr-extract-progress": "그림으로부터 텍스트 변환하기...",
 	"wikisource-ocr-extract-cancel": "취소",
+	"wikisource-ocr-extract-undo": "변환 되돌리기",
 	"wikisource-ocr-extract-close": "이 알림 닫기",
-	"wikisource-ocr-extract-text-title": "이 이미지의 OCR 텍스트를 가져옵니다",
+	"wikisource-ocr-extract-text-title": "이 그림의 OCR 텍스트를 가져옵니다",
 	"wikisource-ocr-error": "OCR 도구의 오류: $1",
 	"wikisource-ocr-no-text": "OCR 도구가 반환한 문구가 없습니다.",
 	"wikisource-ocr-settings-menu": "OCR 설정 변경",
+	"wikisource-ocr-engine": "기본으로 사용할 변환 도구를 선택하세요",
+	"wikisource-ocr-engine-tesseract": "테서랙트 OCR",
+	"wikisource-ocr-engine-google": "구글 OCR",
+	"wikisource-ocr-engine-transkribus": "트랜스크리버스 OCR",
+	"wikisource-ocr-engine-line-model-checkbox-label": "줄 감지 모델 사용하기",
 	"wikisource-ocr-advanced": "고급 옵션",
-	"wikisource-ocr-onboarding-button": "알겠습니다"
+	"wikisource-ocr-advanced-title": "새 탭에서 고급 옵션 양식 열기",
+	"wikisource-ocr-onboarding-title": "그림을 텍스트로 변환",
+	"wikisource-ocr-onboarding-text": "광학 문자 인식(OCR)을 사용하여 스캔한 문서를 편집 가능한 텍스트로 변환합니다.",
+	"wikisource-ocr-onboarding-button": "알겠습니다",
+	"wikisource-ocr-language-dropdown-label": "언어 (선택 사항):",
+	"wikisource-ocr-model-dropdown-label": "텍스트 인식 모델"
 }
