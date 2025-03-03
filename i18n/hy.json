@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"GeoO",
 			"Kareyac",
 			"Դավիթ Սարոյան"
 		]
 	},
+	"wikisource-desc": "MediaWiki-ի կարգավորումները Վիքիդարանի համար",
 	"wikisource-export-portlet": "Տպել/արտահանել",
 	"wikisource-download-epub": "Ներբեռնել որպես EPUB",
 	"wikisource-download-epub-tooltip": "Ներբեռնել այս էջի EPUB տարբերակը",
@@ -20,7 +22,17 @@
 	"wikisource-download-chooser-pdf-description": "մեծ էկրանների և տպագրության համար",
 	"wikisource-download-chooser-different-format": "Փնտրում եք ա՞յլ ձևաչափ։",
 	"wikisource-ocr-extract-text": "Տառաճանաչել տեքստը",
+	"wikisource-ocr-extract-progress": "Տեքստի տառադարձում պատկերից",
 	"wikisource-ocr-extract-cancel": "Չեղարկել",
+	"wikisource-ocr-extract-undo": "Հետարկել տառադարձումը",
+	"wikisource-ocr-extract-close": "Փակել այս ծանուցումը",
+	"wikisource-ocr-extract-text-title": "Ստանալ այս պատկերի OCR տեքստը",
+	"wikisource-ocr-error": "OCR գործիքի սխալ՝ $1",
+	"wikisource-ocr-no-text": "OCR գործիքը որևէ տեքստ չի վերադարձրել։",
+	"wikisource-ocr-settings-menu": "Փոխել OCR կարգավորումները",
 	"wikisource-ocr-engine": "Ընտրել տառաճանաչման լռելայն գործիքը",
-	"wikisource-ocr-onboarding-button": "Լավ, հասկացա"
+	"wikisource-ocr-advanced": "Ընդլայնված կարգավորումներ",
+	"wikisource-ocr-onboarding-button": "Լավ, հասկացա",
+	"wikisource-ocr-language-dropdown-label": "Լեզուներ (ոչ պարտադիր)՝",
+	"wikisource-ocr-model-dropdown-label": "Տեքստի ճանաչման մոդել"
 }
