@@ -3,7 +3,8 @@
 		"authors": [
 			"Kareyac",
 			"Okras",
-			"Putnik"
+			"Putnik",
+			"Yurina Tatiana"
 		]
 	},
 	"wikisource-desc": "Настройки MediaWiki для Викитеки",
@@ -31,5 +32,7 @@
 	"wikisource-ocr-no-text": "Инструмент OCR не вернул никакого текста.",
 	"wikisource-ocr-advanced": "Расширенные настройки",
 	"wikisource-ocr-onboarding-title": "Преобразование изображений в текст",
-	"wikisource-ocr-onboarding-button": "Окей, понятно"
+	"wikisource-ocr-onboarding-button": "Окей, понятно",
+	"wikisource-ocr-language-dropdown-label": "Языки (необязательно):",
+	"wikisource-ocr-model-dropdown-label": "Модель распознавания текста"
 }
