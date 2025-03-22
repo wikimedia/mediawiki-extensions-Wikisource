@@ -46,6 +46,7 @@ function ExtractTextWidget( ocrTool, $textbox ) {
 	// So, disable the RadioSelect widget when the popup is closed
 	this.configButton.popup.connect( this, { closing: () => {
 		this.radioSelect.setDisabled( true );
+		this.ocrTool.saveConfig();
 	} } );
 
 	var config = {

@@ -93,7 +93,6 @@ OcrTool.prototype.loadConfig = function () {
  */
 OcrTool.prototype.setEngine = function ( engine ) {
 	this.engine = engine;
-	this.saveConfig();
 };
 
 /**
@@ -101,7 +100,6 @@ OcrTool.prototype.setEngine = function ( engine ) {
  */
 OcrTool.prototype.setLangs = function ( langs ) {
 	this.langs = langs;
-	this.saveConfig();
 };
 
 /**
@@ -129,7 +127,6 @@ OcrTool.prototype.getShowOnboarding = function () {
 
 OcrTool.prototype.setShowOnboarding = function ( showOnboarding ) {
 	this.showOnboarding = !!showOnboarding;
-	this.saveConfig();
 };
 
 /**
