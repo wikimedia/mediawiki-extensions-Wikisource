@@ -2,9 +2,42 @@
 	"@metadata": {
 		"authors": [
 			"NGC 54",
-			"Paloi Sciurala"
+			"Paloi Sciurala",
+			"TiberiuFr25"
 		]
 	},
+	"wikisource-desc": "Personalizări MediaWiki specifice pentru Wikisource",
+	"wikisource-export-portlet": "Tipărire/exportare",
+	"wikisource-download-epub": "Descărcare EPUB",
+	"wikisource-download-epub-tooltip": "Descărcați o versiune EPUB a acestei lucrări",
+	"wikisource-download-mobi": "Descărcare MOBI",
+	"wikisource-download-mobi-tooltip": "Descărcați o versiune MOBI a acestei lucrări",
 	"wikisource-download-pdf": "Descărcare PDF",
-	"wikisource-download-button": "Descărcare"
+	"wikisource-download-pdf-tooltip": "Descărcați o versiune PDF a acestei lucrări",
+	"wikisource-download-choose": "Alte formate",
+	"wikisource-download-choose-tooltip": "Deschideți un formular pentru a alege alte formate și fonturi ș.a.",
+	"wikisource-download-button": "Descărcare",
+	"wikisource-download-chooser-title": "Alegeți un format",
+	"wikisource-download-chooser-epub-description": "pentru calculatoare, telefoane mobile, tablete",
+	"wikisource-download-chooser-mobi-description": "pentru tablete Kindle",
+	"wikisource-download-chooser-pdf-description": "pentru ecrane mari și imprimare",
+	"wikisource-download-chooser-different-format": "Căutați un alt format?",
+	"wikisource-ocr-extract-text": "Transcrie textul",
+	"wikisource-ocr-extract-progress": "Se transcrie textul din imagine…",
+	"wikisource-ocr-extract-cancel": "Anulare",
+	"wikisource-ocr-extract-undo": "Anulează transcrierea",
+	"wikisource-ocr-extract-close": "Închide acest anunț",
+	"wikisource-ocr-extract-text-title": "Obțineți textul din această imagine prin OCR",
+	"wikisource-ocr-error": "Eroare de la instrumentul OCR: $1",
+	"wikisource-ocr-no-text": "Instrumentul OCR nu a returnat niciun text.",
+	"wikisource-ocr-settings-menu": "Modificați setările OCR",
+	"wikisource-ocr-engine": "Selectați instrumentul implicit de transcriere a textului",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Utilizați modelul de detectare al rândurilor",
+	"wikisource-ocr-advanced": "Opțiuni avansate",
+	"wikisource-ocr-advanced-title": "Deschideți formularul de opțiuni avansate într-o filă nouă",
+	"wikisource-ocr-onboarding-title": "Transcrie imaginile în text",
+	"wikisource-ocr-onboarding-text": "Transformați documentele scanate în text editabil, utilizând recunoașterea optică a caracterelor (OCR).",
+	"wikisource-ocr-onboarding-button": "Bine, am înțeles.",
+	"wikisource-ocr-language-dropdown-label": "Limbi (opțional)",
+	"wikisource-ocr-model-dropdown-label": "Model de recunoaștere a textului"
 }
