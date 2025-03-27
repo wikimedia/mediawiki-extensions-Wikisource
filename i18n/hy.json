@@ -32,6 +32,7 @@
 	"wikisource-ocr-settings-menu": "Փոխել OCR կարգավորումները",
 	"wikisource-ocr-engine": "Ընտրել տառաճանաչման լռելայն գործիքը",
 	"wikisource-ocr-advanced": "Ընդլայնված կարգավորումներ",
+	"wikisource-ocr-onboarding-title": "Տառադարձեք պատկերները տեքստի",
 	"wikisource-ocr-onboarding-button": "Լավ, հասկացա",
 	"wikisource-ocr-language-dropdown-label": "Լեզուներ (ոչ պարտադիր)՝",
 	"wikisource-ocr-model-dropdown-label": "Տեքստի ճանաչման մոդել"
