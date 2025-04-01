@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Praveenp"
+		]
+	},
+	"wikisource-desc": "വിക്കിഗ്രന്ഥശാലയ്ക്കായുള്ള മീഡിയവിക്കി സജ്ജീകരണങ്ങൾ",
+	"wikisource-export-portlet": "അച്ചടിയ്ക്കുക/കയറ്റുമതി ചെയ്യുക",
+	"wikisource-download-epub": "ഡൗൺലോഡ് ഇപബ്",
+	"wikisource-download-epub-tooltip": "ഈ സൃഷ്ടിയുടെ ഇപബ് പതിപ്പ് ഡൗൺലോഡ് ചെയ്യുക",
+	"wikisource-download-mobi": "ഡൗൺലോഡ് മൊബി (MOBI)",
+	"wikisource-download-mobi-tooltip": "ഈ സൃഷ്ടിയുടെ മൊബി (MOBI) പതിപ്പ് ഡൗൺലോഡ് ചെയ്യുക",
+	"wikisource-download-pdf": "ഡൗൺലോഡ് പി.ഡി.എഫ്.",
+	"wikisource-download-pdf-tooltip": "ഈ സൃഷ്ടിയുടെ പി.ഡി.എഫ്. പതിപ്പ് ഡൗൺലോഡ് ചെയ്യുക",
+	"wikisource-download-choose": "മറ്റ് ഫോർമാറ്റുകൾ",
+	"wikisource-download-choose-tooltip": "മറ്റ് ഫോർമാറ്റുകളും ഫോണ്ടുകളും തിരഞ്ഞെടുക്കാൻ ഫോം തുറക്കുക.",
+	"wikisource-download-button": "ഡൗൺലോഡ്",
+	"wikisource-download-chooser-title": "ഫോർമാറ്റ് തിരഞ്ഞെടുക്കുക",
+	"wikisource-download-chooser-epub-description": "കമ്പ്യൂട്ടറുകൾ, മൊബൈലുകൾ, ടാബ്‌ലെറ്റുകൾ എന്നിവയ്‌ക്കായുള്ളത്",
+	"wikisource-download-chooser-mobi-description": "കിൻഡിലുകൾക്ക്",
+	"wikisource-download-chooser-pdf-description": "വലിയ സ്‌ക്രീനുകൾക്കും പ്രിന്റിംഗിനും",
+	"wikisource-download-chooser-different-format": "മറ്റൊരു ഒരു ഫോർമാറ്റ് തിരയുകയാണോ?",
+	"wikisource-ocr-extract-text": "എഴുത്ത് ട്രാൻസ്ക്രൈബ് ചെയ്യുക",
+	"wikisource-ocr-extract-progress": "ചിത്രത്തിൽ നിന്നും എഴുത്ത് ട്രാൻസ്ക്രൈബ് ചെയ്യുന്നു...",
+	"wikisource-ocr-extract-cancel": "റദ്ദക്കുക"
+}
