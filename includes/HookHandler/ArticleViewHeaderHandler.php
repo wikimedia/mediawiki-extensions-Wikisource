@@ -2,10 +2,10 @@
 
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
-use Article;
 use MediaWiki\Config\Config;
 use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Language\Language;
+use MediaWiki\Page\Article;
 use MediaWiki\Page\Hook\ArticleViewHeaderHook;
 use MediaWiki\Parser\ParserOutput;
 use MediaWiki\Registration\ExtensionRegistry;

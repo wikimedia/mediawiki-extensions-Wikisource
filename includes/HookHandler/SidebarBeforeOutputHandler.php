@@ -8,7 +8,7 @@ use MediaWiki\Extension\Gadgets\GadgetRepo;
 use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Language\Language;
-use Skin;
+use MediaWiki\Skin\Skin;
 
 class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 
