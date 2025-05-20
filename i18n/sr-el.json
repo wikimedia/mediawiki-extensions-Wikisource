@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
+	"wikisource-export-portlet": "Štampanje/izvoz",
 	"wikisource-download-epub": "Preuzimanje EPUB-a",
 	"wikisource-download-epub-tooltip": "Preuzimanje EPUB verzije ovog rada",
 	"wikisource-download-mobi": "Preuzimanje MOBI-ja",
@@ -13,9 +14,22 @@
 	"wikisource-download-button": "Preuzimanje",
 	"wikisource-download-chooser-title": "Izaberite format",
 	"wikisource-download-chooser-epub": "EPUB",
-	"wikisource-download-chooser-epub-description": "za kompjutere, mobilne, tablete",
+	"wikisource-download-chooser-epub-description": "za računare i mobilne uređaje",
 	"wikisource-download-chooser-mobi": "MOBI",
-	"wikisource-download-chooser-mobi-description": "za Kindles",
+	"wikisource-download-chooser-mobi-description": "Kindle",
 	"wikisource-download-chooser-pdf": "PDF",
-	"wikisource-download-chooser-pdf-description": "za velike ekrane i printovanje"
+	"wikisource-download-chooser-pdf-description": "za velike ekrane i štampanje",
+	"wikisource-download-chooser-different-format": "Drugi formati?",
+	"wikisource-ocr-extract-text": "Transkripuj tekst",
+	"wikisource-ocr-extract-progress": "Transkribovanje teksta iz slike…",
+	"wikisource-ocr-extract-cancel": "Otkaži",
+	"wikisource-ocr-extract-undo": "Poništi transkripciju",
+	"wikisource-ocr-extract-close": "Zatvori napomenu",
+	"wikisource-ocr-settings-menu": "Uredi OCR podešavanja",
+	"wikisource-ocr-engine": "Podrazumevana alatka za transkripciju teksta",
+	"wikisource-ocr-advanced": "Napredne opcije",
+	"wikisource-ocr-onboarding-title": "Transkribuje sliku u tekst",
+	"wikisource-ocr-onboarding-button": "U redu, razumem",
+	"wikisource-ocr-language-dropdown-label": "Jezici (neobavezno):",
+	"wikisource-ocr-model-dropdown-label": "Model prepoznavanja teksta"
 }
