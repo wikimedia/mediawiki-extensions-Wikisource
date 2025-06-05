@@ -68,6 +68,7 @@ function ExtractTextWidget( ocrTool, $textbox ) {
 	// Handle the returned text and language updates.
 	this.ocrTool.connect( this, {
 		[ this.ocrTool.events.textExtracted ]: 'processOcrResult',
+		[ this.ocrTool.events.error ]: 'processOcrResult',
 		[ this.ocrTool.events.languageLoaded ]: 'updateMoreOptionsFields'
 	} );
 
