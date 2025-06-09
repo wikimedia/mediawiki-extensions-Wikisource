@@ -19,7 +19,8 @@ function OcrTool( toolUrl, backupPageImageURL ) {
 		textExtracted: 'textExtracted',
 		textExtractEnd: 'textExtractEnd',
 		undoing: 'undoing',
-		languageLoaded: 'languageLoaded'
+		languageLoaded: 'languageLoaded',
+		error: 'error'
 	};
 
 	// Base URL of the tool.
@@ -187,7 +188,7 @@ OcrTool.prototype.extractText = function () {
 	this.hasBeenCancelled = false;
 	this.emit( this.events.textExtractStart );
 	var ocrTool = this;
-	// Use the same function for success and error.
+	// Success handler
 	var handleTextExtracted = function ( result ) {
 		if ( ocrTool.hasBeenCancelled ) {
 			// If the user has clicked 'cancel', ignore the result.
@@ -195,11 +196,19 @@ OcrTool.prototype.extractText = function () {
 		}
 		ocrTool.emit( ocrTool.events.textExtracted, result );
 	};
+	// Error handler
+	var handleError = function ( errorInfo ) {
+		if ( ocrTool.hasBeenCancelled ) {
+			return;
+		}
+		ocrTool.emit( ocrTool.events.error, errorInfo );
+	};
+
 	$.ajax( {
 		url: ocrTool.getUrl( null, true ),
 		dataType: 'json',
 		success: handleTextExtracted,
-		error: handleTextExtracted,
+		error: handleError,
 		complete: function ( jqXHR, textStatus ) {
 			ocrTool.emit( ocrTool.events.textExtractEnd, jqXHR, textStatus );
 			ocrTool.preloadNextPage();

@@ -35,7 +35,8 @@ function UndoWidget( ocrTool, $textbox ) {
 	this.ocrTool.connect( this, {
 		[ this.ocrTool.events.textExtractStart ]: 'hide',
 		[ this.ocrTool.events.undoing ]: 'undo',
-		[ this.ocrTool.events.textExtracted ]: 'show'
+		[ this.ocrTool.events.textExtracted ]: 'show',
+		[ this.ocrTool.events.error ]: 'hide'
 	} );
 	undoButton.connect( undoButton, {
 		click: function () {
