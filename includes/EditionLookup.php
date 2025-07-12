@@ -155,7 +155,7 @@ class EditionLookup {
 	private function getEntity( EntityId $itemId ): ?EntityDocument {
 		try {
 			return $this->entityLookup->getEntity( $itemId );
-		} catch ( EntityLookupException $e ) {
+		} catch ( EntityLookupException ) {
 			return null;
 		}
 	}
