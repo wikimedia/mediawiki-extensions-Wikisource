@@ -24,6 +24,7 @@
 		"ArticleViewHeader": "ArticleViewHeader",
 		"EditPage::showEditForm:initial": "EditPageShowEditFormInitial",
 		"GetPreferences": "GetPreferences",
+		"BeforePageDisplay": "BeforePageDisplay",
 		"WikibaseClientSiteLinksForItem": "MediaWiki\\Extension\\Wikisource\\WikibaseClientSiteLinksForItemHandler::provideSiteLinks"
 	},
 	"HookHandlers": {
@@ -53,6 +54,13 @@
 		},
 		"GetPreferences": {
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\GetPreferencesHandler"
+		},
+		"BeforePageDisplay": {
+			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\BeforePageDisplayHandler",
+			"services": [
+				"UserGroupManager",
+				"MainConfig"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -87,6 +95,33 @@
 				"wikisource-download-chooser-different-format"
 			]
 		},
+		"ext.wikisource.bulkocr": {
+			"dependencies": [
+				"oojs-ui-core",
+				"oojs-ui-widgets",
+				"jquery",
+				"ext.wikisource.icons"
+			],
+			"packageFiles": [
+				"ext.wikisource.bulkocr/ext.wikisource.bulkocr.js",
+				"ext.wikisource.bulkocr/BulkOcrWidget.js"
+			],
+			"styles": [
+				"ext.wikisource.bulkocr/bulkocr.less"
+			],
+			"messages": [
+				"wikisource-bulkocr-button",
+				"wikisource-bulkocr-active-development-warning",
+				"wikisource-bulkocr-success-message",
+				"wikisource-bulkocr-no-pages-found",
+				"wikisource-bulkocr-in-progress",
+				"wikisource-bulkocr-fetch-pages-failed",
+				"wikisource-bulkocr-fetch-images-failed",
+				"wikisource-bulkocr-ocr-progress",
+				"wikisource-bulkocr-saving-progress",
+				"wikisource-bulkocr-saving-progress-with-failures"
+			]
+		},
 		"ext.wikisource.icons": {
 			"class": "MediaWiki\\ResourceLoader\\ImageModule",
 			"selector": ".ext-wikisource-icon-{name}",
@@ -102,6 +137,9 @@
 				},
 				"ocr-onboarding": {
 					"file": "ext.wikisource.OCR/OnboardingPopup.svg"
+				},
+				"bulk-ocr": {
+					"file": "ext.wikisource.bulkocr/icons/bulk-ocr.svg"
 				}
 			}
 		},
@@ -177,6 +215,9 @@
 		},
 		"WikisourceOcrUrl": {
 			"value": "https://ocr.wmcloud.org/"
+		},
+		"WikisourceEnableBulkOCR": {
+			"value": false
 		},
 		"WikisourceHttpProxy": {
 			"value": false,

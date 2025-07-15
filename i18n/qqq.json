@@ -49,5 +49,15 @@
 	"wikisource-ocr-onboarding-text": "Text paragraph for the onboarding popup.",
 	"wikisource-ocr-onboarding-button": "Confirmation button label for the onboarding popup.",
 	"wikisource-ocr-language-dropdown-label": "Label for language dropdown",
-	"wikisource-ocr-model-dropdown-label": "Label for model dropdown"
+	"wikisource-ocr-model-dropdown-label": "Label for model dropdown",
+	"wikisource-bulkocr-button": "Button text for the Bulk OCR button.",
+	"wikisource-bulkocr-active-development-warning": "Warning message displayed to users about the Bulk OCR feature being under development.",
+	"wikisource-bulkocr-success-message": "Success message displayed when bulk OCR process completes successfully.",
+	"wikisource-bulkocr-no-pages-found": "Error message displayed when no empty pages are found to process.",
+	"wikisource-bulkocr-in-progress": "Status message displayed when bulk OCR process is starting.",
+	"wikisource-bulkocr-fetch-pages-failed": "Error message displayed when fetching untranscribed pages fails.",
+	"wikisource-bulkocr-fetch-images-failed": "Error message displayed when fetching image thumbnails fails.",
+	"wikisource-bulkocr-ocr-progress": "Progress message for OCR processing. $1 is the number of pages processed, $2 is the total number of pages.",
+	"wikisource-bulkocr-saving-progress": "Progress message for saving OCR results. $1 is the number of pages saved, $2 is the total number of pages.",
+	"wikisource-bulkocr-saving-progress-with-failures": "Progress message for saving OCR results with failures. $1 is the number of pages saved, $2 is the total number of pages, $3 is the list of failed pages."
 }
