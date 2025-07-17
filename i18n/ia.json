@@ -37,5 +37,15 @@
 	"wikisource-ocr-onboarding-text": "Transforma documentos scannate in texto modificabile usante le recognition optic de characteres (OCR, ''Optical Character Recognition'').",
 	"wikisource-ocr-onboarding-button": "Ben, io comprende",
 	"wikisource-ocr-language-dropdown-label": "Linguas (optional):",
-	"wikisource-ocr-model-dropdown-label": "Modello de recognoscentia de texto"
+	"wikisource-ocr-model-dropdown-label": "Modello de recognoscentia de texto",
+	"wikisource-bulkocr-button": "OCR in massa",
+	"wikisource-bulkocr-active-development-warning": "Iste function es in disveloppamento active e debe esser usate con prudentia extreme.",
+	"wikisource-bulkocr-success-message": "OCR in massa executate con successo. Le statos del paginas se ha actualisate a non corrigite.",
+	"wikisource-bulkocr-no-pages-found": "Necun pagina vacue trovate a tractar",
+	"wikisource-bulkocr-in-progress": "OCR in massa in progresso",
+	"wikisource-bulkocr-fetch-pages-failed": "Non poteva obtener paginas non transcribite ab le indice",
+	"wikisource-bulkocr-fetch-images-failed": "Non poteva obtener miniaturas de imagines pro paginas in le indice",
+	"wikisource-bulkocr-ocr-progress": "Progresso OCR: $1 de $2 paginas tractate",
+	"wikisource-bulkocr-saving-progress": "Salveguarda resultatos OCR: $1 de $2 paginas salveguardate",
+	"wikisource-bulkocr-saving-progress-with-failures": "Salveguarda resultatos OCR: $1 de $2 paginas salveguardate (fallite: $3)"
 }

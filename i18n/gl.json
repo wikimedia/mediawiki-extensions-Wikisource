@@ -31,6 +31,9 @@
 	"wikisource-ocr-no-text": "A ferramenta de OCR non devolveu ningún texto.",
 	"wikisource-ocr-settings-menu": "Modificar os axustes de OCR",
 	"wikisource-ocr-engine": "Selecciona a túa ferramenta de transcrición de texto predeterminada",
+	"wikisource-ocr-engine-tesseract": "OCR de Tesseract",
+	"wikisource-ocr-engine-google": "OCR de Google",
+	"wikisource-ocr-engine-transkribus": "OCR de Transkribus",
 	"wikisource-ocr-engine-line-model-checkbox-label": "Usar o modelo de detección de liñas",
 	"wikisource-ocr-advanced": "Opcións avanzadas",
 	"wikisource-ocr-advanced-title": "Abrir o formulario de opcións avanzadas nunha nova lapela",
@@ -38,5 +41,15 @@
 	"wikisource-ocr-onboarding-text": "Converter documentos escaneados en texto editable usando o recoñecemento óptico de caracteres (OCR).",
 	"wikisource-ocr-onboarding-button": "Entendido",
 	"wikisource-ocr-language-dropdown-label": "Linguas (opcional):",
-	"wikisource-ocr-model-dropdown-label": "Modelo de recoñecemento de texto"
+	"wikisource-ocr-model-dropdown-label": "Modelo de recoñecemento de texto",
+	"wikisource-bulkocr-button": "OCR masivo",
+	"wikisource-bulkocr-active-development-warning": "Esta funcionalidade está en desenvolvemento e debe usarse extremando a precaución.",
+	"wikisource-bulkocr-success-message": "O OCR masivo executouse correctamente. Os estados da páxina actualizáronse a non revisada.",
+	"wikisource-bulkocr-no-pages-found": "Non se atoparon páxinas baleiras para procesar",
+	"wikisource-bulkocr-in-progress": "OCR masivo en curso",
+	"wikisource-bulkocr-fetch-pages-failed": "Non se puideron obter as páxinas non transcritas do índice",
+	"wikisource-bulkocr-fetch-images-failed": "Non se puideron obter as miniaturas das imaxes para as páxinas do índice",
+	"wikisource-bulkocr-ocr-progress": "Progreso do OCR: $1/$2 páxinas procesadas",
+	"wikisource-bulkocr-saving-progress": "Gardando os resultados do OCR: $1/$2 páxinas gardadas",
+	"wikisource-bulkocr-saving-progress-with-failures": "Gardando os resultados do OCR: $1/$2 páxinas gardadas (fallos: $3)"
 }

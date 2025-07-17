@@ -38,5 +38,15 @@
 	"wikisource-ocr-onboarding-text": "Verwandelt gescannte Dokumente mithilfe der optischen Zeichenerkennung (OCR) in bearbeitbaren Text.",
 	"wikisource-ocr-onboarding-button": "Okay, verstanden.",
 	"wikisource-ocr-language-dropdown-label": "Sprachen (optional):",
-	"wikisource-ocr-model-dropdown-label": "Texterkennungsmodell"
+	"wikisource-ocr-model-dropdown-label": "Texterkennungsmodell",
+	"wikisource-bulkocr-button": "Massen-OCR",
+	"wikisource-bulkocr-active-development-warning": "Diese Funktion wird derzeit aktiv entwickelt und sollte mit großer Vorsicht genutzt werden.",
+	"wikisource-bulkocr-success-message": "Massen-OCR erfolgreich ausgeführt. Der Status der Seiten wurde nicht auf Proofread aktualisiert.",
+	"wikisource-bulkocr-no-pages-found": "Keine leeren Seiten zum Verarbeiten gefunden",
+	"wikisource-bulkocr-in-progress": "Massen-OCR wird ausgeführt",
+	"wikisource-bulkocr-fetch-pages-failed": "Nicht transkribierte Seiten konnten nicht aus dem Index abgerufen werden.",
+	"wikisource-bulkocr-fetch-images-failed": "Das Abrufen der Miniaturansichten der Seiten im Index ist fehlgeschlagen.",
+	"wikisource-bulkocr-ocr-progress": "OCR-Fortschritt: $1/$2 Seiten verarbeitet",
+	"wikisource-bulkocr-saving-progress": "OCR-Ergebnisse speichern: $1/$2 Seiten gespart",
+	"wikisource-bulkocr-saving-progress-with-failures": "OCR-Ergebnisse werden gespeichert: $1/$2 Seiten gespeichert (Fehlgeschlagen: $3)"
 }
