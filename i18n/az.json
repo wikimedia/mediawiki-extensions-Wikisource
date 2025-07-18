@@ -41,5 +41,15 @@
 	"wikisource-ocr-onboarding-text": "Optik Simvol Tanıma (OCR) istifadə edərək, skan edilmiş sənədləri redaktə edilə bilən mətnə çevirin.",
 	"wikisource-ocr-onboarding-button": "Tamam, başa düşdüm",
 	"wikisource-ocr-language-dropdown-label": "Dillər (istəyə bağlı):",
-	"wikisource-ocr-model-dropdown-label": "Mətnin tanınması modeli"
+	"wikisource-ocr-model-dropdown-label": "Mətnin tanınması modeli",
+	"wikisource-bulkocr-button": "Toplu OCR",
+	"wikisource-bulkocr-active-development-warning": "Bu funksiya aktiv inkişaf mərhələsindədir və tam ehtiyatla istifadə edilməlidir.",
+	"wikisource-bulkocr-success-message": "Toplu OCR uğurla icra edildi. Səhifə statusları \"yoxlanılmamış\" kimi yeniləndi.",
+	"wikisource-bulkocr-no-pages-found": "İşləmək üçün boş səhifə tapılmadı",
+	"wikisource-bulkocr-in-progress": "Toplu OCR davam edir",
+	"wikisource-bulkocr-fetch-pages-failed": "Transkripsiya edilməmiş səhifələri İndeksdən əldə etmək alınmadı",
+	"wikisource-bulkocr-fetch-images-failed": "İndeksdəki səhifələr üçün şəkil miniatürlərini əldə etmək alınmadı",
+	"wikisource-bulkocr-ocr-progress": "OCR prosesi: $1/$2 səhifə işlənib",
+	"wikisource-bulkocr-saving-progress": "OCR nəticələrinin saxlanması: $1/$2 səhifə saxlanıb",
+	"wikisource-bulkocr-saving-progress-with-failures": "OCR nəticələrinin saxlanması: $1/$2 səhifə saxlanıb (Uğursuz: $3)"
 }

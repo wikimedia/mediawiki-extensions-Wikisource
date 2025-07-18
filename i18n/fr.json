@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Daniel236",
+			"Derugon",
 			"Gomoko",
+			"JLTRY",
 			"Momo50WM",
 			"Seudo",
 			"Thibaut120094",
@@ -50,5 +52,15 @@
 	"wikisource-ocr-onboarding-text": "Transformer les facsimilés numérisés de documents en texte modifiable, à l’aide de la reconnaissance optique des caractères (OCR).",
 	"wikisource-ocr-onboarding-button": "Ok, allons-y",
 	"wikisource-ocr-language-dropdown-label": "Langues (facultatif) :",
-	"wikisource-ocr-model-dropdown-label": "Modèle de reconnaissance de texte"
+	"wikisource-ocr-model-dropdown-label": "Modèle de reconnaissance de texte",
+	"wikisource-bulkocr-button": "Reconnaissance optique des caractères en masse",
+	"wikisource-bulkocr-active-development-warning": "Cette fonctionnalité est en cours de développement actif et doit être utilisée avec une extrême prudence.",
+	"wikisource-bulkocr-success-message": "La reconnaissance optique des caractères en masse a bien été exécutée. Les pages ont été mises à jour à l’état « Non relue ».",
+	"wikisource-bulkocr-no-pages-found": "Aucune page vide trouvée à traiter",
+	"wikisource-bulkocr-in-progress": "Reconnaissance optique des caractères en masse en cours",
+	"wikisource-bulkocr-fetch-pages-failed": "Échec de la récupération des pages non transcrites de l'index",
+	"wikisource-bulkocr-fetch-images-failed": "Échec de la récupération des miniatures d'images pour les pages de l'index",
+	"wikisource-bulkocr-ocr-progress": "Progression de la reconnaissance optique des caractères : $1 sur $2 pages traitées",
+	"wikisource-bulkocr-saving-progress": "Enregistrement des résultats de la reconnaissance optique des caractères : $1 sur $2 pages enregistrées",
+	"wikisource-bulkocr-saving-progress-with-failures": "Enregistrement des résultats de la reconnaissance optique des caractères : $1 sur $2 pages enregistrées (Échouées : $3)"
 }

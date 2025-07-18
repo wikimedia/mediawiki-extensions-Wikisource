@@ -6,6 +6,7 @@
 			"Eulalio",
 			"Fitoschido",
 			"Jackiezelaya",
+			"JorgeElias2302",
 			"Rodney Araujo"
 		]
 	},
@@ -42,5 +43,14 @@
 	"wikisource-ocr-onboarding-text": "Convierta documentos escaneados en texto editable mediante el reconocimiento óptico de caracteres (OCR).",
 	"wikisource-ocr-onboarding-button": "Entendido",
 	"wikisource-ocr-language-dropdown-label": "Idiomas (opcional):",
-	"wikisource-ocr-model-dropdown-label": "Modelo de reconocimiento de texto"
+	"wikisource-ocr-model-dropdown-label": "Modelo de reconocimiento de texto",
+	"wikisource-bulkocr-button": "Óptico de caracters (OCR) masivo",
+	"wikisource-bulkocr-active-development-warning": "Esta función se encuentra en desarrollo activo y debe utilizarse con extrema precaución.",
+	"wikisource-bulkocr-success-message": "El reconocimiento óptico de caracteres (OCR) masivo se ejecutó correctamente. El estado de la página se actualizó a \"No revisado\".",
+	"wikisource-bulkocr-no-pages-found": "No se encontraron páginas vacías para procesar",
+	"wikisource-bulkocr-in-progress": "Óptico de caracteres (OCR) en progreso",
+	"wikisource-bulkocr-fetch-pages-failed": "No se pudieron obtener las páginas no transcritas del índice",
+	"wikisource-bulkocr-ocr-progress": "Progreso del óptico de caracteres (OCR) masivo: $1/$2 páginas procesadas",
+	"wikisource-bulkocr-saving-progress": "Guardar resultados del óptico de caracteres (OCR) masivo: $1/$2 páginas guardados",
+	"wikisource-bulkocr-saving-progress-with-failures": "Guardado de resultados de Óptico de caracteres (OCR) masivo: $1/$2 páginas ahorradas (Error: $3)"
 }
