@@ -37,5 +37,15 @@
 	"wikisource-ocr-onboarding-text": "Претворање на отсликани документи во уредлив текст со Општичко препознавање на знаци (OCR).",
 	"wikisource-ocr-onboarding-button": "Јасно",
 	"wikisource-ocr-language-dropdown-label": "Јазици (незадолж.):",
-	"wikisource-ocr-model-dropdown-label": "Модел за препознавање текст"
+	"wikisource-ocr-model-dropdown-label": "Модел за препознавање текст",
+	"wikisource-bulkocr-button": "Групно ОПЗ",
+	"wikisource-bulkocr-active-development-warning": "Оваа функција е во тековен развој и треба да се користи крајно претпазливо.",
+	"wikisource-bulkocr-success-message": "Групното ОПЗ е успешно извршено. Статусите на страниците се изменети за да не се за коректура.",
+	"wikisource-bulkocr-no-pages-found": "Во постапката не најдов празни страници",
+	"wikisource-bulkocr-in-progress": "Групното ОПЗ е во тек",
+	"wikisource-bulkocr-fetch-pages-failed": "Не успеав да добијам непрепишани страници од Индексот",
+	"wikisource-bulkocr-fetch-images-failed": "Не успеав да добијат минијатури на слики за страниците во индексот",
+	"wikisource-bulkocr-ocr-progress": "Напредок на ОПЗ: обработени $1/$2 страници",
+	"wikisource-bulkocr-saving-progress": "Зачувување на исходот од ОПЗ: зачувани $1/$2 страници",
+	"wikisource-bulkocr-saving-progress-with-failures": "Зачувување на исходот од ОПЗ: зачувани $1/$2 страници (Неуспешни: $3)"
 }

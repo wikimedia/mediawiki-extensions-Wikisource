@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"wikisource-download-epub": "EPUB eroflueden",
@@ -19,5 +20,6 @@
 	"wikisource-ocr-error": "Feeler vum OCR Geschier: $1",
 	"wikisource-ocr-advanced": "Erweidert Optiounen",
 	"wikisource-ocr-onboarding-title": "Biller an Text ëmwandelen",
-	"wikisource-ocr-onboarding-button": "OK, verstan"
+	"wikisource-ocr-onboarding-button": "OK, verstan",
+	"wikisource-bulkocr-no-pages-found": "Keng eidel Säite fir ze verschaffe fonnt"
 }

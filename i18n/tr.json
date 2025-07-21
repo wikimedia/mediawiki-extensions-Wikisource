@@ -44,5 +44,15 @@
 	"wikisource-ocr-onboarding-text": "Optik Karakter Tanıma'yı (OCR) kullanarak taranan belgeleri düzenlenebilir metne dönüştürün.",
 	"wikisource-ocr-onboarding-button": "Tamam, anladım",
 	"wikisource-ocr-language-dropdown-label": "Diller (isteğe bağlı):",
-	"wikisource-ocr-model-dropdown-label": "Metin tanıma modeli"
+	"wikisource-ocr-model-dropdown-label": "Metin tanıma modeli",
+	"wikisource-bulkocr-button": "Toplu OCR",
+	"wikisource-bulkocr-active-development-warning": "Bu özellik etkin olarak geliştirilme aşamasındadır ve son derece dikkatli kullanılması gerekir.",
+	"wikisource-bulkocr-success-message": "Toplu OCR başarıyla gerçekleştirildi. Sayfa durumları Elden geçirilmedi olarak güncellendi.",
+	"wikisource-bulkocr-no-pages-found": "İşlenecek boş sayfa bulunamadı",
+	"wikisource-bulkocr-in-progress": "Toplu OCR devam ediyor",
+	"wikisource-bulkocr-fetch-pages-failed": "Dizinden uyarlanmamış sayfalar getirilemedi",
+	"wikisource-bulkocr-fetch-images-failed": "Dizindeki sayfalar için küçük görseller alınamadı",
+	"wikisource-bulkocr-ocr-progress": "OCR ilerlemesi: $1/$2 sayfa işlendi",
+	"wikisource-bulkocr-saving-progress": "OCR sonuçları saklanıyor: $1/$2 sayfa saklandı",
+	"wikisource-bulkocr-saving-progress-with-failures": "OCR sonuçları saklanıyor: $1/$2 sayfa saklandı (Başarısız: $3 )"
 }

@@ -44,5 +44,15 @@
 	"wikisource-ocr-onboarding-text": "Zet gescande documenten om in bewerkbare tekst met behulp van Optical Character Recognition (OCR).",
 	"wikisource-ocr-onboarding-button": "Oké, ik snap het",
 	"wikisource-ocr-language-dropdown-label": "Talen (optioneel):",
-	"wikisource-ocr-model-dropdown-label": "Tekstherkenningsmodel"
+	"wikisource-ocr-model-dropdown-label": "Tekstherkenningsmodel",
+	"wikisource-bulkocr-button": "Bulk-OCR",
+	"wikisource-bulkocr-active-development-warning": "Deze functie is nog in ontwikkeling en moet met de grootst mogelijke voorzichtigheid worden gebruikt.",
+	"wikisource-bulkocr-success-message": "Bulk-OCR succesvol uitgevoerd. Paginastatussen bijgewerkt naar ‘niet proefgelezen’.",
+	"wikisource-bulkocr-no-pages-found": "Geen lege pagina’s gevonden om te verwerken",
+	"wikisource-bulkocr-in-progress": "Bulk-OCR in uitvoering",
+	"wikisource-bulkocr-fetch-pages-failed": "Het is niet gelukt om niet-getranscribeerde pagina’s uit de index op te halen",
+	"wikisource-bulkocr-fetch-images-failed": "Het is niet gelukt om miniatuurafbeeldingen op te halen voor pagina’s in de index",
+	"wikisource-bulkocr-ocr-progress": "OCR-voortgang: $1 van de $2 pagina’s verwerkt",
+	"wikisource-bulkocr-saving-progress": "Opslag OCR-resultaten: $1 van de $2 pagina’s opgeslagen",
+	"wikisource-bulkocr-saving-progress-with-failures": "Opslag OCR-resultaten: $1 van de $2 pagina’s opgeslagen (mislukt: $3)"
 }
