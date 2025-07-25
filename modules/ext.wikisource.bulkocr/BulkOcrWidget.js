@@ -214,7 +214,12 @@ class BulkOcrWidget {
 	processOcrForPage( pageTitle, thumbnail ) {
 		const deferred = $.Deferred();
 		const toolUrl = mw.config.get( 'WikisourceOcrUrl' );
-		const ocrApiUrl = `${toolUrl}/api?engine=${this.selectedEngine}&image=${encodeURIComponent( thumbnail )}&langs%5B%5D=${this.selectedLanguageKey}`;
+		// Convert relative URLs to absolute URLs
+		const imageUrl = thumbnail.startsWith( '/' ) && !thumbnail.startsWith( '//' ) ?
+			mw.config.get( 'wgServer' ) + thumbnail :
+			thumbnail;
+
+		const ocrApiUrl = `${toolUrl}/api?engine=${this.selectedEngine}&image=${encodeURIComponent( imageUrl )}&langs%5B%5D=${this.selectedLanguageKey}`;
 
 		$.ajax( {
 			url: ocrApiUrl,
