@@ -40,5 +40,15 @@
 	"wikisource-ocr-onboarding-text": "تحويل المستندات الممسوحة ضوئيًا إلى نص قابل للتحرير باستخدام التعرف الضوئي على المحارف (OCR).",
 	"wikisource-ocr-onboarding-button": "فهمت",
 	"wikisource-ocr-language-dropdown-label": "اللغات (اختياري):",
-	"wikisource-ocr-model-dropdown-label": "نموذج التعرف على النص"
+	"wikisource-ocr-model-dropdown-label": "نموذج التعرف على النص",
+	"wikisource-bulkocr-button": "التعرف الضوئي على الحروف بالجملة",
+	"wikisource-bulkocr-active-development-warning": "هذه الميزة قيد التطوير النشط ويجب استخدامها بحذر شديد.",
+	"wikisource-bulkocr-success-message": "تم تنفيذ عملية التعرف الضوئي على الحروف (OCR) بنجاح. تم تحديث حالة الصفحة إلى \"غير مُراجعة\".",
+	"wikisource-bulkocr-no-pages-found": "لم يتم العثور على صفحات فارغة للمعالجة",
+	"wikisource-bulkocr-in-progress": "عملية التعرف الضوئي على الحروف بالجملة قيد التقدم",
+	"wikisource-bulkocr-fetch-pages-failed": "فشل جلب الصفحات غير المنقولة من الفهرس",
+	"wikisource-bulkocr-fetch-images-failed": "فشل جلب الصور المصغرة للصفحات الموجودة في الفهرس",
+	"wikisource-bulkocr-ocr-progress": "تقدم التعرف الضوئي على الحروف: $1 / $2 من الصفحات المعالجة",
+	"wikisource-bulkocr-saving-progress": "حفظ نتائج التعرف الضوئي على الحروف: $1 / $2 من الصفحات المحفوظة",
+	"wikisource-bulkocr-saving-progress-with-failures": "حفظ نتائج التعرف الضوئي على الحروف: $1 / $2 تم حفظ الصفحات (فشل: $3)"
 }
