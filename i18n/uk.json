@@ -38,9 +38,22 @@
 	"wikisource-ocr-engine": "Вибрати інструмент транскрибування тексту за замовчуванням",
 	"wikisource-ocr-engine-tesseract": "Розпізнавання Tesseract",
 	"wikisource-ocr-engine-google": "OCR розпізнавання Google",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Використовувати модель виявлення рядків",
 	"wikisource-ocr-advanced": "Розширені опції",
 	"wikisource-ocr-advanced-title": "Відкрити форму розширений опцій у новій вкладці",
 	"wikisource-ocr-onboarding-title": "Транскрибувати зображення у текст",
 	"wikisource-ocr-onboarding-text": "Перетворіть відскановані документи на редаговний текст з допомогою оптичного розпізнавання символів (OCR).",
-	"wikisource-ocr-onboarding-button": "Гаразд, зрозуміло"
+	"wikisource-ocr-onboarding-button": "Гаразд, зрозуміло",
+	"wikisource-ocr-language-dropdown-label": "Мови (необов'язково):",
+	"wikisource-ocr-model-dropdown-label": "Модель розпізнавання тексту",
+	"wikisource-bulkocr-button": "Масове OCR",
+	"wikisource-bulkocr-active-development-warning": "Ця функція перебуває в активній розробці, тому її слід використовувати з надзвичайною обережністю.",
+	"wikisource-bulkocr-success-message": "Масове OCR виконано успішно. Статуси сторінок оновлено на «не вичитано».",
+	"wikisource-bulkocr-no-pages-found": "Не знайдено пустих сторінок для обробки.",
+	"wikisource-bulkocr-in-progress": "Масове OCR в процесі",
+	"wikisource-bulkocr-fetch-pages-failed": "Не вдалося отримати нерозшифровані сторінки з «Індексу»",
+	"wikisource-bulkocr-fetch-images-failed": "Не вдалося отримати мініатюри зображень для сторінок в індексі",
+	"wikisource-bulkocr-ocr-progress": "OCR в процесі: оброблено $1/$2 сторінок.",
+	"wikisource-bulkocr-saving-progress": "Збереження результатів OCR: $1/$2 сторінок збережено",
+	"wikisource-bulkocr-saving-progress-with-failures": "береження результатів OCR: $1/$2 сторінок збережено (помилка: $3)."
 }
