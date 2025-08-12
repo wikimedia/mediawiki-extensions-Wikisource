@@ -38,9 +38,12 @@
 	"wikisource-ocr-engine": "Вибрати інструмент транскрибування тексту за замовчуванням",
 	"wikisource-ocr-engine-tesseract": "Розпізнавання Tesseract",
 	"wikisource-ocr-engine-google": "OCR розпізнавання Google",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Використовувати модель виявлення рядків",
 	"wikisource-ocr-advanced": "Розширені опції",
 	"wikisource-ocr-advanced-title": "Відкрити форму розширений опцій у новій вкладці",
 	"wikisource-ocr-onboarding-title": "Транскрибувати зображення у текст",
 	"wikisource-ocr-onboarding-text": "Перетворіть відскановані документи на редаговний текст з допомогою оптичного розпізнавання символів (OCR).",
-	"wikisource-ocr-onboarding-button": "Гаразд, зрозуміло"
+	"wikisource-ocr-onboarding-button": "Гаразд, зрозуміло",
+	"wikisource-ocr-language-dropdown-label": "Мови (необов'язково):",
+	"wikisource-ocr-model-dropdown-label": "Модель розпізнавання тексту"
 }
