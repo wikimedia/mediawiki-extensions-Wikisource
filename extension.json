@@ -216,7 +216,7 @@
 		"WikisourceOcrUrl": {
 			"value": "https://ocr.wmcloud.org/"
 		},
-		"WikisourceEnableBulkOCR": {
+		"WikisourceEnableBulkOcr": {
 			"value": false
 		},
 		"WikisourceHttpProxy": {

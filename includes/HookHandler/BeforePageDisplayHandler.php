@@ -41,7 +41,7 @@ class BeforePageDisplayHandler implements BeforePageDisplayHook {
 		// Check if the user is an admin
 		if ( in_array( 'sysop', $userGroups ) ) {
 			$enableOcr = $this->config->get( 'WikisourceEnableOcr' );
-			$enableBulkOcr = $this->config->get( 'WikisourceEnableBulkOCR' );
+			$enableBulkOcr = $this->config->get( 'WikisourceEnableBulkOcr' );
 			$ocrUrl = $this->config->get( 'WikisourceOcrUrl' );
 			$title = $out->getTitle();
 			// Check if Ocr and BulkOcr are enabled and OcrUrl is configured then check if we are in the Index namespace
