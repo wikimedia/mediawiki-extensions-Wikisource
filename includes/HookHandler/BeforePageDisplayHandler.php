@@ -48,6 +48,7 @@ class BeforePageDisplayHandler implements BeforePageDisplayHook {
 			if ( $enableOcr && $enableBulkOcr && $ocrUrl &&
 				$title->inNamespace( ProofreadPageInit::getNamespaceId( 'index' ) )
 			) {
+				$out->getCSP()->addDefaultSrc( $ocrUrl );
 				$out->addJsConfigVars( 'WikisourceOcrUrl', rtrim( $ocrUrl, '/' ) );
 				$out->addModules( [ 'ext.wikisource.bulkocr' ] );
 			}
