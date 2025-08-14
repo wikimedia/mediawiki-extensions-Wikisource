@@ -37,5 +37,6 @@
 	"wikisource-ocr-onboarding-text": "Сканерца дӀайаздина документаш хийца йиш йолчу тексте дерзаде, оптикин хьаьркаш довзаран (OCR) гӀоьнца.",
 	"wikisource-ocr-onboarding-button": "Окей, кхетта",
 	"wikisource-ocr-language-dropdown-label": "Меттанаш (лаамехь):",
-	"wikisource-ocr-model-dropdown-label": "Текст йовзаран модель"
+	"wikisource-ocr-model-dropdown-label": "Текст йовзаран модель",
+	"wikisource-bulkocr-button": "Алсам OCR"
 }
