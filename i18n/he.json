@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Neriah"
 		]
 	},
 	"wikisource-desc": "התאמות של מדיה־ויקי לוויקיטקסט (Wikisource)",
@@ -37,5 +38,6 @@
 	"wikisource-ocr-onboarding-text": "הפכו מסמכים סרוקים לטקסט שאפשר לערוך באמצעות זיהוי תווים אופטי (OCR)",
 	"wikisource-ocr-onboarding-button": "בסדר, הבנתי",
 	"wikisource-ocr-language-dropdown-label": "שפות (לא חובה):",
-	"wikisource-ocr-model-dropdown-label": "מודל זיהוי טקסט"
+	"wikisource-ocr-model-dropdown-label": "מודל זיהוי טקסט",
+	"wikisource-bulkocr-no-pages-found": "לא נמצאו דפים ריקים לעיבוד"
 }
