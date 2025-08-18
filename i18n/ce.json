@@ -38,5 +38,6 @@
 	"wikisource-ocr-onboarding-button": "Окей, кхетта",
 	"wikisource-ocr-language-dropdown-label": "Меттанаш (лаамехь):",
 	"wikisource-ocr-model-dropdown-label": "Текст йовзаран модель",
-	"wikisource-bulkocr-button": "Алсам OCR"
+	"wikisource-bulkocr-button": "Алсам OCR",
+	"wikisource-bulkocr-in-progress": "Дукха OCR процессехь йу"
 }

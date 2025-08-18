@@ -38,5 +38,15 @@
 	"wikisource-ocr-onboarding-text": "Tukar dokumen yang diimbas menjadi teks boleh disunting, menggunakan Pengecaman Aksara Optik (OCR).",
 	"wikisource-ocr-onboarding-button": "Baiklah, saya faham",
 	"wikisource-ocr-language-dropdown-label": "Bahasa (pilihan)",
-	"wikisource-ocr-model-dropdown-label": "Model pengecaman teks"
+	"wikisource-ocr-model-dropdown-label": "Model pengecaman teks",
+	"wikisource-bulkocr-button": "OCR pukal",
+	"wikisource-bulkocr-active-development-warning": "Ciri ini sedang dalam pembangunan aktif dan perlu digunakan dengan sangat berhati-hati.",
+	"wikisource-bulkocr-success-message": "OCR pukal berjaya dilaksanakan. Status laman dikemas kini kepada tidak dibacapruf.",
+	"wikisource-bulkocr-no-pages-found": "Tiada laman kosong ditemui untuk diproses",
+	"wikisource-bulkocr-in-progress": "OCR pukal sedang dijalankan",
+	"wikisource-bulkocr-fetch-pages-failed": "Gagal mengambil laman yang tidak ditranskripsi daripada Indeks",
+	"wikisource-bulkocr-fetch-images-failed": "Gagal mengambil imej kenit untuk laman dalam indeks",
+	"wikisource-bulkocr-ocr-progress": "Kemajuan OCR: $1/$2 laman diproses",
+	"wikisource-bulkocr-saving-progress": "Menyimpan hasil OCR: $1/$2 laman disimpan",
+	"wikisource-bulkocr-saving-progress-with-failures": "Menyimpan hasil OCR: $1/$2 laman disimpan (Gagal: $3)"
 }
