@@ -7,6 +7,7 @@ namespace MediaWiki\Extension\Wikisource\HookHandler;
 use MediaWiki\Config\Config;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Skin\Skin;
 use MediaWiki\User\UserGroupManager;
 use ProofreadPage\ProofreadPageInit;
@@ -16,15 +17,11 @@ use ProofreadPage\ProofreadPageInit;
  */
 class BeforePageDisplayHandler implements BeforePageDisplayHook {
 
-	/** @var UserGroupManager UserGroupManager service for checking user permissions */
-	private UserGroupManager $userGroupManager;
-
-	/** @var Config Config service for accessing configuration variables */
-	private Config $config;
-
-	public function __construct( UserGroupManager $userGroupManager, Config $config ) {
-		$this->userGroupManager = $userGroupManager;
-		$this->config = $config;
+	public function __construct(
+		private readonly UserGroupManager $userGroupManager,
+		private readonly Config $config,
+		private readonly ExtensionRegistry $extensionRegistry,
+	) {
 	}
 
 	/**
@@ -35,10 +32,14 @@ class BeforePageDisplayHandler implements BeforePageDisplayHook {
 	 * @return void
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
-		$user = $out->getUser();
-		$userGroups = $this->userGroupManager->getUserGroups( $user );
+		// Ensure ProofreadPage is loaded.
+		if ( !$this->extensionRegistry->isLoaded( 'ProofreadPage' ) ) {
+			return;
+		}
 
 		// Check if the user is an admin
+		$user = $out->getUser();
+		$userGroups = $this->userGroupManager->getUserGroups( $user );
 		if ( in_array( 'sysop', $userGroups ) ) {
 			$enableOcr = $this->config->get( 'WikisourceEnableOcr' );
 			$enableBulkOcr = $this->config->get( 'WikisourceEnableBulkOcr' );

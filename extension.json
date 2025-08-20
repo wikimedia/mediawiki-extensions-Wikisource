@@ -59,7 +59,8 @@
 			"class": "MediaWiki\\Extension\\Wikisource\\HookHandler\\BeforePageDisplayHandler",
 			"services": [
 				"UserGroupManager",
-				"MainConfig"
+				"MainConfig",
+				"ExtensionRegistry"
 			]
 		}
 	},
