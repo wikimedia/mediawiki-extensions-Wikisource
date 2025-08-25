@@ -39,5 +39,14 @@
 	"wikisource-ocr-onboarding-button": "בסדר, הבנתי",
 	"wikisource-ocr-language-dropdown-label": "שפות (לא חובה):",
 	"wikisource-ocr-model-dropdown-label": "מודל זיהוי טקסט",
-	"wikisource-bulkocr-no-pages-found": "לא נמצאו דפים ריקים לעיבוד"
+	"wikisource-bulkocr-button": "זיהוי תווים אופטי (OCR) בכמות גדולה",
+	"wikisource-bulkocr-active-development-warning": "האפשרות הזאת עדיין בפיתוח פעיל ויש להשתמש בה בזהירות רבה.",
+	"wikisource-bulkocr-success-message": "זיהוי תווים אופטי (OCR) בכמות גדולה בוצע בהצלחה. מצבי הדפים עודכנו ל \"לא בוצעה הגהה\".",
+	"wikisource-bulkocr-no-pages-found": "לא נמצאו דפים ריקים לעיבוד",
+	"wikisource-bulkocr-in-progress": "מבתצע זיהוי תווים אופטי (OCR) בכמות גדולה",
+	"wikisource-bulkocr-fetch-pages-failed": "נכשל אחזור דפים שלא הועתקו מהמפתח",
+	"wikisource-bulkocr-fetch-images-failed": "נכשל אחזור תמונות ממוזערות של דפים מהמפתח",
+	"wikisource-bulkocr-ocr-progress": "התקדמות זיהוי תווים אופטי: עובדו $1 מתוך $2 דפים",
+	"wikisource-bulkocr-saving-progress": "שמירת תוצאות זיהוי תווים אופטי: נשמרו $1 מתוך $2 דפים",
+	"wikisource-bulkocr-saving-progress-with-failures": "שמירת תוצאות זיהוי תווים אופטי: נשמרו $1 מתוך $2 דפים (נכשלו: $3)"
 }

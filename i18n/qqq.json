@@ -52,7 +52,7 @@
 	"wikisource-ocr-model-dropdown-label": "Label for model dropdown",
 	"wikisource-bulkocr-button": "Button text for the Bulk OCR button.",
 	"wikisource-bulkocr-active-development-warning": "Warning message displayed to users about the Bulk OCR feature being under development.",
-	"wikisource-bulkocr-success-message": "Success message displayed when bulk OCR process completes successfully.",
+	"wikisource-bulkocr-success-message": "Success message displayed when bulk OCR process completes successfully. \"Not proofread\" is {{msg-mw|Tag-proofreadpage-quality1}}",
 	"wikisource-bulkocr-no-pages-found": "Error message displayed when no empty pages are found to process.",
 	"wikisource-bulkocr-in-progress": "Status message displayed when bulk OCR process is starting.",
 	"wikisource-bulkocr-fetch-pages-failed": "Error message displayed when fetching untranscribed pages fails.",
