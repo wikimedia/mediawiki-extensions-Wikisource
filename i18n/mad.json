@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Boesenbergia"
+		]
+	},
+	"wikisource-export-portlet": "Cètha'/èkspor",
+	"wikisource-download-epub": "Patoron EPUB",
+	"wikisource-download-epub-tooltip": "Patoron vèrsi EPUB ḍâri karjâ rèya",
+	"wikisource-download-mobi": "Patoron MOBI",
+	"wikisource-download-mobi-tooltip": "Patoron vèrsi MOBI ḍâri karjâ rèya",
+	"wikisource-download-pdf": "Patoron PDF",
+	"wikisource-download-pdf-tooltip": "Patoron vèrsi PDF ḍâri karjâ rèya",
+	"wikisource-download-choose": "Format sè laèn",
+	"wikisource-download-choose-tooltip": "Bukka' formulir ka'anghuy mèlè format sè laèn, fon, bân sabhârângnga.",
+	"wikisource-download-button": "Patoron",
+	"wikisource-download-chooser-title": "Pèlè format",
+	"wikisource-download-chooser-epub": "EPUB",
+	"wikisource-download-chooser-epub-description": "ka'angghuy komputer, \"mobile\", tablèt",
+	"wikisource-download-chooser-mobi": "MOBI",
+	"wikisource-download-chooser-mobi-description": "ka'angghuy Kindle",
+	"wikisource-download-chooser-pdf": "PDF",
+	"wikisource-download-chooser-pdf-description": "ka'angghuy lajâr lèbâr bân pangeccabhân",
+	"wikisource-download-chooser-different-format": "Nyarè format sè laèn?",
+	"wikisource-ocr-extract-text": "Ebblat tolèsan",
+	"wikisource-ocr-extract-progress": "Ngebblat tolèsan ḍâri ghâmbhâr...",
+	"wikisource-ocr-extract-cancel": "Paburung",
+	"wikisource-ocr-extract-undo": "Bhâttalaghi ebbladhân",
+	"wikisource-ocr-extract-close": "Totop partèla rèya",
+	"wikisource-ocr-extract-text-title": "Ollè'è tolèsan OCR ḍâri ghâmbhâr arèya",
+	"wikisource-ocr-error": "Kasala'an ḍâri pakakas OCR: $1",
+	"wikisource-ocr-no-text": "Taḍâ' tolèsan sè èyasèlaghi kalabân pakakas OCR.",
+	"wikisource-ocr-settings-menu": "Obâ pangatoran OCR",
+	"wikisource-ocr-engine-tesseract": "Tesseract OCR",
+	"wikisource-ocr-engine-google": "Google OCR",
+	"wikisource-ocr-advanced": "Pèlèyan terrosan",
+	"wikisource-ocr-onboarding-title": "Ebblat ghâmbhâr dhâddhi tolèsan",
+	"wikisource-ocr-onboarding-button": "Iyâ, engko' ngartè"
+}
