@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Foomin10",
 			"Likibp",
 			"Omotecho"
 		]
@@ -25,7 +26,7 @@
 	"wikisource-download-chooser-pdf-description": "大画面、印刷用",
 	"wikisource-download-chooser-different-format": "別のファイル形式を探していますか？",
 	"wikisource-ocr-extract-text": "文章の転記",
-	"wikisource-ocr-extract-progress": "画像から文章を転記中...",
+	"wikisource-ocr-extract-progress": "画像から文章を転記中…",
 	"wikisource-ocr-extract-cancel": "中止",
 	"wikisource-ocr-extract-undo": "転記を元に戻す",
 	"wikisource-ocr-extract-close": "この通知を閉じます",
@@ -38,5 +39,17 @@
 	"wikisource-ocr-advanced-title": "新しいタブで詳細設定のフォームを開く",
 	"wikisource-ocr-onboarding-title": "画像を文章に転記",
 	"wikisource-ocr-onboarding-text": "光学式文字認識(OCR)を使用して、スキャンされたドキュメントを編集可能なテキストに変換します。",
-	"wikisource-ocr-onboarding-button": "わかりました"
+	"wikisource-ocr-onboarding-button": "わかりました",
+	"wikisource-ocr-language-dropdown-label": "言語（オプション）:",
+	"wikisource-ocr-model-dropdown-label": "テキスト認識モデル",
+	"wikisource-bulkocr-button": "一括OCR",
+	"wikisource-bulkocr-active-development-warning": "この機能は開発中であり、最新の注意を払って使用してください。",
+	"wikisource-bulkocr-success-message": "一括査定OCRが正常に実行されました。ページの状態が未校正に変更されました。",
+	"wikisource-bulkocr-no-pages-found": "処理すべき空のページがありませんでした",
+	"wikisource-bulkocr-in-progress": "一括OCRの処理中",
+	"wikisource-bulkocr-fetch-pages-failed": "インデックスから転記されていないページを取得できませんでした",
+	"wikisource-bulkocr-fetch-images-failed": "インデックス内のページの画像サムネイルを取得できませんでした",
+	"wikisource-bulkocr-ocr-progress": "OCR処理: $1/$2 ページを処理しました",
+	"wikisource-bulkocr-saving-progress": "OCR 結果の保存: $1/$2 ページを保存しました",
+	"wikisource-bulkocr-saving-progress-with-failures": "OCR 結果の保存: $1/$2 ページを保存しました (失敗: $3)"
 }
