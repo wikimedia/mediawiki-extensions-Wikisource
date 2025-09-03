@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Likibp",
-			"Omotecho"
+			"Omotecho",
+			"Foomin10"
 		]
 	},
 	"wikisource-desc": "ウィキソース固有のMediaWikiカスタマイズ",
@@ -25,7 +26,7 @@
 	"wikisource-download-chooser-pdf-description": "大画面、印刷用",
 	"wikisource-download-chooser-different-format": "別のファイル形式を探していますか？",
 	"wikisource-ocr-extract-text": "文章の転記",
-	"wikisource-ocr-extract-progress": "画像から文章を転記中...",
+	"wikisource-ocr-extract-progress": "画像から文章を転記中…",
 	"wikisource-ocr-extract-cancel": "中止",
 	"wikisource-ocr-extract-undo": "転記を元に戻す",
 	"wikisource-ocr-extract-close": "この通知を閉じます",
@@ -38,5 +39,7 @@
 	"wikisource-ocr-advanced-title": "新しいタブで詳細設定のフォームを開く",
 	"wikisource-ocr-onboarding-title": "画像を文章に転記",
 	"wikisource-ocr-onboarding-text": "光学式文字認識(OCR)を使用して、スキャンされたドキュメントを編集可能なテキストに変換します。",
-	"wikisource-ocr-onboarding-button": "わかりました"
+	"wikisource-ocr-onboarding-button": "わかりました",
+	"wikisource-ocr-language-dropdown-label": "言語（オプション）:",
+	"wikisource-ocr-model-dropdown-label": "テキスト認識モデル"
 }
