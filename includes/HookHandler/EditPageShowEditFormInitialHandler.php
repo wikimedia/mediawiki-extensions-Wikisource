@@ -12,7 +12,6 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\ResourceLoader\Context;
 use MediaWiki\User\Options\UserOptionsLookup;
 
-// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initialHook {
 
 	/** @var bool */
