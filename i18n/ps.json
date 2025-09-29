@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"wikisource-desc": "ټيکي‌سرچينې ځانگړې مېډياويکي دوديزونې",
+	"wikisource-export-portlet": "چاپول/بهرلېږل",
+	"wikisource-download-epub": "اېپوب راکښته‌کول",
+	"wikisource-download-epub-tooltip": "د دې کار اېپوب بل‌بڼه راکښته‌کول",
+	"wikisource-download-mobi": "موبي راکښته‌کول",
+	"wikisource-download-mobi-tooltip": "د دې کار موبي بل‌بڼه راکښته‌کول",
+	"wikisource-download-pdf": "پي‌ډي‌اېف راکښته‌کول",
+	"wikisource-download-pdf-tooltip": "د دې کار پي‌ډي‌اېف بل‌بڼه راکښته‌کول",
+	"wikisource-download-choose": "نورې بڼې",
+	"wikisource-download-choose-tooltip": "د نورو بڼو او ليکبڼو خوښولو لپاره يوه فورمه پرانېځئ.",
+	"wikisource-download-button": "راکښته‌کول",
+	"wikisource-download-chooser-title": "يوه بڼه ټاکل",
+	"wikisource-download-chooser-epub-description": "کمپيوټرونو، موبايلونو، ټابلېټونو لپاره",
+	"wikisource-download-chooser-mobi-description": "کېنډلز لپاره",
+	"wikisource-download-chooser-pdf-description": "لويو سکرينونو او چاپ لپاره",
+	"wikisource-download-chooser-different-format": "د بلې بڼې لټه کې ياست؟",
+	"wikisource-ocr-extract-text": "ليک مخليکنه",
+	"wikisource-ocr-extract-progress": "له انځوره ليک مخليکنه...",
+	"wikisource-ocr-extract-cancel": "ناگارل",
+	"wikisource-ocr-extract-undo": "مخليکنه ناکړل",
+	"wikisource-ocr-extract-close": "دا خبرتيا تړل",
+	"wikisource-ocr-extract-text-title": "د دې انځور او‌سي‌ار ليک ترلاسه‌کول",
+	"wikisource-ocr-error": "د او‌سي‌ار توکي څخه تېروتنه: $1",
+	"wikisource-ocr-no-text": "او‌سي‌ار توکي هېڅ ليک نه دی راگرځولی.",
+	"wikisource-ocr-settings-menu": "او‌سي‌ار اوڼنې بدلول",
+	"wikisource-ocr-engine": "خپل د ليک مخليکنې تلواليز توکی غوره‌کول",
+	"wikisource-ocr-advanced": "پرمختللې خوښنې",
+	"wikisource-ocr-advanced-title": "د پرمختللو خوښنو فورمه په نوې ريښکه کې پرانېستل",
+	"wikisource-ocr-onboarding-title": "له انځوره د ليک مخليکنه کول",
+	"wikisource-ocr-onboarding-button": "ښه، وپوهېدم"
+}
