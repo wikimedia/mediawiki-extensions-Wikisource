@@ -41,5 +41,15 @@
 	"wikisource-ocr-onboarding-text": "Gjør skannede dokumenter til redigerbar tekst med optisk tegngjenkjenning (OCR).",
 	"wikisource-ocr-onboarding-button": "OK, skjønner",
 	"wikisource-ocr-language-dropdown-label": "Språk (valgfritt):",
-	"wikisource-ocr-model-dropdown-label": "Tekstgjenkjenningsmodell"
+	"wikisource-ocr-model-dropdown-label": "Tekstgjenkjenningsmodell",
+	"wikisource-bulkocr-button": "Masse-OCR",
+	"wikisource-bulkocr-active-development-warning": "Denne funksjonen er under aktiv utvikling, og må brukes meget forsiktig.",
+	"wikisource-bulkocr-success-message": "Masse-OCR utført. Sidestatusene har blitt oppdatert til «ikke korrekturlest».",
+	"wikisource-bulkocr-no-pages-found": "Det ble ikke funnet noen tomme sider å behandle",
+	"wikisource-bulkocr-in-progress": "Masse-OCR pågår",
+	"wikisource-bulkocr-fetch-pages-failed": "Kunne ikke hente utranskriberte sider fra indeksen",
+	"wikisource-bulkocr-fetch-images-failed": "Kunne ikke hente miniatyrbilder for sider i indeksen",
+	"wikisource-bulkocr-ocr-progress": "OCR-fremdrift: $1/$2 sider behandlet",
+	"wikisource-bulkocr-saving-progress": "Lagrer OCR-resultater: $1/$2 sider lagret",
+	"wikisource-bulkocr-saving-progress-with-failures": "Lagrer OCR-resultater: $1/$2 sider lagret (mislykket: $3)"
 }
