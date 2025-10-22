@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Satdeep gill"
+		]
+	},
+	"wikisource-desc": "وکی سورس کے لیے مخصوص میڈیا وکی کی تخصیصات",
+	"wikisource-export-portlet": "طباعت/برآمد",
+	"wikisource-download-epub": "ڈاؤن‌لوڈ بشکل EPUB",
+	"wikisource-download-epub-tooltip": "اس کام کا EPUB ورژن ڈاؤن لوڈ کریں۔",
+	"wikisource-download-mobi": "ڈاؤن‌لوڈ بشکل MOBI",
+	"wikisource-download-mobi-tooltip": "اس کام کا MOBI ورژن ڈاؤن لوڈ کریں۔",
+	"wikisource-download-pdf": "ڈاؤن‌لوڈ بشکل پی‌ڈی‌ایف",
+	"wikisource-download-pdf-tooltip": "اس کام کا پی‌ڈی‌ایف ورژن ڈاؤن لوڈ کریں۔",
+	"wikisource-download-choose": "دیگر فارمیٹ",
+	"wikisource-download-button": "ڈاؤنلوڈ",
+	"wikisource-download-chooser-title": "ایک فارمیٹ منتخب کریں۔",
+	"wikisource-download-chooser-epub-description": "کمپیوٹر، موبائل، ٹیبلٹ کے لیے",
+	"wikisource-download-chooser-mobi-description": "Kindle کے لئے",
+	"wikisource-download-chooser-pdf-description": "بڑی سکرین اور پرنٹنگ کے لیے",
+	"wikisource-download-chooser-different-format": "مختلف شکل تلاش کر رہے ہیں؟",
+	"wikisource-ocr-extract-text": "متن نقل کریں",
+	"wikisource-ocr-extract-progress": "تصویر سے متن کو نقل کیا جا رہا ہے…",
+	"wikisource-ocr-extract-cancel": "منسوخ کریں",
+	"wikisource-ocr-extract-undo": "نقل کو کالعدم کریں۔",
+	"wikisource-ocr-extract-close": "اس نوٹس کو بند کریں",
+	"wikisource-ocr-extract-text-title": "اس تصویر کا OCR متن حاصل کریں۔",
+	"wikisource-ocr-error": "OCR ٹول میں خرابی: $1",
+	"wikisource-ocr-no-text": "OCR ٹول کے ذریعہ کوئی متن حاصل نہیں کیا گیا۔",
+	"wikisource-ocr-settings-menu": "OCR کی ترتیبات کو تبدیل کریں",
+	"wikisource-ocr-engine-line-model-checkbox-label": "لائن کا پتہ لگانے کا ماڈل استعمال کریں۔",
+	"wikisource-ocr-advanced": "اضافی اختیارات",
+	"wikisource-ocr-onboarding-button": "ٹھیک، سمجھ گیا",
+	"wikisource-ocr-language-dropdown-label": "زبانیں (اختیاری):",
+	"wikisource-ocr-model-dropdown-label": "متن کی شناخت کا ماڈل"
+}
