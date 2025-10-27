@@ -6,7 +6,8 @@
 			"Yoosef Pooranvary",
 			"Ebraminio",
 			"Ebrahim",
-			"Rulebased"
+			"Rulebased",
+			"LordProfo"
 		]
 	},
 	"wikisource-desc": "موارد سفارشی‌سازی مدیاویکی مخصوص ویکی‌نبشته",
@@ -18,7 +19,7 @@
 	"wikisource-download-pdf": "بارگیری PDF",
 	"wikisource-download-pdf-tooltip": "نسخه PDF این اثر را بارگیری کنید",
 	"wikisource-download-choose": "قالب‌های دیگر",
-	"wikisource-download-choose-tooltip": "گشودن یک فرم به منظور انتخاب قالب، قلم‌ و موارد دیگر.",
+	"wikisource-download-choose-tooltip": "گشودن یک فرم برای انتخاب قالب، قلم‌ و موارد دیگر.",
 	"wikisource-download-button": "بارگیری",
 	"wikisource-download-chooser-title": "انتخاب یک قالب",
 	"wikisource-download-chooser-epub-description": "برای رایانه، موبایل، تبلت",
