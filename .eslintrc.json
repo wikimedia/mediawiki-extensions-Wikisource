@@ -24,6 +24,7 @@
 					"OcrTool"
 				]
 			}
-		]
+		],
+		"mediawiki/no-unlabeled-buttonwidget": "warn"
 	}
 }
