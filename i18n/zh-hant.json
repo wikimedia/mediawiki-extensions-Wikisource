@@ -42,5 +42,15 @@
 	"wikisource-ocr-onboarding-text": "使用光學字元辨識（OCR）來將掃描過的文件轉成可編輯的文字。",
 	"wikisource-ocr-onboarding-button": "好的，了解",
 	"wikisource-ocr-language-dropdown-label": "語言（非必填）：",
-	"wikisource-ocr-model-dropdown-label": "文字辨識模型"
+	"wikisource-ocr-model-dropdown-label": "文字辨識模型",
+	"wikisource-bulkocr-button": "批量 OCR",
+	"wikisource-bulkocr-active-development-warning": "此功能仍在努力開發中，使用時請格外留意。",
+	"wikisource-bulkocr-success-message": "批量 OCR 執行成功。頁面狀態已更新為「未校對」。",
+	"wikisource-bulkocr-no-pages-found": "未找到要處理的空白頁面",
+	"wikisource-bulkocr-in-progress": "批量 OCR 進行中",
+	"wikisource-bulkocr-fetch-pages-failed": "無法從索引中取得未轉譯的頁面",
+	"wikisource-bulkocr-fetch-images-failed": "取得索引的頁面縮圖失敗",
+	"wikisource-bulkocr-ocr-progress": "OCR 進度：已處理 $1/$2 個頁面",
+	"wikisource-bulkocr-saving-progress": "儲存 OCR 結果：已儲存 $1/$2 個頁面",
+	"wikisource-bulkocr-saving-progress-with-failures": "儲存 OCR 結果：已儲存 $1/$2 個頁面，失敗 $3 個"
 }
