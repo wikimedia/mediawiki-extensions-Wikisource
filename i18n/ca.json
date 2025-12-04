@@ -41,5 +41,15 @@
 	"wikisource-ocr-onboarding-text": "Torni els documents escannejats en text editable utilitzant el reconeixement òptic de caràcters (OCR).",
 	"wikisource-ocr-onboarding-button": "D'acord",
 	"wikisource-ocr-language-dropdown-label": "Idiomes (opcional):",
-	"wikisource-ocr-model-dropdown-label": "Model de reconeixement de textos"
+	"wikisource-ocr-model-dropdown-label": "Model de reconeixement de textos",
+	"wikisource-bulkocr-button": "OCR massiu",
+	"wikisource-bulkocr-active-development-warning": "Aquesta funció està en desenvolupament i s'ha d'utilitzar amb molta precaució.",
+	"wikisource-bulkocr-success-message": "L'OCR massiu s'ha executat correctament. Els estats de pàgina s'han actualitzat a «no revisat».",
+	"wikisource-bulkocr-no-pages-found": "No s'han trobat pàgines buides per processar",
+	"wikisource-bulkocr-in-progress": "OCR massiu en curs",
+	"wikisource-bulkocr-fetch-pages-failed": "No s'han pogut obtenir les pàgines no transcrites de l'índex",
+	"wikisource-bulkocr-fetch-images-failed": "No s'han pogut obtenir les miniatures de les imatges de les pàgines de l'índex",
+	"wikisource-bulkocr-ocr-progress": "Progrés de l'OCR: $1/$2 pàgines processades",
+	"wikisource-bulkocr-saving-progress": "Desant els resultats de l'OCR: $1/$2 pàgines desades",
+	"wikisource-bulkocr-saving-progress-with-failures": "Desant els resultats de l'OCR: $1/$2 pàgines desades (Error: $3)"
 }
