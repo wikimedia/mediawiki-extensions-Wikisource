@@ -12,23 +12,18 @@ use MediaWiki\Skin\Skin;
 
 class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 
-	/** @var WsExport */
-	private $wsExport;
+	private readonly WsExport $wsExport;
 
-	private ?GadgetRepo $gadgetRepo;
-
-	/**
-	 * @param Config $config
-	 * @param Language $contentLanguage
-	 * @param GadgetRepo|null $gadgetRepo
-	 */
-	public function __construct( Config $config, Language $contentLanguage, ?GadgetRepo $gadgetRepo ) {
+	public function __construct(
+		Config $config,
+		Language $contentLanguage,
+		private readonly ?GadgetRepo $gadgetRepo,
+	) {
 		$this->wsExport = new WsExport(
 			$contentLanguage,
 			$config->get( 'WikisourceWsExportUrl' ),
 			$config->get( 'ServerName' )
 		);
-		$this->gadgetRepo = $gadgetRepo;
 	}
 
 	/**

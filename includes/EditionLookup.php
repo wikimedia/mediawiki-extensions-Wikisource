@@ -30,26 +30,6 @@ use Wikibase\DataModel\Snak\Snak;
 class EditionLookup {
 
 	/**
-	 * @var EntityLookup
-	 */
-	private $entityLookup;
-
-	/**
-	 * @var NumericPropertyId
-	 */
-	private $editionPropertyId;
-
-	/**
-	 * @var NumericPropertyId
-	 */
-	private $editionOfPropertyId;
-
-	/**
-	 * @var UsageAccumulator
-	 */
-	private $usageAccumulator;
-
-	/**
 	 * @param UsageAccumulator $usageAccumulator
 	 * @return self
 	 */
@@ -69,22 +49,12 @@ class EditionLookup {
 		return new NumericPropertyId( RequestContext::getMain()->getConfig()->get( $configParamName ) );
 	}
 
-	/**
-	 * @param EntityLookup $entityLookup
-	 * @param NumericPropertyId $editionPropertyId
-	 * @param NumericPropertyId $editionOfPropertyId
-	 * @param UsageAccumulator $usageAccumulator
-	 */
 	public function __construct(
-		EntityLookup $entityLookup,
-		NumericPropertyId $editionPropertyId,
-		NumericPropertyId $editionOfPropertyId,
-		UsageAccumulator $usageAccumulator
+		private readonly EntityLookup $entityLookup,
+		private readonly NumericPropertyId $editionPropertyId,
+		private readonly NumericPropertyId $editionOfPropertyId,
+		private readonly UsageAccumulator $usageAccumulator,
 	) {
-		$this->entityLookup = $entityLookup;
-		$this->editionPropertyId = $editionPropertyId;
-		$this->editionOfPropertyId = $editionOfPropertyId;
-		$this->usageAccumulator = $usageAccumulator;
 	}
 
 	/**

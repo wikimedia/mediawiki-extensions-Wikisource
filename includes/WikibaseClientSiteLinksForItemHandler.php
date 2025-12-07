@@ -18,16 +18,6 @@ use Wikibase\DataModel\SiteLink;
 class WikibaseClientSiteLinksForItemHandler {
 
 	/**
-	 * @var EditionLookup
-	 */
-	private $editionLookup;
-
-	/**
-	 * @var UsageAccumulator
-	 */
-	private $usageAccumulator;
-
-	/**
 	 * @param UsageAccumulator $usageAccumulator
 	 * @return self
 	 */
@@ -40,16 +30,10 @@ class WikibaseClientSiteLinksForItemHandler {
 		);
 	}
 
-	/**
-	 * @param EditionLookup $editionLookup
-	 * @param UsageAccumulator $usageAccumulator
-	 */
 	public function __construct(
-		EditionLookup $editionLookup,
-		UsageAccumulator $usageAccumulator
+		private readonly EditionLookup $editionLookup,
+		private readonly UsageAccumulator $usageAccumulator,
 	) {
-		$this->editionLookup = $editionLookup;
-		$this->usageAccumulator = $usageAccumulator;
 	}
 
 	/**

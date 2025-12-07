@@ -14,25 +14,17 @@ use MediaWiki\User\Options\UserOptionsLookup;
 
 class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initialHook {
 
-	/** @var bool */
-	private $enabled;
-
-	/** @var string */
-	private $toolUrl;
-
-	/** @var array */
-	private $WikisourceTranskribusModels;
-
-	private UserOptionsLookup $userOptionsLookup;
+	private readonly bool $enabled;
+	private readonly string $toolUrl;
+	private readonly array $WikisourceTranskribusModels;
 
 	public function __construct(
 		Config $config,
-		UserOptionsLookup $userOptionsLookup
+		private readonly UserOptionsLookup $userOptionsLookup,
 	) {
 		$this->enabled = (bool)$config->get( 'WikisourceEnableOcr' );
 		$this->toolUrl = rtrim( $config->get( 'WikisourceOcrUrl' ), '/' );
 		$this->WikisourceTranskribusModels = $config->get( 'WikisourceTranskribusModels' );
-		$this->userOptionsLookup = $userOptionsLookup;
 	}
 
 	/**
