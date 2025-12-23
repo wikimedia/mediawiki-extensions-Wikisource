@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Daud I.F. Argana",
-			"Mnam23"
+			"Mnam23",
+			"Penyuwangi"
 		]
 	},
 	"wikisource-desc": "Kustomisasi MediaWiki khusus untuk Wikisource",
@@ -17,7 +18,7 @@
 	"wikisource-download-choose-tooltip": "Buka formulir untuk memilih format lain, fon, dan sebagainya.",
 	"wikisource-download-button": "Unduh",
 	"wikisource-download-chooser-title": "Pilih format",
-	"wikisource-download-chooser-epub-description": "untuk komputer, ''mobile'', tablet",
+	"wikisource-download-chooser-epub-description": "untuk komputer, seluler, tablet",
 	"wikisource-download-chooser-mobi-description": "untuk Kindle",
 	"wikisource-download-chooser-pdf-description": "untuk layar lebar dan pencetakan",
 	"wikisource-download-chooser-different-format": "Mencari format lain?",
