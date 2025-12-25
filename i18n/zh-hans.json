@@ -12,7 +12,8 @@
 			"Stang",
 			"Yfdyh000",
 			"Zhang8569",
-			"沈澄心"
+			"沈澄心",
+			"Peterxy12"
 		]
 	},
 	"wikisource-desc": "维基文库特定的MediaWiki自定义",
@@ -51,5 +52,6 @@
 	"wikisource-ocr-onboarding-text": "使用光学字符识别（OCR）将扫描的文档转换为可编辑的文字。",
 	"wikisource-ocr-onboarding-button": "好的，明白了",
 	"wikisource-ocr-language-dropdown-label": "语言（可选）：",
-	"wikisource-ocr-model-dropdown-label": "文本识别模型"
+	"wikisource-ocr-model-dropdown-label": "文本识别模型",
+	"wikisource-bulkocr-button": "批量OCR"
 }
