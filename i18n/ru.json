@@ -4,7 +4,8 @@
 			"Kareyac",
 			"Okras",
 			"Putnik",
-			"Yurina Tatiana"
+			"Yurina Tatiana",
+			"Abanima"
 		]
 	},
 	"wikisource-desc": "Настройки MediaWiki для Викитеки",
@@ -23,8 +24,8 @@
 	"wikisource-download-chooser-mobi-description": "для Kindle",
 	"wikisource-download-chooser-pdf-description": "для больших экранов и печати",
 	"wikisource-download-chooser-different-format": "Ищете другой формат?",
-	"wikisource-ocr-extract-text": "Расшифровать текст",
-	"wikisource-ocr-extract-progress": "Расшифровка текста с изображения…",
+	"wikisource-ocr-extract-text": "Распознать текст",
+	"wikisource-ocr-extract-progress": "Распознавание текста с изображения…",
 	"wikisource-ocr-extract-cancel": "Отменить",
 	"wikisource-ocr-extract-close": "Закрыть это уведомление",
 	"wikisource-ocr-extract-text-title": "Получить OCR-текст этого изображения",
