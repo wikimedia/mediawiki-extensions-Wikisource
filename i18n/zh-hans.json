@@ -53,5 +53,14 @@
 	"wikisource-ocr-onboarding-button": "好的，明白了",
 	"wikisource-ocr-language-dropdown-label": "语言（可选）：",
 	"wikisource-ocr-model-dropdown-label": "文本识别模型",
-	"wikisource-bulkocr-button": "批量OCR"
+	"wikisource-bulkocr-button": "批量OCR",
+	"wikisource-bulkocr-active-development-warning": "此功能仍在努力开发中，使用时请格外留意。",
+	"wikisource-bulkocr-success-message": "批量OCR识别成功。页面状态已更新为“未校对”。",
+	"wikisource-bulkocr-no-pages-found": "未找到要处理的空白页面",
+	"wikisource-bulkocr-in-progress": "批量OCR进行中",
+	"wikisource-bulkocr-fetch-pages-failed": "无法从索引中获取未转译的页面",
+	"wikisource-bulkocr-fetch-images-failed": "获取索引的页面缩略图失败",
+	"wikisource-bulkocr-ocr-progress": "OCR进度：已处理$1/$2个页面",
+	"wikisource-bulkocr-saving-progress": "保存OCR结果：已保存$1/$2个页面",
+	"wikisource-bulkocr-saving-progress-with-failures": "保存OCR结果：已保存$1/$2个页面，失败$3个"
 }

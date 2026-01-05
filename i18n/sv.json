@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Sabelöga",
+			"Stefan2255",
 			"Thurs"
 		]
 	},
@@ -31,7 +32,22 @@
 	"wikisource-ocr-no-text": "Ingen text returnerades av OCR-verktyget.",
 	"wikisource-ocr-settings-menu": "Ändra OCR-inställningar",
 	"wikisource-ocr-engine": "Väj ditt standard-texttranskriberingsverktyg",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Använd linjedetekteringsmodell",
 	"wikisource-ocr-advanced": "Avancerade alternativ",
+	"wikisource-ocr-advanced-title": "Öppna formuläret för avancerade alternativ i en ny flik",
 	"wikisource-ocr-onboarding-title": "Transkribera bilder till text",
-	"wikisource-ocr-onboarding-button": "Okej, jag förstår"
+	"wikisource-ocr-onboarding-text": "Omvandla skannade dokument till redigerbar text med hjälp av optisk teckenigenkänning (OCR).",
+	"wikisource-ocr-onboarding-button": "Okej, jag förstår",
+	"wikisource-ocr-language-dropdown-label": "Språk (valfri)",
+	"wikisource-ocr-model-dropdown-label": "Textigenkänningsmodell",
+	"wikisource-bulkocr-button": "Mass-OCR",
+	"wikisource-bulkocr-active-development-warning": "Den här funktionen är under aktiv utveckling och måste användas med extrem försiktighet.",
+	"wikisource-bulkocr-success-message": "Mass-OCR har körts. Sidstatus har uppdaterats till inte korrekturläst.",
+	"wikisource-bulkocr-no-pages-found": "Inga tomma sidor hittades att bearbeta",
+	"wikisource-bulkocr-in-progress": "Mass-OCR pågår",
+	"wikisource-bulkocr-fetch-pages-failed": "Misslyckades med att hämta otranskriberade sidor från indexet",
+	"wikisource-bulkocr-fetch-images-failed": "Misslyckades med att hämta miniatyrbilder för sidor i indexet",
+	"wikisource-bulkocr-ocr-progress": "OCR-förlopp: $1/$2 sidor bearbetade",
+	"wikisource-bulkocr-saving-progress": "Spara OCR-resultat: $1/$2 sidor sparade",
+	"wikisource-bulkocr-saving-progress-with-failures": "Sparar OCR-resultat: $1/$2 sidor sparade (Misslyckades: $3)"
 }
