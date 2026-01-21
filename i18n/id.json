@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bennylin",
 			"Daud I.F. Argana",
 			"Mnam23",
 			"Penyuwangi"
@@ -25,7 +26,7 @@
 	"wikisource-ocr-extract-text": "Transkripkan teks",
 	"wikisource-ocr-extract-progress": "Mentranskripkan teks dari gambar…",
 	"wikisource-ocr-extract-cancel": "Batal",
-	"wikisource-ocr-extract-undo": "Balikkan transkripsi",
+	"wikisource-ocr-extract-undo": "Batalkan transkripsi",
 	"wikisource-ocr-extract-close": "Tutup pemberitahuan ini",
 	"wikisource-ocr-extract-text-title": "Dapatkan teks OCR dari gambar ini",
 	"wikisource-ocr-error": "Galat dari alat OCR: $1",
