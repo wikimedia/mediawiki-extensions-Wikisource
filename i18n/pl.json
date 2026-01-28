@@ -4,6 +4,7 @@
 			"Ajsmen91",
 			"Msz2001",
 			"Rail",
+			"Woytecr",
 			"Zdzislaw"
 		]
 	},
@@ -40,5 +41,15 @@
 	"wikisource-ocr-onboarding-text": "Zamień zeskanowane dokumenty w edytowalny tekst za pomocą optycznego rozpoznawania znaków (OCR).",
 	"wikisource-ocr-onboarding-button": "Ok, rozumiem",
 	"wikisource-ocr-language-dropdown-label": "Języki (opcjonalnie):",
-	"wikisource-ocr-model-dropdown-label": "Model rozpoznawania tekstu"
+	"wikisource-ocr-model-dropdown-label": "Model rozpoznawania tekstu",
+	"wikisource-bulkocr-button": "Masowe OCR",
+	"wikisource-bulkocr-active-development-warning": "Funkcja ta jest obecnie aktywnie rozwijana, dlatego należy korzystać z niej ze szczególną ostrożnością.",
+	"wikisource-bulkocr-success-message": "Masowe OCR zostało wykonane pomyślnie. Statusy stron zostały ustawione na „przepisana”.",
+	"wikisource-bulkocr-no-pages-found": "Nie znaleziono pustych stron do przetworzenia",
+	"wikisource-bulkocr-in-progress": "Trwa masowe OCR",
+	"wikisource-bulkocr-fetch-pages-failed": "Nie udało się pobrać nieprzepisanych stron z indeksu",
+	"wikisource-bulkocr-fetch-images-failed": "Nie udało się pobrać miniatur obrazów dla stron w indeksie",
+	"wikisource-bulkocr-ocr-progress": "Postęp OCR: przetworzono $1 z $2 stron",
+	"wikisource-bulkocr-saving-progress": "Zapisywanie wyników OCR: zapisano $1 z $2 stron",
+	"wikisource-bulkocr-saving-progress-with-failures": "Zapisywanie wyników OCR: zapisano $1 z $2 stron (nie udało się dla $3 {{PLURAL:$3|strony|stron}})"
 }
