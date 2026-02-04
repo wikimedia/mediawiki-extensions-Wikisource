@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Renessaince"
+			"Renessaince",
+			"Ucukor"
 		]
 	},
-	"wikisource-download-button": "Загрузіць"
+	"wikisource-download-button": "Загрузіць",
+	"wikisource-ocr-extract-cancel": "Скасаваць"
 }
