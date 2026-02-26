@@ -4,7 +4,8 @@
 			"Chadyka",
 			"Kareyac",
 			"No Sleep till Krupki",
-			"Plaga med"
+			"Plaga med",
+			"Ucukor"
 		]
 	},
 	"wikisource-desc": "Налады MediaWiki для Вікікрыніцаў",
@@ -25,7 +26,7 @@
 	"wikisource-download-chooser-different-format": "Шукаеце іншы фармат?",
 	"wikisource-ocr-extract-text": "Аблічбаваць тэкст",
 	"wikisource-ocr-extract-progress": "Аблічбоўка тэксту з выявы...",
-	"wikisource-ocr-extract-cancel": "Адмена",
+	"wikisource-ocr-extract-cancel": "Скасаваць",
 	"wikisource-ocr-extract-undo": "Адмена аблічбоўкі",
 	"wikisource-ocr-extract-close": "Закрыць гэта апавяшчэнне",
 	"wikisource-ocr-extract-text-title": "Атрымаць OCR-тэкст гэтай выявы",
