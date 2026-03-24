@@ -25,7 +25,7 @@ function ExtractTextWidget( ocrTool, $textbox ) {
 
 	this.configButton = new OO.ui.PopupButtonWidget( {
 		indicator: 'down',
-		title: mw.message( 'wikisource-ocr-settings-menu' ).text(),
+		label: mw.message( 'wikisource-ocr-settings-menu' ).text(),
 		invisibleLabel: true,
 		$overlay: OO.ui.getDefaultOverlay(),
 		popup: {

@@ -22,7 +22,8 @@ function UndoWidget( ocrTool, $textbox ) {
 	var closeButton = new OO.ui.ButtonWidget( {
 		icon: 'close',
 		framed: false,
-		title: mw.message( 'wikisource-ocr-extract-close' ).text()
+		invisibleLabel: true,
+		label: mw.message( 'wikisource-ocr-extract-close' ).text()
 	} );
 	this.$element.hide();
 	this.$element.append( undoButton.$element, closeButton.$element );

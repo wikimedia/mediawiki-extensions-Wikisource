@@ -25,6 +25,6 @@
 				]
 			}
 		],
-		"mediawiki/no-unlabeled-buttonwidget": "warn"
+		"mediawiki/no-unlabeled-buttonwidget": "error"
 	}
 }
