@@ -49,10 +49,10 @@
 	"wikisource-bulkocr-fetch-images-failed": "Failed to fetch image thumbnails for pages in index",
 	"wikisource-bulkocr-ocr-progress": "OCR progress: $1/$2 pages processed",
 	"wikisource-bulkocr-saving-progress": "Saving OCR results: $1/$2 pages saved",
-	"wikisource-bulkocr-saving-progress-with-failures": "Saving OCR results: $1/$2 pages saved (Failed: $3)"
+	"wikisource-bulkocr-saving-progress-with-failures": "Saving OCR results: $1/$2 pages saved (Failed: $3)",
 	"wikisource-ocr-bulk-submit": "Run OCR on all selected pages",
-    "wikisource-ocr-bulk-progress": "Processing page $1 of $2",
-    "wikisource-ocr-bulk-success": "OCR completed for $1 pages",
-    "wikisource-ocr-bulk-error": "OCR failed for page $1. Please try again.",
-    "wikisource-ocr-bulk-permission-denied": "You do not have permission to perform bulk OCR operations."
+	"wikisource-ocr-bulk-progress": "Processing page $1 of $2",
+	"wikisource-ocr-bulk-success": "OCR completed for $1 pages",
+	"wikisource-ocr-bulk-error": "OCR failed for page $1. Please try again.",
+	"wikisource-ocr-bulk-permission-denied": "You do not have permission to perform bulk OCR operations."
 }
