@@ -4,7 +4,6 @@ declare( strict_types = 1 );
 
 namespace MediaWiki\Extension\Wikisource;
 
-use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use Wikibase\Client\Usage\UsageAccumulator;
 use Wikibase\Client\WikibaseClient;
@@ -46,7 +45,9 @@ class EditionLookup {
 	}
 
 	private static function getPropertyIdFromConfig( string $configParamName ): NumericPropertyId {
-		return new NumericPropertyId( RequestContext::getMain()->getConfig()->get( $configParamName ) );
+		return new NumericPropertyId(
+			MediaWikiServices::getInstance()->getMainConfig()->get( $configParamName )
+		);
 	}
 
 	public function __construct(
