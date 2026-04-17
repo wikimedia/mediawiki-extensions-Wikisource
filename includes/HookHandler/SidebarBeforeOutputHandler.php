@@ -6,8 +6,8 @@ use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Extension\Gadgets\GadgetRepo;
 use MediaWiki\Extension\Wikisource\WsExport;
-use MediaWiki\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Language\Language;
+use MediaWiki\Skin\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Skin\Skin;
 
 class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {

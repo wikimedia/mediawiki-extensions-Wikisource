@@ -5,7 +5,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extension\Wikisource\HookHandler;
 
 use MediaWiki\Config\Config;
-use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Skin\Skin;
