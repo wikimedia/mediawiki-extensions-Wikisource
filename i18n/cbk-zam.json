@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Noooote"
+		]
+	},
+	"wikisource-desc": "Maga personalizacion de Mediawiki que espefico na Wikisource",
+	"wikisource-export-portlet": "Imprenta/exporta",
+	"wikisource-download-epub": "Man download na forma EPUB",
+	"wikisource-download-epub-tooltip": "Man download un version EPUB de este obra",
+	"wikisource-download-mobi": "Man download na forma MOBI",
+	"wikisource-download-mobi-tooltip": "Man download un version MOBI de este obra",
+	"wikisource-download-pdf": "Man download na forma PDF",
+	"wikisource-download-pdf-tooltip": "Man download un version PDF de este obra",
+	"wikisource-download-choose": "Otro formato",
+	"wikisource-download-choose-tooltip": "Abri un formulario para selecciona otro maga formato y font y otros pa.",
+	"wikisource-download-button": "Man download",
+	"wikisource-download-chooser-title": "Escoge un formato",
+	"wikisource-download-chooser-epub-description": "para na maga computer, cellphone, y tablet",
+	"wikisource-download-chooser-mobi-description": "para na Kindle",
+	"wikisource-download-chooser-pdf-description": "para na grande screen y imprentada",
+	"wikisource-download-chooser-different-format": "Ta busca pa ba tu otro formato?",
+	"wikisource-ocr-extract-text": "Transcribi texto",
+	"wikisource-ocr-extract-progress": "Ta hace transcribi con el texto estaba na retrato…",
+	"wikisource-ocr-extract-cancel": "Cancela",
+	"wikisource-ocr-extract-undo": "Deshace transcripcion",
+	"wikisource-ocr-extract-close": "Cerra con este aviso",
+	"wikisource-ocr-extract-text-title": "Saca texto OCR de este retrato",
+	"wikisource-ocr-error": "Error desde el herramienta de OCR: $1",
+	"wikisource-ocr-no-text": "No hay devolve ni un texto el herramienta OCR.",
+	"wikisource-ocr-settings-menu": "Cambia configuracion del OCR",
+	"wikisource-ocr-engine": "Selecciona herramienta de transcripcion de texto predeterminao de tuyo",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Usa modelo de deteccion de lineas",
+	"wikisource-ocr-advanced": "Opciones Avanzao",
+	"wikisource-ocr-advanced-title": "Abri formulario de opciones avanzao na un nuevo tab",
+	"wikisource-ocr-onboarding-title": "Transcribi maga retrato na texto",
+	"wikisource-ocr-onboarding-text": "Converti maga documento escaneao para na texto editable, usando el Reconocimiento Optico de Caracteres (OCR).",
+	"wikisource-ocr-onboarding-button": "Claro ya!",
+	"wikisource-ocr-language-dropdown-label": "Lenguajes (opcional):",
+	"wikisource-ocr-model-dropdown-label": "Modelo de reconocimiento de texto"
+}
