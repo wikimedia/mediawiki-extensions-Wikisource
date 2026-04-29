@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Namoroka",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -41,5 +42,7 @@
 	"wikisource-ocr-onboarding-text": "광학 문자 인식(OCR)을 사용하여 스캔한 문서를 편집 가능한 텍스트로 변환합니다.",
 	"wikisource-ocr-onboarding-button": "알겠습니다",
 	"wikisource-ocr-language-dropdown-label": "언어 (선택 사항):",
-	"wikisource-ocr-model-dropdown-label": "텍스트 인식 모델"
+	"wikisource-ocr-model-dropdown-label": "텍스트 인식 모델",
+	"wikisource-bulkocr-button": "대량 OCR",
+	"wikisource-bulkocr-in-progress": "대량 OCR 진행중"
 }
