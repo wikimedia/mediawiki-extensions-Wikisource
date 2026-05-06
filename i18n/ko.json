@@ -44,5 +44,11 @@
 	"wikisource-ocr-language-dropdown-label": "언어 (선택 사항):",
 	"wikisource-ocr-model-dropdown-label": "텍스트 인식 모델",
 	"wikisource-bulkocr-button": "대량 OCR",
-	"wikisource-bulkocr-in-progress": "대량 OCR 진행중"
+	"wikisource-bulkocr-active-development-warning": "이 기능은 현재 개발 중이기에 매우 신중하게 사용해야 합니다.",
+	"wikisource-bulkocr-success-message": "대량 OCR 작업이 성공적으로 완료되었습니다. 문서 상태가 '교정 안 됨'으로 업데이트되었습니다.",
+	"wikisource-bulkocr-no-pages-found": "처리할 빈 문서가 없습니다",
+	"wikisource-bulkocr-in-progress": "대량 OCR 진행중",
+	"wikisource-bulkocr-ocr-progress": "OCR 진행 상황: $1/$2 문서 처리됨",
+	"wikisource-bulkocr-saving-progress": "OCR 결과 저장중: $1/$2 문서 저장됨",
+	"wikisource-bulkocr-saving-progress-with-failures": "OCR 결과 저장중: $1/$2 문서 저장됨 (실패함: $3)"
 }
