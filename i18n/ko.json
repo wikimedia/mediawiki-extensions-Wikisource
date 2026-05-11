@@ -48,6 +48,8 @@
 	"wikisource-bulkocr-success-message": "대량 OCR 작업이 성공적으로 완료되었습니다. 문서 상태가 '교정 안 됨'으로 업데이트되었습니다.",
 	"wikisource-bulkocr-no-pages-found": "처리할 빈 문서가 없습니다",
 	"wikisource-bulkocr-in-progress": "대량 OCR 진행중",
+	"wikisource-bulkocr-fetch-pages-failed": "색인으로부터 변환되지 않은 문서를 가져오는데 실패했습니다",
+	"wikisource-bulkocr-fetch-images-failed": "색인에 있는 문서의 이미지 섬네일을 가져오는 데 실패했습니다",
 	"wikisource-bulkocr-ocr-progress": "OCR 진행 상황: $1/$2 문서 처리됨",
 	"wikisource-bulkocr-saving-progress": "OCR 결과 저장중: $1/$2 문서 저장됨",
 	"wikisource-bulkocr-saving-progress-with-failures": "OCR 결과 저장중: $1/$2 문서 저장됨 (실패함: $3)"
