@@ -18,7 +18,7 @@ class WsExportTest extends MediaWikiIntegrationTestCase {
 	public function testServerName( $langCode, $serverName, $exportUrl ) {
 		$lang = $this->getServiceContainer()->getLanguageFactory()->getLanguage( $langCode );
 		$wsExport = new WsExport( $lang, 'exportUrl', $serverName );
-		$this->assertSame( $exportUrl, $wsExport->getExportUrl( Title::newFromText( 'Lorem' ) ) );
+		$this->assertSame( $exportUrl, $wsExport->getExportUrl( Title::makeTitle( NS_MAIN, 'Lorem' ) ) );
 	}
 
 	public static function provideServerName() {
