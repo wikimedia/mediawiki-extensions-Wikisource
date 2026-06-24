@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Peter Alberti",
-			"Saederup92"
+			"Saederup92",
+			"Steenth"
 		]
 	},
 	"wikisource-desc": "Wikisource-specifikke tilpasninger af MediaWiki",
@@ -21,7 +22,7 @@
 	"wikisource-download-chooser-mobi-description": "til Kindle",
 	"wikisource-download-chooser-pdf-description": "til store skærme og udskrift",
 	"wikisource-download-chooser-different-format": "Leder du efter et andet format?",
-	"wikisource-ocr-extract-text": "Udtræk tekst",
+	"wikisource-ocr-extract-text": "Transskriber tekst",
 	"wikisource-ocr-extract-text-title": "Hent OCR-teksten for dette billede",
 	"wikisource-ocr-error": "Fejl fra OCR-værktøjet: $1",
 	"wikisource-ocr-no-text": "OCR-værktøjet gav ikke nogen tekst."
