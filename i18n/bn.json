@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bodhisattwa",
 			"R4356th",
 			"আফতাবুজ্জামান",
 			"খাত্তাব হাসান"
@@ -38,7 +39,7 @@
 	"wikisource-ocr-engine-tesseract": "টেসারেক্ট ওসিআর",
 	"wikisource-ocr-engine-google": "গুগল ওসিআর",
 	"wikisource-ocr-engine-line-model-checkbox-label": "লাইন সনাক্তকরণ মডেল ব্যবহার করুন",
-	"wikisource-ocr-advanced": "উচ্চতর বিকল্প",
+	"wikisource-ocr-advanced": "উন্নত বিকল্প",
 	"wikisource-ocr-advanced-title": "একটি নতুন ট্যাবে উচ্চতর বিকল্পের ফরমটি খুলুন",
 	"wikisource-ocr-onboarding-title": "চিত্র থেকে পাঠ্য আহরণ করুন",
 	"wikisource-ocr-onboarding-text": "অপটিক্যাল ক্যারেক্টার রেকগনিশন (ওসিআর) ব্যবহার করে, স্ক্যান করা নথিগুলিকে সম্পাদনাযোগ্য পাঠ্যে পরিণত করুন।",
