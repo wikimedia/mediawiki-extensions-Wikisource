@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"wikisource-desc": "Habaynno gaar ah oo MediaWiki ah oo loogu talagalay Wikisource",
+	"wikisource-export-portlet": "Daabac/dhoofin",
+	"wikisource-download-epub": "Soo deji EPUB",
+	"wikisource-download-epub-tooltip": "Soo dejiso nooca EPUB ee shaqadan",
+	"wikisource-download-mobi": "Soo deji MOBI",
+	"wikisource-download-mobi-tooltip": "Soo dejiso nooca MOBI ee shaqadan",
+	"wikisource-download-pdf": "Soo deji PDF",
+	"wikisource-download-pdf-tooltip": "Soo dejiso nooca PDF ee shaqadan",
+	"wikisource-download-choose": "Qaabab kale",
+	"wikisource-download-choose-tooltip": "Fur foom aad ku dooran karto qaabab kale, faro iyo wixii la mid ah.",
+	"wikisource-download-button": "Soo deji",
+	"wikisource-download-chooser-title": "Dooro qaab",
+	"wikisource-download-chooser-epub-description": "loogu talagalay kombiyuutarro, moobilo, iyo tablet-yada",
+	"wikisource-download-chooser-mobi-description": "loogu talagalay Kindles",
+	"wikisource-download-chooser-pdf-description": "loogu talagalay shaashadaha waaweyn iyo daabacaadda",
+	"wikisource-download-chooser-different-format": "Ma raadinaysaa qaab kale?",
+	"wikisource-ocr-extract-text": "Qoraalka u beddel far qorid",
+	"wikisource-ocr-extract-progress": "Qoraal ka soo qoraya sawirka…",
+	"wikisource-ocr-extract-cancel": "Jooji",
+	"wikisource-ocr-extract-undo": "Ka noqo turjumaadda qoraalka",
+	"wikisource-ocr-extract-close": "Xir ogeysiiskan",
+	"wikisource-ocr-extract-text-title": "Soo hel qoraalka OCR ee sawirkan",
+	"wikisource-ocr-error": "Khalad ayaa ka yimid qalabka OCR: $1",
+	"wikisource-ocr-no-text": "Qalabka OCR wax qoraal ah ma soo celin.",
+	"wikisource-ocr-settings-menu": "Beddel dejimaha OCR",
+	"wikisource-ocr-engine": "Dooro qalabkaaga caadiga ah ee turjumaadda qoraalka",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Isticmaal qaabka ogaanshaha xariiqyada",
+	"wikisource-ocr-advanced": "Xulasho horumarsan",
+	"wikisource-ocr-advanced-title": "Fur foomka ikhtiyaarrada horumarsan tab cusub",
+	"wikisource-ocr-onboarding-title": "U beddel sawirrada qoraal",
+	"wikisource-ocr-onboarding-text": "U beddel dukumentiyada la sawiray qoraal la tafatiri karo, adigoo adeegsanaya aqoonsiga astaamaha indhaha (OCR).",
+	"wikisource-ocr-onboarding-button": "Hagaag, waan fahmay",
+	"wikisource-ocr-language-dropdown-label": "Luuqadaha (ikhtiyaari ah):",
+	"wikisource-ocr-model-dropdown-label": "Qaabka aqoonsiga qoraalka"
+}
