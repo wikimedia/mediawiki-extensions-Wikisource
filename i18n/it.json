@@ -29,9 +29,21 @@
 	"wikisource-ocr-extract-progress": "Trascrizione del testo dall'immagine...",
 	"wikisource-ocr-extract-cancel": "Annulla",
 	"wikisource-ocr-extract-undo": "Annulla la trascrizione",
+	"wikisource-ocr-extract-close": "Chiudi questo avviso",
+	"wikisource-ocr-extract-text-title": "Ottieni il testo OCR di questa immagine",
+	"wikisource-ocr-error": "Errore dallo strumento OCR: $1",
+	"wikisource-ocr-no-text": "Lo strumento OCR non ha restituito alcun testo.",
+	"wikisource-ocr-settings-menu": "Modifica le impostazioni OCR",
 	"wikisource-ocr-engine": "Seleziona il tuo strumento di trascrizione del testo predefinito",
+	"wikisource-ocr-engine-tesseract": "Tesseract OCR",
+	"wikisource-ocr-engine-google": "Google OCR",
+	"wikisource-ocr-engine-transkribus": "Transkribus OCR",
+	"wikisource-ocr-engine-line-model-checkbox-label": "Usa il modello di rilevamento delle righe",
 	"wikisource-ocr-advanced": "Opzioni avanzate",
+	"wikisource-ocr-advanced-title": "Apri il modulo delle opzioni avanzate in una nuova scheda",
 	"wikisource-ocr-onboarding-title": "Trascrivi le immagini in testo",
+	"wikisource-ocr-onboarding-text": "Trasforma i documenti scansionati in testo modificabile, utilizzando il riconoscimento ottico dei caratteri (OCR).",
 	"wikisource-ocr-onboarding-button": "Ok, capito",
-	"wikisource-ocr-language-dropdown-label": "Lingue (facoltativo):"
+	"wikisource-ocr-language-dropdown-label": "Lingue (facoltativo):",
+	"wikisource-ocr-model-dropdown-label": "Modello di riconoscimento del testo"
 }
