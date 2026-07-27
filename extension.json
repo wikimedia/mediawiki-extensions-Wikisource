@@ -100,12 +100,14 @@
 			"dependencies": [
 				"oojs-ui-core",
 				"oojs-ui-widgets",
+				"oojs-ui-windows",
 				"jquery",
 				"ext.wikisource.icons"
 			],
 			"packageFiles": [
 				"ext.wikisource.bulkocr/ext.wikisource.bulkocr.js",
-				"ext.wikisource.bulkocr/BulkOcrWidget.js"
+				"ext.wikisource.bulkocr/BulkOcrWidget.js",
+				"ext.wikisource.bulkocr/BulkOcrFeedbackDialog.js"
 			],
 			"styles": [
 				"ext.wikisource.bulkocr/bulkocr.less"
@@ -120,7 +122,11 @@
 				"wikisource-bulkocr-fetch-images-failed",
 				"wikisource-bulkocr-ocr-progress",
 				"wikisource-bulkocr-saving-progress",
-				"wikisource-bulkocr-saving-progress-with-failures"
+				"wikisource-bulkocr-saving-progress-with-failures",
+				"wikisource-bulkocr-feedback-title",
+				"wikisource-bulkocr-feedback-approve",
+				"wikisource-bulkocr-feedback-no-results",
+				"wikisource-bulkocr-feedback-cancel"
 			]
 		},
 		"ext.wikisource.icons": {

@@ -71,7 +71,9 @@ class BulkOcrWidget {
 		} );
 
 		// Handle when images are loaded
+		// Keep a reference so the feedback dialog can show images alongside OCR text.
 		this.events.on( 'ocr-images-loaded', ( e, pageImageMap ) => {
+			this.pageImageMap = pageImageMap;
 			// Process OCR in batches of 10
 			this.processBatchedOcr( pageImageMap, 10 )
 				.then( () => {
@@ -80,8 +82,9 @@ class BulkOcrWidget {
 		} );
 
 		// Handle when OCR processing is complete
+		// Instead of auto-saving user can review the OCR results before writing them to the wiki
 		this.events.on( 'ocr-complete', () => {
-			this.saveOcrResults();
+			this.showFeedbackDialog();
 		} );
 
 		// Handle when page updates are complete
@@ -298,6 +301,33 @@ class BulkOcrWidget {
 		processBatch( 0 );
 
 		return deferred.promise();
+	}
+	/**
+	 * Open the feedback dialog so the user can review the OCR results
+	 * before they are written to the wiki. See T394131
+	 */
+	showFeedbackDialog() {
+		// Close the OCR progress notification the dialog is now the UI.
+		if ( this.progressNotificationId ) {
+			this.progressNotificationId.then( ( notif ) => notif.close() );
+			this.progressNotificationId = null;
+		}
+
+		// If OCR produced no results show an error notification instead of empty dialog
+		if ( Object.keys( this.ocrDictionary ).length === 0 ) {
+			mw.notify( mw.msg( 'wikisource-bulkocr-feedback-no-results' ), { type: 'error' } );
+			return;
+		}
+
+		const BulkOcrFeedbackDialog = require( './BulkOcrFeedbackDialog.js' );
+		const dialog = new BulkOcrFeedbackDialog( {
+			ocrDictionary: this.ocrDictionary,
+			pageImageMap: this.pageImageMap,
+			onApprove: () => this.saveOcrResults()
+		} );
+
+		OO.ui.getWindowManager().addWindows( [ dialog ] );
+		OO.ui.getWindowManager().openWindow( dialog );
 	}
 
 	/**

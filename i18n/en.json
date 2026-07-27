@@ -47,6 +47,10 @@
 	"wikisource-bulkocr-in-progress": "Bulk OCR in progress",
 	"wikisource-bulkocr-fetch-pages-failed": "Failed to fetch untranscribed pages from Index",
 	"wikisource-bulkocr-fetch-images-failed": "Failed to fetch image thumbnails for pages in index",
+	"wikisource-bulkocr-feedback-title": "Review OCR Results",
+	"wikisource-bulkocr-feedback-approve": "Approve",
+	"wikisource-bulkocr-feedback-cancel": "Cancel",
+	"wikisource-bulkocr-feedback-no-results": "OCR did not produce any text for the selected pages. The OCR service may be temporarily unavailable. please try again later.",
 	"wikisource-bulkocr-ocr-progress": "OCR progress: $1/$2 pages processed",
 	"wikisource-bulkocr-saving-progress": "Saving OCR results: $1/$2 pages saved",
 	"wikisource-bulkocr-saving-progress-with-failures": "Saving OCR results: $1/$2 pages saved (Failed: $3)"
