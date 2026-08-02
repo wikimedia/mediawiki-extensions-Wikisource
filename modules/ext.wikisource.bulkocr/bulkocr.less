@@ -10,33 +10,28 @@
 	margin-bottom: 0.5em;
 }
 
-/* Feedback dialog: one unified frame per page, text left, image right,
+/* Feedback dialog layout of the text/image row inside each PageLayout
  * separated by a single vertical divider. See T433033. */
 
 .ext-wikisource-bulkocr-feedback-row {
 	display: flex;
 	align-items: stretch;
-	border: 1px solid #a2a9b1;
-	margin-bottom: 24px;
-	min-height: 400px;
-	overflow: hidden;
+	height: 100%;
 }
 
-.ext-wikisource-bulkocr-feedback-text-cell {
-	flex: 1;
-	min-width: 0;
-	padding: 16px;
-	overflow-y: auto;
-	max-height: 600px;
-	border-right: 1px solid #a2a9b1;
-}
-
+.ext-wikisource-bulkocr-feedback-text-cell,
 .ext-wikisource-bulkocr-feedback-image-cell {
 	flex: 1;
 	min-width: 0;
 	padding: 16px;
 	overflow-y: auto;
-	max-height: 600px;
+}
+
+.ext-wikisource-bulkocr-feedback-text-cell {
+	border-inline-end: 1px solid #a2a9b1;
+}
+
+.ext-wikisource-bulkocr-feedback-image-cell {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -44,6 +39,9 @@
 
 .ext-wikisource-bulkocr-feedback-text {
 	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
 	white-space: pre-wrap;
 	word-wrap: break-word;
 }

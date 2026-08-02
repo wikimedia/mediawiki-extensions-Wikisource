@@ -50,6 +50,7 @@
 	"wikisource-bulkocr-feedback-title": "Review OCR Results",
 	"wikisource-bulkocr-feedback-approve": "Approve",
 	"wikisource-bulkocr-feedback-cancel": "Cancel",
+	"wikisource-bulkocr-feedback-page-label": "Page $1",
 	"wikisource-bulkocr-feedback-no-results": "OCR did not produce any text for the selected pages. The OCR service may be temporarily unavailable. please try again later.",
 	"wikisource-bulkocr-ocr-progress": "OCR progress: $1/$2 pages processed",
 	"wikisource-bulkocr-saving-progress": "Saving OCR results: $1/$2 pages saved",

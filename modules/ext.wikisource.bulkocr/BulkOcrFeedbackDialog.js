@@ -23,7 +23,7 @@ function BulkOcrFeedbackDialog( config ) {
 }
 OO.inheritClass( BulkOcrFeedbackDialog, OO.ui.ProcessDialog );
 BulkOcrFeedbackDialog.static.name = 'BulkOcrFeedbackDialog';
-BulkOcrFeedbackDialog.static.size = 'larger';
+BulkOcrFeedbackDialog.static.size = 'full';
 BulkOcrFeedbackDialog.static.title = OO.ui.deferMsg( 'wikisource-bulkocr-feedback-title' );
 BulkOcrFeedbackDialog.static.actions = [
 	{
@@ -38,51 +38,91 @@ BulkOcrFeedbackDialog.static.actions = [
 	}
 ];
 /**
- * show the image and text side by side.
+ * A single reviewable page inside the feedback dialog.
  *
- * @inheritdoc
+ * @param {string} name Page title, used as the unique BookletLayout key
+ * @param {Object} config
+ * @param {string} config.label Sidebar label
+ * @param {string} config.ocrText OCR text for this page
+ * @param {string} config.imageUrl Image URL for this page
+ * @class
+ * @constructor
+ * @extends OO.ui.PageLayout
  */
-BulkOcrFeedbackDialog.prototype.initialize = function () {
-	BulkOcrFeedbackDialog.super.prototype.initialize.apply( this, arguments );
-	this.content = new OO.ui.PanelLayout( { padded: true, expanded: false } );
-	this.content.$element.addClass( 'ext-wikisource-bulkocr-feedback-dialog' );
+function FeedbackPageLayout( name, config ) {
+	FeedbackPageLayout.super.call( this, name, config );
 
-	// One row per page: image on the left, OCR text on the right.
-	Object.keys( this.ocrDictionary ).forEach( ( pageTitle ) => {
-		this.content.$element.append( this.buildPageRow( pageTitle ) );
-	} );
-	this.$body.append( this.content.$element );
-};
-
-/**
- * Build a single row showing the page image and its OCR text side by side.
- *
- * @param {string} pageTitle
- * @return {jQuery}
- */
-BulkOcrFeedbackDialog.prototype.buildPageRow = function ( pageTitle ) {
-	const imageUrl = this.pageImageMap[ pageTitle ] || '';
-	const ocrText = this.ocrDictionary[ pageTitle ] || '';
-	const $imageCell = $( '<div>' )
-		.addClass( 'ext-wikisource-bulkocr-feedback-image-cell' )
-		.append(
-			$( '<img>' )
-				.attr( 'src', imageUrl )
-				.attr( 'alt', pageTitle )
-				.addClass( 'ext-wikisource-bulkocr-feedback-image' )
-		);
+	this.label = config.label;
 
 	const $textCell = $( '<div>' )
 		.addClass( 'ext-wikisource-bulkocr-feedback-text-cell' )
 		.append(
 			$( '<pre>' )
-				.text( ocrText )
+				.text( config.ocrText )
 				.addClass( 'ext-wikisource-bulkocr-feedback-text' )
 		);
 
-	return $( '<div>' )
+	const $imageCell = $( '<div>' )
+		.addClass( 'ext-wikisource-bulkocr-feedback-image-cell' )
+		.append(
+			$( '<img>' )
+				.attr( 'src', config.imageUrl )
+				.attr( 'alt', name )
+				.addClass( 'ext-wikisource-bulkocr-feedback-image' )
+		);
+
+	// Wrap the flex layout in an inner div so BookletLayout can freely
+	const $inner = $( '<div>' )
 		.addClass( 'ext-wikisource-bulkocr-feedback-row' )
 		.append( $textCell, $imageCell );
+
+	this.$element.append( $inner );
+}
+OO.inheritClass( FeedbackPageLayout, OO.ui.PageLayout );
+
+FeedbackPageLayout.prototype.setupOutlineItem = function () {
+	this.outlineItem.setLabel( this.label );
+};
+
+// dialog body bookletlayout with one FeedbackPageLayout per OCR page.
+BulkOcrFeedbackDialog.prototype.initialize = function () {
+	BulkOcrFeedbackDialog.super.prototype.initialize.apply( this, arguments );
+
+	this.booklet = new OO.ui.BookletLayout( {
+		outlined: true,
+		expanded: true
+	} );
+
+	// Sort page titles by page number so the sidebar always shows them in book order
+	const pageTitles = Object.keys( this.ocrDictionary ).sort( ( a, b ) => {
+		const numA = parseInt( a.slice( a.lastIndexOf( '/' ) + 1 ), 10 );
+		const numB = parseInt( b.slice( b.lastIndexOf( '/' ) + 1 ), 10 );
+		return numA - numB;
+	} );
+
+	const pages = pageTitles.map( ( pageTitle, index ) => {
+		return new FeedbackPageLayout( pageTitle, {
+			label: mw.msg( 'wikisource-bulkocr-feedback-page-label', index + 1 ),
+			ocrText: this.ocrDictionary[ pageTitle ] || '',
+			imageUrl: this.pageImageMap[ pageTitle ] || ''
+		} );
+	} );
+
+	this.booklet.addPages( pages );
+	// activates the first page as soon as the dialog opens.
+	this.booklet.selectFirstSelectablePage();
+
+	this.$body.append( this.booklet.$element );
+};
+
+/**
+ * The ProcessDialog body needs an explicit height when it wraps a
+ * BookletLayout, following the pattern used in mw.Upload.Dialog.
+ *
+ * @inheritdoc
+ */
+BulkOcrFeedbackDialog.prototype.getBodyHeight = function () {
+	return 600;
 };
 
 /**

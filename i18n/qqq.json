@@ -60,6 +60,7 @@
 	"wikisource-bulkocr-feedback-title": "Title of the dialog shown after Bulk OCR completes the user reviews the OCR results before they are written to the wiki.",
 	"wikisource-bulkocr-feedback-approve": "Label for the button that confirms the OCR results and saves them to the wiki.",
 	"wikisource-bulkocr-feedback-cancel": "Label for the button that discards the OCR results without saving.",
+	"wikisource-bulkocr-feedback-page-label": "Label shown in the feedback dialog sidebar for each page.",
 	"wikisource-bulkocr-feedback-no-results": "Error notification shown when Bulk OCR completes but no OCR text was produced for any page. So the feedback dialog is not opened.",
 	"wikisource-bulkocr-ocr-progress": "Progress message for OCR processing. $1 is the number of pages processed, $2 is the total number of pages.",
 	"wikisource-bulkocr-saving-progress": "Progress message for saving OCR results. $1 is the number of pages saved, $2 is the total number of pages.",
