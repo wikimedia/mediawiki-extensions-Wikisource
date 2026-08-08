@@ -107,7 +107,8 @@
 			"packageFiles": [
 				"ext.wikisource.bulkocr/ext.wikisource.bulkocr.js",
 				"ext.wikisource.bulkocr/BulkOcrWidget.js",
-				"ext.wikisource.bulkocr/BulkOcrFeedbackDialog.js"
+				"ext.wikisource.bulkocr/BulkOcrFeedbackDialog.js",
+				"ext.wikisource.bulkocr/BulkOcrFeedbackPageLayout.js"
 			],
 			"styles": [
 				"ext.wikisource.bulkocr/bulkocr.less"
@@ -127,7 +128,8 @@
 				"wikisource-bulkocr-feedback-approve",
 				"wikisource-bulkocr-feedback-cancel",
 				"wikisource-bulkocr-feedback-page-label",
-				"wikisource-bulkocr-feedback-no-results"
+				"wikisource-bulkocr-feedback-no-results",
+				"wikisource-bulkocr-feedback-safety-banner"
 			]
 		},
 		"ext.wikisource.icons": {
