@@ -66,7 +66,9 @@ class BulkOcrWidget {
 		this.events.off( 'ocr-pages-found ocr-images-loaded ocr-complete update-pages-complete' );
 
 		// Handle when untranscribed pages are found
+		// Open the dialog immediately with a progress bar show working is happening
 		this.events.on( 'ocr-pages-found', ( e, indexTitle, titlesArray ) => {
+			this.openFeedbackDialog( titlesArray.length );
 			this.getImagesForPages( indexTitle, titlesArray );
 		} );
 
@@ -82,9 +84,11 @@ class BulkOcrWidget {
 		} );
 
 		// Handle when OCR processing is complete
-		// Instead of auto-saving user can review the OCR results before writing them to the wiki
+		// Pages have already streamed in finish up (hide progress, enable Approve).
 		this.events.on( 'ocr-complete', () => {
-			this.showFeedbackDialog();
+			if ( this.feedbackDialog ) {
+				this.feedbackDialog.finishProcessing();
+			}
 		} );
 
 		// Handle when page updates are complete
@@ -130,14 +134,6 @@ class BulkOcrWidget {
 	 */
 	getUnTranscribedPagesInIndex( indexTitle ) {
 		const deferred = $.Deferred();
-
-		this.progressNotificationElement.textContent = mw.msg( 'wikisource-bulkocr-in-progress' );
-
-		this.progressNotificationId = mw.notify( $( this.progressNotificationElement ), {
-			autoHide: false,
-			type: 'info',
-			tag: 'bulk-ocr-progress'
-		} );
 
 		this.mwApi.get( {
 			action: 'query',
@@ -203,7 +199,12 @@ class BulkOcrWidget {
 			this.events.trigger( 'ocr-images-loaded', [ pageImageMap ] );
 		} ).fail( ( xhr, status, error ) => {
 			console.error( 'Image data fetch failed:', error );
-			mw.notify( mw.msg( 'wikisource-bulkocr-fetch-images-failed' ), { type: 'error' } );
+			// The dialog is already open show the error inside it.
+			if ( this.feedbackDialog ) {
+				this.feedbackDialog.showError( mw.msg( 'wikisource-bulkocr-fetch-images-failed' ) );
+			} else {
+				mw.notify( mw.msg( 'wikisource-bulkocr-fetch-images-failed' ), { type: 'error' } );
+			}
 		} );
 	}
 
@@ -257,17 +258,6 @@ class BulkOcrWidget {
 		const totalPages = entries.length;
 		let processedCount = 0;
 
-		this.progressNotificationElement.textContent = mw.msg( 'wikisource-bulkocr-ocr-progress', 0, totalPages );
-
-		// Show the notification if not already shown
-		if ( !this.progressNotificationId ) {
-			this.progressNotificationId = mw.notify( $( this.progressNotificationElement ), {
-				autoHide: false,
-				type: 'info',
-				tag: 'bulk-ocr-progress'
-			} );
-		}
-
 		const processBatch = ( startIndex ) => {
 			const batch = entries.slice( startIndex, startIndex + batchSize );
 			if ( batch.length === 0 ) {
@@ -278,12 +268,20 @@ class BulkOcrWidget {
 			const batchPromises = batch.map( ( [ pageTitle, thumbnail ] ) => {
 				return this.processOcrForPage( pageTitle, thumbnail )
 					.then( ocrText => {
+						processedCount++;
+						// Update the dialog's progress label so it counts up.
+						if ( this.feedbackDialog ) {
+							// Count up the dialog's progress label.
+							this.feedbackDialog.updateProgress( processedCount, totalPages );
+							// Stream this page into the dialog as soon as its OCR is ready.
+							if ( ocrText ) {
+								this.feedbackDialog.addPage( pageTitle, ocrText, thumbnail );
+							}
+						}
+
 						if ( ocrText ) {
 							this.ocrDictionary[ pageTitle ] = ocrText;
 						}
-						processedCount++;
-						// Update notification text
-						this.progressNotificationElement.textContent = mw.msg( 'wikisource-bulkocr-ocr-progress', processedCount, totalPages );
 						return ocrText;
 					} );
 			} );
@@ -303,31 +301,20 @@ class BulkOcrWidget {
 		return deferred.promise();
 	}
 	/**
-	 * Open the feedback dialog so the user can review the OCR results
-	 * before they are written to the wiki. See T394131
+	 * Open the feedback dialog early before OCR results are ready so the
+	 * user sees a progress bar while processing runs. See T433174.
+	 *
+	 *  @param {number} totalPages Total number of pages that will be processed
 	 */
-	showFeedbackDialog() {
-		// Close the OCR progress notification the dialog is now the UI.
-		if ( this.progressNotificationId ) {
-			this.progressNotificationId.then( ( notif ) => notif.close() );
-			this.progressNotificationId = null;
-		}
-
-		// If OCR produced no results show an error notification instead of empty dialog
-		if ( Object.keys( this.ocrDictionary ).length === 0 ) {
-			mw.notify( mw.msg( 'wikisource-bulkocr-feedback-no-results' ), { type: 'error' } );
-			return;
-		}
-
+	openFeedbackDialog( totalPages ) {
 		const BulkOcrFeedbackDialog = require( './BulkOcrFeedbackDialog.js' );
-		const dialog = new BulkOcrFeedbackDialog( {
-			ocrDictionary: this.ocrDictionary,
-			pageImageMap: this.pageImageMap,
+		this.feedbackDialog = new BulkOcrFeedbackDialog( {
+			totalPages: totalPages,
 			onApprove: () => this.saveOcrResults()
 		} );
 
-		OO.ui.getWindowManager().addWindows( [ dialog ] );
-		OO.ui.getWindowManager().openWindow( dialog );
+		OO.ui.getWindowManager().addWindows( [ this.feedbackDialog ] );
+		OO.ui.getWindowManager().openWindow( this.feedbackDialog );
 	}
 
 	/**
