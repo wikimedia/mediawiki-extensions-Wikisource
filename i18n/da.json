@@ -47,6 +47,10 @@
 	"wikisource-bulkocr-in-progress": "Masse-OCR i gang",
 	"wikisource-bulkocr-fetch-pages-failed": "Kunne ikke hente ikke-transkriberede sider fra indekset",
 	"wikisource-bulkocr-fetch-images-failed": "Kunne ikke hente miniaturebilleder af sider i indekset",
+	"wikisource-bulkocr-feedback-title": "Gennemgå OCR-resultater",
+	"wikisource-bulkocr-feedback-approve": "Godkend",
+	"wikisource-bulkocr-feedback-cancel": "Annullér",
+	"wikisource-bulkocr-feedback-no-results": "OCR producerede ingen tekst til de valgte sider. OCR-tjenesten er muligvis midlertidigt utilgængelig. Prøv igen senere.",
 	"wikisource-bulkocr-ocr-progress": "OCR-status: $1/$2 sider behandlet",
 	"wikisource-bulkocr-saving-progress": "Gemmer OCR-resultater: $1/$2 sider gemt",
 	"wikisource-bulkocr-saving-progress-with-failures": "Gemmer OCR-resultater: $1/$2 sider gemt (mislykkedes: $3)"

@@ -49,6 +49,10 @@
 	"wikisource-bulkocr-in-progress": "OCR masivo en curso",
 	"wikisource-bulkocr-fetch-pages-failed": "Non se puideron obter as páxinas non transcritas do índice",
 	"wikisource-bulkocr-fetch-images-failed": "Non se puideron obter as miniaturas das imaxes para as páxinas do índice",
+	"wikisource-bulkocr-feedback-title": "Revisión dos resultados do OCR",
+	"wikisource-bulkocr-feedback-approve": "Aprobar",
+	"wikisource-bulkocr-feedback-cancel": "Cancelar",
+	"wikisource-bulkocr-feedback-no-results": "O OCR non produciu ningún texto para as páxinas seleccionadas. Se cadra o servizo do OCR non estea dispoñible temporalmente. Inténtao de novo máis tarde.",
 	"wikisource-bulkocr-ocr-progress": "Progreso do OCR: $1/$2 páxinas procesadas",
 	"wikisource-bulkocr-saving-progress": "Gardando os resultados do OCR: $1/$2 páxinas gardadas",
 	"wikisource-bulkocr-saving-progress-with-failures": "Gardando os resultados do OCR: $1/$2 páxinas gardadas (fallos: $3)"

@@ -46,6 +46,10 @@
 	"wikisource-bulkocr-in-progress": "Massen-OCR wird ausgeführt",
 	"wikisource-bulkocr-fetch-pages-failed": "Nicht transkribierte Seiten konnten nicht aus dem Index abgerufen werden.",
 	"wikisource-bulkocr-fetch-images-failed": "Das Abrufen der Miniaturansichten der Seiten im Index ist fehlgeschlagen.",
+	"wikisource-bulkocr-feedback-title": "OCR-Ergebnisse prüfen",
+	"wikisource-bulkocr-feedback-approve": "Genehmigen",
+	"wikisource-bulkocr-feedback-cancel": "Abbrechen",
+	"wikisource-bulkocr-feedback-no-results": "Für die ausgewählten Seiten wurde kein Text per OCR erkannt. Der OCR-Dienst ist möglicherweise vorübergehend nicht verfügbar. Bitte versuche es später erneut.",
 	"wikisource-bulkocr-ocr-progress": "OCR-Fortschritt: $1/$2 Seiten verarbeitet",
 	"wikisource-bulkocr-saving-progress": "OCR-Ergebnisse speichern: $1/$2 Seiten gespart",
 	"wikisource-bulkocr-saving-progress-with-failures": "OCR-Ergebnisse werden gespeichert: $1/$2 Seiten gespeichert (Fehlgeschlagen: $3)"

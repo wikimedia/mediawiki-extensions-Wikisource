@@ -49,6 +49,10 @@
 	"wikisource-bulkocr-in-progress": "Toplu OCR davam edir",
 	"wikisource-bulkocr-fetch-pages-failed": "Transkripsiya edilməmiş səhifələri İndeksdən əldə etmək alınmadı",
 	"wikisource-bulkocr-fetch-images-failed": "İndeksdəki səhifələr üçün şəkil miniatürlərini əldə etmək alınmadı",
+	"wikisource-bulkocr-feedback-title": "OCR nəticələrini yoxla",
+	"wikisource-bulkocr-feedback-approve": "Təsdiqlə",
+	"wikisource-bulkocr-feedback-cancel": "İmtina",
+	"wikisource-bulkocr-feedback-no-results": "OCR seçilmiş səhifələr üçün heç bir mətn yaratmadı. OCR xidməti müvəqqəti olaraq əlçatan olmaya bilər. Zəhmət olmasa, daha sonra yenidən cəhd edin.",
 	"wikisource-bulkocr-ocr-progress": "OCR prosesi: $1/$2 səhifə işlənib",
 	"wikisource-bulkocr-saving-progress": "OCR nəticələrinin saxlanması: $1/$2 səhifə saxlanıb",
 	"wikisource-bulkocr-saving-progress-with-failures": "OCR nəticələrinin saxlanması: $1/$2 səhifə saxlanıb (Uğursuz: $3)"

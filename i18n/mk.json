@@ -45,6 +45,10 @@
 	"wikisource-bulkocr-in-progress": "Групното ОПЗ е во тек",
 	"wikisource-bulkocr-fetch-pages-failed": "Не успеав да добијам непрепишани страници од Индексот",
 	"wikisource-bulkocr-fetch-images-failed": "Не успеав да добијат минијатури на слики за страниците во индексот",
+	"wikisource-bulkocr-feedback-title": "Прегледајте го исходот од ОПЗ",
+	"wikisource-bulkocr-feedback-approve": "Одобри",
+	"wikisource-bulkocr-feedback-cancel": "Откажи",
+	"wikisource-bulkocr-feedback-no-results": "ОПЗ не даде никаков текст за избраните страници. Службата може да е привремено недостапна. Обидете се подоцна.",
 	"wikisource-bulkocr-ocr-progress": "Напредок на ОПЗ: обработени $1/$2 страници",
 	"wikisource-bulkocr-saving-progress": "Зачувување на исходот од ОПЗ: зачувани $1/$2 страници",
 	"wikisource-bulkocr-saving-progress-with-failures": "Зачувување на исходот од ОПЗ: зачувани $1/$2 страници (Неуспешни: $3)"
