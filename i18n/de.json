@@ -49,6 +49,7 @@
 	"wikisource-bulkocr-feedback-title": "OCR-Ergebnisse prüfen",
 	"wikisource-bulkocr-feedback-approve": "Genehmigen",
 	"wikisource-bulkocr-feedback-cancel": "Abbrechen",
+	"wikisource-bulkocr-feedback-page-label": "Seite $1",
 	"wikisource-bulkocr-feedback-no-results": "Für die ausgewählten Seiten wurde kein Text per OCR erkannt. Der OCR-Dienst ist möglicherweise vorübergehend nicht verfügbar. Bitte versuche es später erneut.",
 	"wikisource-bulkocr-ocr-progress": "OCR-Fortschritt: $1/$2 Seiten verarbeitet",
 	"wikisource-bulkocr-saving-progress": "OCR-Ergebnisse speichern: $1/$2 Seiten gespart",
