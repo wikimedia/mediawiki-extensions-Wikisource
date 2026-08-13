@@ -48,7 +48,9 @@
 	"wikisource-bulkocr-feedback-title": "Dib u eeg natiijooyinka OCR",
 	"wikisource-bulkocr-feedback-approve": "Ansixi",
 	"wikisource-bulkocr-feedback-cancel": "Jooji",
+	"wikisource-bulkocr-feedback-page-label": "Bogga $1",
 	"wikisource-bulkocr-feedback-no-results": "OCR ma uusan soo saarin wax qoraal ah bogagga la doortay. Adeegga OCR waxaa laga yaabaa inuusan si ku meelgaar ah u shaqaynayn. Fadlan mar kale isku day goor dambe.",
+	"wikisource-bulkocr-feedback-safety-banner": "Sii wad ficilka oo keliya haddii aad ogtahay waxa aad samaynayso, maadaama uu saameynayo bogag badan oo buugga ah.",
 	"wikisource-bulkocr-ocr-progress": "Horumarka OCR: $1/$2 bogag ayaa la farsameeyay",
 	"wikisource-bulkocr-saving-progress": "Kaydinta natiijooyinka OCR: $1/$2 bogag ayaa la kaydiyay",
 	"wikisource-bulkocr-saving-progress-with-failures": "Kaydinta natiijooyinka OCR: $1/$2 bogag ayaa la kaydiyay (Fashilmay: $3)"

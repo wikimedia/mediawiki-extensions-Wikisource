@@ -51,6 +51,7 @@
 	"wikisource-bulkocr-feedback-cancel": "Abbrechen",
 	"wikisource-bulkocr-feedback-page-label": "Seite $1",
 	"wikisource-bulkocr-feedback-no-results": "Für die ausgewählten Seiten wurde kein Text per OCR erkannt. Der OCR-Dienst ist möglicherweise vorübergehend nicht verfügbar. Bitte versuche es später erneut.",
+	"wikisource-bulkocr-feedback-safety-banner": "Führe diesen Vorgang nur durch, wenn du genau weißt, was du tust, da er sich auf mehrere Seiten des Buches auswirkt.",
 	"wikisource-bulkocr-ocr-progress": "OCR-Fortschritt: $1/$2 Seiten verarbeitet",
 	"wikisource-bulkocr-saving-progress": "OCR-Ergebnisse speichern: $1/$2 Seiten gespart",
 	"wikisource-bulkocr-saving-progress-with-failures": "OCR-Ergebnisse werden gespeichert: $1/$2 Seiten gespeichert (Fehlgeschlagen: $3)"

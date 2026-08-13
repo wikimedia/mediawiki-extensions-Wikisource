@@ -65,7 +65,9 @@
 	"wikisource-bulkocr-feedback-title": "复核 OCR 结果",
 	"wikisource-bulkocr-feedback-approve": "批准",
 	"wikisource-bulkocr-feedback-cancel": "取消",
+	"wikisource-bulkocr-feedback-page-label": "第$1页",
 	"wikisource-bulkocr-feedback-no-results": "光学字符识别未从所选页面中提取任何文本。OCR服务可能暂时不可用，请稍后再试。",
+	"wikisource-bulkocr-feedback-safety-banner": "只有在您清楚自己在做什么的情况下才进行此操作，因为它会影响书中的多个页面。",
 	"wikisource-bulkocr-ocr-progress": "OCR进度：已处理$1/$2个页面",
 	"wikisource-bulkocr-saving-progress": "保存OCR结果：已保存$1/$2个页面",
 	"wikisource-bulkocr-saving-progress-with-failures": "保存OCR结果：已保存$1/$2个页面，失败$3个"

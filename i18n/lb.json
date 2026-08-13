@@ -22,5 +22,6 @@
 	"wikisource-ocr-onboarding-title": "Biller an Text ëmwandelen",
 	"wikisource-ocr-onboarding-button": "OK, verstan",
 	"wikisource-bulkocr-no-pages-found": "Keng eidel Säite fir ze verschaffe fonnt",
-	"wikisource-bulkocr-feedback-cancel": "Ofbriechen"
+	"wikisource-bulkocr-feedback-cancel": "Ofbriechen",
+	"wikisource-bulkocr-feedback-page-label": "Säit $1"
 }

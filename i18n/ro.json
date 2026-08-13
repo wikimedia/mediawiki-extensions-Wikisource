@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Blaséd",
 			"NGC 54",
 			"Paloi Sciurala",
 			"TiberiuFr25"
@@ -39,5 +40,6 @@
 	"wikisource-ocr-onboarding-text": "Transformați documentele scanate în text editabil, utilizând recunoașterea optică a caracterelor (OCR).",
 	"wikisource-ocr-onboarding-button": "Bine, am înțeles.",
 	"wikisource-ocr-language-dropdown-label": "Limbi (opțional)",
-	"wikisource-ocr-model-dropdown-label": "Model de recunoaștere a textului"
+	"wikisource-ocr-model-dropdown-label": "Model de recunoaștere a textului",
+	"wikisource-bulkocr-feedback-safety-banner": "Continuă acțiunea numai dacă știi ce faci, deoarece afectează mai multe pagini ale cărții."
 }
