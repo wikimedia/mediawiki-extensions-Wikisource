@@ -45,9 +45,8 @@ BulkOcrFeedbackDialog.prototype.initialize = function () {
 	BulkOcrFeedbackDialog.super.prototype.initialize.apply( this, arguments );
 
 	// Safety banner warning about the multi-page effect of Approve.
-	this.safetyBanner = new OO.ui.MessageWidget( {
+	const safetyBanner = new OO.ui.MessageWidget( {
 		type: 'warning',
-		inline: true,
 		label: mw.msg( 'wikisource-bulkocr-feedback-safety-banner' ),
 		classes: [ 'ext-wikisource-bulkocr-feedback-safety-banner' ]
 	} );
@@ -79,7 +78,7 @@ BulkOcrFeedbackDialog.prototype.initialize = function () {
 	// Wrap banner and booklet in a flex column so the banner sits at the top.
 	const $container = $( '<div>' )
 		.addClass( 'ext-wikisource-bulkocr-feedback-container' )
-		.append( this.safetyBanner.$element, this.booklet.$element );
+		.append( safetyBanner.$element, this.booklet.$element );
 	this.$body.append( $container );
 };
 
