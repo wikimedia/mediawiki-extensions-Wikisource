@@ -45,5 +45,6 @@
 	"wikisource-ocr-onboarding-text": "অপটিক্যাল ক্যারেক্টার রেকগনিশন (ওসিআর) ব্যবহার করে, স্ক্যান করা নথিগুলিকে সম্পাদনাযোগ্য পাঠ্যে পরিণত করুন।",
 	"wikisource-ocr-onboarding-button": "ঠিক আছে, বুঝেছি",
 	"wikisource-ocr-language-dropdown-label": "ভাষা (ঐচ্ছিক):",
-	"wikisource-ocr-model-dropdown-label": "পাঠ্য শনাক্তকরণ মডেল"
+	"wikisource-ocr-model-dropdown-label": "পাঠ্য শনাক্তকরণ মডেল",
+	"wikisource-bulkocr-ocr-progress": "ওসিআর অগ্রগতি: $2টির মধ্যে $1টি পাতা প্রক্রিয়াকরণ হয়েছে"
 }
