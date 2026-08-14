@@ -58,6 +58,7 @@
 	"wikisource-bulkocr-feedback-cancel": "Annuleren",
 	"wikisource-bulkocr-feedback-page-label": "Pagina $1",
 	"wikisource-bulkocr-feedback-no-results": "OCR heeft geen tekst gegenereerd voor de geselecteerde pagina's. De OCR-dienst is mogelijk tijdelijk niet beschikbaar. Probeer het later opnieuw.",
+	"wikisource-bulkocr-feedback-safety-banner": "Ga alleen verder met deze handeling als u weet wat u doet, aangezien het meerdere pagina's van het boek beïnvloedt.",
 	"wikisource-bulkocr-ocr-progress": "OCR-voortgang: $1 van de $2 pagina’s verwerkt",
 	"wikisource-bulkocr-saving-progress": "Opslag OCR-resultaten: $1 van de $2 pagina’s opgeslagen",
 	"wikisource-bulkocr-saving-progress-with-failures": "Opslag OCR-resultaten: $1 van de $2 pagina’s opgeslagen (mislukt: $3)"
