@@ -55,5 +55,5 @@
 	"wikisource-bulkocr-feedback-safety-banner": "Proceed with the action only if you know what you are doing as it affects multiple pages of the book.",
 	"wikisource-bulkocr-ocr-progress": "OCR progress: $1/$2 pages processed",
 	"wikisource-bulkocr-saving-progress": "Saving OCR results: $1/$2 pages saved",
-	"wikisource-bulkocr-saving-progress-with-failures": "Saving OCR results: $1/$2 pages saved (Failed: $3)"
+	"wikisource-bulkocr-feedback-save-failed": "{{PLURAL:$1|One page|$1 pages}} could not be saved. You can retry or cancel."
 }

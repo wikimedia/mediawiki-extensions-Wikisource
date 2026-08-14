@@ -122,7 +122,7 @@
 				"wikisource-bulkocr-fetch-pages-failed",
 				"wikisource-bulkocr-fetch-images-failed",
 				"wikisource-bulkocr-saving-progress",
-				"wikisource-bulkocr-saving-progress-with-failures",
+				"wikisource-bulkocr-feedback-save-failed",
 				"wikisource-bulkocr-feedback-title",
 				"wikisource-bulkocr-feedback-approve",
 				"wikisource-bulkocr-feedback-cancel",

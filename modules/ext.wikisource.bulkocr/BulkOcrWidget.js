@@ -102,7 +102,6 @@ class BulkOcrWidget {
 				tag: 'bulk-ocr-progress'
 			} );
 
-			this.updatePageListStatus();
 		} );
 
 		// Start the process
@@ -320,21 +319,43 @@ class BulkOcrWidget {
 	/**
 	 * Save OCR results to pages in batches
 	 *
+	 * Resolves when every page saves successfully and rejects with the list of
+	 * failed page the feedback dialog can stay open and show the error inside
+	 * it. A retry only re-attempts pages that have not yet saved.
+	 *
 	 * @param {number} batchSize - Number of saves to process in each batch
+	 * @return {jQuery.Promise} Resolves on full success rejects with an array
+	 *   of failed page titles if any page fails to save.
 	 */
 	saveOcrResults( batchSize = 10 ) {
-		const entries = Object.entries( this.ocrDictionary );
+		// Track pages saved across attempts so a retry only re-attempts pages
+		// that still failed, not ones already saved which would fail under createonly.
+		if ( !this.alreadySavedPages ) {
+			this.alreadySavedPages = [];
+		}
+
+		const entries = Object.entries( this.ocrDictionary ).filter(
+			( [ pageTitle ] ) => !this.alreadySavedPages.includes( pageTitle )
+		);
 		const totalEntries = entries.length;
 		let savedCount = 0;
-		let failedPages = [];
-
-		// Update shared notification element
-		this.progressNotificationElement.textContent = mw.msg( 'wikisource-bulkocr-saving-progress', 0, totalEntries );
+		const failedPages = [];
+		const savedPages = [];
+		const deferred = $.Deferred();
 
 		const saveBatch = ( startIndex ) => {
 			const batch = entries.slice( startIndex, startIndex + batchSize );
 			if ( batch.length === 0 ) {
-				this.events.trigger( 'update-pages-complete' );
+				// Turn the successfully saved pages not proofread,
+				// leaving any failed pages red.
+				this.updatePageListStatus( savedPages );
+
+				if ( failedPages.length > 0 ) {
+					deferred.reject( failedPages );
+				} else {
+					this.events.trigger( 'update-pages-complete' );
+					deferred.resolve();
+				}
 				return;
 			}
 
@@ -344,31 +365,24 @@ class BulkOcrWidget {
 				this.mwApi.postWithToken( 'csrf', {
 					action: 'edit',
 					title: pageTitle,
-					appendtext: text, // Append OCR text to page
-					createonly: 1, // Only create new pages, don't overwrite existing content
+					appendtext: text,
+					createonly: 1,
 					format: 'json'
 				} ).done( () => {
 					savedCount++;
-					// Update notification text
-					this.progressNotificationElement.textContent = mw.msg( 'wikisource-bulkocr-saving-progress', savedCount, totalEntries );
-					if ( failedPages.length > 0 ) {
-						this.progressNotificationElement.textContent = mw.msg( 'wikisource-bulkocr-saving-progress-with-failures', savedCount, totalEntries, failedPages.join( ', ' ) );
+					savedPages.push( pageTitle );
+					this.alreadySavedPages.push( pageTitle );
+					if ( this.feedbackDialog ) {
+						this.feedbackDialog.updateSaveProgress( savedCount, totalEntries );
 					}
-
 					batchPendingSaves--;
 					if ( batchPendingSaves === 0 ) {
-						// Process next batch after a short delay
 						setTimeout( () => {
 							saveBatch( startIndex + batchSize );
 						}, 1000 );
 					}
-				} ).fail( ( error ) => {
-					console.error( `Edit failed for ${pageTitle}:`, error );
+				} ).fail( () => {
 					failedPages.push( pageTitle );
-
-					// Update notification to show failure
-					this.progressNotificationElement.textContent = mw.msg( 'wikisource-bulkocr-saving-progress-with-failures', savedCount, totalEntries, failedPages.join( ', ' ) );
-
 					batchPendingSaves--;
 					if ( batchPendingSaves === 0 ) {
 						// Process next batch after a short delay
@@ -382,15 +396,19 @@ class BulkOcrWidget {
 
 		// Start saving the first batch
 		saveBatch( 0 );
+
+		return deferred.promise();
 	}
 
 	/**
-	 * Live Updates pageList links from "page does not exist"
-	 * status to "not proofread" status by updating CSS classes.
+	 * Live Updates pageList links from "page does not exist" to status to
+	 * "not proofread" status by updating CSS classes For failed pages stay red.
+	 *
+	 * @param {string[]} savedPages Titles of pages that saved successfully
 	 */
-	updatePageListStatus() {
-		// Update pagelist links to show 'not proofread' status
-		Object.keys( this.ocrDictionary ).forEach( pageTitle => {
+	updatePageListStatus( savedPages ) {
+		const pages = savedPages || Object.keys( this.ocrDictionary );
+		pages.forEach( pageTitle => {
 			const pageLink = document.querySelector( `a[title="${pageTitle} (page does not exist)"]` );
 			if ( pageLink ) {
 				pageLink.classList.remove( 'new' );

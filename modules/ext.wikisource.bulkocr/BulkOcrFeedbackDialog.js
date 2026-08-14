@@ -118,6 +118,22 @@ BulkOcrFeedbackDialog.prototype.updateProgress = function ( processed, total ) {
 };
 
 /**
+ * Show saving progress inside the dialog while OCR text is written to pages.
+ * Reuses the progress bar and label shown during OCR.
+ *
+ * @param {number} saved Number of pages saved so far
+ * @param {number} total Total number of pages being saved
+ */
+BulkOcrFeedbackDialog.prototype.updateSaveProgress = function ( saved, total ) {
+	this.$statusBar.show();
+	this.progressBar.$element.show();
+	this.$progressLabel.show();
+	this.$progressLabel.text(
+		mw.msg( 'wikisource-bulkocr-saving-progress', saved, total )
+	);
+};
+
+/**
  * Add a single page to the booklet as its OCR completes (streaming review).
  * The page is inserted at the correct position by page number so the sidebar
  * stays in book order even though OCR completes out of order. See T433174.
@@ -196,17 +212,41 @@ BulkOcrFeedbackDialog.prototype.showError = function ( message ) {
 BulkOcrFeedbackDialog.prototype.getActionProcess = function ( action ) {
 	if ( action === 'approve' ) {
 		return new OO.ui.Process( () => {
-			if ( typeof this.onApprove === 'function' ) {
-				this.onApprove();
+			if ( typeof this.onApprove !== 'function' ) {
+				this.close( { action: action } );
+				return;
 			}
-			this.close( { action: action } );
+
+			// Show the saving indicator and disable Approve while saving.
+			this.updateSaveProgress( 0, Object.keys( this.ocrDictionary ).length );
+			this.actions.setAbilities( { approve: false } );
+
+			// Keep the dialog open while saving. Close on full success show an
+			// error inside the dialog if any page fails so the user can retry or cancel.
+			return this.onApprove().then(
+				() => {
+					this.close( { action: action } );
+				},
+				( failedPages ) => {
+					const failed = Array.isArray( failedPages ) ? failedPages : [];
+					this.actions.setAbilities( { approve: true } );
+					this.progressBar.$element.hide();
+					this.$progressLabel.hide();
+					return $.Deferred().reject( new OO.ui.Error(
+						mw.msg( 'wikisource-bulkocr-feedback-save-failed', failed.length ),
+						{ recoverable: true, warning: false }
+					) ).promise();
+				}
+			);
 		} );
 	}
+
 	if ( action === 'cancel' ) {
 		return new OO.ui.Process( () => {
 			this.close( { action: action } );
 		} );
 	}
+
 	return BulkOcrFeedbackDialog.super.prototype.getActionProcess.call( this, action );
 };
 module.exports = BulkOcrFeedbackDialog;

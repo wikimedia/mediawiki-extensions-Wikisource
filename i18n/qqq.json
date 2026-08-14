@@ -65,5 +65,5 @@
 	"wikisource-bulkocr-feedback-safety-banner": "Warning banner shown at the top of the Bulk OCR feedback dialog, cautioning the user that approving will affect multiple pages of the book.",
 	"wikisource-bulkocr-ocr-progress": "Progress message for OCR processing. $1 is the number of pages processed, $2 is the total number of pages.",
 	"wikisource-bulkocr-saving-progress": "Progress message for saving OCR results. $1 is the number of pages saved, $2 is the total number of pages.",
-	"wikisource-bulkocr-saving-progress-with-failures": "Progress message for saving OCR results with failures. $1 is the number of pages saved, $2 is the total number of pages, $3 is the list of failed pages."
+	"wikisource-bulkocr-feedback-save-failed": "Error shown inside the feedback dialog when one or more pages fail to save. $1 is the number of pages that failed."
 }
