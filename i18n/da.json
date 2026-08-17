@@ -52,6 +52,7 @@
 	"wikisource-bulkocr-feedback-cancel": "Annullér",
 	"wikisource-bulkocr-feedback-page-label": "Side $1",
 	"wikisource-bulkocr-feedback-no-results": "OCR producerede ingen tekst til de valgte sider. OCR-tjenesten er muligvis midlertidigt utilgængelig. Prøv igen senere.",
+	"wikisource-bulkocr-feedback-safety-banner": "Fortsæt kun med handlingen, hvis du ved, hvad du gør, da det påvirker flere sider i bogen.",
 	"wikisource-bulkocr-ocr-progress": "OCR-status: $1/$2 sider behandlet",
 	"wikisource-bulkocr-saving-progress": "Gemmer OCR-resultater: $1/$2 sider gemt",
 	"wikisource-bulkocr-saving-progress-with-failures": "Gemmer OCR-resultater: $1/$2 sider gemt (mislykkedes: $3)"

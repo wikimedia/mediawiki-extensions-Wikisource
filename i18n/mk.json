@@ -48,7 +48,9 @@
 	"wikisource-bulkocr-feedback-title": "Прегледајте го исходот од ОПЗ",
 	"wikisource-bulkocr-feedback-approve": "Одобри",
 	"wikisource-bulkocr-feedback-cancel": "Откажи",
+	"wikisource-bulkocr-feedback-page-label": "Страница $1",
 	"wikisource-bulkocr-feedback-no-results": "ОПЗ не даде никаков текст за избраните страници. Службата може да е привремено недостапна. Обидете се подоцна.",
+	"wikisource-bulkocr-feedback-safety-banner": "Продолжете со дејството само ако знаете што правите бидејќи засега повеќе страници од книгата.",
 	"wikisource-bulkocr-ocr-progress": "Напредок на ОПЗ: обработени $1/$2 страници",
 	"wikisource-bulkocr-saving-progress": "Зачувување на исходот од ОПЗ: зачувани $1/$2 страници",
 	"wikisource-bulkocr-saving-progress-with-failures": "Зачувување на исходот од ОПЗ: зачувани $1/$2 страници (Неуспешни: $3)"

@@ -52,7 +52,9 @@
 	"wikisource-bulkocr-feedback-title": "OCR nəticələrini yoxla",
 	"wikisource-bulkocr-feedback-approve": "Təsdiqlə",
 	"wikisource-bulkocr-feedback-cancel": "İmtina",
+	"wikisource-bulkocr-feedback-page-label": "Səhifə $1",
 	"wikisource-bulkocr-feedback-no-results": "OCR seçilmiş səhifələr üçün heç bir mətn yaratmadı. OCR xidməti müvəqqəti olaraq əlçatan olmaya bilər. Zəhmət olmasa, daha sonra yenidən cəhd edin.",
+	"wikisource-bulkocr-feedback-safety-banner": "Bunu yalnız nə etdiyinizi bildiyiniz təqdirdə davam etdirin, çünki bu, kitabın bir neçə səhifəsinə təsir edəcək.",
 	"wikisource-bulkocr-ocr-progress": "OCR prosesi: $1/$2 səhifə işlənib",
 	"wikisource-bulkocr-saving-progress": "OCR nəticələrinin saxlanması: $1/$2 səhifə saxlanıb",
 	"wikisource-bulkocr-saving-progress-with-failures": "OCR nəticələrinin saxlanması: $1/$2 səhifə saxlanıb (Uğursuz: $3)"
