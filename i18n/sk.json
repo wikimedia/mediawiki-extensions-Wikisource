@@ -51,6 +51,12 @@
 	"wikisource-bulkocr-in-progress": "Prebieha hromadné OCR",
 	"wikisource-bulkocr-fetch-pages-failed": "Nepodarilo sa načítať neprepísané strany z Indexu",
 	"wikisource-bulkocr-fetch-images-failed": "Nepodarilo sa načítať miniatúry obrázkov pre strany v indexe",
+	"wikisource-bulkocr-feedback-title": "Skontrolovať výsledky OCR",
+	"wikisource-bulkocr-feedback-approve": "Schváliť",
+	"wikisource-bulkocr-feedback-cancel": "Zrušiť",
+	"wikisource-bulkocr-feedback-page-label": "Strana $1",
+	"wikisource-bulkocr-feedback-no-results": "OCR nevytvorilo pre vybrané strany žiadny text. Služba OCR môže byť dočasne nedostupná. Skúste to, prosím, neskôr.",
+	"wikisource-bulkocr-feedback-safety-banner": "V akcii pokračujte, len ak viete, čo robíte, pretože ovplyvní viacero strán knihy.",
 	"wikisource-bulkocr-ocr-progress": "Priebeh OCR: spracovaných $1/$2 strán",
 	"wikisource-bulkocr-saving-progress": "Ukladanie výsledkov OCR: uložených $1/$2 strán",
 	"wikisource-bulkocr-saving-progress-with-failures": "Ukladanie výsledkov OCR: uložených $1/$2 strán (zlyhalo: $3)"
