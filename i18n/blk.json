@@ -12,5 +12,7 @@
 	"wikisource-download-mobi": "ထူႏလင်ꩻ MOBI",
 	"wikisource-download-pdf": "ထူႏလင်ꩻ PDF",
 	"wikisource-download-button": "ထူႏလင်ꩻ",
-	"wikisource-ocr-extract-cancel": "မာꩻတဝ်းဒွုမ်"
+	"wikisource-ocr-extract-cancel": "မာꩻတဝ်းဒွုမ်",
+	"wikisource-bulkocr-feedback-cancel": "မာꩻဒွုမ်",
+	"wikisource-bulkocr-feedback-page-label": "လိတ်မဲ့ငါ $1"
 }
