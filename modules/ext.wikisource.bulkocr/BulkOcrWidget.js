@@ -1,3 +1,13 @@
+/**
+ * Number of pages whose image data is requested per API call.
+ *
+ * Requesting a whole index in one call times out on large works, so image data
+ * is fetched in batches. See T436941.
+ *
+ * @type {number}
+ */
+const IMAGE_FETCH_BATCH_SIZE = 10;
+
 class BulkOcrWidget {
 	constructor( pageCount, ocrStartIndex ) {
 		// Create the Bulk OCR button, Warning message, and UI Container
@@ -69,7 +79,7 @@ class BulkOcrWidget {
 		// Open the dialog immediately with a progress bar show working is happening
 		this.events.on( 'ocr-pages-found', ( e, indexTitle, titlesArray ) => {
 			this.openFeedbackDialog( titlesArray.length );
-			this.getImagesForPages( indexTitle, titlesArray );
+			this.getImagesForPages( titlesArray );
 		} );
 
 		// Handle when images are loaded
@@ -163,48 +173,58 @@ class BulkOcrWidget {
 	}
 
 	/**
-	 * Get images for pages in the index
+	 * Get images for pages in the index.
 	 *
-	 * @param {string} indexTitle - The title of the index page
+	 * Requests image data only for the pages that need OCR in batches of
+	 * IMAGE_FETCH_BATCH_SIZE rather than for every page in the index.
+	 * Requesting the whole index in a single call times out on large works.
+	 * See T436941.
+	 *
+	 * Batches are requested one after another rather than in parallel to avoid
+	 * issuing many concurrent thumbnail requests.
+	 *
 	 * @param {Array} titlesArray - Array of page titles to get images for
 	 */
-	getImagesForPages( indexTitle, titlesArray ) {
+	getImagesForPages( titlesArray ) {
 		const pageImageMap = {};
 
-		this.mwApi.get( {
-			action: 'query',
-			prop: 'imageforpage',
-			generator: 'proofreadpagesinindex',
-			formatversion: 2,
-			prppifpprop: 'filename|size|fullsize|responsiveimages',
-			gprppiiprop: 'ids|title',
-			gprppiititle: indexTitle,
-			origin: '*'
-		} ).done( ( imgResponse ) => {
-			if ( imgResponse.query && imgResponse.query.pages ) {
-				Object.values( imgResponse.query.pages ).forEach( page => {
-					const pageTitle = page.title;
-					// Remove already transcribed or non-empty pages
-					if ( !titlesArray.includes( pageTitle ) ) {
-						return;
-					}
-					const thumbnail = page.imagesforpage.thumbnail || '';
-					// add image to dictionary
-					if ( thumbnail ) {
-						pageImageMap[ pageTitle ] = thumbnail;
-					}
-				} );
+		const fetchBatch = ( startIndex ) => {
+			const batch = titlesArray.slice( startIndex, startIndex + IMAGE_FETCH_BATCH_SIZE );
+
+			// All batches are done so pass the images to OCR.
+			if ( batch.length === 0 ) {
+				this.events.trigger( 'ocr-images-loaded', [ pageImageMap ] );
+				return;
 			}
-			this.events.trigger( 'ocr-images-loaded', [ pageImageMap ] );
-		} ).fail( ( xhr, status, error ) => {
-			console.error( 'Image data fetch failed:', error );
-			// The dialog is already open show the error inside it.
-			if ( this.feedbackDialog ) {
-				this.feedbackDialog.showError( mw.msg( 'wikisource-bulkocr-fetch-images-failed' ) );
-			} else {
-				mw.notify( mw.msg( 'wikisource-bulkocr-fetch-images-failed' ), { type: 'error' } );
-			}
-		} );
+
+			this.mwApi.get( {
+				action: 'query',
+				prop: 'imageforpage',
+				titles: batch.join( '|' ),
+				formatversion: 2,
+				prppifpprop: 'filename|size|fullsize|responsiveimages'
+			} ).done( ( imgResponse ) => {
+				if ( imgResponse.query && imgResponse.query.pages ) {
+					imgResponse.query.pages.forEach( ( page ) => {
+						const thumbnail = page.imagesforpage && page.imagesforpage.thumbnail;
+						if ( thumbnail ) {
+							pageImageMap[ page.title ] = thumbnail;
+						}
+					} );
+				}
+				fetchBatch( startIndex + IMAGE_FETCH_BATCH_SIZE );
+			} ).fail( ( xhr, status, error ) => {
+				// Stop if a request fails to avoid missing pages.
+				console.error( 'Image data fetch failed:', error );
+				if ( this.feedbackDialog ) {
+					this.feedbackDialog.showError( mw.msg( 'wikisource-bulkocr-fetch-images-failed' ) );
+				} else {
+					mw.notify( mw.msg( 'wikisource-bulkocr-fetch-images-failed' ), { type: 'error' } );
+				}
+			} );
+		};
+
+		fetchBatch( 0 );
 	}
 
 	/**
