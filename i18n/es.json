@@ -52,6 +52,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "No se pudieron obtener las páginas no transcritas del índice",
 	"wikisource-bulkocr-fetch-images-failed": "No se pudieron obtener las miniaturas de las imágenes de las páginas del índice",
 	"wikisource-bulkocr-ocr-progress": "Progreso del OCR: $1/$2 páginas procesadas",
-	"wikisource-bulkocr-saving-progress": "Guardar resultados de OCR: $1/$2 páginas guardadas",
-	"wikisource-bulkocr-saving-progress-with-failures": "Guardando resultados de OCR: $1/$2 páginas guardadas (Error: $3)"
+	"wikisource-bulkocr-saving-progress": "Guardar resultados de OCR: $1/$2 páginas guardadas"
 }

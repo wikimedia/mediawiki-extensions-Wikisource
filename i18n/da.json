@@ -55,5 +55,5 @@
 	"wikisource-bulkocr-feedback-safety-banner": "Fortsæt kun med handlingen, hvis du ved, hvad du gør, da det påvirker flere sider i bogen.",
 	"wikisource-bulkocr-ocr-progress": "OCR-status: $1/$2 sider behandlet",
 	"wikisource-bulkocr-saving-progress": "Gemmer OCR-resultater: $1/$2 sider gemt",
-	"wikisource-bulkocr-saving-progress-with-failures": "Gemmer OCR-resultater: $1/$2 sider gemt (mislykkedes: $3)"
+	"wikisource-bulkocr-feedback-save-failed": "{{PLURAL:$1|Én side| $1 sider}} kunne ikke gemmes. Du kan prøve igen eller annullere."
 }

@@ -57,5 +57,5 @@
 	"wikisource-bulkocr-feedback-safety-banner": "Continúa coa acción só se sabes o que estás a facer, xa que afecta a varias páxinas do libro.",
 	"wikisource-bulkocr-ocr-progress": "Progreso do OCR: $1/$2 páxinas procesadas",
 	"wikisource-bulkocr-saving-progress": "Gardando os resultados do OCR: $1/$2 páxinas gardadas",
-	"wikisource-bulkocr-saving-progress-with-failures": "Gardando os resultados do OCR: $1/$2 páxinas gardadas (fallos: $3)"
+	"wikisource-bulkocr-feedback-save-failed": "Non se {{PLURAL:$1|puido gardar unha páxina|puideron gardar $1 páxinas}}. Podes intentalo de novo ou cancelar."
 }

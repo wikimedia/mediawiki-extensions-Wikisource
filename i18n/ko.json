@@ -3,6 +3,7 @@
 		"authors": [
 			"Namoroka",
 			"Tensama0415",
+			"YeBoy371",
 			"Ykhwong"
 		]
 	},
@@ -54,7 +55,9 @@
 	"wikisource-bulkocr-feedback-approve": "승인",
 	"wikisource-bulkocr-feedback-cancel": "취소",
 	"wikisource-bulkocr-feedback-page-label": "페이지 $1",
+	"wikisource-bulkocr-feedback-no-results": "OCR이 선택한 페이지에서 텍스트를 생성하지 못했습니다. OCR 서비스가 일시적으로 이용 불가능할 수 있습니다. 나중에 다시 시도해 주세요.",
+	"wikisource-bulkocr-feedback-safety-banner": "이 작업은 책의 여러 페이지에 영향을 미치므로, 자신이 무엇을 하고 있는지 정확히 알고 있는 경우에만 진행하세요.",
 	"wikisource-bulkocr-ocr-progress": "OCR 진행 상황: $1/$2 문서 처리됨",
 	"wikisource-bulkocr-saving-progress": "OCR 결과 저장중: $1/$2 문서 저장됨",
-	"wikisource-bulkocr-saving-progress-with-failures": "OCR 결과 저장중: $1/$2 문서 저장됨 (실패함: $3)"
+	"wikisource-bulkocr-feedback-save-failed": "{{PLURAL:$1|문서 한 개|문서 $1개}}를 저장할 수 없습니다. 다시 시도하거나 취소할 수 있습니다."
 }

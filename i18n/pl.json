@@ -50,6 +50,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "Nie udało się pobrać nieprzepisanych stron z indeksu",
 	"wikisource-bulkocr-fetch-images-failed": "Nie udało się pobrać miniatur obrazów dla stron w indeksie",
 	"wikisource-bulkocr-ocr-progress": "Postęp OCR: przetworzono $1 z $2 stron",
-	"wikisource-bulkocr-saving-progress": "Zapisywanie wyników OCR: zapisano $1 z $2 stron",
-	"wikisource-bulkocr-saving-progress-with-failures": "Zapisywanie wyników OCR: zapisano $1 z $2 stron (nie udało się dla $3 {{PLURAL:$3|strony|stron}})"
+	"wikisource-bulkocr-saving-progress": "Zapisywanie wyników OCR: zapisano $1 z $2 stron"
 }

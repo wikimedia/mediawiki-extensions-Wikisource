@@ -50,6 +50,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "Kunne ikke hente utranskriberte sider fra indeksen",
 	"wikisource-bulkocr-fetch-images-failed": "Kunne ikke hente miniatyrbilder for sider i indeksen",
 	"wikisource-bulkocr-ocr-progress": "OCR-fremdrift: $1/$2 sider behandlet",
-	"wikisource-bulkocr-saving-progress": "Lagrer OCR-resultater: $1/$2 sider lagret",
-	"wikisource-bulkocr-saving-progress-with-failures": "Lagrer OCR-resultater: $1/$2 sider lagret (mislykket: $3)"
+	"wikisource-bulkocr-saving-progress": "Lagrer OCR-resultater: $1/$2 sider lagret"
 }

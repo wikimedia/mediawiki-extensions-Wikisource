@@ -61,5 +61,5 @@
 	"wikisource-bulkocr-feedback-safety-banner": "Ga alleen verder met deze handeling als u weet wat u doet, aangezien het meerdere pagina's van het boek beïnvloedt.",
 	"wikisource-bulkocr-ocr-progress": "OCR-voortgang: $1 van de $2 pagina’s verwerkt",
 	"wikisource-bulkocr-saving-progress": "Opslag OCR-resultaten: $1 van de $2 pagina’s opgeslagen",
-	"wikisource-bulkocr-saving-progress-with-failures": "Opslag OCR-resultaten: $1 van de $2 pagina’s opgeslagen (mislukt: $3)"
+	"wikisource-bulkocr-feedback-save-failed": "{{PLURAL:$1|Één pagina kon|$1 pagina's konden}} niet opgeslagen worden. U kunt het opnieuw proberen of annuleren."
 }

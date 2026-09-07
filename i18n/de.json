@@ -54,5 +54,5 @@
 	"wikisource-bulkocr-feedback-safety-banner": "Führe diesen Vorgang nur durch, wenn du genau weißt, was du tust, da er sich auf mehrere Seiten des Buches auswirkt.",
 	"wikisource-bulkocr-ocr-progress": "OCR-Fortschritt: $1/$2 Seiten verarbeitet",
 	"wikisource-bulkocr-saving-progress": "OCR-Ergebnisse speichern: $1/$2 Seiten gespart",
-	"wikisource-bulkocr-saving-progress-with-failures": "OCR-Ergebnisse werden gespeichert: $1/$2 Seiten gespeichert (Fehlgeschlagen: $3)"
+	"wikisource-bulkocr-feedback-save-failed": "{{PLURAL:$1|Eine Seite konnte|$1 Seiten konnten}} nicht gespeichert werden. Du kannst es erneut versuchen oder abbrechen."
 }

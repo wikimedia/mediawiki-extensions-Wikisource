@@ -56,6 +56,5 @@
 	"wikisource-bulkocr-feedback-no-results": "لم ينتج عن تقنية التعرف الضوئي على الحروف أي نص للصفحات المحددة. قد تكون خدمة التعرف الضوئي على الحروف غير متاحة مؤقتًا. يرجى المحاولة مرة أخرى لاحقًا.",
 	"wikisource-bulkocr-feedback-safety-banner": "لا تقم بهذا الإجراء إلا إذا كنت تعرف ما تفعله لأنه يؤثر على صفحات متعددة من الكتاب.",
 	"wikisource-bulkocr-ocr-progress": "تقدم التعرف الضوئي على الحروف: $1 / $2 من الصفحات المعالجة",
-	"wikisource-bulkocr-saving-progress": "حفظ نتائج التعرف الضوئي على الحروف: $1 / $2 من الصفحات المحفوظة",
-	"wikisource-bulkocr-saving-progress-with-failures": "حفظ نتائج التعرف الضوئي على الحروف: $1 / $2 تم حفظ الصفحات (فشل: $3)"
+	"wikisource-bulkocr-saving-progress": "حفظ نتائج التعرف الضوئي على الحروف: $1 / $2 من الصفحات المحفوظة"
 }

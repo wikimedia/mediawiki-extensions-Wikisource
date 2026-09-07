@@ -46,6 +46,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "Индекс чуьра транскрипци ца йина агӀонаш схьаэца аьтто ца баьлла",
 	"wikisource-bulkocr-fetch-images-failed": "Индексехь йолу агӀонашна суьртийн миниатюраш чуйаха аьтто ца баьлла",
 	"wikisource-bulkocr-ocr-progress": "OCR кхиам: $1/$2 агӀонаш кечйина",
-	"wikisource-bulkocr-saving-progress": "OCR жамӀаш Ӏалашдар: $1/$2 агӀо Ӏалашйина",
-	"wikisource-bulkocr-saving-progress-with-failures": "OCR жамӀаш Ӏалашдар: $1/$2 агӀо Ӏалашйина (кхиам ца хилла: $3)"
+	"wikisource-bulkocr-saving-progress": "OCR жамӀаш Ӏалашдар: $1/$2 агӀо Ӏалашйина"
 }

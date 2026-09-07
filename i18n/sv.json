@@ -48,6 +48,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "Misslyckades med att hämta otranskriberade sidor från indexet",
 	"wikisource-bulkocr-fetch-images-failed": "Misslyckades med att hämta miniatyrbilder för sidor i indexet",
 	"wikisource-bulkocr-ocr-progress": "OCR-förlopp: $1/$2 sidor bearbetade",
-	"wikisource-bulkocr-saving-progress": "Spara OCR-resultat: $1/$2 sidor sparade",
-	"wikisource-bulkocr-saving-progress-with-failures": "Sparar OCR-resultat: $1/$2 sidor sparade (Misslyckades: $3)"
+	"wikisource-bulkocr-saving-progress": "Spara OCR-resultat: $1/$2 sidor sparade"
 }

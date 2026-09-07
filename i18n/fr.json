@@ -61,6 +61,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "Échec de la récupération des pages non transcrites de l'index",
 	"wikisource-bulkocr-fetch-images-failed": "Échec de la récupération des miniatures d'images pour les pages de l'index",
 	"wikisource-bulkocr-ocr-progress": "Progression de la reconnaissance optique des caractères : $1 sur $2 pages traitées",
-	"wikisource-bulkocr-saving-progress": "Enregistrement des résultats de la reconnaissance optique des caractères : $1 sur $2 pages enregistrées",
-	"wikisource-bulkocr-saving-progress-with-failures": "Enregistrement des résultats de la reconnaissance optique des caractères : $1 sur $2 pages enregistrées (Échouées : $3)"
+	"wikisource-bulkocr-saving-progress": "Enregistrement des résultats de la reconnaissance optique des caractères : $1 sur $2 pages enregistrées"
 }

@@ -46,6 +46,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "Non poteva obtener paginas non transcribite ab le indice",
 	"wikisource-bulkocr-fetch-images-failed": "Non poteva obtener miniaturas de imagines pro paginas in le indice",
 	"wikisource-bulkocr-ocr-progress": "Progresso OCR: $1 de $2 paginas tractate",
-	"wikisource-bulkocr-saving-progress": "Salveguarda resultatos OCR: $1 de $2 paginas salveguardate",
-	"wikisource-bulkocr-saving-progress-with-failures": "Salveguarda resultatos OCR: $1 de $2 paginas salveguardate (fallite: $3)"
+	"wikisource-bulkocr-saving-progress": "Salveguarda resultatos OCR: $1 de $2 paginas salveguardate"
 }

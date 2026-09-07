@@ -54,6 +54,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "Не вдалося отримати нерозшифровані сторінки з «Індексу»",
 	"wikisource-bulkocr-fetch-images-failed": "Не вдалося отримати мініатюри зображень для сторінок в індексі",
 	"wikisource-bulkocr-ocr-progress": "OCR в процесі: оброблено $1/$2 сторінок.",
-	"wikisource-bulkocr-saving-progress": "Збереження результатів OCR: $1/$2 сторінок збережено",
-	"wikisource-bulkocr-saving-progress-with-failures": "береження результатів OCR: $1/$2 сторінок збережено (помилка: $3)."
+	"wikisource-bulkocr-saving-progress": "Збереження результатів OCR: $1/$2 сторінок збережено"
 }

@@ -50,6 +50,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "No s'han pogut obtenir les pàgines no transcrites de l'índex",
 	"wikisource-bulkocr-fetch-images-failed": "No s'han pogut obtenir les miniatures de les imatges de les pàgines de l'índex",
 	"wikisource-bulkocr-ocr-progress": "Progrés de l'OCR: $1/$2 pàgines processades",
-	"wikisource-bulkocr-saving-progress": "Desant els resultats de l'OCR: $1/$2 pàgines desades",
-	"wikisource-bulkocr-saving-progress-with-failures": "Desant els resultats de l'OCR: $1/$2 pàgines desades (Error: $3)"
+	"wikisource-bulkocr-saving-progress": "Desant els resultats de l'OCR: $1/$2 pàgines desades"
 }

@@ -58,6 +58,5 @@
 	"wikisource-bulkocr-feedback-no-results": "OCR nevytvorilo pre vybrané strany žiadny text. Služba OCR môže byť dočasne nedostupná. Skúste to, prosím, neskôr.",
 	"wikisource-bulkocr-feedback-safety-banner": "V akcii pokračujte, len ak viete, čo robíte, pretože ovplyvní viacero strán knihy.",
 	"wikisource-bulkocr-ocr-progress": "Priebeh OCR: spracovaných $1/$2 strán",
-	"wikisource-bulkocr-saving-progress": "Ukladanie výsledkov OCR: uložených $1/$2 strán",
-	"wikisource-bulkocr-saving-progress-with-failures": "Ukladanie výsledkov OCR: uložených $1/$2 strán (zlyhalo: $3)"
+	"wikisource-bulkocr-saving-progress": "Ukladanie výsledkov OCR: uložených $1/$2 strán"
 }

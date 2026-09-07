@@ -57,5 +57,5 @@
 	"wikisource-bulkocr-feedback-safety-banner": "Bunu yalnız nə etdiyinizi bildiyiniz təqdirdə davam etdirin, çünki bu, kitabın bir neçə səhifəsinə təsir edəcək.",
 	"wikisource-bulkocr-ocr-progress": "OCR prosesi: $1/$2 səhifə işlənib",
 	"wikisource-bulkocr-saving-progress": "OCR nəticələrinin saxlanması: $1/$2 səhifə saxlanıb",
-	"wikisource-bulkocr-saving-progress-with-failures": "OCR nəticələrinin saxlanması: $1/$2 səhifə saxlanıb (Uğursuz: $3)"
+	"wikisource-bulkocr-feedback-save-failed": "{{PLURAL:$1|Səhifəni|$1 səhifəni}} yadda saxlamaq mümkün olmadı. Yenidən cəhd edə və ya ləğv edə bilərsiniz."
 }

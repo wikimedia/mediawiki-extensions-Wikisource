@@ -51,6 +51,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "無法從索引中取得未轉譯的頁面",
 	"wikisource-bulkocr-fetch-images-failed": "取得索引的頁面縮圖失敗",
 	"wikisource-bulkocr-ocr-progress": "OCR 進度：已處理 $1/$2 個頁面",
-	"wikisource-bulkocr-saving-progress": "儲存 OCR 結果：已儲存 $1/$2 個頁面",
-	"wikisource-bulkocr-saving-progress-with-failures": "儲存 OCR 結果：已儲存 $1/$2 個頁面，失敗 $3 個"
+	"wikisource-bulkocr-saving-progress": "儲存 OCR 結果：已儲存 $1/$2 個頁面"
 }

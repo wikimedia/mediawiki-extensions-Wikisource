@@ -47,6 +47,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "Gagal mengambil laman yang tidak ditranskripsi daripada Indeks",
 	"wikisource-bulkocr-fetch-images-failed": "Gagal mengambil imej kenit untuk laman dalam indeks",
 	"wikisource-bulkocr-ocr-progress": "Kemajuan OCR: $1/$2 laman diproses",
-	"wikisource-bulkocr-saving-progress": "Menyimpan hasil OCR: $1/$2 laman disimpan",
-	"wikisource-bulkocr-saving-progress-with-failures": "Menyimpan hasil OCR: $1/$2 laman disimpan (Gagal: $3)"
+	"wikisource-bulkocr-saving-progress": "Menyimpan hasil OCR: $1/$2 laman disimpan"
 }

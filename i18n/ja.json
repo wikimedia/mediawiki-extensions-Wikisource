@@ -50,6 +50,5 @@
 	"wikisource-bulkocr-fetch-pages-failed": "インデックスから転記されていないページを取得できませんでした",
 	"wikisource-bulkocr-fetch-images-failed": "インデックス内のページの画像サムネイルを取得できませんでした",
 	"wikisource-bulkocr-ocr-progress": "OCR処理: $1/$2 ページを処理しました",
-	"wikisource-bulkocr-saving-progress": "OCR 結果の保存: $1/$2 ページを保存しました",
-	"wikisource-bulkocr-saving-progress-with-failures": "OCR 結果の保存: $1/$2 ページを保存しました (失敗: $3)"
+	"wikisource-bulkocr-saving-progress": "OCR 結果の保存: $1/$2 ページを保存しました"
 }

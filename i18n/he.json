@@ -48,6 +48,5 @@
 	"wikisource-bulkocr-fetch-images-failed": "נכשל אחזור תמונות ממוזערות של דפים מהמפתח",
 	"wikisource-bulkocr-feedback-page-label": "דף $1",
 	"wikisource-bulkocr-ocr-progress": "התקדמות זיהוי תווים אופטי: עובדו $1 מתוך $2 דפים",
-	"wikisource-bulkocr-saving-progress": "שמירת תוצאות זיהוי תווים אופטי: נשמרו $1 מתוך $2 דפים",
-	"wikisource-bulkocr-saving-progress-with-failures": "שמירת תוצאות זיהוי תווים אופטי: נשמרו $1 מתוך $2 דפים (נכשלו: $3)"
+	"wikisource-bulkocr-saving-progress": "שמירת תוצאות זיהוי תווים אופטי: נשמרו $1 מתוך $2 דפים"
 }
