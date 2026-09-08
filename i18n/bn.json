@@ -46,8 +46,11 @@
 	"wikisource-ocr-onboarding-button": "ঠিক আছে, বুঝেছি",
 	"wikisource-ocr-language-dropdown-label": "ভাষা (ঐচ্ছিক):",
 	"wikisource-ocr-model-dropdown-label": "পাঠ্য শনাক্তকরণ মডেল",
+	"wikisource-bulkocr-button": "গণহারে ওসিআর",
+	"wikisource-bulkocr-in-progress": "গণহারে ওসিআর চলছে",
 	"wikisource-bulkocr-feedback-title": "ওসিআর ফলাফল পর্যালোচনা করুন",
 	"wikisource-bulkocr-feedback-approve": "অনুমোদন করুন",
 	"wikisource-bulkocr-feedback-cancel": "বাতিল",
+	"wikisource-bulkocr-feedback-page-label": "পাতা $1",
 	"wikisource-bulkocr-ocr-progress": "ওসিআর অগ্রগতি: $2টির মধ্যে $1টি পাতা প্রক্রিয়াকরণ হয়েছে"
 }
