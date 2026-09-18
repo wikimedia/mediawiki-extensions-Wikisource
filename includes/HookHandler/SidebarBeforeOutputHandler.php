@@ -7,6 +7,7 @@ use MediaWiki\Context\IContextSource;
 use MediaWiki\Extension\Gadgets\GadgetRepo;
 use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Language\Language;
+use MediaWiki\MainConfigNames;
 use MediaWiki\Skin\Hook\SidebarBeforeOutputHook;
 use MediaWiki\Skin\Skin;
 
@@ -22,7 +23,7 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 		$this->wsExport = new WsExport(
 			$contentLanguage,
 			$config->get( 'WikisourceWsExportUrl' ),
-			$config->get( 'ServerName' )
+			$config->get( MainConfigNames::ServerName )
 		);
 	}
 
@@ -48,9 +49,7 @@ class SidebarBeforeOutputHandler implements SidebarBeforeOutputHook {
 		}
 
 		// Do not add export links to non-content namespaces, the main page, pages that don't exist, or during editing.
-		$exportNamespaceIds = $skin->getConfig()->get( 'ContentNamespaces' );
-		if (
-			!in_array( $skin->getTitle()->getNamespace(), $exportNamespaceIds )
+		if ( !$skin->getTitle()->inNamespaces( $skin->getConfig()->get( MainConfigNames::ContentNamespaces ) )
 			|| $skin->getTitle()->isMainPage()
 			|| !$skin->getTitle()->exists()
 			|| in_array( $skin->getRequest()->getVal( 'action' ), [ 'edit', 'submit' ] )

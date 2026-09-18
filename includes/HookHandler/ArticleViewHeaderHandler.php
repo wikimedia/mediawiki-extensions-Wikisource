@@ -5,6 +5,7 @@ namespace MediaWiki\Extension\Wikisource\HookHandler;
 use MediaWiki\Config\Config;
 use MediaWiki\Extension\Wikisource\WsExport;
 use MediaWiki\Language\Language;
+use MediaWiki\MainConfigNames;
 use MediaWiki\Page\Article;
 use MediaWiki\Page\Hook\ArticleViewHeaderHook;
 use MediaWiki\Parser\ParserOutput;
@@ -27,7 +28,7 @@ class ArticleViewHeaderHandler implements ArticleViewHeaderHook {
 		$this->wsExport = new WsExport(
 			$contentLanguage,
 			$config->get( 'WikisourceWsExportUrl' ),
-			$config->get( 'ServerName' )
+			$config->get( MainConfigNames::ServerName )
 		);
 
 		if ( ExtensionRegistry::getInstance()->isLoaded( 'ProofreadPage' ) ) {
