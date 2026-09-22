@@ -46,7 +46,13 @@
 	"wikisource-bulkocr-in-progress": "מבתצע זיהוי תווים אופטי (OCR) בכמות גדולה",
 	"wikisource-bulkocr-fetch-pages-failed": "נכשל אחזור דפים שלא הועתקו מהמפתח",
 	"wikisource-bulkocr-fetch-images-failed": "נכשל אחזור תמונות ממוזערות של דפים מהמפתח",
+	"wikisource-bulkocr-feedback-title": "סקירת תוצאות זיהוי תווים אופטי",
+	"wikisource-bulkocr-feedback-approve": "אישור",
+	"wikisource-bulkocr-feedback-cancel": "ביטול",
 	"wikisource-bulkocr-feedback-page-label": "דף $1",
+	"wikisource-bulkocr-feedback-no-results": "זיהוי תווים אופטי (OCR) לא יצר טקסט עבור הדפים שנבחרו. ייתכן ששירות ה־OCR אינו זמין כעת. נא לנסות שוב מאוחר יותר.",
+	"wikisource-bulkocr-feedback-safety-banner": "נא להמשיך בפעולה רק אם ברור לך מה זה עושה כי זה ישפיע על כמה דפים בספר.",
 	"wikisource-bulkocr-ocr-progress": "התקדמות זיהוי תווים אופטי: עובדו $1 מתוך $2 דפים",
-	"wikisource-bulkocr-saving-progress": "שמירת תוצאות זיהוי תווים אופטי: נשמרו $1 מתוך $2 דפים"
+	"wikisource-bulkocr-saving-progress": "שמירת תוצאות זיהוי תווים אופטי: נשמרו $1 מתוך $2 דפים",
+	"wikisource-bulkocr-feedback-save-failed": "לא היה ניתן לשמור {{PLURAL:$1|דף אחד|$1 דפים}}. באפשרותך לנסות שוב או לבטל."
 }
