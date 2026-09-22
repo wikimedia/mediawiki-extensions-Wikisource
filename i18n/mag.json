@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"ऐक्टिवेटेड्"
+		]
+	},
+	"wikisource-desc": "विकिस्रोत-विशिष्ट मीडियाविकि अनुकूलन",
+	"wikisource-export-portlet": "मुद्रण/निर्यात",
+	"wikisource-download-epub": "इपब डाउनलोड करथिन",
+	"wikisource-ocr-extract-cancel": "निरस्त करथिन",
+	"wikisource-ocr-extract-close": "ई सूचना बन्द करथिन",
+	"wikisource-ocr-onboarding-button": "ठीक, बुझ गेली ।",
+	"wikisource-ocr-language-dropdown-label": "भाषा (वैकल्पिक):",
+	"wikisource-ocr-model-dropdown-label": "पाठ पहचान मोडल"
+}
