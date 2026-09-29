@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"باران",
 			"شاه زمان پټان"
 		]
 	},
-	"wikisource-desc": "ټيکي‌سرچينې ځانگړې مېډياويکي دوديزونې",
+	"wikisource-desc": "ويکي‌سرچينې ځانگړې مېډياويکي دوديزونې",
 	"wikisource-export-portlet": "چاپول/بهرلېږل",
 	"wikisource-download-epub": "اېپوب راکښته‌کول",
 	"wikisource-download-epub-tooltip": "د دې کار اېپوب بل‌بڼه راکښته‌کول",
@@ -40,5 +41,8 @@
 	"wikisource-ocr-model-dropdown-label": "ليک پېژندنې نمونه",
 	"wikisource-bulkocr-button": "بولک او‌سي‌ار",
 	"wikisource-bulkocr-active-development-warning": "دا ځانگړنه د کارنده پرمختگ لاندې ده بايد په ډېرې پاملرنې سره وکارول شي.",
-	"wikisource-bulkocr-no-pages-found": "هېڅ تش مخونه پروسس کولو لپاره ونه موندل شوې"
+	"wikisource-bulkocr-no-pages-found": "هېڅ تش مخونه پروسس کولو لپاره ونه موندل شوې",
+	"wikisource-bulkocr-feedback-approve": "منل",
+	"wikisource-bulkocr-feedback-cancel": "ناگارل",
+	"wikisource-bulkocr-feedback-page-label": "$1 مخ"
 }
