@@ -102,7 +102,9 @@
 				"oojs-ui-widgets",
 				"oojs-ui-windows",
 				"jquery",
-				"ext.wikisource.icons"
+				"ext.wikisource.icons",
+				"mediawiki.Title",
+				"mediawiki.util"
 			],
 			"packageFiles": [
 				"ext.wikisource.bulkocr/ext.wikisource.bulkocr.js",

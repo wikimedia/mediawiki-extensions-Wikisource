@@ -427,12 +427,43 @@ class BulkOcrWidget {
 	 * @param {string[]} savedPages Titles of pages that saved successfully
 	 */
 	updatePageListStatus( savedPages ) {
-		const pages = savedPages || Object.keys( this.ocrDictionary );
-		pages.forEach( pageTitle => {
-			const pageLink = document.querySelector( `a[title="${pageTitle} (page does not exist)"]` );
-			if ( pageLink ) {
+		if ( !Array.isArray( savedPages ) || savedPages.length === 0 ) {
+			return;
+		}
+
+		const savedPagesMap = Object.create( null );
+		let hasSaved = false;
+		savedPages.forEach( ( pageTitle ) => {
+			const titleObj = mw.Title.newFromText( pageTitle );
+			if ( titleObj ) {
+				savedPagesMap[ titleObj.getPrefixedDb() ] = titleObj;
+				hasSaved = true;
+			}
+		} );
+
+		if ( !hasSaved ) {
+			return;
+		}
+
+		const pageLinks = document.querySelectorAll( '.prp-index-pagelist a.prp-index-pagelist-page.new' );
+		pageLinks.forEach( ( pageLink ) => {
+			let titleParam;
+			try {
+				const url = new URL( pageLink.href, window.location.href );
+				titleParam = url.searchParams.get( 'title' );
+			} catch ( e ) {
+				return;
+			}
+			if ( !titleParam ) {
+				return;
+			}
+
+			const titleObj = savedPagesMap[ titleParam ];
+			if ( titleObj ) {
 				pageLink.classList.remove( 'new' );
 				pageLink.classList.add( 'prp-pagequality-1', 'quality1' );
+				pageLink.title = titleObj.getPrefixedText();
+				pageLink.href = mw.util.getUrl( titleObj.getPrefixedText() );
 			}
 		} );
 	}
