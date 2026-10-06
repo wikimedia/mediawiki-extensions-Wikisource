@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"شاه زمان پټان"
+			"شاه زمان پټان",
+			"باران"
 		]
 	},
-	"wikisource-desc": "ټيکي‌سرچينې ځانگړې مېډياويکي دوديزونې",
+	"wikisource-desc": "ويکي‌سرچينې ځانگړې مېډياويکي دوديزونې",
 	"wikisource-export-portlet": "چاپول/بهرلېږل",
 	"wikisource-download-epub": "اېپوب راکښته‌کول",
 	"wikisource-download-epub-tooltip": "د دې کار اېپوب بل‌بڼه راکښته‌کول",
