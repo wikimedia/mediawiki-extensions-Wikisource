@@ -8,11 +8,8 @@ function InitBulkOcr() {
 	}
 
 	// Add bulk OCR widget to each pagelist container
-	let ocrStartIndex = 0;
 	pagelistContainers.forEach( ( pagelistContainer ) => {
-		const pageCount = pagelistContainer.children.length;
-		const bulkOcrWidget = new BulkOcrWidget( pageCount, ocrStartIndex );
-		ocrStartIndex = ocrStartIndex + pageCount;
+		const bulkOcrWidget = new BulkOcrWidget( pagelistContainer );
 
 		// Insert the container above the pagelist container
 		pagelistContainer.parentNode.insertBefore(

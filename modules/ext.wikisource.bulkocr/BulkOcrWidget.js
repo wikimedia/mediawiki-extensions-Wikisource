@@ -9,7 +9,7 @@
 const IMAGE_FETCH_BATCH_SIZE = 10;
 
 class BulkOcrWidget {
-	constructor( pageCount, ocrStartIndex ) {
+	constructor( pagelistContainer ) {
 		// Create the Bulk OCR button, Warning message, and UI Container
 		const bulkOcrButton = new OO.ui.ButtonWidget( {
 			icon: 'bulk-ocr',
@@ -34,11 +34,7 @@ class BulkOcrWidget {
 		this.bulkOcrButton = bulkOcrButton;
 		this.warningMessage = warningMessage;
 		this.container = container;
-
-		// Store individual widget-specific data
-		this.pageCount = pageCount;
-		this.ocrStartIndex = ocrStartIndex;
-		this.ocrEndIndex = this.ocrStartIndex + this.pageCount;
+		this.pagelistContainer = pagelistContainer;
 
 		// Initialize state variables
 		this.ocrDictionary = {}; // Maps page titles to OCR text
@@ -141,35 +137,23 @@ class BulkOcrWidget {
 	 * @param {string} indexTitle - The title of the index page
 	 * @return {jQuery.Promise} - Promise resolving to array of untranscribed page titles
 	 */
+	// eslint-disable-next-line no-unused-vars
 	getUnTranscribedPagesInIndex( indexTitle ) {
-		const deferred = $.Deferred();
-
-		this.mwApi.get( {
-			action: 'query',
-			list: 'proofreadpagesinindex',
-			prppiititle: indexTitle,
-			prppiiprop: 'ids|title|formattedpagenumber',
-			formatversion: 2
-		} ).done( ( response ) => {
-			const unTranscribedPages = [];
-			if ( response.query.proofreadpagesinindex ) {
-				const allPages = response.query.proofreadpagesinindex;
-				const currentPagelistPages = allPages.slice( this.ocrStartIndex, this.ocrEndIndex );
-
-				// Collect uncreated pages (pageid === 0)
-				currentPagelistPages.forEach( page => {
-					if ( page.pageid === 0 ) {
-						unTranscribedPages.push( page.title );
+		const unTranscribedPages = [];
+		if ( this.pagelistContainer ) {
+			const pageLinks = this.pagelistContainer.querySelectorAll( 'a.prp-index-pagelist-page.new' );
+			pageLinks.forEach( ( pageLink ) => {
+				const titleParam = this.getTitleParamFromLink( pageLink );
+				if ( titleParam ) {
+					const titleObj = mw.Title.newFromText( titleParam );
+					if ( titleObj && !unTranscribedPages.includes( titleObj.getPrefixedText() ) ) {
+						unTranscribedPages.push( titleObj.getPrefixedText() );
 					}
-				} );
-			}
-			deferred.resolve( unTranscribedPages );
-		} ).fail( ( xhr, status, error ) => {
-			mw.notify( mw.msg( 'wikisource-bulkocr-fetch-pages-failed' ), { type: 'error' } );
-			deferred.reject( error || 'API request failed' );
-		} );
+				}
+			} );
+		}
 
-		return deferred.promise();
+		return $.Deferred().resolve( unTranscribedPages ).promise();
 	}
 
 	/**
@@ -421,13 +405,28 @@ class BulkOcrWidget {
 	}
 
 	/**
+	 * Get the title query parameter from a link URL.
+	 *
+	 * @param {HTMLAnchorElement} pageLink
+	 * @return {string|null}
+	 */
+	getTitleParamFromLink( pageLink ) {
+		try {
+			const url = new URL( pageLink.href, window.location.href );
+			return url.searchParams.get( 'title' );
+		} catch ( e ) {
+			return null;
+		}
+	}
+
+	/**
 	 * Live Updates pageList links from "page does not exist" to status to
 	 * "not proofread" status by updating CSS classes For failed pages stay red.
 	 *
 	 * @param {string[]} savedPages Titles of pages that saved successfully
 	 */
 	updatePageListStatus( savedPages ) {
-		if ( !Array.isArray( savedPages ) || savedPages.length === 0 ) {
+		if ( !Array.isArray( savedPages ) || savedPages.length === 0 || !this.pagelistContainer ) {
 			return;
 		}
 
@@ -445,15 +444,9 @@ class BulkOcrWidget {
 			return;
 		}
 
-		const pageLinks = document.querySelectorAll( '.prp-index-pagelist a.prp-index-pagelist-page.new' );
+		const pageLinks = this.pagelistContainer.querySelectorAll( 'a.prp-index-pagelist-page.new' );
 		pageLinks.forEach( ( pageLink ) => {
-			let titleParam;
-			try {
-				const url = new URL( pageLink.href, window.location.href );
-				titleParam = url.searchParams.get( 'title' );
-			} catch ( e ) {
-				return;
-			}
+			const titleParam = this.getTitleParamFromLink( pageLink );
 			if ( !titleParam ) {
 				return;
 			}

@@ -55,7 +55,6 @@
 	"wikisource-bulkocr-success-message": "Success message displayed when bulk OCR process completes successfully. \"Not proofread\" is {{msg-mw|Tag-proofreadpage-quality1}}",
 	"wikisource-bulkocr-no-pages-found": "Error message displayed when no empty pages are found to process.",
 	"wikisource-bulkocr-in-progress": "Status message displayed when bulk OCR process is starting.",
-	"wikisource-bulkocr-fetch-pages-failed": "Error message displayed when fetching untranscribed pages fails.",
 	"wikisource-bulkocr-fetch-images-failed": "Error message displayed when fetching image thumbnails fails.",
 	"wikisource-bulkocr-feedback-title": "Title of the dialog shown after Bulk OCR completes the user reviews the OCR results before they are written to the wiki.",
 	"wikisource-bulkocr-feedback-approve": "Label for the button that confirms the OCR results and saves them to the wiki.",

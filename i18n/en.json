@@ -45,7 +45,6 @@
 	"wikisource-bulkocr-success-message": "Bulk OCR executed successfully. Page statuses updated to not Proofread.",
 	"wikisource-bulkocr-no-pages-found": "No empty pages found to process",
 	"wikisource-bulkocr-in-progress": "Bulk OCR in progress",
-	"wikisource-bulkocr-fetch-pages-failed": "Failed to fetch untranscribed pages from Index",
 	"wikisource-bulkocr-fetch-images-failed": "Failed to fetch image thumbnails for pages in index",
 	"wikisource-bulkocr-feedback-title": "Review OCR Results",
 	"wikisource-bulkocr-feedback-approve": "Approve",
