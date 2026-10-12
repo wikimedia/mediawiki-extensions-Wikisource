@@ -118,7 +118,6 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		$langs = $cache->buildGetWithSetCallback()
 			->globalKey( 'wikisource-ocr-langs', $engine )
 			->keepForADay()
-			->keepStaleFor( $cache::TTL_WEEK )
 			->callback( $callback )
 			->fetch();
 		return $langs === false ? [] : $langs;
