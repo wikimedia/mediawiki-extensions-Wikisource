@@ -11,6 +11,7 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\ResourceLoader\Context;
 use MediaWiki\User\Options\UserOptionsLookup;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initialHook {
 
@@ -93,9 +94,13 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		$proxy = $config->get( 'WikisourceHttpProxy' );
 		$url = $toolUrl . '/api/available_langs?engine=' . $engine;
 		$fname = __METHOD__;
-		$callback = static function () use ( $url, $http, $proxy, $logger, $engine, $fname ) {
+		$callback = static function ( $oldValue, &$ttl ) use ( $url, $http, $proxy, $logger, $engine, $fname ) {
 			$logger->debug( 'Language list not cached for {engine}, fetching now', [ 'engine' => $engine ] );
-			$options = [];
+			$options = [
+				// T442064: Low timeouts. Generally responds < 200ms.
+				'connectTimeout' => 0.5,
+				'timeout' => 1,
+			];
 			if ( $proxy ) {
 				$options[ 'proxy' ] = $proxy;
 			}
@@ -109,17 +114,21 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 				]
 			);
 			if ( $response === null ) {
+				// T442064: Cache absence
+				$ttl = WANObjectCache::TTL_HOUR;
 				$logger->warning( 'OCR empty response from tool', [ 'url' => $url ] );
-				return false;
+				return [];
 			}
 			$contents = json_decode( $response );
-			return $contents->available_langs ?? false;
+			return $contents->available_langs ?? [];
 		};
-		$langs = $cache->buildGetWithSetCallback()
+		return $cache->buildGetWithSetCallback()
 			->globalKey( 'wikisource-ocr-langs', $engine )
 			->keepForADay()
+			// T442064: Avoid stampedes
+			->allowStale( WANObjectCache::TTL_WEEK )
+			->busyValue( [] )
 			->callback( $callback )
 			->fetch();
-		return $langs === false ? [] : $langs;
 	}
 }
