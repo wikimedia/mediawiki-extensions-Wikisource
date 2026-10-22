@@ -87,14 +87,15 @@ class EditPageShowEditFormInitialHandler implements EditPage__showEditForm_initi
 		if ( defined( 'MW_PHPUNIT_TEST' ) ) {
 			return [];
 		}
-		$http = MediaWikiServices::getInstance()->getHttpRequestFactory();
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$logger = LoggerFactory::getInstance( 'Wikisource' );
 		$toolUrl = rtrim( $config->get( 'WikisourceOcrUrl' ), '/' );
-		$proxy = $config->get( 'WikisourceHttpProxy' );
 		$url = $toolUrl . '/api/available_langs?engine=' . $engine;
+		$proxy = $config->get( 'WikisourceHttpProxy' );
 		$fname = __METHOD__;
-		$callback = static function ( $oldValue, &$ttl ) use ( $url, $http, $proxy, $logger, $engine, $fname ) {
+		$callback = static function ( $oldValue, &$ttl ) use ( $url, $proxy, $engine, $fname ) {
+			$http = MediaWikiServices::getInstance()->getHttpRequestFactory();
+			$logger = LoggerFactory::getInstance( 'Wikisource' );
+
 			$logger->debug( 'Language list not cached for {engine}, fetching now', [ 'engine' => $engine ] );
 			$options = [
 				// T442064: Low timeouts. Generally responds < 200ms.
