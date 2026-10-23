@@ -41,8 +41,18 @@
 	"wikisource-ocr-model-dropdown-label": "ليک پېژندنې نمونه",
 	"wikisource-bulkocr-button": "بولک او‌سي‌ار",
 	"wikisource-bulkocr-active-development-warning": "دا ځانگړنه د کارنده پرمختگ لاندې ده بايد په ډېرې پاملرنې سره وکارول شي.",
+	"wikisource-bulkocr-success-message": "د او‌سي‌ار ډله‌ييزه اجرا په برياليتوب ترسره شوه. د مخ دريځونه د نه لوست‌ارزول‌شوي ته هم‌مهاله شول.",
 	"wikisource-bulkocr-no-pages-found": "هېڅ تش مخونه پروسس کولو لپاره ونه موندل شوې",
+	"wikisource-bulkocr-in-progress": "په لويه‌کچه او‌سي‌ار روان دی",
+	"wikisource-bulkocr-fetch-pages-failed": "د ليکلړ څخه د ناليکل‌شويو مخونو په ترلاسنه کې پاتې راغی",
+	"wikisource-bulkocr-fetch-images-failed": "د مخونو له ليکلړ د انځور بټنوکونو ترلاسنه کې پاتې راغی",
+	"wikisource-bulkocr-feedback-title": "د او‌سي‌ار پايلو بياکتنه",
 	"wikisource-bulkocr-feedback-approve": "منل",
 	"wikisource-bulkocr-feedback-cancel": "ناگارل",
-	"wikisource-bulkocr-feedback-page-label": "$1 مخ"
+	"wikisource-bulkocr-feedback-page-label": "$1 مخ",
+	"wikisource-bulkocr-feedback-no-results": "او‌سي‌ار د ټاکل‌شويو مخونو لپاره هېڅ ليک نه دی توليد کړی. د او‌سي‌ار چوپړ ښايي په لنډمهاله ډول شتون ونلري. مهرباني وکړئ وروسته بيا هڅه وکړئ.",
+	"wikisource-bulkocr-feedback-safety-banner": "يوازې هغه وخت چارې ته دوام ورکړئ کله چې تاسو پوهېږئ چې تاسو څه کوئ؛ ځکه چې دا د کتاب په ډېرو مخونو اغېزه کوي.",
+	"wikisource-bulkocr-ocr-progress": "د او‌سي‌ار بهير: $1/$2 مخونه پروسس شوې دي",
+	"wikisource-bulkocr-saving-progress": "د او‌سي‌ار پايلې خوندي‌‌کول: $1/$2 مخونه خوندي شول",
+	"wikisource-bulkocr-feedback-save-failed": "{{PLURAL:$1|يو مخ|$1 مخونه}} نشي خوندي کېدی. تاسو کولی شئ يوځل بيا هڅه وکړئ يا يې ناگاره کړئ."
 }
