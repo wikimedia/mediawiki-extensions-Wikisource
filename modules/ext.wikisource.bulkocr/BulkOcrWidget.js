@@ -366,13 +366,13 @@ class BulkOcrWidget {
 			let batchPendingSaves = batch.length;
 
 			batch.forEach( ( [ pageTitle, text ] ) => {
-				this.mwApi.postWithToken( 'csrf', {
+				this.getPageText( pageTitle, text ).then( ( pageText ) => this.mwApi.postWithToken( 'csrf', {
 					action: 'edit',
 					title: pageTitle,
-					appendtext: text,
+					text: pageText,
 					createonly: 1,
 					format: 'json'
-				} ).done( () => {
+				} ) ).done( () => {
 					savedCount++;
 					savedPages.push( pageTitle );
 					this.alreadySavedPages.push( pageTitle );
@@ -417,6 +417,29 @@ class BulkOcrWidget {
 		} catch ( e ) {
 			return null;
 		}
+	}
+
+	/**
+	 * Put the OCR text between the header and footer that a new page gets
+	 * from its Index page, as the edit form does.
+	 *
+	 * @param {string} pageTitle Title of the page to save
+	 * @param {string} text OCR text
+	 * @return {jQuery.Promise} Resolves with the text to save, or just the
+	 *   OCR text if the default content can't be fetched
+	 */
+	getPageText( pageTitle, text ) {
+		return this.mwApi.get( {
+			action: 'query',
+			prop: 'defaultcontentforpage',
+			titles: pageTitle,
+			formatversion: 2
+		} ).then( ( data ) => {
+			const parts = ( data.query.pages[ 0 ].defaultcontentforpage || '' ).match(
+				/^(<noinclude>[\s\S]*?<\/noinclude>)[\s\S]*(<noinclude>[\s\S]*?<\/noinclude>)$/
+			);
+			return parts ? parts[ 1 ] + text + parts[ 2 ] : text;
+		}, () => text );
 	}
 
 	/**
