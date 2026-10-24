@@ -371,6 +371,7 @@ class BulkOcrWidget {
 					title: pageTitle,
 					text: pageText,
 					createonly: 1,
+					bot: 1,
 					format: 'json'
 				} ) ).done( () => {
 					savedCount++;
