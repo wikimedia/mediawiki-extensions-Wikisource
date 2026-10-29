@@ -7,6 +7,7 @@
 			"JLTRY",
 			"Momo50WM",
 			"Seudo",
+			"SleaY",
 			"Thibaut120094",
 			"VIGNERON",
 			"Verdy p",
@@ -60,6 +61,7 @@
 	"wikisource-bulkocr-in-progress": "Reconnaissance optique des caractères en masse en cours",
 	"wikisource-bulkocr-fetch-pages-failed": "Échec de la récupération des pages non transcrites de l'index",
 	"wikisource-bulkocr-fetch-images-failed": "Échec de la récupération des miniatures d'images pour les pages de l'index",
+	"wikisource-bulkocr-feedback-cancel": "Annuler",
 	"wikisource-bulkocr-ocr-progress": "Progression de la reconnaissance optique des caractères : $1 sur $2 pages traitées",
 	"wikisource-bulkocr-saving-progress": "Enregistrement des résultats de la reconnaissance optique des caractères : $1 sur $2 pages enregistrées"
 }
