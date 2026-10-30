@@ -11,5 +11,7 @@
 	"wikisource-ocr-extract-close": "ई सूचना बन्द करथिन",
 	"wikisource-ocr-onboarding-button": "ठीक, बुझ गेली ।",
 	"wikisource-ocr-language-dropdown-label": "भाषा (वैकल्पिक):",
-	"wikisource-ocr-model-dropdown-label": "पाठ पहचान मोडल"
+	"wikisource-ocr-model-dropdown-label": "पाठ पहचान मोडल",
+	"wikisource-bulkocr-feedback-cancel": "निरस्त करथिन",
+	"wikisource-bulkocr-feedback-page-label": "पन्ना $1"
 }
