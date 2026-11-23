@@ -47,7 +47,6 @@
 	"wikisource-bulkocr-success-message": "一括査定OCRが正常に実行されました。ページの状態が未校正に変更されました。",
 	"wikisource-bulkocr-no-pages-found": "処理すべき空のページがありませんでした",
 	"wikisource-bulkocr-in-progress": "一括OCRの処理中",
-	"wikisource-bulkocr-fetch-pages-failed": "インデックスから転記されていないページを取得できませんでした",
 	"wikisource-bulkocr-fetch-images-failed": "インデックス内のページの画像サムネイルを取得できませんでした",
 	"wikisource-bulkocr-ocr-progress": "OCR処理: $1/$2 ページを処理しました",
 	"wikisource-bulkocr-saving-progress": "OCR 結果の保存: $1/$2 ページを保存しました"

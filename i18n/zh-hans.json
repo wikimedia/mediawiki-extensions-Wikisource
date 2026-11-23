@@ -60,7 +60,6 @@
 	"wikisource-bulkocr-success-message": "批量OCR识别成功。页面状态已更新为“未校对”。",
 	"wikisource-bulkocr-no-pages-found": "未找到要处理的空白页面",
 	"wikisource-bulkocr-in-progress": "批量OCR进行中",
-	"wikisource-bulkocr-fetch-pages-failed": "无法从索引中获取未转译的页面",
 	"wikisource-bulkocr-fetch-images-failed": "获取索引的页面缩略图失败",
 	"wikisource-bulkocr-feedback-title": "复核 OCR 结果",
 	"wikisource-bulkocr-feedback-approve": "批准",

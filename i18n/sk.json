@@ -49,7 +49,6 @@
 	"wikisource-bulkocr-success-message": "Hromadné OCR bolo úspešne vykonané. Stavy strán boli zmenené na neskorigované.",
 	"wikisource-bulkocr-no-pages-found": "Nenašli sa žiadne prázdne strany na spracovanie",
 	"wikisource-bulkocr-in-progress": "Prebieha hromadné OCR",
-	"wikisource-bulkocr-fetch-pages-failed": "Nepodarilo sa načítať neprepísané strany z Indexu",
 	"wikisource-bulkocr-fetch-images-failed": "Nepodarilo sa načítať miniatúry obrázkov pre strany v indexe",
 	"wikisource-bulkocr-feedback-title": "Skontrolovať výsledky OCR",
 	"wikisource-bulkocr-feedback-approve": "Schváliť",

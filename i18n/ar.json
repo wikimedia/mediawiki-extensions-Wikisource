@@ -47,7 +47,6 @@
 	"wikisource-bulkocr-success-message": "تم تنفيذ عملية التعرف الضوئي على الحروف (OCR) بنجاح. تم تحديث حالة الصفحة إلى \"غير مُراجعة\".",
 	"wikisource-bulkocr-no-pages-found": "لم يتم العثور على صفحات فارغة للمعالجة",
 	"wikisource-bulkocr-in-progress": "عملية التعرف الضوئي على الحروف بالجملة قيد التقدم",
-	"wikisource-bulkocr-fetch-pages-failed": "فشل جلب الصفحات غير المنقولة من الفهرس",
 	"wikisource-bulkocr-fetch-images-failed": "فشل جلب الصور المصغرة للصفحات الموجودة في الفهرس",
 	"wikisource-bulkocr-feedback-title": "مراجعة نتائج التعرف الضوئي على الأحرف",
 	"wikisource-bulkocr-feedback-approve": "موافقة",

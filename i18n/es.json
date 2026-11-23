@@ -49,7 +49,6 @@
 	"wikisource-bulkocr-success-message": "El reconocimiento óptico de caracteres (OCR) masivo se ejecutó correctamente. El estado de la página se actualizó a \"No revisado\".",
 	"wikisource-bulkocr-no-pages-found": "No se encontraron páginas vacías para procesar",
 	"wikisource-bulkocr-in-progress": "OCR masivo en curso",
-	"wikisource-bulkocr-fetch-pages-failed": "No se pudieron obtener las páginas no transcritas del índice",
 	"wikisource-bulkocr-fetch-images-failed": "No se pudieron obtener las miniaturas de las imágenes de las páginas del índice",
 	"wikisource-bulkocr-ocr-progress": "Progreso del OCR: $1/$2 páginas procesadas",
 	"wikisource-bulkocr-saving-progress": "Guardar resultados de OCR: $1/$2 páginas guardadas"

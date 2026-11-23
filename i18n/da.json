@@ -45,7 +45,6 @@
 	"wikisource-bulkocr-success-message": "Masse-OCR udført. Sidestatus opdateret til ikke korrekturlæst.",
 	"wikisource-bulkocr-no-pages-found": "Det blev ikke fundet nogle tomme sider at behandle",
 	"wikisource-bulkocr-in-progress": "Masse-OCR i gang",
-	"wikisource-bulkocr-fetch-pages-failed": "Kunne ikke hente ikke-transkriberede sider fra indekset",
 	"wikisource-bulkocr-fetch-images-failed": "Kunne ikke hente miniaturebilleder af sider i indekset",
 	"wikisource-bulkocr-feedback-title": "Gennemgå OCR-resultater",
 	"wikisource-bulkocr-feedback-approve": "Godkend",

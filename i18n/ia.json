@@ -43,7 +43,6 @@
 	"wikisource-bulkocr-success-message": "OCR in massa executate con successo. Le statos del paginas se ha actualisate a non corrigite.",
 	"wikisource-bulkocr-no-pages-found": "Necun pagina vacue trovate a tractar",
 	"wikisource-bulkocr-in-progress": "OCR in massa in progresso",
-	"wikisource-bulkocr-fetch-pages-failed": "Non poteva obtener paginas non transcribite ab le indice",
 	"wikisource-bulkocr-fetch-images-failed": "Non poteva obtener miniaturas de imagines pro paginas in le indice",
 	"wikisource-bulkocr-ocr-progress": "Progresso OCR: $1 de $2 paginas tractate",
 	"wikisource-bulkocr-saving-progress": "Salveguarda resultatos OCR: $1 de $2 paginas salveguardate"

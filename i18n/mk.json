@@ -43,7 +43,6 @@
 	"wikisource-bulkocr-success-message": "Групното ОПЗ е успешно извршено. Статусите на страниците се изменети за да не се за коректура.",
 	"wikisource-bulkocr-no-pages-found": "Во постапката не најдов празни страници",
 	"wikisource-bulkocr-in-progress": "Групното ОПЗ е во тек",
-	"wikisource-bulkocr-fetch-pages-failed": "Не успеав да добијам непрепишани страници од Индексот",
 	"wikisource-bulkocr-fetch-images-failed": "Не успеав да добијат минијатури на слики за страниците во индексот",
 	"wikisource-bulkocr-feedback-title": "Прегледајте го исходот од ОПЗ",
 	"wikisource-bulkocr-feedback-approve": "Одобри",

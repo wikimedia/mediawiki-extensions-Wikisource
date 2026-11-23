@@ -47,7 +47,6 @@
 	"wikisource-bulkocr-success-message": "O OCR masivo executouse correctamente. Os estados da páxina actualizáronse a non revisada.",
 	"wikisource-bulkocr-no-pages-found": "Non se atoparon páxinas baleiras para procesar",
 	"wikisource-bulkocr-in-progress": "OCR masivo en curso",
-	"wikisource-bulkocr-fetch-pages-failed": "Non se puideron obter as páxinas non transcritas do índice",
 	"wikisource-bulkocr-fetch-images-failed": "Non se puideron obter as miniaturas das imaxes para as páxinas do índice",
 	"wikisource-bulkocr-feedback-title": "Revisión dos resultados do OCR",
 	"wikisource-bulkocr-feedback-approve": "Aprobar",

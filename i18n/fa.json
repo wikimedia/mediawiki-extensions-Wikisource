@@ -51,7 +51,6 @@
 	"wikisource-bulkocr-success-message": "اوسی‌آر عمده با موفقیت اجرا شد. وضعیت برگه‌ها به نمونه‌خوانی‌نشده تغییر یافت.",
 	"wikisource-bulkocr-no-pages-found": "هیچ برگهٔ خالی‌ای برای پردازش یافت نشد",
 	"wikisource-bulkocr-in-progress": "اوسی‌آر عمده در حال انجام",
-	"wikisource-bulkocr-fetch-pages-failed": "دریافت برگه‌های رونویسی نشده از فهرست شکست خورد",
 	"wikisource-bulkocr-fetch-images-failed": "دریافت تصاویر بندانگشتی برای برگه‌های موجود در فهرست شکست خورد",
 	"wikisource-bulkocr-feedback-title": "بازبینی نتایج اوسی‌آر",
 	"wikisource-bulkocr-feedback-approve": "تأیید",

@@ -51,7 +51,6 @@
 	"wikisource-bulkocr-success-message": "Масове OCR виконано успішно. Статуси сторінок оновлено на «не вичитано».",
 	"wikisource-bulkocr-no-pages-found": "Не знайдено пустих сторінок для обробки.",
 	"wikisource-bulkocr-in-progress": "Масове OCR в процесі",
-	"wikisource-bulkocr-fetch-pages-failed": "Не вдалося отримати нерозшифровані сторінки з «Індексу»",
 	"wikisource-bulkocr-fetch-images-failed": "Не вдалося отримати мініатюри зображень для сторінок в індексі",
 	"wikisource-bulkocr-ocr-progress": "OCR в процесі: оброблено $1/$2 сторінок.",
 	"wikisource-bulkocr-saving-progress": "Збереження результатів OCR: $1/$2 сторінок збережено"

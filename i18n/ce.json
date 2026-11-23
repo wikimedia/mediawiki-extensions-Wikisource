@@ -43,7 +43,6 @@
 	"wikisource-bulkocr-success-message": "Массо а текст йовзар кхиамца чекхдаьккхина. АгӀонан статусаш карлайахна «Таллам ца бина» аьлла.",
 	"wikisource-bulkocr-no-pages-found": "Цхьа а йаьсса агӀонаш ца карийна процесс йан",
 	"wikisource-bulkocr-in-progress": "Дукха OCR процессехь йу",
-	"wikisource-bulkocr-fetch-pages-failed": "Индекс чуьра транскрипци ца йина агӀонаш схьаэца аьтто ца баьлла",
 	"wikisource-bulkocr-fetch-images-failed": "Индексехь йолу агӀонашна суьртийн миниатюраш чуйаха аьтто ца баьлла",
 	"wikisource-bulkocr-ocr-progress": "OCR кхиам: $1/$2 агӀонаш кечйина",
 	"wikisource-bulkocr-saving-progress": "OCR жамӀаш Ӏалашдар: $1/$2 агӀо Ӏалашйина"

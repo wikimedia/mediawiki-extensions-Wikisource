@@ -59,7 +59,6 @@
 	"wikisource-bulkocr-success-message": "La reconnaissance optique des caractères en masse a bien été exécutée. Les pages ont été mises à jour à l’état « Non relue ».",
 	"wikisource-bulkocr-no-pages-found": "Aucune page vide trouvée à traiter",
 	"wikisource-bulkocr-in-progress": "Reconnaissance optique des caractères en masse en cours",
-	"wikisource-bulkocr-fetch-pages-failed": "Échec de la récupération des pages non transcrites de l'index",
 	"wikisource-bulkocr-fetch-images-failed": "Échec de la récupération des miniatures d'images pour les pages de l'index",
 	"wikisource-bulkocr-feedback-cancel": "Annuler",
 	"wikisource-bulkocr-ocr-progress": "Progression de la reconnaissance optique des caractères : $1 sur $2 pages traitées",

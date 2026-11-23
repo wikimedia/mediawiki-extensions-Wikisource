@@ -43,7 +43,6 @@
 	"wikisource-bulkocr-success-message": "Correctamente ya cumpli el OCR. El maga estado de pagina ya hace update na \"No hay revisa\".",
 	"wikisource-bulkocr-no-pages-found": "Msga pagina no hay laman no hay encontra para hace procesa",
 	"wikisource-bulkocr-in-progress": "En pendiente progreso el Masivo OCR",
-	"wikisource-bulkocr-fetch-pages-failed": "No hay puede obtene con el maga pagina hende transcribido del indice",
 	"wikisource-bulkocr-fetch-images-failed": "No hay puede obtene con el maga thumbnails del retrato para na maga pagina na indice",
 	"wikisource-bulkocr-ocr-progress": "Progreso del OCR: $1/$2 pagina el ya hace procesa",
 	"wikisource-bulkocr-saving-progress": "Ta salva con maga resulta del OCR: $1/$2 pagina el salvao"

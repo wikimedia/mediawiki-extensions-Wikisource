@@ -44,7 +44,6 @@
 	"wikisource-bulkocr-success-message": "Massen-OCR erfolgreich ausgeführt. Der Status der Seiten wurde nicht auf Proofread aktualisiert.",
 	"wikisource-bulkocr-no-pages-found": "Keine leeren Seiten zum Verarbeiten gefunden",
 	"wikisource-bulkocr-in-progress": "Massen-OCR wird ausgeführt",
-	"wikisource-bulkocr-fetch-pages-failed": "Nicht transkribierte Seiten konnten nicht aus dem Index abgerufen werden.",
 	"wikisource-bulkocr-fetch-images-failed": "Das Abrufen der Miniaturansichten der Seiten im Index ist fehlgeschlagen.",
 	"wikisource-bulkocr-feedback-title": "OCR-Ergebnisse prüfen",
 	"wikisource-bulkocr-feedback-approve": "Genehmigen",
